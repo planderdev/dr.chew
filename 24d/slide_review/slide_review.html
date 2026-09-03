@@ -1,0 +1,66 @@
+<!--@js(/24d/slide_review/js/slide_review.js)-->
+<!--@css(/24d/slide_review/css/slide_review.css)-->
+
+
+<div id="slide_review" class="scroll-reveal">
+    
+	<div id="slide_review_title">
+        <!--@import(/24d/slide_review/slide_review_title.html)-->
+    </div>
+    
+    <div id="slide_review_table_box" class="ec-base-table typeList gThumb gBorderClear">
+        <table border="1" id="slide_review_swiper" class="swiper">
+        <tbody module="board_list_4" class="center swiper-wrapper">
+            <!--
+				$count = 12
+                $product_name_cut = 10
+                $login_page_url = /member/login.html
+                $deny_access_url = /index.html
+            -->
+            <tr class="swiper-slide">
+                <td class="thumb">
+                    <a class="thumb_a" data-board="{$board_no}" href="/24d/add_part/review_detail.html{$param_read}"><img src="{$product_img_src}" onerror="this.src='/0dzimg/photo_err_img.jpg'" alt="photo" /></a>
+                    <div class="subject left txtBreak">
+                    	<span class="subject_title"><a href="/24d/add_part/review_detail.html{$param_read}">{$subject}</a></span>
+                    	<span class="subject_content"><a href="/24d/add_part/review_detail.html{$param_read}">{$content}</a></span>
+                        <span class="review_writer"><span>{$writer}</span><span class="point_span {$point_display|display}"><img src="/0dzimg/rating{$point_count}.png" alt="{$point_count}점" /></span></span>
+                	</div>
+                </td>
+                <td class="product_and_point">
+                    <a class="product_and_point_left" href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='/0dzimg/photo_err_img.jpg'" alt="photo" /></a>
+                    <div class="product_and_point_right"><span class="pdname_span">{$product_name}</span></div>
+                </td>
+            </tr>
+            <tr class="swiper-slide">
+                <td class="thumb">
+                    <a class="thumb_a" data-board="{$board_no}" href="/24d/add_part/review_detail.html{$param_read}"><img src="{$product_img_src}" onerror="this.src='/0dzimg/photo_err_img.jpg'" alt="photo" /></a>
+                    <div class="subject left txtBreak">
+                    	<span class="subject_title"><a href="/24d/add_part/review_detail.html{$param_read}">{$subject}</a></span>
+                    	<span class="subject_content"><a href="/24d/add_part/review_detail.html{$param_read}">{$content}</a></span>
+                        <span class="review_writer"><span>{$writer}</span><span class="point_span {$point_display|display}"><img src="/0dzimg/rating{$point_count}.png" alt="{$point_count}점" /></span></span>
+                	</div>
+                </td>
+                <td class="product_and_point">
+                    <a class="product_and_point_left" href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='/0dzimg/photo_err_img.jpg'" alt="photo" /></a>
+                    <div class="product_and_point_right"><span class="pdname_span">{$product_name}</span></div>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+        <p class="message {$empty_display|display}" module="board_empty_4">{$empty_message}</p>
+    </div>
+    
+</div>
+
+<div id="detail_review_popup" module="board_CommentPackage_4">
+    <div id="detail_review_popup_in">
+    	<div id="detail_review_popup_mask"></div>
+    	<div id="detail_review_popup_info_box">
+            <div id="detail_review_popup_info_out">
+                <div id="detail_review_popup_close"><img src="/0svg/close.svg"></div>
+                <div id="detail_review_popup_info">
+            	</div>
+            </div>
+        </div>
+    </div>
+</div> 

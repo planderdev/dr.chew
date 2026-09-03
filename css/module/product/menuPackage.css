@@ -1,0 +1,222 @@
+.xans-product-menupackage {
+    margin: 0px 0 30px 0;
+}
+
+.xans-product-menupackage #titleArea h2 {
+    padding: 0 2%;
+    margin-top: 40px;
+    color: #222;
+    font-size: 35px;
+    line-height: 40px; 
+    font-style: italic;
+    font-weight: 800;
+}
+
+.xans-product-menupackage #titleArea>h2>img {
+    max-width: 100%;
+}
+
+.xans-product-menupackage .title {
+    min-height: 10px;
+    margin: 0px 0 20px;
+}
+
+.xans-product-menupackage .banner {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 0px;
+    text-align: center;
+}
+
+.xans-product-menupackage .banner img {
+    max-width: 100%;
+}
+
+.xans-product-menupackage .title h2 {
+    float: left;
+    width: 100%;
+    margin: 0px 0 0px 0;
+    color: #4a5164;
+    font-size: 12px;
+    /*url("//img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat;*/
+    text-align: center;
+}
+
+.xans-product-menupackage .title h2 span {
+    width: auto;
+    padding: 5px 60px 20px 60px;
+    border-bottom: 0px #ccc double;
+}
+
+.xans-product-menupackage .title h2,
+.xans-product-menupackage .title .likeButton {
+    float: left;
+    width: 100%;
+    margin: 0px 0 0px 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.xans-product-menupackage .title .likeButton button {
+    margin: 0px 0 0px 0px;
+    padding: 0 0 0 0px;
+    height: 14px;
+    line-height: 14px; 
+    color: #333;
+    letter-spacing: -1px;
+    background: none;
+}
+
+.xans-product-menupackage .title .likeButton.selected button {
+    color: #353535;
+}
+
+.xans-product-menupackage .menuCategory {
+    border: 0px solid #d7d5d5;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+}
+
+.xans-product-menupackage .menuCategory>ul {
+    float: left;
+    width: 100%;
+}
+
+.xans-product-menupackage .menuCategory>li {
+    display: inline-block;
+    width: auto;
+    margin: 30px 10px 5px 10px;
+    font-size: 0px;
+    line-height: 15px;
+    vertical-align: top;
+}
+
+.xans-product-menupackage .menuCategory>li>a {
+    padding: 2px 5px 2px 5px;
+    font-size: 15px;
+    font-weight: ;
+    color: #333;
+    /*background:url("//img.echosting.cafe24.com/skin/base_ko_KR/product/ico_menu_category.gif") no-repeat 100% 5px;*/
+    border: 0px #ccc solid;
+    text-align: center;
+}
+
+.xans-product-menupackage .menuCategory>li>a:hover {
+    color: #999;
+    text-decoration: none;
+    /* background-position:100% -95px;*/
+    border: 0px #999 solid;
+    text-align: center;
+}
+
+.xans-product-menupackage .menuCategory>li.selected>a {
+    /* color:#fff;  background:#999; */
+}
+
+.xans-product-menupackage .menuCategory>li .count {
+    font-weight: normal;
+}
+
+.xans-product-menupackage .menuCategory>li>ul {
+    display: none;
+    padding: 0px 0 0 0;
+}
+
+.xans-product-menupackage .menuCategory>li>ul>li {
+    position: relative;
+    margin: 8px 0 0 0;
+    line-height: 14px;
+    font-size: 13px;
+}
+
+.xans-product-menupackage .menuCategory>li>ul>li>a {
+    color: #555;
+}
+
+.xans-product-menupackage .menuCategory>li>ul>li>a:hover,
+.xans-product-menupackage .menuCategory>li>ul>li.selected>a {
+    color: #999;
+}
+
+
+.xans-product-menupackage .menuCategory>li>img {
+    display: none;
+    position: relative;
+    height: 15px;
+    margin-top: -11px;
+    cursor: pointer;
+}
+
+.xans-product-menupackage .menuCategory>li>img.subon_state {
+    transform: rotate(180deg);
+}
+
+.xans-product-menupackage .menuCategory>li>ul>li>.button {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: -2px 0 0 3px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.xans-product-menupackage .menuCategory>li>ul>li>.button img {
+    height: 12px;
+}
+
+.xans-product-menupackage .menuCategory>li>ul>li>.button.subon_state>img {
+    transform: rotate(180deg);
+}
+
+.xans-product-menupackage .subCategory {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 5px);
+    width: auto;
+    margin: 0 0 0 0;
+    padding: 0px 0;
+    border: 1px solid #ddd;
+    font-size: 0;
+    line-height: 0;
+    background: #fff;
+    z-index: 11;
+    white-space: nowrap;
+}
+
+.xans-product-menupackage .subCategory li {
+    display: block;
+    width: auto;
+    margin: 8px 10px 8px 10px;
+    font-size: 13px;
+    line-height: 14px;
+    vertical-align: top;
+}
+
+.xans-product-menupackage .subCategory li a {
+    color: #575a63;
+}
+
+.xans-product-menupackage .subCategory li a:hover,
+.xans-product-menupackage .subCategory li.selected a {
+    color: #999;
+}
+
+.xans-product-menupackage .subCategory img {
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    .xans-product-menupackage #titleArea h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .xans-product-menupackage .menuCategory>li {
+        margin: 15px 5px 5px 5px;
+    }
+}

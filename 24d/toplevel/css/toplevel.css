@@ -1,0 +1,8 @@
+
+#main #top_go,
+#main #bottom_go { display:none !Important; }
+#top_go { display:none; position:fixed; bottom:68px; right:15px; display:flex; justify-content:center; align-items:center; width:40px; height:40px; background-color:rgba(255,255,255,1); border-radius:50%; cursor:pointer; z-index:999; border:1px solid #eee; }
+#bottom_go { display:none; position:fixed; bottom:20px; right:15px; display:flex; justify-content:center; align-items:center; width:40px; height:40px; background-color:rgba(255,255,255,1); border-radius:50%; cursor:pointer; z-index:999; border:1px solid #eee; }
+
+#top_go img, 
+#bottom_go img { width:14px; transform:rotate(-90deg); }

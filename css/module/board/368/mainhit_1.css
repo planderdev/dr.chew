@@ -1,0 +1,54 @@
+.xans-board-mainhit {
+    position: relative;
+}
+
+.xans-board-mainhit h3 {
+    margin: 0 0 13px;
+    height: 28px;
+    font-size: 16px;
+    color: #2e2e2e;
+    border-bottom: 2px solid #626672;
+}
+
+.xans-board-mainhit .more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px;
+}
+
+.xans-board-mainhit table {
+    width: 100%;
+}
+
+.xans-board-mainhit table th {
+    display: none;
+}
+
+.xans-board-mainhit td {
+    width: 65px;
+    padding: 0 1px 0 0;
+    border: none;
+    border-bottom: 1px dotted #d8d8d8;
+    font-size: 10px;
+    
+    color: #a4a4a4;
+    text-align: right;
+    line-height: 34px;
+}
+
+.xans-board-mainhit td.title {
+    width: auto;
+    font-size: 12px;
+    text-align: left;
+}
+
+.xans-board-mainhit td.title a,
+.xans-board-mainhit td.title a:hover {
+    color: #4f4f4f;
+}
+
+.xans-board-mainhit table td.date {
+    width: 75px;
+    text-align: right;
+}

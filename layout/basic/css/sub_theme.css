@@ -1,0 +1,116 @@
+/** subpage_theme01 (button_color - black) **/
+
+:root {
+	/* Subpage Theme */
+	--sub-theme-title-font-size: var(--headline-1-size-ko);
+	--sub-theme-title-font-size-mobile: var(--title-4-size);
+	--sub-theme-title-color: var(--text-main);
+	--sub-theme-text: var(--text-main);
+	--sub-theme-muted-text: var(--text-weak);
+	--sub-theme-border: var(--line-weak);
+	--sub-theme-border-strong: var(--line-strong);
+	--sub-theme-tab-active: var(--brand-primary);
+}
+
+/* 기획전 타이틀 */
+.xans-project-package .title {
+	margin: 45px 0 0;
+}
+
+.xans-project-package .title h2 {
+	font-weight: var(--headline-font-weight-ko);
+	font-size: var(--sub-theme-title-font-size);
+	color: var(--sub-theme-title-color);
+}
+
+/* 테마스타일 */
+.sub_theme_pop {
+	position: fixed;
+	top: 40%;
+	right: 20px;
+}
+
+.sub_theme_pop ul li {
+	cursor: pointer;
+	color: var(--sub-theme-muted-text);
+	text-align: right;
+}
+
+.sub_theme_pop ul li:hover {
+	cursor: pointer;
+	color: var(--sub-theme-text);
+}
+
+/* 레이아웃스타일 */
+.layout_theme_pop {
+	position: fixed;
+	top: 55%;
+	right: 20px;
+	z-index: 10;
+}
+
+.layout_theme_pop ul li {
+	cursor: pointer;
+	color: var(--sub-theme-muted-text);
+	text-align: right;
+}
+
+.layout_theme_pop ul li:hover {
+	cursor: pointer;
+	color: var(--sub-theme-text);
+}
+
+.layout_theme_pop2 {
+	position: fixed;
+	top: 67%;
+	right: 20px;
+	z-index: 10;
+}
+
+.layout_theme_pop2 ul li {
+	cursor: pointer;
+	color: var(--sub-theme-muted-text);
+	text-align: right;
+}
+
+.layout_theme_pop2 ul li:hover {
+	cursor: pointer;
+	color: var(--sub-theme-text);
+}
+
+/* 목록 레이아웃스타일 */
+.sub_grid_pop {
+	position: fixed;
+	top: 70%;
+	right: 20px;
+}
+
+.sub_grid_pop ul li {
+	cursor: pointer;
+	color: var(--sub-theme-muted-text);
+	text-align: right;
+}
+
+.sub_grid_pop ul li:hover {
+	cursor: pointer;
+	color: var(--sub-theme-text);
+}
+
+@media screen and (max-width:1000px) {
+
+	.xans-project-package .title {
+		margin: 20px -4% 0;
+		padding-bottom: 20px;
+		border-bottom: var(--border-width-1) solid var(--sub-theme-border);
+	}
+
+	.xans-project-package .title h2 {
+		font-size: var(--sub-theme-title-font-size-mobile);
+		margin: 0;
+	}
+
+
+	.xans-board-listpackage .ec-base-button.gBottom {
+		margin: 20px 0 0;
+	}
+}

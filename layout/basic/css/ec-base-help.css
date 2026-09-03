@@ -1,0 +1,105 @@
+:root {
+    /* Help / Form Feedback */
+    --help-font-family: var(--font-body);
+    --help-font-size: var(--caption-2-size);
+    --help-line-height: var(--line-height-140);
+    --help-text: var(--form-helper-color, var(--text-weak));
+    --help-title-text: var(--text-main);
+    --help-border: var(--line-weak);
+    --help-border-strong: var(--line-strong);
+    --help-bg: var(--bg-0);
+    --help-radius: var(--radius-sm);
+    --help-padding: 20px;
+    --help-gap: var(--space-12);
+}
+
+span.ec-base-help,
+p.ec-base-help,
+ul.ec-base-help li {
+    margin: var(--space-4) 0;
+    padding: 1px 0 1px 22px;
+    font-family: var(--help-font-family);
+    font-size: var(--help-font-size);
+    line-height: var(--help-line-height);
+    color: var(--help-text);
+    background: url('//img.echosting.cafe24.com/skin/skin/common/ico_info.svg') no-repeat 0 0;
+}
+
+div.ec-base-help {
+    margin: var(--space-48) 0 var(--space-24);
+    font-family: var(--help-font-family);
+    line-height: var(--help-line-height);
+}
+
+div.ec-base-help>h2,
+div.ec-base-help>h3 {
+    display: block;
+    margin: 0 0 var(--help-padding);
+    font-size: var(--title-4-size);
+    font-weight: var(--title-font-weight);
+    color: var(--help-title-text);
+}
+
+div.ec-base-help .inner {
+    padding: var(--help-padding);
+    border: var(--border-width-1) solid var(--help-border);
+    border-top-color: var(--help-border-strong);
+    border-radius: var(--help-radius);
+    background: var(--help-bg);
+}
+
+div.ec-base-help h4 {
+    margin: var(--space-24) 0 calc(var(--space-4) * -1);
+    color: var(--help-title-text);
+    font-size: var(--help-font-size);
+    font-weight: var(--font-weight-medium);
+}
+
+div.ec-base-help h4:first-child {
+    margin-top: 0;
+}
+
+div.ec-base-help p,
+div.ec-base-help ul,
+div.ec-base-help ol {
+    margin: var(--help-gap) 0 0 0;
+}
+
+div.ec-base-help p,
+div.ec-base-help li {
+    color: var(--help-text);
+    font-size: var(--help-font-size);
+    line-height: var(--help-line-height);
+}
+
+div.ec-base-help p,
+div.ec-base-help ul li {
+    padding: 0 0 0 12px;
+}
+
+div.ec-base-help p:before,
+div.ec-base-help ul li:before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin: 7px 9px 0 -12px;
+    vertical-align: top;
+    border-radius: 50%;
+    background: var(--help-text);
+}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1000px) {
+
+    span.ec-base-help,
+    p.ec-base-help,
+    ul.ec-base-help li {
+        margin: var(--space-8) 0;
+    }
+
+    div.ec-base-help>h2,
+    div.ec-base-help>h3 {
+        padding: 0 var(--space-16);
+    }
+}

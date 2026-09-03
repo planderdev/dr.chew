@@ -1,0 +1,84 @@
+	#category_all .more_cate { background: url(/0dzimg/header_all_cate_arrow.png) no-repeat 97% 50%; }
+	#category_all .cate1_li.more_cate { background-image:none; }
+
+	/** 전체메뉴 **/
+
+	#header_all_cate { position:absolute; top:0px; left:0px; display:inline-block; z-index:199; width:50px; height:50px; padding:10px 0px !important; border-left:0px solid #eee; border-right:0px solid #eee; cursor:pointer; font-size:0; }
+	.onScroll #header_all_cate { padding:0 0px !important; }
+	#header_all_cate #header_all_cate_title { position:relative; width:auto; height:50px; line-height:50px; font-size:16px; }
+	#header_all_cate #category_all_btn_box { display:none; position:relative; width:50px; height:50px; }
+    #header_all_cate .category_all_btn { display:block; position:absolute; left:15px; top:46%; width:20px; height:2px; background:rgba(0,0,0,1); color:transparent; transform:translate(0,50%); transition: all 0.5s; }
+	#header_all_cate .category_all_btn:before,
+	#header_all_cate .category_all_btn:after { content:""; position:absolute; left:0; top:0; width:100%; height:2px; background:rgba(0,0,0,1); transition: all 0.5s; }
+	#header_all_cate .category_all_btn:before { top:-7px; }
+	#header_all_cate .category_all_btn:after { top:7px; }
+    /*
+	#header_all_cate..viewallcate .category_all_btn { transform:rotate(90deg); }
+	*/
+	#category_all { position:fixed; z-index:200; display:none; top:230px; left:0px; width:1240px; min-height:220px; max-height:450px; padding:0 20px; box-sizing:border-box; cursor:default; }
+	.onScroll #category_all { top:50px; padding:0 0px; }
+	#gtlayout .onScroll #category_all { top:50px; }
+	#category_all::-webkit-scrollbar { display: none; }
+    #category_all .close_allcate { display:none; }
+	#category_all a { display:block; line-height:20px; color:#444; }
+	#category_all .position { position:relative; width:100%; max-height:450px; display:flex; border:1px solid #eee; background:#fff; box-sizing:border-box; overflow:hidden; overflow-y:auto; -ms-overflow-style: none; scrollbar-width: none; }
+	#category_all .position::-webkit-scrollbar { display: none; }
+	#category_all .position .close_allcate { position:absolute; right:10px; bottom:10px; cursor:pointer; }
+	#category_all #scroll_icon { position:absolute; display:none; top:50%; left:50%; transform:translate(-50%,-100%); z-index:201; width:100px; height:100px; background:#fff; border-radius:10px; border:1px solid #888; transition:all .3s ease; -webkit-transition:all .3s ease; }
+	#category_all #scroll_icon.scroll_icon_on { display:inline-block; animation: scroll_icon 1s cubic-bezier( 0.5, 0, 0.5, 1 ) 0s 4 alternate; -webkit-animation: scroll_icon 1s cubic-bezier( 0.5, 0, 0.5, 1 ) 0s 4 alternate; }
+	#category_all #scroll_icon.scroll_icon_off { display:none !important }
+	@keyframes scroll_icon { 0% {top:50%;} 100% {top:55%;} }
+	@-webkit-keyframes scroll_icon { 0% {top:50%;} 100% {top:55%;} }
+
+
+	/* 대분류 */
+	#category_all .cate1_ul { display:inline-block; width: cacl(100% - 241px); margin:20px 0; padding:0 15px; font-size:0; line-height:0; letter-spacing:-4px; text-align:left; }
+	#category_all .cate1_ul .cate1_li { position:relative; display:inline-block; *display:inline; *zoom:1; width:200px; margin:0px 20px 20px; vertical-align:top; font-size:11px; line-height:28px; letter-spacing:0; }
+	#category_all .cate1_ul .cate1_li > a { height:auto; margin-bottom:10px; padding:0 0 10px 10px; background:none; border-bottom:1px solid #eee; font-size:11px; line-height:20px; font-weight:700; transition:all .3s ease; -webkit-transition:all .3s ease; }
+
+
+    /* 중분류 */
+	#category_all .cate2_ul { margin-bottom:20px; }
+	#category_all .cate2_ul .cate2_li { position:relative; }
+	#category_all .cate2_ul .cate2_li > a { width:180px; padding:5px 10px; font-weight:500; transition:all .2s ease; -webkit-transition:all .2s ease; }
+	#category_all .cate2_ul .cate2_li > a:hover,
+	#category_all .cate2_ul .cate2_li.viewallcate > a { padding:5px 5px 5px 15px; background-color:#f7f7f7; color:#C10000; }
+    #category_all .cate2_ul .img { display:none; }
+
+    /* 소분류 */
+	#category_all .cate3_ul { position:absolute; display:none; left:200px; top:0px; padding:10px 0; background:#fff; border:1px solid #eee; }
+	#category_all .cate3_ul .cate3_li { position:relative; display:inline-block; width:180px; padding:0 10px; }
+	#category_all .cate3_ul .cate3_li > a { width:160px; padding:5px 10px; font-weight:500; transition:all .2s ease; -webkit-transition:all .2s ease; }
+	#category_all .cate3_ul .cate3_li > a:hover,
+	#category_all .cate3_ul .cate3_li.viewallcate > a { padding:5px 5px 5px 15px; background-color:#f7f7f7; color:#C10000; }
+
+    /* 4차분류 */
+	#category_all .cate4_ul { position:absolute; display:none; left:200px; top:-11px; padding:10px 0; background:#fff; border:1px solid #eee; }
+	#category_all .cate4_ul .cate4_li { position:relative; display:inline-block; width:180px; padding:0 10px; }
+	#category_all .cate4_ul .cate4_li > a { width:160px; padding:5px 10px; font-weight:500; transition:all .2s ease; -webkit-transition:all .2s ease; }
+	#category_all .cate4_ul .cate4_li > a:hover { padding:5px 5px 5px 15px; background-color:#f7f7f7; color:#C10000; }
+	#category_all .cate1_ul .cate1_li:nth-child(4n) .cate4_ul { left:-200px; }
+
+
+	#category_all .allcate_right { display:inline-block; vertical-align:top; width:160px; height:100%; margin:20px 0; margin-left: auto; padding:0 40px 0; text-align:left; border-left:1px solid #eee; }
+	#category_all h4 { display:block; width:150px; height:30px; line-height:30px; padding:0 0 0 10px; font-size:11px; margin-bottom:10px; border-bottom:1px solid #eee; }
+	#category_all .menu { margin:0 0 15px; }
+	#category_all .menu li a { display:block; line-height:24px; padding:0 0 0 10px; font-size:11px; font-weight:500; transition:all .2s ease; -webkit-transition:all .2s ease; }
+	#category_all .menu li a:hover { padding:0 0 0 15px; background-color:#f7f7f7; color:#C10000; }
+
+
+
+
+
+
+
+/* 1000px이하 모바일버전 */
+
+@media (max-width: 1001px) {
+
+#header_all_cate { padding:0 0px !important; }
+.onScroll #header_all_cate { padding:0 0px !important; }
+#header_all_cate #header_all_cate_title { display:none; }
+#category_all { display:none !Important; }
+    
+}

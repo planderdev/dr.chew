@@ -1,0 +1,46 @@
+<!--@css(/24d/header/css/header_all_cate.css)-->
+
+
+
+
+<div id="header_all_cate">
+    <div id="header_all_cate_title"><span class="category_all_btn"></span></div>
+    <div id="category_all" module="Layout_category">
+        <div class="position">            
+            <img id="scroll_icon" src="/0dzimg/header_all_cate_scroll_icon.png">
+                
+            <ul class="cate1_ul">
+                <li class="cate1_li new_item" data-param="{$param}"><a href="/product/list.html{$param}">{$name}</a></li>
+                <li class="cate1_li" data-param="{$param}"><a href="/product/list.html{$param}">{$name}</a></li>
+                <li class="cate1_li" data-param="{$param}"><a href="/product/list.html{$param}">{$name}</a></li>
+            </ul>
+                
+            
+            
+            <div class="allcate_right">
+                
+            	<div>
+                	<h4 class="allcate_right_title">회사</h4>
+                	<ul class="menu">
+                    	<li><a href="/shopinfo/company.html"><!--@import(/24d/client/company_text.html)--></a></li>
+						<li><a href="/member/agreement.html">이용약관</a></li>
+						<li><a href="/member/privacy.html">개인정보처리방침</a></li>
+						<li><a href="/shopinfo/guide.html">이용안내</a></li>
+                	</ul>
+                </div>
+                
+                <div>
+                	<h4 class="allcate_right_title">커뮤니티</h4>
+                	<ul class="menu" module="Layout_BoardInfo">
+                    	<li><a href="{$link_board_list}">{$board_name}</a></li>
+						<li><a href="{$link_board_list}">{$board_name}</a></li>
+                	</ul>
+                </div>
+                
+            </div>
+            
+            <!--div class="close_allcate">닫기</div--> 
+        </div>
+    </div>
+</div>
+

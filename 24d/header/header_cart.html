@@ -1,0 +1,262 @@
+<!--@js(/24d/header/js/header_cart.js)-->
+<!--@css(/24d/header/css/header_cart.css)-->
+
+<div id="header_cart_area" class="notOn" module="Order_BasketPackage">
+    <div id="header_cart_title">SHOPPING CART</div>
+    <div module="Order_TabInfo">
+        <ul>
+            <li class="{$domestic_select} {$domestic_display|display}"><a href="/order/basket.html">국내배송상품 ({$basket_count})</a></li>
+            <li class="{$oversea_select} {$oversea_display|display}"><a href="/order/basket.html?delvtype=B">해외배송상품 ({$basket_oversea_count})</a></li>
+        </ul>
+        <p class="{$basket_perd_display|display}">장바구니에 담긴 상품은 {$basket_remove_perd}일 동안 보관됩니다.</p>
+    </div>
+    <!-- 장바구니 비어있을 때 -->
+    <div module="Order_Empty">
+        <p>장바구니가 비어 있습니다.</p>
+    </div>
+    <!-- 일반상품 -->
+    <div class="orderListArea">
+        <!-- 일반상품 (기본배송) -->
+        <table border="1" summary="" class="boardList" module="Order_NormNormal">
+            <caption>기본배송</caption>
+            <tfoot>
+                <tr>
+                    <td colspan="10"><strong class="type">[기본배송]</strong> 상품구매금액 <strong>{$total_product_price} <span class="{$total_option_price_display|display}">({$total_option_price})</span></strong><span class="{$total_product_ref_display|display}"> {$total_product_ref}</span> + 배송비 {$total_delv_price}<span class="{$total_delv_ref_display|display}"> {$total_delv_ref}</span> <span class="{$total_delvtype_benefit_price_display|display}"> - 상품할인금액 {$total_delvtype_benefit_price} </span> = 합계 : <strong class="total">{$total_sum_price_front_head}<span>{$total_sum_price_front}</span>{$total_sum_price_front_tail}</strong> <span class="{$total_sum_price_ref_display|display}"> {$total_sum_price_back_head}{$total_sum_price_back}{$total_sum_price_back_tail}</span></td>
+                </tr>
+            </tfoot>
+            <tbody module="Order_list">
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                    <td><span class="quantity"><strong>{$quantity}개</strong></span></td>
+                    <td class="total"><strong>총 {$sum_price_front_head}{$sum_price_front}{$sum_price_front_tail}</strong><div class="{$sum_price_display|display}">{$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</div></td>
+                </tr>
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                    <td><span class="quantity"><strong>{$quantity}개</strong></span></td>
+                    <td class="total"><strong>총 {$sum_price_front_head}{$sum_price_front}{$sum_price_front_tail}</strong><div class="{$sum_price_display|display}">{$sum_price_back_head}{$sum_price_back}{$sum_price_back_tail}</div></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 일반상품 (업체기본배송) -->
+        <table border="1" summary="" class="boardList" module="Order_SuppNormal">
+            <caption>업체기본배송</caption>
+            <tfoot>
+                <tr>
+                    <td colspan="10"><strong class="type">[업체기본배송]</strong> 상품구매금액 <strong>{$total_product_price} <span class="{$total_option_price_display|display}">({$total_option_price})</span></strong><span class="{$total_product_ref_display|display}"> {$total_product_ref}</span> + 배송비 {$total_delv_price}<span class="{$total_delv_ref_display|display}"> {$total_delv_ref}</span> <span class="{$total_delvtype_benefit_price_display|display}"> - 상품할인금액 {$total_delvtype_benefit_price} </span> = 합계 : <strong class="total">{$total_sum_price_front_head}<span>{$total_sum_price_front}</span>{$total_sum_price_front_tail}</strong> <span class="{$total_sum_price_ref_display|display}"> {$total_sum_price_back_head}{$total_sum_price_back}{$total_sum_price_back_tail}</span></td>
+                </tr>
+            </tfoot>
+            <tbody module="Order_list">
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 일반상품 (개별배송) -->
+        <table border="1" summary="" class="boardList" module="Order_NormIndividual">
+            <caption>개별배송</caption>
+            <tfoot>
+                <tr>
+                    <td colspan="10"><strong class="type">[개별배송]</strong> 상품구매금액 <strong>{$total_product_price} <span class="{$total_option_price_display|display}">({$total_option_price})</span></strong><span class="{$total_product_ref_display|display}"> {$total_product_ref}</span> + 배송비 {$total_delv_price}<span class="{$total_delv_ref_display|display}"> {$total_delv_ref}</span> <span class="{$total_delvtype_benefit_price_display|display}"> - 상품할인금액 {$total_delvtype_benefit_price} </span> = 합계 : <strong class="total">{$total_sum_price_front_head}<span>{$total_sum_price_front}</span>{$total_sum_price_front_tail}</strong> <span class="{$total_sum_price_ref_display|display}"> {$total_sum_price_back_head}{$total_sum_price_back}{$total_sum_price_back_tail}</span></td>
+                </tr>
+            </tfoot>
+            <tbody module="Order_list">
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="title" module="Order_NormOverseaTitle">
+            <h3>일반상품 ({$item_total})</h3>
+        </div>
+        <!-- 일반상품 (해외배송) -->
+        <table border="1" summary="" class="boardList" module="Order_NormOversea">
+            <caption>해외배송</caption>
+            <tfoot>
+                <tr>
+                    <td colspan="9">상품구매금액 <strong>{$total_product_price} <span class="{$total_option_price_display|display}">({$total_option_price})</span></strong><span class="{$total_product_ref_display|display}"> {$total_product_ref}</span> <span class="{$total_delvtype_benefit_price_display|display}"> - 상품할인금액 {$total_delvtype_benefit_price} </span> = 합계 : <strong class="total">{$total_sum_price_front_head}<span>{$total_sum_price_front}</span>{$total_sum_price_front_tail}</strong> <span class="{$total_sum_price_ref_display|display}"> {$total_sum_price_back_head}{$total_sum_price_back}{$total_sum_price_back_tail}</span></td>
+                </tr>
+            </tfoot>
+            <tbody module="Order_list">
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- 무이자상품 -->
+    <div class="orderListArea">
+        <!-- 무이자상품 (기본배송)-->
+        <table border="1" summary="" class="boardList" module="Order_InstNormal">
+            <caption>기본배송</caption>
+            <tfoot>
+                <tr>
+                    <td colspan="10"><strong class="type">[기본배송]</strong> 상품구매금액 <strong>{$total_product_price} <span class="{$total_option_price_display|display}">({$total_option_price})</span></strong><span class="{$total_product_ref_display|display}"> {$total_product_ref}</span> + 배송비 {$total_delv_price}<span class="{$total_delv_ref_display|display}"> {$total_delv_ref}</span> <span class="{$total_delvtype_benefit_price_display|display}"> - 상품할인금액 {$total_delvtype_benefit_price} </span> = 합계 : <strong class="total">{$total_sum_price_front_head}<span>{$total_sum_price_front}</span>{$total_sum_price_front_tail}</strong> <span class="{$total_sum_price_ref_display|display}"> {$total_sum_price_back_head}{$total_sum_price_back}{$total_sum_price_back_tail}</span></td>
+                </tr>
+            </tfoot>
+            <tbody module="Order_list">
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 무이자상품 (개별배송)-->
+        <table border="1" summary="" class="boardList" module="Order_InstIndividual">
+            <caption>개별배송</caption>
+            <tfoot>
+                <tr>
+                    <td colspan="10"><strong class="type">[개별배송]</strong> 상품구매금액 <strong>{$total_product_price} <span class="{$total_option_price_display|display}">({$total_option_price})</span></strong><span class="{$total_product_ref_display|display}"> {$total_product_ref}</span> + 배송비 {$total_delv_price}<span class="{$total_delv_ref_display|display}"> {$total_delv_ref}</span> <span class="{$total_delvtype_benefit_price_display|display}"> - 상품할인금액 {$total_delvtype_benefit_price} </span> = 합계 : <strong class="total">{$total_sum_price_front_head}<span>{$total_sum_price_front}</span>{$total_sum_price_front_tail}</strong> <span class="{$total_sum_price_ref_display|display}"> {$total_sum_price_back_head}{$total_sum_price_back}{$total_sum_price_back_tail}</span></td>
+                </tr>
+            </tfoot>
+            <tbody module="Order_list">
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>  
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>  
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="title" module="Order_InstOverseaTitle">
+            <h3>무이자할부 상품 ({$item_total})</h3>
+        </div>
+        <!-- 무이자상품 (해외배송) -->
+        <table border="1" summary="" class="boardList" module="Order_InstOversea">
+            <caption>해외배송</caption>
+            <tfoot>
+                <tr>
+                    <td colspan="9">상품구매금액 <strong>{$total_product_price} <span class="{$total_option_price_display|display}">({$total_option_price})</span></strong><span class="{$total_product_ref_display|display}"> {$total_product_ref}</span> <span class="{$total_delvtype_benefit_price_display|display}"> - 상품할인금액 {$total_delvtype_benefit_price} </span> = 합계 : <strong class="total">{$total_sum_price_front_head}<span>{$total_sum_price_front}</span>{$total_sum_price_front_tail}</strong> <span class="{$total_sum_price_ref_display|display}"> {$total_sum_price_back_head}{$total_sum_price_back}{$total_sum_price_back_tail}</span></td>
+                </tr>
+            </tfoot>
+            <tbody module="Order_list">
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="thumb"><a href="/product/detail.html{$param}"><img src="{$img}" onerror="this.src='http://img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="{$name_alt}" /></a></td>
+                    <td class="product">
+                        <input type="checkbox" id="{$chk_id}" name="{$chk_name}" /><a href="/product/detail.html{$param}"><strong>{$name}</strong>{$icon} {$benefit_icons}</a><span class="{$eng_name_display|display}"><br />(영문명 : {$eng_name})</span>
+                    </td>
+                    <td class="price">
+                        <div class="{$discount}"><strong>{$product_price_front_head}{$product_price_front}{$product_price_front_tail}</strong><p class="{$product_price_display|display}">{$product_price_back_head}{$product_price_back}{$product_price_back_tail}</p></div>
+                        <div class="{$product_sale_price_display|display}"><strong>{$product_sale_price_front_head}{$product_sale_price_front}{$product_sale_price_front_tail}</strong><p class="{$product_sale_price_ref_display|display}">{$product_sale_price_back_head}{$product_sale_price_back}{$product_sale_price_back_tail}</p></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+    <!-- 선택상품 제어 버튼 -->
+    <div module="Order_SelectOrder">
+		<a href="#none" onclick="{$action_delete}">선택상품 삭제 <i class="xi-trash"></i></a>
+        <a href="#none" onclick="{$action_empty}">장바구니 비우기<i class="xi-trash"></i></a>
+        <!--a href="#none" onclick="{$action_estimate}" link="/estimate/userform.html"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/order/btn_estimate.gif" alt="견적서출력" /></a-->
+    </div>
+    
+  
+	<a id="header_cart_go_bt" href="/order/basket.html"><i class="xi-cart-o"></i>&nbsp;장바구니</a>
+
+</div>

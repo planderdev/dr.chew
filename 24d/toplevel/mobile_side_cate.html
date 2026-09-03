@@ -1,0 +1,144 @@
+<aside id="aside" module="layout_slidePackage">
+    <!--@css(/24d/toplevel/css/mobile_side_cate.css)-->
+	<!--@js(/24d/toplevel/js/mobile_side_cate.js)-->
+    
+    
+    
+    
+    
+  <div id="side_category_bn"><!--@import(/24d/client/category_bn.html)--></div>
+    
+    
+    
+    
+  <div class="lside_text_logo" module="Layout_footer">
+      <a href="/index.html"><!--@import(/24d/gt/logo.html)--></a>
+      <div module="Layout_statelogon" class="member" >
+      	<a href="{$action_logout}"><div>LOGOUT</div></a>
+        <span>/</span>
+      	<a href="/member/modify.html"><div>MODIFY</div></a>
+      </div>
+      <div module="Layout_stateLogoff" class="member" >
+        <a href="/member/login.html?noMemberOrder&returnUrl=%2Fmyshop%2Forder%2Flist.html"><div>LOGIN</div></a>
+        <span>/</span>
+        <a class="join_bt" href="/member/agreement.html"><div>JOIN</div></a>   
+      </div>
+  </div>   
+    
+    
+<div id="member_area">
+    <div class="member" >
+      	<a module="Layout_orderBasketcount" href="/order/basket.html"><div>CART</div><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+        <a href="/myshop/order/list.html"><div>ORDER</div></a>
+        <a href="/myshop/index.html"><div>MYPAGE</div></a><br>
+        <a href="/myshop/wish_list.html"><div>LIKE ITEM</div><span class="wish_count"></span><span module="Layout_shoppingInfo" class="wish_real">{$interest_prd_cnt}</span></a>
+        <a href="/product/recent_view_product.html"><div>TODAY VIEW</div></a>
+    </div>        
+</div>    
+
+
+
+<div id="btgroup_area">
+
+        <a href="/product/recent_view_product.html"><div>TODAY VIEW</div></a>
+        <a href="/myshop/wish_list.html"><div>관심상품</div><span class="wish_count"></span><span module="Layout_shoppingInfo" class="wish_real">{$interest_prd_cnt}</span></a>
+        <a module="Layout_orderBasketcount" href="/order/basket.html"><div>CART</div><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+        
+</div>  
+    
+    
+
+<div id="tab_bt_area">
+    <div><a class="lookbook_num" href="/24d/add_part/list_lookbook.html?cate_no=42">LOOKBOOK</a></div>
+    <div id="tab_bt_shop" class="onTabBt">SHOP</div>
+    <div id="tab_bt_community">COMMUNITY</div>
+    
+</div>
+    
+    
+    
+    
+    
+    <div id="slideCateList" class="categoryCont">
+         
+         
+        
+          <ul module="layout_category" class="categoryList">
+            <li id="cate{$cate_no}">
+                <a href="{$link_product_list}" class="cate">{$name_or_img_tag}</a>
+                <a href="#none" class="view" cate="{$param}"><img class="plus_i" src="/0svg/plus.svg"><img class="minus_i" src="/0svg/minus.svg"></a>
+
+            </li>
+            <li id="cate{$cate_no}">
+                <a href="{$link_product_list}" class="cate">{$name_or_img_tag}</a>
+                <a href="#none" class="view" cate="{$param}"><img class="plus_i" src="/0svg/plus.svg"><img class="minus_i" src="/0svg/minus.svg"></a>
+            </li>
+          </ul>
+        
+        
+         <div class="bookmarkCategory" id="bookmarkCategory">
+            <h2 class="selected">즐겨찾기<button type="button" class="icoCategory">펼침</button></h2>
+            <p class="bookmarkEmpty" id="bookmarkEmpty">자주쓰는 카테고리 우측에 <img src="http://img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_bookmark_star.png" alt="즐겨찾기"> 을 눌러주세요.<br>쉽게 카테고리를 이용할 수 있습니다.</p>
+            <div id="bookmartCateArea" class="bookmarkCategory"></div>
+        </div>
+      
+        
+        
+        
+        
+        <!--div id="slideProjectList" module="layout_project">
+            <h2 class="selected">기획전<button type="button" class="icoCategory">펼침</button></h2>
+            <ul class="categoryList">
+                <li id="cate{$cate_no}">
+                    <a href="#none" class="cate" cate="{$param}">{$category_text|cut 25}</a>
+                </li>
+                <li id="cate{$cate_no}">
+                    <a href="#none" class="cate" cate="{$param}">{$category_text|cut 25}</a>
+                </li>
+            </ul>
+        </div-->
+    
+    
+	</div>    
+    
+    
+    
+    
+
+    
+<div module="Layout_BoardInfo" id="side_community_list">
+	<a href="{$link_board_list}">{$board_name}</a>
+	<a href="{$link_board_list}">{$board_name}</a>
+</div>
+    
+    
+    
+    
+<div class="cboth"></div>
+    
+    
+
+
+<div id="side_customer_center" module="Layout_Info">
+    <div id="side_cs_center_title">CS CENTER</div>
+    <a target="_blank" href="tel:{$phone}">
+    <div id="side_cs_center_ss">
+        <!--@import(/24d/client/cs_center.html)-->
+    </div>
+    </a>
+    
+    <div id="side_bank_title">BANK INFO</div>
+    <div id="side_bank_ss">
+        <!--@import(/24d/client/bank_info.html)-->
+    </div>
+</div>
+    
+
+
+<button type="button" class="btnClose"><img src="/0svg/close.svg"></button>
+    
+<div style="width:100%; height:50px"></div>
+    
+    
+</aside>
+<!--#ez="1/2"-->

@@ -1,0 +1,50 @@
+
+
+.section { max-width:1600px !important; padding-left:2% !important; padding-right:2% !important; margin-left:auto !important; margin-right:auto !important; }
+.ec-base-product .prdList .thumbnail .sale_box { top:0px !important; right:0px !important; border-radius:0 !important; box-shadow: -1px 1px 2px rgb(0 0 0 / 20%); background-color:#1a1a1a !important; color:#fff !important; }
+
+
+
+.xans-popup-multipopup .ec-multi-popup-full { z-index:501; }
+.xans-popup-multipopup .ec-multi-popup { z-index:501; }
+
+.sale_countdown { position: absolute; top:5%; left: 50%; transform: translateX(-50%); padding: 5px 15px 5px 30px; display:flex; align-items:center; justify-content:center; color: #000; filter:invert(100%); background-image: url('/0svg/clock.svg'); background-repeat: no-repeat; background-position: 12px center;  background-size: 12px 12px; background-color: #ccc; line-height: 1; white-space: nowrap; border-radius: 20px; font-size: 11px; letter-spacing: 1px; }
+.ec-base-product .prdList .description .sale_box { display:inline-block; color:#472c17; font-weight:500; font-size:13px; }
+.ec-base-product .prdList .spec > li.spec_price,
+.ec-base-product .prdList .spec > li.spec_consumer { display:inline-block; margin:0 7px 5px 0; } 
+
+#userStyle { color:#000; }
+#userStyle #mCafe24Order.typeHeader { padding-top:0; }
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.on {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-color {
+ overflow:hidden;   
+}
+
+.scroll-color img {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+  transition: all 1.5s ease;
+}
+
+.scroll-color.on img {
+  filter: grayscale(0%);
+  transform: scale(1);
+}
+
+@media (max-width: 1000px) {
+
+.section { box-sizing:border-box; }
+
+}

@@ -1,0 +1,50 @@
+
+
+
+.scroll_list_main.list_main_box { max-width:none; margin:50px auto 0; padding:50px 0% 50px; font-size:0; background-color:#fff; }
+.scroll_list_main .xans-product-listmain { display:block; position:relative; margin-top:0px; padding-left:25%;; box-sizing:border-box; }
+.scroll_list_main .listmain_title {  position:absolute; top:0; left:0; width:25%; height:100%; padding:50px 20px 20px; margin-bottom:0; text-align:left;  z-index:2; border-right:0px solid #000; box-sizing:border-box; background-color:#fff;  }
+.scroll_list_main .listmain_title > span { display:inline-block; padding:0 0; font-size:22px; color:#333; font-weight:500; }
+.scroll_list_main .listmain_title > a { display:block; margin-top:10px; font-size:1vw; color:#333; text-decoration:underline; }
+
+
+.list_main_box .more .btnMore { border-radius:2px; }
+.scroll_list_main.list_main_box .ec-base-product .prdList { flex-wrap:nowrap; margin:0 0 0; }
+.scroll_list_main.list_main_box .ec-base-product ul.grid4 > li { padding:0 10px 0px 0; margin:0 0 0; border-right:0px solid #000 !important; box-sizing:border-box; }
+.scroll_list_main.list_main_box .ec-base-product .prdList .description { padding:0 5px; }
+
+
+
+.list_main_box { max-width:1600px; margin:90px auto 0; padding:0 2%;  }
+.xans-product-listmain { display:inline-block; margin-top:0px; }
+.listmain_title {  margin-bottom:40px; text-align:left; }
+.listmain_title > span { position:relative; display:inline-block; width:100%; padding:0 0; font-size:22px; color:#333; font-weight:500;  }
+.listmain_title > span:nth-child(2) { width:auto; padding:0 0; font-size:0.7vw; color:#333; font-weight:100; }
+.listmain_title > span:nth-child(2):after { content: ""; position:absolute; left:50%; top:0px; transform:translateX(-50%); width:5%; height:0px; background-color:#999; }
+
+
+
+
+
+
+
+@media (max-width: 1001px) {
+    
+.xans-product-listmain { margin-top:0px; padding-left:0; }
+.scroll_list_main .xans-product-listmain { margin-top:0px; padding-left:33%; }
+.scroll_list_main .listmain_title { width:33%; }
+.scroll_list_main .listmain_title > span { font-size:18px; }
+.listmain_title > span { font-size:18px; }
+.listmain_title > a { font-size:12px; }
+      
+    
+}
+
+
+@media (max-width: 767px) {
+
+.xans-product-listmain { margin-top:0px; padding-left:0; }
+.scroll_list_main .xans-product-listmain { margin-top:0px; padding-left:50%; }
+.scroll_list_main .listmain_title { width:50%; }
+
+}

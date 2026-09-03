@@ -1,0 +1,55 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/24d/add_part/css/list_lookbook.css)-->
+
+
+<div id="list_wrap" class="lookbook">
+
+<div class="titleArea" module="product_headcategory">
+    <h2>{$title_text_or_image}</h2>
+    <span class="likeButton {$disp_likecate_class}"><button type="button">{$disp_likecate_icon}<strong>{$disp_likecate_count}</strong></button></span>
+</div>
+
+<div class="normalpackage_box section">
+	<div module="product_normalpackage" class="product_scrollx">
+		<!--@css(/css/module/product/listnormal.css)-->
+		<!--@js(/js/module/product/normalmenu.js)-->
+		<div data-ez-holder="product_list" >
+			<div module="product_listnormal" class="ec-base-product" >
+				<!--
+					$count = 8
+					※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+					※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+					$moreview = no
+					$cache = yes
+					$basket_result = /product/add_basket.html
+					$basket_option = /product/basket_option.html
+				-->
+				<ul class="prdList grid4 normalLi">
+					<!--@import(/24d/add_part/list_product_lookbook.html)-->
+				</ul>
+			</div>
+
+			<div module="product_listmore" class="more">
+				<a href="#none" onclick="{$more_action}" class="btnMore">
+					상품 더보기<div>(<span id="more_current_page">{$current_page}</span>/<span id="more_total_page">{$total_page}</span>)</div>
+				</a>
+			</div>
+
+			<div module="product_normalpaging" class="ec-base-paginate typeList">
+				<a href="{$param_first}" class="first">첫 페이지</a>
+				<a href="{$param_before}">이전 페이지</a>
+				<ol>
+					<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+					<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+					<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+					<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+					<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+				</ol>
+				<a href="{$param_next}">다음 페이지</a>
+				<a href="{$param_last}" class="last">마지막 페이지</a>
+			</div>
+		</div><!-- //product_list -->
+	</div><!-- //product_normalpackage -->
+</div>
+</div>
+<!--#ez="1/1"-->

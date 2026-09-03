@@ -1,0 +1,31 @@
+
+
+#recent_viwe_bt { display:none; position:fixed; bottom:116px; right:15px; width:40px; height:40px; line-height:52px; background-color:rgba(255,255,255,1); border-radius:50%; text-align:center; font-size:24px; color:#222; cursor:pointer; z-index:999; border:1px solid #eee;}
+#recent_viwe_bt div { display:flex; align-items:center; justify-content:center; width:100%; height:100%; }
+#recent_viwe_bt img { width:16px; }
+
+
+#fixed_recent_view { display:none; position:fixed; bottom:150px; right:40px; width:400px; height:400px; background:#fff; border:1px solid #eee; z-index:999; text-align:left; font-size:12px; }
+#fixed_recent_view_top { width:370px; height:50px; line-height:50px; padding:0 15px; font-weight:bold; border-bottom:1px solid #eee; }
+#fixed_recent_view_top #fixed_recent_view_close { float: right; position:relative; left:5px; width:16px; height:16px; line-height:20px; margin-top:17px; cursor:pointer; font-size:20px; }
+
+
+#fixed_recent_view_mid { width:400px; height:300px; border-bottom:1px solid #eee; }
+#fixed_recent_view_mid .mCSB_inside>.mCSB_container { margin-right:0px; }
+#fixed_recent_view_mid .mCSB_scrollTools { opacity:0; width:6px; }
+#fixed_recent_view_mid:hover .mCSB_scrollTools { opacity:1; width:6px; }
+#fixed_recent_view_mid .mCSB_draggerRail { display:none; }
+#fixed_recent_view_mid li { width:370px; height:100px; line-height:100px; padding:15px; border-bottom:1px solid #eee; }
+#fixed_recent_view_mid li .image { float:left; width:80px; height:100px; overflow:hidden; }
+#fixed_recent_view_mid li .image a { width:80px; height:100px; display: flex; align-items: center; justify-content: center; }
+#fixed_recent_view_mid li .image img { width:100%; height:auto; }
+#fixed_recent_view_mid li .product { float:left; width:150px; height:100px; margin:0 10px; white-space: nowrap; overflow:hidden; text-overflow: ellipsis; }
+#fixed_recent_view_mid li .price { float:left; width:120px; height:70px; padding-top:30px; line-height:1; overflow:hidden; }
+#fixed_recent_view_mid li .price span { display:inline-block; width:100%; height:20px; line-height:20px; text-align:center; }
+#fixed_recent_view_mid li .price span:first-child { text-decoration:line-through; font-size:9px; color:#999; }
+#fixed_recent_view_mid  .norecentview { width:400px; height:300px; line-height:300px; text-align:center; color:#999; }
+
+#fixed_recent_view_bot { width:400px; height:48px; background:#f5f5f5; text-align:center; }
+#fixed_recent_view_bot a { display:inline-block; width:150px; height:26px; line-height:26px; margin-top:11px; background:#444; color:#fff; font-weight:bold; }
+
+

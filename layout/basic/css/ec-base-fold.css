@@ -1,0 +1,182 @@
+.ec-base-fold {
+    --fold-title-color: var(--text-main);
+    --fold-title-font-size: var(--caption-1-size);
+    --fold-title-font-size-mobile: var(--title-4-size);
+    --fold-title-font-size-pc: var(--title-3-size);
+    --fold-title-font-weight: var(--title-font-weight);
+    --fold-line-height: var(--line-height-130);
+    --fold-border: var(--line-weak);
+    --fold-border-strong: var(--line-strong);
+    --fold-bg: var(--bg-0);
+    --fold-icon-color: var(--icon-main);
+    --fold-tap-highlight: rgba(255, 255, 255, 0);
+    --fold-transition: transform var(--motion-base) var(--motion-ease), border-color var(--motion-base) var(--motion-ease);
+}
+
+.ec-base-fold {
+    position: relative;
+}
+
+.ec-base-fold>.title {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    color: var(--fold-title-color);
+    font-size: var(--fold-title-font-size);
+    line-height: var(--fold-line-height);
+    -webkit-tap-highlight-color: var(--fold-tap-highlight);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.ec-base-fold>.title h2,
+.ec-base-fold>.title h3 {
+    display: inline-block;
+    color: var(--fold-title-color);
+    font-size: var(--fold-title-font-size);
+    font-weight: var(--fold-title-font-weight);
+    line-height: var(--fold-line-height);
+}
+
+.ec-base-fold>.title:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    -webkit-transition: var(--fold-transition);
+    transition: var(--fold-transition);
+}
+
+.ec-base-fold>.contents {
+    display: none;
+    background: var(--fold-bg);
+}
+
+.ec-base-fold .ec-base-fold {
+    border-width: 1px 0 0;
+}
+
+.ec-base-fold .ec-base-fold+.ec-base-fold {
+    margin-top: 0;
+}
+
+.ec-base-fold.selected>.title:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.ec-base-fold.selected>.contents {
+    display: block;
+}
+
+/* theme1 */
+.ec-base-fold.theme1 {
+    position: relative;
+}
+
+.ec-base-fold.theme1>.title {
+    border-top: var(--border-width-1) solid var(--fold-border-strong);
+}
+
+.ec-base-fold.theme1>.title h2 {
+    padding: 25px 0;
+    font-weight: var(--fold-title-font-weight);
+}
+
+.ec-base-fold.theme1>.title h3 {
+    padding: 20px 0;
+    font-size: var(--fold-title-font-size);
+}
+
+.ec-base-fold.theme1>.title:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    overflow: hidden;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-left: var(--border-width-1) solid var(--fold-icon-color);
+    border-bottom: var(--border-width-1) solid var(--fold-icon-color);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: var(--fold-transition);
+    transition: var(--fold-transition);
+}
+
+.ec-base-fold.theme1.selected>.title:after {
+    top: 25px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.ec-base-fold.theme1.gBottomLine>.title {
+    border-top: 0;
+    border-bottom: var(--border-width-1) solid var(--fold-border-strong);
+}
+
+.ec-base-fold.theme1.gClearLine>.title {
+    border-top: 0;
+    border-bottom: var(--border-width-1) solid transparent;
+}
+
+.ec-base-fold.theme1+.ec-base-fold.theme1 {
+    margin-top: 30px;
+}
+
+/* ec-base-table */
+.ec-base-fold.theme1.gBottomLine>.contents .ec-base-table,
+.ec-base-fold.theme1.gBottomLine .ec-base-fold>.contents .ec-base-table {
+    border: 0;
+}
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1000px) {
+    .ec-base-fold.theme1.gMargin {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .ec-base-fold.theme1>.title {
+        padding: 0 16px;
+    }
+
+    .ec-base-fold.theme1>.title h2 {
+        font-size: var(--fold-title-font-size-mobile);
+    }
+
+    .ec-base-fold.theme1>.title:after {
+        right: 21px;
+    }
+
+    .ec-base-fold.theme1.selected>.title:after {
+        top: 32px;
+    }
+
+    /* ec-base-table */
+    .ec-base-fold.theme1 .ec-base-table.typeList {
+        border-color: var(--fold-border);
+    }
+}
+
+/********************* PC *********************/
+@media all and (min-width:1001px) {
+    .ec-base-fold.theme1 .title>h2 {
+        font-size: var(--fold-title-font-size-pc);
+    }
+}

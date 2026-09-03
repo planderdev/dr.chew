@@ -1,0 +1,46 @@
+<!--@js(/24d/detail_review_widget/js/detail_review_widget.js)-->
+<!--@css(/24d/detail_review_widget/css/detail_review_widget.css)-->
+
+
+
+
+
+<div id="detail_review_widget">
+  <div id="detail_review_widget_box"> 
+      
+      
+    <div id="detail_review_widget_close"><img src="/0svg/close.svg"></div>
+    <div id="detail_review_widget_in" class="swiper">
+        
+    	<div class="swiper-wrapper" module="product_review">
+            
+			<div class="swiper-slide">
+                <a class="review_widget_img" data-board="{$board_no}" href="{$link_board_detail}{$param_read}"><img src="{$product_img_src}" onerror="this.src='/0dzimg/photo_err_img.jpg'" alt="photo" /><span>{$writer}</span></a>
+                <div class="review_widget_contents">
+                    <div id="review_widget_contents_line1">
+                    	<span class="review_widget_point {$point_display|display}"><img src="/0dzimg/rating{$point_count}.png" alt="{$point_count}점" /></span>
+                    	<span class="review_widget_title">{$subject}</span>
+                    </div>
+                    <span class="review_widget_text">{$content}</span>
+                    <div id="review_widget_contents_mask"><span></span><span></span><span></span></div>
+                </div>
+            </div>
+			<div class="swiper-slide">
+                <a class="review_widget_img" data-board="{$board_no}" href="{$link_board_detail}{$param_read}"><img src="{$product_img_src}" onerror="this.src='/0dzimg/photo_err_img.jpg'" alt="photo" /><span>{$writer}</span></a>
+                <div class="review_widget_contents">
+                    <div id="review_widget_contents_line1">
+                    	<span class="review_widget_point {$point_display|display}"><img src="/0dzimg/rating{$point_count}.png" alt="{$point_count}점" /></span>
+                    	<span class="review_widget_title">{$subject}</span>
+                    </div>
+                    <span class="review_widget_text">{$content}</span>
+                    <div id="review_widget_contents_mask"><span></span><span></span><span></span></div>
+                </div>
+            </div>
+            
+    	</div>
+        
+	</div>
+      
+      
+  </div>    
+</div>

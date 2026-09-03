@@ -1,0 +1,41 @@
+/** subpage_theme03 (Peach) **/
+
+.theme03 {
+    --theme-accent-bg: var(--color-orange-200);
+    --theme-accent-strong: var(--color-orange-600);
+    --theme-accent-muted-bg: var(--bg-50);
+    --theme-accent-text: var(--text-main);
+    --theme-inverse-text: var(--color-white);
+    --theme-border-strong: var(--line-strong);
+
+    --button-primary-bg: var(--theme-accent-bg);
+    --button-primary-bg-hover: var(--theme-accent-strong);
+    --button-primary-color: var(--theme-accent-text);
+    --button-primary-border: var(--theme-accent-bg);
+    --button-outline-border-hover: var(--theme-accent-strong);
+    --button-outline-color-hover: var(--theme-accent-strong);
+
+    --layout-top-banner-bg: var(--theme-accent-bg);
+    --layout-top-banner-color: var(--theme-accent-text);
+    --layout-category-underline: var(--theme-accent-bg);
+    --layout-bg-muted: var(--theme-accent-muted-bg);
+    --sidemenu-bg-muted: var(--theme-accent-muted-bg);
+
+    --main-tab-line-color: var(--theme-accent-bg);
+    --main-tab-active-color: var(--theme-accent-strong);
+    --main-map-bg: var(--theme-accent-muted-bg);
+    --main-map-link-hover-bg: var(--theme-border-strong);
+    --main-map-link-hover-color: var(--theme-inverse-text);
+    --main-map-link-hover-border: var(--theme-border-strong);
+
+    --tab-color-active: var(--theme-accent-strong);
+    --tab-underline: var(--theme-accent-strong);
+    --chip-bg: var(--theme-accent-muted-bg);
+    --chip-border: var(--theme-accent-muted-bg);
+    --chip-color-active: var(--theme-accent-strong);
+    --chip-bg-active: var(--bg-0);
+    --chip-border-active: var(--theme-border-strong);
+
+    --product-sale-badge-bg: var(--theme-accent-bg);
+    --product-sale-badge-color: var(--theme-accent-text);
+}

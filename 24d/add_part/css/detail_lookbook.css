@@ -1,0 +1,40 @@
+#container #contents { width:100% !Important; }
+.section.detail_lookbook { padding:2%; }
+
+
+.detailArea,
+.infoArea { display:none; }
+
+
+.xans-product-relation { width:100%; }
+.relation {position:relative; margin-top:20px; cursor:pointer; }
+.relation .relation_title { display:none; padding:0 0 20px;font-size:24px;font-weight:700;line-height:1.4;color:#3a3a3a;text-align:left;border-bottom:1px solid #e0e0e0;}
+.relation .relation_title span {display:block;font-size:16px;font-weight:400;line-height:1;color:#9a9a9a;margin-top:15px;}
+.relation .ec-base-product .prdList > li { margin-bottom:20px; }
+.relation .ec-base-product .prdList > li .description { display:none; }
+.relation .swiper { margin-top:0px; }
+.relation .swiper-button-prev,
+.relation .swiper-button-next {position:absolute; display:flex; justify-content:center; align-items:center; width:30px;height:30px;top:55%; transform:translateY(-50%); z-index:2;cursor:pointer; background:none; border:1px solid #D6D6D6; border-radius:50%; background-color:rgba(255,255,255,0.8); }
+.relation .swiper-button-prev {left:10px;}
+.relation .swiper-button-next {right:10px;}
+.relation .swiper-button-prev img,
+.relation .swiper-button-next img { width:14px; }
+.relation .swiper-button-next:after,
+.relation .swiper-button-prev:after { display:none; }
+.section_full .relation .swiper-button-prev {left:1%;}
+.section_full .relation .swiper-button-next {right:1%;}
+.swiper.relation_slide {padding:3px 0 10px 0;}
+.swiper.relation_slide .swiper-scrollbar {height:2px;left:0;width:100%;transition:all 0.3s;-webkit-transition:all 0.3s;-o-transition:all 0.3s;-moz-transition:all 0.3s;-ms-transition:all 0.3s;}
+.swiper.relation_slide .swiper-scrollbar:hover {height:5px;}
+.swiper.relation_slide .swiper-scrollbar .swiper-scrollbar-drag {background:#1a1a1a;cursor:pointer;border-radius:0;}
+.swiper.relation_slide ul {display:flex;padding:0;margin:0;height:auto; flex-wrap:nowrap;}
+.swiper.relation_slide ul .thumbnail {margin:0;}
+.swiper.relation_slide ul > li .prdList__item {margin:0;}
+.swiper.relation_slide ul > li .description .name a {font-size:16px;color:#3a3a3a;line-height:1.2;}
+.swiper.relation_slide ul > li .description .price {font-size:20px;margin-top:10px;color:#1a1a1a;font-weight:700;}
+
+@media all and (min-width:1001px) {
+    
+.relation { margin-top:8px; }
+.relation .ec-base-product .prdList > li { margin-bottom:8px; }  
+}
