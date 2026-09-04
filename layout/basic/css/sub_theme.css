@@ -1,20 +1,7 @@
 /** subpage_theme01 (button_color - black) **/
-
-:root {
-	/* Subpage Theme */
-	--sub-theme-title-font-size: var(--headline-1-size-ko);
-	--sub-theme-title-font-size-mobile: var(--title-4-size);
-	--sub-theme-title-color: var(--text-main);
-	--sub-theme-text: var(--text-main);
-	--sub-theme-muted-text: var(--text-weak);
-	--sub-theme-border: var(--line-weak);
-	--sub-theme-border-strong: var(--line-strong);
-	--sub-theme-tab-active: var(--brand-primary);
-}
-
 /* 기획전 타이틀 */
 .xans-project-package .title {
-	margin: 45px 0 0;
+	margin: var(--space-48) 0 0;
 }
 
 .xans-project-package .title h2 {
@@ -27,7 +14,7 @@
 .sub_theme_pop {
 	position: fixed;
 	top: 40%;
-	right: 20px;
+	right: calc(var(--space-16) + var(--space-4));
 }
 
 .sub_theme_pop ul li {
@@ -45,7 +32,7 @@
 .layout_theme_pop {
 	position: fixed;
 	top: 55%;
-	right: 20px;
+	right: calc(var(--space-16) + var(--space-4));
 	z-index: 10;
 }
 
@@ -63,7 +50,7 @@
 .layout_theme_pop2 {
 	position: fixed;
 	top: 67%;
-	right: 20px;
+	right: calc(var(--space-16) + var(--space-4));
 	z-index: 10;
 }
 
@@ -82,7 +69,7 @@
 .sub_grid_pop {
 	position: fixed;
 	top: 70%;
-	right: 20px;
+	right: calc(var(--space-16) + var(--space-4));
 }
 
 .sub_grid_pop ul li {
@@ -99,9 +86,9 @@
 @media screen and (max-width:1000px) {
 
 	.xans-project-package .title {
-		margin: 20px -4% 0;
-		padding-bottom: 20px;
-		border-bottom: var(--border-width-1) solid var(--sub-theme-border);
+		margin: var(--space-24) calc(var(--space-48) * -1) 0;
+		padding-bottom: var(--space-24);
+		border-bottom: var(--form-field-border-width) solid var(--sub-theme-border);
 	}
 
 	.xans-project-package .title h2 {
@@ -111,6 +98,6 @@
 
 
 	.xans-board-listpackage .ec-base-button.gBottom {
-		margin: 20px 0 0;
+		margin: var(--space-24) 0 0;
 	}
 }

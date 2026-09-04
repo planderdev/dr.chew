@@ -1,30 +1,31 @@
 .xans-product-menupackage {
-    margin: 0px 0 30px 0;
+    margin: 0 0 var(--space-32) 0;
 }
 
 .xans-product-menupackage #titleArea h2 {
-    padding: 0 2%;
-    margin-top: 40px;
-    color: #222;
-    font-size: 35px;
-    line-height: 40px; 
+    padding: 0 var(--space-24);
+    margin-top: var(--space-48);
+    color: var(--line-strong);
+    font-size: var(--display-4-size-ko);
+    line-height: var(--display-4-line-height-ko);
     font-style: italic;
-    font-weight: 800;
-}
+    font-weight: var(--display-font-weight-ko);
+    font-family: var(--font-display-ko);
+    letter-spacing: var(--display-letter-spacing-ko);}
 
 .xans-product-menupackage #titleArea>h2>img {
     max-width: 100%;
 }
 
-.xans-product-menupackage .title {
-    min-height: 10px;
-    margin: 0px 0 20px;
+.xans-product-menupackage .title { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between;
+    min-height: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
+    margin: 0 0 var(--space-24);
 }
 
 .xans-product-menupackage .banner {
     display: inline-block;
     width: 100%;
-    margin: 0 0 0px;
+    margin: 0 0 0;
     text-align: center;
 }
 
@@ -33,119 +34,121 @@
 }
 
 .xans-product-menupackage .title h2 {
-    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 0px 0 0px 0;
-    color: #4a5164;
-    font-size: 12px;
-    /*url("//img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat;*/
+    margin: 0 0 0 0;
+    color: var(--text-sub);
+    font-size: var(--caption-2-size);
+    /*none 0 50% no-repeat;*/
     text-align: center;
 }
 
 .xans-product-menupackage .title h2 span {
     width: auto;
-    padding: 5px 60px 20px 60px;
-    border-bottom: 0px #ccc double;
+    padding: var(--space-4) var(--space-64) var(--space-24) var(--space-64);
+    border-bottom: 0 var(--line-default) double;
 }
 
 .xans-product-menupackage .title h2,
 .xans-product-menupackage .title .likeButton {
-    float: left;
     width: 100%;
-    margin: 0px 0 0px 0;
-    display: inline-block;
+    margin: 0 0 0 0;
     vertical-align: middle;
     text-align: center;
 }
 
+.xans-product-menupackage .title .likeButton {
+    display: inline-block;
+}
+
 .xans-product-menupackage .title .likeButton button {
-    margin: 0px 0 0px 0px;
-    padding: 0 0 0 0px;
-    height: 14px;
-    line-height: 14px; 
-    color: #333;
-    letter-spacing: -1px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
+    line-height: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
+    color: var(--text-muted-strong);
+    letter-spacing: calc(var(--form-field-border-width) * -1);
     background: none;
 }
 
 .xans-product-menupackage .title .likeButton.selected button {
-    color: #353535;
+    color: var(--text-muted-strong);
 }
 
-.xans-product-menupackage .menuCategory {
-    border: 0px solid #d7d5d5;
-    font-size: 0;
-    line-height: 0;
+.xans-product-menupackage .menuCategory { display:flex; align-items:center; flex-wrap:wrap; justify-content:center;
+    border: 0 solid var(--line-default);
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
     text-align: center;
 }
 
-.xans-product-menupackage .menuCategory>ul {
-    float: left;
+.xans-product-menupackage .menuCategory>ul { display:flex; align-items:center; flex-wrap:wrap; justify-content:center;
     width: 100%;
 }
 
 .xans-product-menupackage .menuCategory>li {
-    display: inline-block;
+    display: flex;
     width: auto;
-    margin: 30px 10px 5px 10px;
-    font-size: 0px;
-    line-height: 15px;
+    margin: var(--space-32) var(--space-12) var(--space-4) var(--space-12);
+    font-size: var(--font-size-hidden);
+    line-height: calc(var(--space-12) + calc(var(--form-field-border-width) * 3));
     vertical-align: top;
 }
 
 .xans-product-menupackage .menuCategory>li>a {
-    padding: 2px 5px 2px 5px;
-    font-size: 15px;
-    font-weight: ;
-    color: #333;
-    /*background:url("//img.echosting.cafe24.com/skin/base_ko_KR/product/ico_menu_category.gif") no-repeat 100% 5px;*/
-    border: 0px #ccc solid;
+    padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+    font-size: var(--body-2-size);
+    font-weight: var(--font-weight-regular);
+    color: var(--text-muted-strong);
+    /*background:var(--icon-url-right-arr) no-repeat 100% calc(var(--space-4) + var(--form-field-border-width));*/
+    border: 0 var(--line-default) solid;
     text-align: center;
 }
 
 .xans-product-menupackage .menuCategory>li>a:hover {
-    color: #999;
+    color: var(--text-disabled);
     text-decoration: none;
-    /* background-position:100% -95px;*/
-    border: 0px #999 solid;
+    border: 0 var(--text-disabled) solid;
     text-align: center;
 }
 
 .xans-product-menupackage .menuCategory>li.selected>a {
-    /* color:#fff;  background:#999; */
+    /* color:var(--bg-0);  background:var(--text-disabled); */
 }
 
 .xans-product-menupackage .menuCategory>li .count {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
 }
 
 .xans-product-menupackage .menuCategory>li>ul {
     display: none;
-    padding: 0px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .xans-product-menupackage .menuCategory>li>ul>li {
     position: relative;
-    margin: 8px 0 0 0;
-    line-height: 14px;
-    font-size: 13px;
+    margin: var(--space-8) 0 0 0;
+    line-height: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
+    font-size: var(--caption-1-size);
 }
 
 .xans-product-menupackage .menuCategory>li>ul>li>a {
-    color: #555;
+    color: var(--text-sub);
 }
 
 .xans-product-menupackage .menuCategory>li>ul>li>a:hover,
 .xans-product-menupackage .menuCategory>li>ul>li.selected>a {
-    color: #999;
+    color: var(--text-disabled);
 }
 
 
 .xans-product-menupackage .menuCategory>li>img {
     display: none;
     position: relative;
-    height: 15px;
-    margin-top: -11px;
+    height: calc(var(--space-12) + calc(var(--form-field-border-width) * 3));
+    margin-top: calc(var(--space-12) * -1);
     cursor: pointer;
 }
 
@@ -157,13 +160,13 @@
     display: inline-block;
     width: auto;
     height: auto;
-    margin: -2px 0 0 3px;
+    margin: calc(var(--space-4) * -1) 0 0 var(--space-4);
     vertical-align: top;
     cursor: pointer;
 }
 
 .xans-product-menupackage .menuCategory>li>ul>li>.button img {
-    height: 12px;
+    height: var(--space-12);
 }
 
 .xans-product-menupackage .menuCategory>li>ul>li>.button.subon_state>img {
@@ -175,14 +178,14 @@
     position: absolute;
     left: 50%;
     top: 100%;
-    transform: translate(-50%, 5px);
+    transform: translate(-50%, calc(var(--space-4) + var(--form-field-border-width)));
     width: auto;
     margin: 0 0 0 0;
-    padding: 0px 0;
-    border: 1px solid #ddd;
-    font-size: 0;
-    line-height: 0;
-    background: #fff;
+    padding: 0 0;
+    border: var(--form-field-border-width) solid var(--line-weak);
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
+    background: var(--bg-0);
     z-index: 11;
     white-space: nowrap;
 }
@@ -190,19 +193,19 @@
 .xans-product-menupackage .subCategory li {
     display: block;
     width: auto;
-    margin: 8px 10px 8px 10px;
-    font-size: 13px;
-    line-height: 14px;
+    margin: var(--space-8) var(--space-12) var(--space-8) var(--space-12);
+    font-size: var(--caption-1-size);
+    line-height: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
     vertical-align: top;
 }
 
 .xans-product-menupackage .subCategory li a {
-    color: #575a63;
+    color: var(--text-sub);
 }
 
 .xans-product-menupackage .subCategory li a:hover,
 .xans-product-menupackage .subCategory li.selected a {
-    color: #999;
+    color: var(--text-disabled);
 }
 
 .xans-product-menupackage .subCategory img {
@@ -212,11 +215,11 @@
 
 @media (max-width: 1000px) {
     .xans-product-menupackage #titleArea h2 {
-        font-size: 20px;
-        margin-top: 20px;
+        font-size: var(--title-2-size);
+        margin-top: var(--space-24);
     }
 
     .xans-product-menupackage .menuCategory>li {
-        margin: 15px 5px 5px 5px;
+        margin: var(--space-16) var(--space-4) var(--space-4) var(--space-4);
     }
 }

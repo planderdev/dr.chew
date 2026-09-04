@@ -1,8 +1,10 @@
 
 #main #top_go,
-#main #bottom_go { display:none !Important; }
-#top_go { display:none; position:fixed; bottom:68px; right:15px; display:flex; justify-content:center; align-items:center; width:40px; height:40px; background-color:rgba(255,255,255,1); border-radius:50%; cursor:pointer; z-index:999; border:1px solid #eee; }
-#bottom_go { display:none; position:fixed; bottom:20px; right:15px; display:flex; justify-content:center; align-items:center; width:40px; height:40px; background-color:rgba(255,255,255,1); border-radius:50%; cursor:pointer; z-index:999; border:1px solid #eee; }
+#main #bottom_go { display:none; }
+#top_go,
+#bottom_go { display:none; position:fixed; right: calc(var(--space-12) + calc(var(--form-field-border-width) * 3)); justify-content:center; align-items:center; width: calc(var(--space-32) + var(--space-8)); height: calc(var(--space-32) + var(--space-8)); background-color:var(--overlay-light-solid); border-radius: var(--radius-pill); cursor:pointer; z-index:999; border: var(--form-field-border-width) solid var(--bg-100); }
+#top_go { bottom: calc(var(--space-64) + var(--space-4)); }
+#bottom_go { bottom: calc(var(--space-16) + var(--space-4)); }
 
-#top_go img, 
-#bottom_go img { width:14px; transform:rotate(-90deg); }
+#top_go img,
+#bottom_go img { width: calc(var(--space-12) + calc(var(--form-field-border-width) * 2)); transform:rotate(-90deg); }

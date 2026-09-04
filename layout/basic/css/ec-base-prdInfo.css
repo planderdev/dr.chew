@@ -1,36 +1,7 @@
-:root {
-    /* Product Info Status & Badges */
-    --prd-info-bg: var(--bg-0);
-    --prd-info-bg-muted: var(--bg-50);
-    --prd-info-border: var(--line-weak);
-    --prd-info-border-strong: var(--line-strong);
-    --prd-info-text: var(--text-main);
-    --prd-info-muted-text: var(--text-sub);
-    --prd-info-weak-text: var(--text-weak);
-    --prd-info-status-color: var(--brand-primary);
-    --prd-info-status-font-size: var(--body-1-size);
-    --prd-info-status-font-weight: var(--font-weight-semibold);
-    --prd-info-badge-height: 24px;
-    --prd-info-badge-padding-x: var(--space-8);
-    --prd-info-badge-radius: var(--radius-sm);
-    --prd-info-badge-bg: var(--red-100);
-    --prd-info-badge-color: var(--brand-primary);
-    --prd-info-badge-border: var(--red-300);
-    --prd-info-font-size: var(--caption-1-size);
-    --prd-info-caption-font-size: var(--caption-2-size);
-    --prd-info-price-font-size: var(--caption-1-size);
-    --prd-info-total-font-size: var(--title-4-size);
-    --prd-info-line-height: var(--line-height-150);
-    --prd-info-icon-color: var(--icon-weak);
-    --prd-info-link-color: var(--brand-primary);
-    --prd-info-hidden-font-size: 1px;
-    --prd-info-scrim: rgba(10, 10, 10, 0.32);
-    --prd-info-transition: background-color var(--motion-base) var(--motion-ease);
-}
 
 .ec-base-prdInfo {
     position: relative;
-    border-bottom: var(--border-width-1) solid var(--prd-info-border);
+    border-bottom: var(--form-field-border-width) solid var(--prd-info-border);
     box-sizing: border-box;
     background: var(--prd-info-bg);
 }
@@ -45,7 +16,7 @@
 
 .ec-base-prdInfo .check {
     display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 0 var(--space-12) 0 0;
 }
 
 .ec-base-prdInfo .check label {
@@ -54,10 +25,10 @@
 
 .ec-base-prdInfo .thumbnail {
     overflow: hidden;
-    width: 83px;
-    height: 83px;
-    margin: 0 15px 0 0;
-    border: var(--border-width-1) solid var(--prd-info-border);
+    width: calc(var(--space-64) + var(--space-16) + calc(var(--form-field-border-width) * 3));
+    height: calc(var(--space-64) + var(--space-16) + calc(var(--form-field-border-width) * 3));
+    margin: 0 var(--space-16) 0 0;
+    border: var(--form-field-border-width) solid var(--prd-info-border);
     border-radius: var(--radius-sm);
     box-sizing: border-box;
 }
@@ -77,8 +48,8 @@
 
 .ec-base-prdInfo .description .prdName {
     display: block;
-    margin: 0 0 3px;
-    font-weight: normal;
+    margin: 0 0 var(--space-4);
+    font-weight: var(--font-weight-regular);
 }
 
 .ec-base-prdInfo .description .prdName a {
@@ -87,11 +58,11 @@
 
 .ec-base-prdInfo .description .prdName .ec-set-product-name {
     display: block;
-    margin: 0 0 3px;
+    margin: 0 0 var(--space-4);
 }
 
 .ec-base-prdInfo .description .prdName img {
-    margin: 0 1px;
+    margin: 0 0;
     vertical-align: middle;
 }
 
@@ -103,27 +74,27 @@
 }
 
 .ec-base-prdInfo .description .price strong {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
 }
 
 .ec-base-prdInfo .description .price .refer {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
     color: var(--prd-info-weak-text);
     font-size: var(--prd-info-caption-font-size);
 }
 
 .ec-base-prdInfo .description .price .discount {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
     text-decoration: line-through;
 }
 
 .ec-base-prdInfo .description .price .strike {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
     text-decoration: line-through;
 }
 
 .ec-base-prdInfo .description .price .strike strong {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
 }
 
 .ec-base-prdInfo .badge {
@@ -133,14 +104,14 @@
     min-height: var(--prd-info-badge-height);
     margin-left: var(--space-8);
     padding: 0 var(--prd-info-badge-padding-x);
-    border: var(--border-width-1) solid var(--prd-info-badge-border);
+    border: var(--form-field-border-width) solid var(--prd-info-badge-border);
     border-radius: var(--prd-info-badge-radius);
     color: var(--prd-info-badge-color);
     background: var(--prd-info-badge-bg);
     font-family: var(--font-body);
     font-size: var(--caption-2-size);
     font-weight: var(--font-weight-semibold);
-    line-height: 1;
+    line-height: var(--control-line-height);
     letter-spacing: var(--body-letter-spacing);
     white-space: nowrap;
     box-sizing: border-box;
@@ -153,11 +124,11 @@
 }
 
 .ec-base-prdInfo .description .info {
-    margin: 5px 0 0;
+    margin: var(--space-4) 0 0;
 }
 
 .ec-base-prdInfo .description .info li {
-    margin: 0 0 3px;
+    margin: 0 0 var(--space-4);
     color: var(--prd-info-weak-text);
     font-size: var(--prd-info-caption-font-size);
     line-height: var(--prd-info-line-height);
@@ -176,7 +147,7 @@
 }
 
 .ec-base-prdInfo .description input[type="number"] {
-    max-width: 51px;
+    max-width: calc(var(--space-48) + calc(var(--form-field-border-width) * 3));
 }
 
 .ec-base-prdInfo .description .info .amount button {
@@ -186,7 +157,7 @@
 }
 
 .ec-base-prdInfo .description .info .amount {
-    width: 50px;
+    width: calc(var(--space-48) + calc(var(--form-field-border-width) * 2));
 }
 
 .ec-base-prdInfo .description .info input.amount {
@@ -198,7 +169,7 @@
 }
 
 .ec-base-prdInfo .description .quantity input[type="tel"] {
-    width: 51px;
+    width: calc(var(--space-48) + calc(var(--form-field-border-width) * 3));
 }
 
 .ec-base-prdInfo .sumPrice strong {
@@ -208,28 +179,28 @@
 }
 
 .ec-base-prdInfo .quantity {
-    margin: 20px 0 0;
-    padding: 0 0 0 98px;
+    margin: var(--space-24) 0 0;
+    padding: 0 0 0 var(--space-96);
     box-sizing: border-box;
     width: 100%;
 }
 
 .ec-base-prdInfo.gCheck .quantity {
-    padding: 0 0 0 125px;
+    padding: 0 0 0 var(--space-96);
 }
 
 .ec-base-prdInfo .btnDelete {
     display: block;
     position: absolute;
-    top: 20px;
-    right: -5px;
+    top: calc(var(--space-16) + var(--space-4));
+    right: calc((var(--space-4) + var(--form-field-border-width)) * -1);
     overflow: hidden;
-    width: 30px;
-    height: 30px;
+    width: calc(var(--space-24) + var(--space-4) + calc(var(--form-field-border-width) * 2));
+    height: calc(var(--space-24) + var(--space-4) + calc(var(--form-field-border-width) * 2));
     margin: 0 auto;
-    font-size: var(--prd-info-hidden-font-size);
-    line-height: 0;
-    color: transparent;
+    font-size: var(--caption-2-size);
+    line-height: var(--line-height-hidden);
+    color: var(--overlay-transparent);
     white-space: nowrap;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -238,10 +209,10 @@
 .ec-base-prdInfo .btnDelete:before {
     content: "";
     position: absolute;
-    top: 4px;
-    right: 14px;
-    width: 1px;
-    height: 21px;
+    top: var(--space-4);
+    right: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
+    width: var(--form-field-border-width);
+    height: calc(var(--space-16) + var(--space-4) + var(--form-field-border-width));
     background: var(--prd-info-icon-color);
     -webkit-transition: var(--prd-info-transition);
     transition: var(--prd-info-transition);
@@ -250,17 +221,17 @@
 .ec-base-prdInfo .btnDelete:after {
     content: "";
     position: absolute;
-    top: 14px;
-    right: 4px;
-    width: 21px;
-    height: 1px;
+    top: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
+    right: var(--space-4);
+    width: calc(var(--space-16) + var(--space-4) + var(--form-field-border-width));
+    height: var(--form-field-border-width);
     background: var(--prd-info-icon-color);
     -webkit-transition: var(--prd-info-transition);
     transition: var(--prd-info-transition);
 }
 
 .ec-base-prdInfo .optionGroup {
-    margin: 15px 0 0;
+    margin: var(--space-16) 0 0;
 }
 
 .ec-base-prdInfo .optionGroup:empty {
@@ -268,7 +239,7 @@
 }
 
 .ec-base-prdInfo .optionGroup li {
-    margin: 5px 0 0;
+    margin: var(--space-4) 0 0;
     color: var(--prd-info-weak-text);
     font-size: var(--prd-info-caption-font-size);
     line-height: var(--prd-info-line-height);
@@ -281,18 +252,18 @@
 
 .ec-base-prdInfo .optionGroup li .product {
     display: block;
-    margin: 8px 0 0;
+    margin: var(--space-8) 0 0;
     color: var(--prd-info-text);
 }
 
 .ec-base-prdInfo .optionGroup li .change {
-    margin: 0 0 0 5px;
+    margin: 0 0 0 var(--space-4);
     white-space: nowrap;
 }
 
 .ec-base-prdInfo .optionGroup .product.displaynone+.optionStr {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: var(--space-12);
     color: var(--prd-info-text);
 }
 
@@ -311,56 +282,48 @@
 }
 
 .ec-base-prdInfo .optionSelect {
-    padding: 10px 20px 20px;
+    padding: var(--space-12) var(--space-24) var(--space-24);
     border-radius: var(--radius-sm);
     background: var(--prd-info-bg-muted);
 }
 
 .ec-base-prdInfo .optionSelect li {
-    margin: 10px 0 0;
+    margin: var(--space-12) 0 0;
 }
 
 .ec-base-prdInfo .optionSelect select,
 .ec-base-prdInfo .optionSelect input {
-    width: calc(100% - 258px);
+    width: calc(100% - calc((var(--space-96) * 2) + var(--space-64) + calc(var(--form-field-border-width) * 2)));
 }
 
 .ec-base-prdInfo .optionSelect+.optionSelect {
-    margin-top: -34px;
+    margin-top: calc(var(--space-32) * -1);
     padding-top: 0;
 }
 
 .ec-base-prdInfo .optionDesc {
     display: inline-block;
-    width: 254px;
+    width: calc((var(--space-96) * 2) + var(--space-48) + var(--space-12) + calc(var(--form-field-border-width) * 2));
     color: var(--prd-info-muted-text);
 }
 
-.ec-base-prdInfo .prdFoot {
-    line-height: 26px;
-    border-top: var(--border-width-1) solid var(--prd-info-border);
+.ec-base-prdInfo .prdFoot { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between;
+    line-height: calc(var(--space-24) + calc(var(--form-field-border-width) * 2));
+    border-top: var(--form-field-border-width) solid var(--prd-info-border);
 }
 
-.ec-base-prdInfo .prdFoot:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.ec-base-prdInfo .prdFoot .gLeft {
-    float: left;
+.ec-base-prdInfo .prdFoot .gLeft { display:inline-flex; align-items:center;
     text-align: left;
-    line-height: 32px;
+    line-height: var(--space-32);
 }
 
-.ec-base-prdInfo .prdFoot .gRight {
-    float: right;
+.ec-base-prdInfo .prdFoot .gRight { margin-left: auto; display:inline-flex; align-items:center;
     text-align: right;
 }
 
 .ec-base-prdInfo .prdFoot .txtStatus {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: var(--space-12);
     color: var(--prd-info-status-color);
     font-size: var(--prd-info-status-font-size);
     font-weight: var(--prd-info-status-font-weight);
@@ -370,7 +333,7 @@
 
 .ec-base-prdInfo .prdFoot .store {
     color: var(--prd-info-text);
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
 }
 
 .ec-base-prdInfo .prdFoot span span.discount {
@@ -378,7 +341,7 @@
 }
 
 .ec-base-prdInfo .prdFoot span span.discount strong {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
 }
 
 .ec-base-prdInfo .optionModifyLayer {
@@ -396,7 +359,7 @@
 
 .ec-base-prdInfo .optionModifyLayer .title {
     display: block;
-    margin: 0 0 6px;
+    margin: 0 0 var(--space-8);
     color: var(--prd-info-text);
     font-size: var(--prd-info-font-size);
     font-weight: var(--title-font-weight);
@@ -409,7 +372,7 @@
 }
 
 .ec-base-prdInfo .optionModifyLayer .prdInfo li {
-    margin: 0 0 20px;
+    margin: 0 0 var(--space-24);
 }
 
 .ec-base-prdInfo .optionModifyLayer .prdInfo li:empty {
@@ -418,7 +381,7 @@
 
 .ec-base-prdInfo .optionModifyLayer .prdModify li {
     display: flex;
-    margin: 10px 0 0;
+    margin: var(--space-12) 0 0;
 }
 
 .ec-base-prdInfo .optionModifyLayer .prdModify li:first-child {
@@ -427,8 +390,8 @@
 
 .ec-base-prdInfo .optionModifyLayer .prdModify .optionDesc {
     display: inline-block;
-    width: 89px;
-    padding: 11px 0 0;
+    width: calc(var(--space-64) + var(--space-24) + var(--form-field-border-width));
+    padding: var(--space-12) 0 0;
     color: var(--prd-info-muted-text);
     font-size: var(--prd-info-font-size);
 }
@@ -445,7 +408,7 @@
 
 /* order_result.html > orderArea > ec-base-prdInfo */
 .orderArea .ec-base-fold .ec-base-prdInfo {
-    border-bottom: var(--border-width-1) solid var(--prd-info-border);
+    border-bottom: var(--form-field-border-width) solid var(--prd-info-border);
 }
 
 .orderConfirmLayer .orderArea .ec-base-prdInfo {
@@ -453,7 +416,7 @@
 }
 
 .orderArea .ec-base-prdInfo+.ec-base-prdInfo {
-    border-top: var(--border-width-1) solid var(--prd-info-border);
+    border-top: var(--form-field-border-width) solid var(--prd-info-border);
 }
 
 /* ec-base-prdEmpty */
@@ -461,30 +424,30 @@
     text-align: center;
     color: var(--prd-info-muted-text);
     font-size: var(--prd-info-font-size);
-    border-top: var(--border-width-1) solid var(--prd-info-border-strong);
-    border-bottom: var(--border-width-1) solid var(--prd-info-border);
+    border-top: var(--form-field-border-width) solid var(--prd-info-border-strong);
+    border-bottom: var(--form-field-border-width) solid var(--prd-info-border);
 }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1000px) {
     .ec-base-prdInfo .prdBox {
-        padding: 24px 16px;
+        padding: var(--space-24) var(--space-16);
     }
 
     .ec-base-prdInfo .description {
-        padding: 0 40px 0 0;
+        padding: 0 var(--space-48) 0 0;
     }
 
     .ec-base-prdInfo .sumPrice {
-        margin: 20px 0 0;
-        padding: 0 0 0 98px;
+        margin: var(--space-24) 0 0;
+        padding: 0 0 0 var(--space-96);
         box-sizing: border-box;
         width: 100%;
     }
 
     .ec-base-prdInfo .buttonGroup {
-        margin: 20px 0 0;
-        padding: 0 0 0 98px;
+        margin: var(--space-24) 0 0;
+        padding: 0 0 0 var(--space-96);
         box-sizing: border-box;
         width: 100%;
     }
@@ -493,20 +456,20 @@
     .ec-base-prdInfo.gCheck .sumPrice,
     .ec-base-prdInfo.gCheck .quantity,
     .ec-base-prdInfo.gCheck .buttonGroup {
-        padding: 0 0 0 125px;
+        padding: 0 0 0 var(--space-96);
     }
 
     .ec-base-prdInfo .btnDelete {
-        right: 12px;
+        right: var(--space-12);
     }
 
     .ec-base-prdInfo .optionSelect {
-        margin: 0 16px 24px;
-        padding: 10px 20px 20px;
+        margin: 0 var(--space-16) var(--space-24);
+        padding: var(--space-12) var(--space-24) var(--space-24);
     }
 
     .ec-base-prdInfo .optionSelect li {
-        margin: 10px 0 0;
+        margin: var(--space-12) 0 0;
     }
 
     .ec-base-prdInfo .optionSelect select,
@@ -515,18 +478,18 @@
     }
 
     .ec-base-prdInfo .optionSelect+.optionSelect {
-        margin-top: -34px;
+        margin-top: calc(var(--space-32) * -1);
         padding-top: 0;
     }
 
     .ec-base-prdInfo .optionDesc {
         display: block;
-        margin: 0 0 10px;
+        margin: 0 0 var(--space-12);
         color: var(--prd-info-muted-text);
     }
 
-    .ec-base-prdInfo .prdFoot {
-        padding: 18px 16px;
+    .ec-base-prdInfo .prdFoot { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between;
+        padding: var(--space-16) var(--space-16);
     }
 
     .optionModifyLayer .ec-base-button {
@@ -540,7 +503,7 @@
 
     /* ec-base-prdEmpty */
     .ec-base-prdEmpty {
-        padding: 40px 0;
+        padding: var(--space-48) 0;
     }
 }
 
@@ -548,63 +511,63 @@
 @media all and (min-width:1001px) {
     .ec-base-prdInfo .prdBox {
         position: relative;
-        padding: 25px 0;
+        padding: var(--space-24) 0;
     }
 
     .ec-base-prdInfo .description {
-        margin: 0 250px 0 0;
+        margin: 0 var(--space-96) 0 0;
     }
 
     .ec-base-prdInfo .sumPrice {
         text-align: right;
-        padding: 0 42px 0 0;
+        padding: 0 var(--space-48) 0 0;
     }
 
     .ec-base-prdInfo .buttonGroup {
         position: absolute;
-        bottom: 25px;
+        bottom: calc(var(--space-24) + var(--form-field-border-width));
         right: 0;
-        width: 300px;
+        width: calc((var(--space-96) * 3) + var(--space-12));
         text-align: right;
     }
 
     .ec-base-prdInfo .btnDelete {
-        right: -5px;
+        right: calc((var(--space-4) + var(--form-field-border-width)) * -1);
     }
 
     .ec-base-prdInfo .optionSelect {
-        margin: 0 0 24px 98px;
-        padding: 10px 20px 20px;
+        margin: 0 0 var(--space-24) var(--space-96);
+        padding: var(--space-12) var(--space-24) var(--space-24);
     }
 
     .ec-base-prdInfo .optionSelect li {
-        margin: 10px 0 0;
+        margin: var(--space-12) 0 0;
     }
 
     .ec-base-prdInfo .optionSelect select,
     .ec-base-prdInfo .optionSelect input {
-        width: calc(100% - 258px);
+        width: calc(100% - calc((var(--space-96) * 2) + var(--space-64) + calc(var(--form-field-border-width) * 2)));
     }
 
     .ec-base-prdInfo .optionSelect+.optionSelect {
-        margin-top: -34px;
+        margin-top: calc(var(--space-32) * -1);
         padding-top: 0;
     }
 
     .ec-base-prdInfo .optionDesc {
-        width: 254px;
+        width: calc((var(--space-96) * 2) + var(--space-48) + var(--space-12) + calc(var(--form-field-border-width) * 2));
     }
 
-    .ec-base-prdInfo .prdFoot {
-        padding: 18px 0;
+    .ec-base-prdInfo .prdFoot { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between;
+        padding: var(--space-16) 0;
     }
 
     .optionModifyLayer .ec-base-layer {
-        width: 485px;
+        width: calc((var(--space-96) * 5) + var(--space-4) + var(--form-field-border-width));
     }
 
     /* ec-base-prdEmpty */
     .ec-base-prdEmpty {
-        padding: 56px 0;
+        padding: var(--space-64) 0;
     }
 }

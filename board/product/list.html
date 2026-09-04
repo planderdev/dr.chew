@@ -44,14 +44,14 @@
         <table border="1" >
         <caption>상품 게시판 목록</caption>
         <colgroup module="board_listheader_4">
-            <col style="width:80px;" />
-            <col style="width:85px;" />
-            <col style="width:auto;" />
-            <col style="width:100px;" class="{$config.is_category|display}" />
-            <col style="width:85px;" />
-            <col style="width:120px;" class="{$config.use_date|display}" />
-            <col style="width:55px;" class="{$config.use_cnt|display}" />
-            <col style="width:80px;" class="{$config.is_use_point|display}" />
+            <col  class="ec-u-w-80" />
+            <col  class="ec-u-w-85" />
+            <col  class="ec-u-w-auto" />
+            <col class="{$config.is_category|display} ec-u-w-100" />
+            <col  class="ec-u-w-85" />
+            <col class="{$config.use_date|display} ec-u-w-120" />
+            <col class="{$config.use_cnt|display} ec-u-w-55" />
+            <col class="{$config.is_use_point|display} ec-u-w-80" />
         </colgroup>
         <thead module="board_listheader_4">
             <tr style="{$list_bg_color} {$list_char_color}">
@@ -74,7 +74,7 @@
             -->
             <tr style="{$list_bg_color} {$list_char_color}">
                 <td class="chk">{$checkbox}<span class="RW">{$notice_icon}</span></td>
-                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_medium.gif'" alt="" /></a></td>
+                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='/0svg/logo.svg'" alt="" /></a></td>
                 <td class="subject left txtBreak">
                     <p class="product">{$product_name}</p>
                     <span class="badge">{$notice_icon}</span> <strong>{$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_new}{$icon_hit}</strong>
@@ -83,11 +83,11 @@
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
             <tr style="{$list_bg_color} {$list_char_color}">
                 <td class="chk">{$checkbox}<span class="RW">{$notice_icon}</span></td>
-                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_medium.gif'" alt="" /></a></td>
+                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='/0svg/logo.svg'" alt="" /></a></td>
                 <td class="subject left txtBreak">
                     <p class="product">{$product_name}</p>
                     <span class="badge">{$notice_icon}</span> <strong>{$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_new}{$icon_hit}</strong>
@@ -96,7 +96,7 @@
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
         </tbody>
         <tbody module="board_fixed_4" class="center">
@@ -107,7 +107,7 @@
             -->
             <tr style="{$list_bg_color} {$list_char_color}">
                 <td class="chk">{$checkbox}<span class="RW">{$fixed_icon}</span></td>
-                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_medium.gif'" alt="" /></a></td>
+                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='/0svg/logo.svg'" alt="" /></a></td>
                 <td class="subject left txtBreak">
                     <p class="product">{$product_name}</p>
                     <span class="badge">{$fixed_icon}</span> <strong>{$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_new}{$icon_hit}</strong>
@@ -116,11 +116,11 @@
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
             <tr style="{$list_bg_color} {$list_char_color}">
                 <td class="chk">{$checkbox}<span class="RW">{$fixed_icon}</span></td>
-                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_medium.gif'" alt="" /></a></td>
+                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='/0svg/logo.svg'" alt="" /></a></td>
                 <td class="subject left txtBreak">
                     <p class="product">{$product_name}</p>
                     <span class="badge">{$fixed_icon}</span> <strong>{$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_new}{$icon_hit}</strong>
@@ -129,7 +129,7 @@
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
         </tbody>
         <tbody module="board_list_4" class="center">
@@ -140,29 +140,29 @@
             -->
             <tr style="{$list_bg_color} {$list_char_color}">
                 <td class="chk no">{$checkbox}<span class="RW">{$no}</span></td>
-                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_medium.gif'" alt="" /></a></td>
+                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='/0svg/logo.svg'" alt="" /></a></td>
                 <td class="subject left txtBreak">
                     <p class="product">{$product_name}</p>
-                    {$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_new}<span style=" width:100vw; height:100vh;">{$icon_hit}</span>
+                    {$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_new}{$icon_hit}
                 </td>
                 <td class="{$category_display|display}">{$category_name}</td>
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
             <tr style="{$list_bg_color} {$list_char_color}">
                 <td class="chk no">{$checkbox}<span class="RW">{$no}</span></td>
-                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_medium.gif'" alt="{$product_name}" /></a></td>
+                <td class="thumb"><a href="{$link_product_detail}"><img src="{$product_img_src}" onerror="this.src='/0svg/logo.svg'" alt="{$product_name}" /></a></td>
                 <td class="subject left txtBreak">
                     <p class="product">{$product_name}</p>
-                    {$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_new}<span style=" width:100vw; height:100vh;">{$icon_hit}</span>
+                    {$icon_re}{$icon_lock}<a href="{$link_board_detail}" style="{$link_color}">{$subject}</a>{$icon_file}<span class="comment">{$comment_count}</span>{$icon_new}{$icon_hit}
                 </td>
                 <td class="{$category_display|display}">{$category_name}</td>
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
         </tbody>
         </table>
@@ -198,21 +198,21 @@
         <fieldset class="boardSearch">
             <legend>게시물 검색</legend>
             <p class="category {$form.product_category_selector_display|display}"><span>카테고리</span>{$form.product_category_selector}</p>
-            <div class="form"><span>상품명</span>{$form.search_date} {$form.search_key} {$form.search} <a href="#none" class="btnNormal" onclick="{$action_search}"><img alt="search" src="/0svg/search.svg"></a></div>
+            <div class="form"><span>상품명</span>{$form.search_date} {$form.search_key} {$form.search} <a href="#none" class="btnNormal" onclick="{$action_search}"><img alt="search" src="/0svg/search.svg?v=20260903"></a></div>
         </fieldset>
     </div>
     <div class="ec-base-table typeList gThumb gBorderClear">
         <table border="1" >
         <caption>상품 게시판 목록</caption>
         <!--colgroup module="board_listheader_4">
-            <col style="width:80px;" />
-            <col style="width:85px;" />
-            <col style="width:auto;" />
-            <col style="width:100px;" class="{$config.is_category|display}" />
-            <col style="width:85px;" />
-            <col style="width:120px;" class="{$config.use_date|display}" />
-            <col style="width:55px;" class="{$config.use_cnt|display}" />
-            <col style="width:80px;" class="{$config.is_use_point|display}" />
+            <col  class="ec-u-w-80" />
+            <col  class="ec-u-w-85" />
+            <col  class="ec-u-w-auto" />
+            <col class="{$config.is_category|display} ec-u-w-100" />
+            <col  class="ec-u-w-85" />
+            <col class="{$config.use_date|display} ec-u-w-120" />
+            <col class="{$config.use_cnt|display} ec-u-w-55" />
+            <col class="{$config.is_use_point|display} ec-u-w-80" />
         </colgroup-->
         <!--thead module="board_listheader_4">
             <tr style="{$list_bg_color} {$list_char_color}">

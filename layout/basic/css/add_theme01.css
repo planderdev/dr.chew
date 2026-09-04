@@ -1,11 +1,11 @@
 /** subpage_theme02 (Lilac) **/
 
 .theme02 {
-    --theme-accent-bg: var(--color-purple-200);
-    --theme-accent-strong: var(--color-purple-600);
+    --theme-accent-bg: var(--support-purple-soft);
+    --theme-accent-strong: var(--support-purple);
     --theme-accent-muted-bg: var(--bg-50);
     --theme-accent-text: var(--text-main);
-    --theme-inverse-text: var(--color-white);
+    --theme-inverse-text: var(--bg-0);
     --theme-border-strong: var(--line-strong);
 
     --button-primary-bg: var(--theme-accent-bg);

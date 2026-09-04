@@ -1,14 +1,14 @@
 .xans-myshop-orderoldhistorylist .order { position:relative; }
-.xans-myshop-orderoldhistorylist .order h3 { overflow:hidden; padding:20px 0 20px 15px; font-size:13px; background-color:#f6f6f6; border-top:1px solid #000; }
-.xans-myshop-orderoldhistorylist .order .date { font-weight:bold; }
-.xans-myshop-orderoldhistorylist .btnDetail { position:absolute; top:19px; right:19px; }
+.xans-myshop-orderoldhistorylist .order h3 { overflow:hidden; padding: var(--space-24) 0 var(--space-24) var(--space-16); font-size: var(--caption-1-size); background-color:var(--bg-100); border-top: var(--form-field-border-width) solid var(--text-main); }
+.xans-myshop-orderoldhistorylist .order .date { font-weight:var(--font-weight-bold); }
+.xans-myshop-orderoldhistorylist .btnDetail { position:absolute; top: calc(var(--space-16) + calc(var(--form-field-border-width) * 3)); right: calc(var(--space-16) + calc(var(--form-field-border-width) * 3)); }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
-    .xans-myshop-orderoldhistorylist .order h3 { margin:50px 0 0; }
+    .xans-myshop-orderoldhistorylist .order h3 { margin: var(--space-48) 0 0; }
 }
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .xans-myshop-orderoldhistorylist .order h3 { margin:60px 0 0; }
+    .xans-myshop-orderoldhistorylist .order h3 { margin: var(--space-64) 0 0; }
 }

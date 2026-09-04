@@ -1,26 +1,26 @@
 .topArea__statelogon {
     position: absolute;
     right: 0;
-    top: 28px;
+    top: calc(var(--space-24) + var(--space-4));
 }
 
 .topArea__statelogon a {
     display: inline-block;
-    margin-left: 25px; 
-    font-size: 12px;
-    color: #1e1e1e;
+    margin-left: var(--space-24);
+    font-size: var(--caption-2-size);
+    color: var(--text-strong);
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .topArea__statelogon .count {
     display: inline-block;
-    min-width: 24px;
-    margin: 0 0 0 6px;
-    padding: 3px 4px 3px;
-    font-size: 13px;
+    min-width: var(--space-24);
+    margin: 0 0 0 var(--space-8);
+    padding: var(--space-4) var(--space-4) var(--space-4);
+    font-size: var(--caption-1-size);
     text-align: center;
-    border: 1px solid #000;
-    border-radius: 20px;
+    border: var(--form-field-border-width) solid var(--text-main);
+    border-radius: var(--radius-card);
     box-sizing: border-box;
 }

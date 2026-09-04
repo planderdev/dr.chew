@@ -1,2 +1,2 @@
-.xans-board-title p.imgArea { margin:0 0 20px; }
-.xans-board-commentdel .password input { width:100%; max-width:293px; }
+.xans-board-title p.imgArea { margin: 0 0 var(--space-24); }
+.xans-board-commentdel .password input { width: 100%; max-width: calc((var(--space-96) * 3) + var(--space-4) + var(--form-field-border-width)); }

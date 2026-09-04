@@ -1,10 +1,10 @@
-		#header_community { position:relative; display:none; height:50px; line-height:50px; margin-left:0px; margin-top:0px !important; vertical-align:top; z-index:20; }
-		#community_list { position:absolute; top:49px; left:50%; transform:translateX(-50%); display:none; flex-direction:column; text-align:left; background-color:#fff; border:1px solid #000; }
-		#community_text { cursor:pointer; font-size:12px; font-weight:400; }
-		#community_text > img { height:8px; margin-top:-2px; vertical-align:middle; transform:rotate(-90deg); }
-		#community_list.community_hover { top:50px; }
-		.community_list_a { display:block; min-width:160px; line-height:32px; font-size: 12px; text-indent:15px; white-space:nowrap; border-bottom:1px solid #000; }
-	    .community_list_a:last-child { border-bottom:0px; }
+		#header_community { position:relative; display:none; height: calc(var(--space-48) + calc(var(--form-field-border-width) * 2)); line-height: calc(var(--space-48) + calc(var(--form-field-border-width) * 2)); margin-left: 0; margin-top: 0; vertical-align:top; z-index:20; }
+		#community_list { position:absolute; top: calc(var(--space-48) + var(--form-field-border-width)); left: 50%; transform:translateX(-50%); display:none; flex-direction:column; text-align:left; background-color:var(--bg-0); border: var(--form-field-border-width) solid var(--text-main); }
+		#community_text { cursor:pointer; font-size: var(--caption-2-size); font-weight:var(--font-weight-regular); }
+		#community_text > img { height: var(--space-8); margin-top: calc(var(--space-4) * -1); vertical-align:middle; transform:rotate(-90deg); }
+		#community_list.community_hover { top: calc(var(--space-48) + calc(var(--form-field-border-width) * 2)); }
+		.community_list_a { display:block; min-width: calc(var(--space-96) + var(--space-64)); line-height: var(--space-32); font-size: var(--caption-2-size); text-indent: calc(var(--space-12) + calc(var(--form-field-border-width) * 3)); white-space:nowrap; border-bottom: var(--form-field-border-width) solid var(--text-main); }
+	    .community_list_a:last-child { border-bottom: 0; }
 
 
 
@@ -12,5 +12,5 @@
 
 #header_community { display:inline-block; }
 
-    
+
 }

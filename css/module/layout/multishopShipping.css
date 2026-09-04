@@ -1,4 +1,4 @@
 .xans-layout-multishopshipping { display:none; }
-.xans-layout-multishopshipping .worldshipLayer { width:448px; max-width:90vw; }
-.xans-layout-multishopshipping .worldshipLayer .content .desc { display:none; margin:4px 0 14px; }
-.xans-layout-multishopshipping .worldshipLayer select { width:100%; margin:10px 0 0; }
+.xans-layout-multishopshipping .worldshipLayer { width: calc((var(--space-96) * 4) + var(--space-64)); max-width: 90vw; }
+.xans-layout-multishopshipping .worldshipLayer .content .desc { display:none; margin: var(--space-4) 0 var(--space-16); }
+.xans-layout-multishopshipping .worldshipLayer select { width: 100%; margin: var(--space-12) 0 0; }

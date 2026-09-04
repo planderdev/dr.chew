@@ -1,13 +1,13 @@
-.xans-board-listsgroup { margin:50px 0; }
-.xans-board-listsgroup h4 { font-size: 16px; color: #000;  }
-.xans-board-listsgroup .txtNum {font-size: 13px;}
+.xans-board-listsgroup { margin: var(--space-48) 0; }
+.xans-board-listsgroup h4 { font-size: var(--body-1-size); color: var(--text-main);  }
+.xans-board-listsgroup .txtNum {font-size: var(--caption-1-size);}
 
-.xans-board-listsgroup tr td:nth-child(3) span { display:none !Important; }
+.xans-board-listsgroup tr td:nth-child(3) span { display:none; }
 .xans-board-listsgroup tr td.subject > span { z-index:1; }
 @media (max-width: 1000px) {
-    
+
 .xans-board-listsgroup tr { display:flex; flex-direction:column; }
-.xans-board-listsgroup tr td:first-child { float:none; }
+.xans-board-listsgroup tr td:first-child { }
 .xans-board-listsgroup tr td:nth-child(3) span { display:inline-block; }
-    
+
 }

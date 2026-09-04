@@ -1,7 +1,7 @@
-#popup { width:700px; }
-.xans-myshop-couponproductsearch p { padding:0 0 10px; }
-.xans-myshop-couponproductlist .title { overflow:hidden; margin:18px 0 8px; }
-.xans-myshop-couponproductlist .title .result { float:left; }
-.xans-myshop-couponproductlist .title select { float:right; }
-.xans-myshop-couponproductlist table td.thumb img { width:80px; }
+#popup { width: calc((var(--space-96) * 7) + var(--space-24) + var(--space-4)); }
+.xans-myshop-couponproductsearch p { padding: 0 0 var(--space-12); }
+.xans-myshop-couponproductlist .title { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between; overflow:hidden; margin: var(--space-16) 0 var(--space-8); }
+.xans-myshop-couponproductlist .title .result { display:inline-flex; align-items:center; }
+.xans-myshop-couponproductlist .title select { margin-left: auto; display:inline-flex; align-items:center; }
+.xans-myshop-couponproductlist table td.thumb img { width: calc(var(--space-64) + var(--space-16)); }
 .xans-myshop-couponproductlist table td.price strong { display:block; }

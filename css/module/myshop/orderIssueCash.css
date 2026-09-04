@@ -1,5 +1,5 @@
-#popup { width:800px; }
+#popup { width: calc((var(--space-96) * 8) + var(--space-32)); }
 
-.xans-myshop-orderissuecash table #regno { width:120px; }
-.xans-myshop-orderissuecash table #ssn1 { width:90px; margin:0 4px 0 0; }
-.xans-myshop-orderissuecash table #ssn2 { width:90px; margin:0 4px; }
+.xans-myshop-orderissuecash table #regno { width: calc(var(--space-96) + var(--space-24)); }
+.xans-myshop-orderissuecash table #ssn1 { width: calc(var(--space-64) + var(--space-24) + calc(var(--form-field-border-width) * 2)); margin: 0 var(--space-4) 0 0; }
+.xans-myshop-orderissuecash table #ssn2 { width: calc(var(--space-64) + var(--space-24) + calc(var(--form-field-border-width) * 2)); margin: 0 var(--space-4); }

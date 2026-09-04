@@ -1,34 +1,9 @@
 /* typeList */
-:root {
-    /* Pagination Component */
-    --paginate-margin-y: var(--space-64);
-    --paginate-item-size: 40px;
-    --paginate-item-padding-y: var(--space-12);
-    --paginate-arrow-size: 7px;
-    --paginate-dot-size: var(--space-8);
-    --paginate-dot-gap: 7px;
-    --paginate-font-size: var(--body-3-size);
-    --paginate-line-height: var(--line-height-120);
-    --paginate-color: var(--text-weak);
-    --paginate-color-hover: var(--brand-primary);
-    --paginate-color-active: var(--brand-primary);
-    --paginate-border: var(--line-weak);
-    --paginate-border-active: var(--brand-primary);
-    --paginate-bg: var(--bg-0);
-    --paginate-bg-hover: var(--red-50);
-    --paginate-icon-color: var(--icon-main);
-    --paginate-dot-color: var(--icon-weak);
-    --paginate-dot-color-active: var(--brand-primary);
-    --paginate-hidden-font-size: 1px;
-    --paginate-focus-shadow: 0 0 0 3px rgba(215, 59, 80, 0.16);
-    --paginate-transition: color var(--motion-base) var(--motion-ease), background-color var(--motion-base) var(--motion-ease), border-color var(--motion-base) var(--motion-ease), box-shadow var(--motion-fast) var(--motion-ease);
-}
-
 .ec-base-paginate.typeList {
     margin: var(--paginate-margin-y) 0;
     text-align: center;
-    font-size: 0;
-    line-height: 0;
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
 }
 
 .ec-base-paginate.typeList>a {
@@ -48,7 +23,7 @@
     display: inline-block;
     width: var(--paginate-arrow-size);
     height: var(--paginate-arrow-size);
-    border-width: var(--border-width-1) var(--border-width-1) 0 0;
+    border-width: var(--form-field-border-width) var(--form-field-border-width) 0 0;
     border-style: solid;
     border-color: var(--paginate-icon-color);
     vertical-align: middle;
@@ -57,7 +32,7 @@
 
 .ec-base-paginate.typeList>a:first-child::before,
 .ec-base-paginate.typeList>a:last-child::before {
-    margin: 0 -3px;
+    margin: 0 calc(var(--space-4) * -1);
 }
 
 .ec-base-paginate.typeList>a:first-child::after,
@@ -68,14 +43,14 @@
 
 .ec-base-paginate.typeList ol {
     display: inline-block;
-    font-size: 0;
-    line-height: 0;
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
     vertical-align: middle;
 }
 
 .ec-base-paginate.typeList li {
     display: inline-block;
-    margin: 0 0 0 -1px;
+    margin: 0 0 0 0;
     vertical-align: top;
 }
 
@@ -93,7 +68,7 @@
     padding: var(--paginate-item-padding-y) 0;
     color: var(--paginate-color);
     font-size: var(--paginate-font-size);
-    border: var(--border-width-1) solid var(--paginate-border);
+    border: var(--form-field-border-width) solid var(--paginate-border);
     line-height: var(--paginate-line-height);
     background: var(--paginate-bg);
     box-sizing: border-box;
@@ -139,10 +114,10 @@
     width: var(--paginate-dot-size);
     height: var(--paginate-dot-size);
     overflow: hidden;
-    font-size: var(--paginate-hidden-font-size);
-    line-height: 0;
-    text-indent: -9999px;
-    border-radius: 100%;
+    font-size: var(--caption-2-size);
+    line-height: var(--line-height-hidden);
+    text-indent: calc(((var(--space-96) * 104) + var(--space-12) + calc(var(--form-field-border-width) * 3)) * -1);
+    border-radius: var(--radius-pill);
     background: var(--paginate-dot-color);
     opacity: 1;
     transition: var(--paginate-transition);

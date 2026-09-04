@@ -51,7 +51,7 @@ function setDefaultImage(element) {
     document.querySelectorAll(element).forEach(function(item){
         var $img = new Image();
         $img.onerror = function () {
-            item.src="//img.echosting.cafe24.com/thumb/img_product_big.gif";
+            item.src="/0svg/logo.svg";
         }
         $img.src = item.src;
     });

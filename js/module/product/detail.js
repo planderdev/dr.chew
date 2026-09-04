@@ -117,7 +117,7 @@ $(function () {
     $('#slide_thumbnail li').addClass('swiper-slide');
     $('#slide_thumbnail_dot li').css('display', 'list-item');
     $('#slide_thumbnail_dot li').addClass('swiper-slide');
-    $('#slide_thumbnail_dot li:first-child').css('border','1px solid #000');
+    $('#slide_thumbnail_dot li:first-child').css('border','1px solid var(--line-strong)');
     
 	const thumbDotSwiper = new Swiper('#slide_thumbnail_dot', {
   		spaceBetween: 10,
@@ -154,8 +154,8 @@ $(function () {
     
     thumbSwiper.on('slideChange', function () {
   		const realIndex = thumbSwiper.realIndex;
-		$('#slide_thumbnail_dot .swiper-slide').css('border','0px solid #000');
-		$('#slide_thumbnail_dot .swiper-slide').eq(realIndex).css('border','1px solid #000');
+		$('#slide_thumbnail_dot .swiper-slide').css('border','0 solid var(--line-strong)');
+		$('#slide_thumbnail_dot .swiper-slide').eq(realIndex).css('border','1px solid var(--line-strong)');
   		thumbDotSwiper.slideTo(realIndex);
 	});
     
@@ -164,28 +164,80 @@ $(function () {
 
 
 
+function getProductDetailRowType(title) {
+  const normalizedTitle = title.replace(/\s+/g, '');
+
+  if (normalizedTitle === '상품명') return 'name';
+  if (normalizedTitle.indexOf('영문상품명') > -1) return 'en';
+  if (
+    normalizedTitle.indexOf('상품요약정보') > -1 ||
+    normalizedTitle.indexOf('상품요약설명') > -1 ||
+    normalizedTitle.indexOf('상품간략설명') > -1
+  ) return 'summary';
+  if (normalizedTitle.indexOf('할인판매가') > -1) return 'sale';
+  if (normalizedTitle.indexOf('판매가') > -1) return 'price';
+
+  return 'default';
+}
+
+function normalizeProductDetailInfo() {
+  const rowClassNames = 'detail-meta-row--name detail-meta-row--en detail-meta-row--summary detail-meta-row--price detail-meta-row--sale detail-meta-row--default';
+
+  $('.infoArea .xans-product-detaildesign').each(function () {
+    const $design = $(this);
+    const $rows = $design.find('> table > tbody > tr');
+
+    $rows.each(function () {
+      const $row = $(this);
+      const $title = $row.children('th').first();
+      const $content = $row.children('td').first();
+
+      if (!$title.length) return;
+
+      const rowType = getProductDetailRowType($.trim($title.text()));
+
+      $row.addClass('detail-meta-row').removeClass(rowClassNames).addClass(`detail-meta-row--${rowType}`);
+      $title.addClass('detail-meta-title');
+      $content.addClass('detail-meta-content');
+
+      if (['en', 'summary', 'price', 'sale'].indexOf(rowType) > -1) {
+        $title.addClass('displaynone');
+      }
+    });
+
+    const hasSale = $rows.filter('.detail-meta-row--sale').filter(function () {
+      const saleText = $.trim($(this).find('.detail-meta-content, td').first().text());
+      return saleText.length > 0 && !$(this).hasClass('displaynone');
+    }).length > 0;
+
+    $design.toggleClass('detail-has-sale', hasSale);
+  });
+}
+
 // th 삭제 td 한줄처리
 function fixHiddenTh() {
-  $('th.displaynone').each(function () {
+  $('.infoArea .xans-product-detaildesign th.displaynone').each(function () {
     const $th = $(this);
     const $tr = $th.closest('tr');
     $th.remove();
-    $tr.find('td').attr('colspan', 2).css('width', '100%');
+    $tr.find('td').attr('colspan', 2).addClass('detail-meta-content--full');
   });
 }
 
 $(function() {
-    
+
+  normalizeProductDetailInfo();
   fixHiddenTh();
 
-  const tbody = document.querySelector('tbody');
-  if (!tbody) return;
+  const infoArea = document.querySelector('.infoArea');
+  if (!infoArea) return;
 
   const observer = new MutationObserver(function () {
+    normalizeProductDetailInfo();
     fixHiddenTh();
   });
 
-  observer.observe(tbody, {
+  observer.observe(infoArea, {
     childList: true,
     subtree: true
   });
@@ -303,10 +355,8 @@ window.addEventListener('resize', showSectionsIfWide);
 
 $(function() {
     function displayClass(){
-		$('.infoArea .xans-product-detaildesign > table > tbody tr th span:contains("상품요약정보")').parents('th').addClass('displaynone');
-        $('.infoArea .xans-product-detaildesign > table > tbody tr th span:contains("상품요약설명")').parents('th').addClass('displaynone');
-        $('.infoArea .xans-product-detaildesign > table > tbody tr th span:contains("상품 요약설명")').parents('th').addClass('displaynone');
-        $('.infoArea .xans-product-detaildesign > table > tbody tr th span:contains("상품간략설명")').parents('th').addClass('displaynone');    
+		normalizeProductDetailInfo();
+        fixHiddenTh();
 	};
 	displayClass();
     
@@ -425,6 +475,3 @@ if (targetNode) {
   const observer = new MutationObserver(updateDeliveryGauge);
   observer.observe(targetNode, { childList: true, subtree: true });
 }
-
-
-

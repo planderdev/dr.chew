@@ -1,16 +1,16 @@
-.titleArea--middle { background-color:transparent !important }
+.titleArea--middle { background-color:var(--overlay-transparent) }
 .xans-mall-company .info { text-align:center; }
 .xans-mall-company .map { text-align:center; }
-.xans-mall-company .xans-layout-footer { padding:0; }
+.xans-mall-company .xans-layout-footer { padding: 0; }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
-    .xans-mall-company .info { padding:30px 16px 50px; line-height:22px; }
-    .xans-mall-company .map { padding:30px 0; }
-    
+    .xans-mall-company .info { padding: var(--space-32) var(--space-16) var(--space-48); line-height: calc(var(--space-16) + var(--space-4) + calc(var(--form-field-border-width) * 2)); }
+    .xans-mall-company .map { padding: var(--space-32) 0; }
+
 }
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .xans-mall-company .info { padding:30px 0 0; line-height:22px; }
-    .xans-mall-company .map { margin:0 0 50px; padding:30px 0 0; }
+    .xans-mall-company .info { padding: var(--space-32) 0 0; line-height: calc(var(--space-16) + var(--space-4) + calc(var(--form-field-border-width) * 2)); }
+    .xans-mall-company .map { margin: 0 0 var(--space-48); padding: var(--space-32) 0 0; }
 }

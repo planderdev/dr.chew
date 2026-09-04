@@ -1,10 +1,10 @@
-.xans-myshop-depositsummary { margin:14px 7px; }
-.xans-myshop-depositsummary h3 { padding:14px; font-size:13px; line-height:1.2em; color:#fff; background:#737781; }
+.xans-myshop-depositsummary { margin: var(--space-16) var(--space-8); }
+.xans-myshop-depositsummary h3 { padding: var(--space-16); font-size: var(--caption-1-size); line-height: var(--body-line-height); color:var(--bg-0); background:var(--text-weak); }
 
 /* 관련 링크 */
-.xans-myshop-deposithistorypackage .navigation { padding:0 7px 14px; }
-.xans-myshop-deposithistorypackage .navigation ul { border:1px solid #d5d5d5; }
-.xans-myshop-deposithistorypackage .navigation li { background:#f9f9f9; border-top:1px solid #ddd; }
-.xans-myshop-deposithistorypackage .navigation li:first-child { border-top:0; }
-.xans-myshop-deposithistorypackage .navigation li a { display:block; position:relative; padding:14px; font-weight:bold; font-size:13px; line-height:1.2em; color:#4a5164; }
-.xans-myshop-deposithistorypackage .navigation li a:after { display:block; content:""; width:20px; height:20px; position:absolute; top:12px; right:12px; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_arrow_gray.png") right 50% no-repeat; background-size:20px 20px; transform:rotate(-90deg); -ms-transform:rotate(-90deg); -webkit-transform:rotate(-90deg); }
+.xans-myshop-deposithistorypackage .navigation { padding: 0 var(--space-8) var(--space-16); }
+.xans-myshop-deposithistorypackage .navigation ul { border: var(--form-field-border-width) solid var(--line-default); }
+.xans-myshop-deposithistorypackage .navigation li { background:var(--bg-50); border-top: var(--form-field-border-width) solid var(--line-weak); }
+.xans-myshop-deposithistorypackage .navigation li:first-child { border-top: 0; }
+.xans-myshop-deposithistorypackage .navigation li a { display:block; position:relative; padding: var(--space-16); font-weight:var(--font-weight-bold); font-size: var(--caption-1-size); line-height: var(--body-line-height); color:var(--text-sub); }
+.xans-myshop-deposithistorypackage .navigation li a:after { display:block; content:""; width: calc(var(--space-16) + var(--space-4)); height: calc(var(--space-16) + var(--space-4)); position:absolute; top: var(--space-12); right: var(--space-12); background:var(--icon-url-right-arr) right 50% no-repeat; background-size: calc(var(--space-16) + var(--space-4)) calc(var(--space-16) + var(--space-4)); transform:rotate(-90deg); -ms-transform:rotate(-90deg); -webkit-transform:rotate(-90deg); }

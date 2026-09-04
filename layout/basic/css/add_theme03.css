@@ -1,11 +1,11 @@
 /** subpage_theme04 (Pure Mint) **/
 
 .theme04 {
-    --theme-accent-bg: var(--color-sky-200);
-    --theme-accent-strong: var(--color-sky-600);
+    --theme-accent-bg: var(--support-info-soft);
+    --theme-accent-strong: var(--support-info);
     --theme-accent-muted-bg: var(--bg-50);
     --theme-accent-text: var(--text-main);
-    --theme-inverse-text: var(--color-white);
+    --theme-inverse-text: var(--bg-0);
     --theme-border-strong: var(--line-strong);
 
     --button-primary-bg: var(--theme-accent-bg);

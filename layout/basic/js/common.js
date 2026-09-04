@@ -4,7 +4,7 @@ $(window).on('load', function() {
     $(".thumbnail img, img.thumbImage, img.bigImage").each(function($i,$item){
         var $img = new Image();
         $img.onerror = function () {
-            $item.src="//img.echosting.cafe24.com/thumb/img_product_big.gif";
+            $item.src="/0svg/logo.svg";
         }
         $img.src = this.src;
     });
@@ -41,9 +41,9 @@ $(function(){
         var bClosed = !!$(this).data('is_closed');
         var sUrl;
         if (bClosed) {
-            sUrl = "//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_title_close.gif";
+            sUrl = "/0svg/close.svg";
         } else {
-            sUrl = "//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_title_open.gif";
+            sUrl = "/0svg/plus.svg";
         }
         $(this).css('background-image', 'url("'+ sUrl +'")');
         $(this).siblings().toggle();

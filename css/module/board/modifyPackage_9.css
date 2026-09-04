@@ -1,32 +1,32 @@
-.xans-board-title p.imgArea { margin:0 0 20px; }
+.xans-board-title p.imgArea { margin: 0 0 var(--space-24); }
 
-.xans-board-modify-9 .ec-base-table .view .detail { padding:10px; word-break:break-all; line-height:normal; }
+.xans-board-modify-9 .ec-base-table .view .detail { padding: var(--space-12); word-break:break-all; line-height: var(--body-line-height); }
 .xans-board-modify-9 .ec-base-table .view .detail ol,
-.xans-board-modify-9 .ec-base-table .view .detail ul { margin:15px 0; padding:0 0 0 40px; }
+.xans-board-modify-9 .ec-base-table .view .detail ul { margin: var(--space-16) 0; padding: 0 0 0 var(--space-48); }
 .xans-board-modify-9 .ec-base-table .view .detail ol li { list-style:decimal; }
 .xans-board-modify-9 .ec-base-table .view .detail ul li { list-style:disc; }
 
-.xans-board-modify-9 .file td { color:#7d7d7d; }
-.xans-board-modify-9 .file label { color:#000; }
-.xans-board-modify-9 .file [id^="delfile"] { margin-left:20px; }
+.xans-board-modify-9 .file td { color:var(--text-weak); }
+.xans-board-modify-9 .file label { color:var(--text-main); }
+.xans-board-modify-9 .file [id^="delfile"] { margin-left: var(--space-24); }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
 	.xans-board-modify-9 .ec-base-table input[type="text"],
     .xans-board-modify-9 .ec-base-table input[type="password"],
-    .xans-board-modify-9 .ec-base-table select { width:100%; }
-    .xans-board-modify-9 #email1 { width:47%; margin:0 6px 0 0; }
-    .xans-board-modify-9 #email2 { width:47%; flex:1; margin:0 0 0 6px; }
-    .xans-board-modify-9 #email3 { margin:10px 0 0; }
-    .xans-board-modify-9 #captcha { flex:1; margin-left:10px; }
+    .xans-board-modify-9 .ec-base-table select { width: 100%; }
+    .xans-board-modify-9 #email1 { width: 47%; margin: 0 var(--space-8) 0 0; }
+    .xans-board-modify-9 #email2 { width: 47%; flex:1; margin: 0 0 0 var(--space-8); }
+    .xans-board-modify-9 #email3 { margin: var(--space-12) 0 0; }
+    .xans-board-modify-9 #captcha { flex:1; margin-left: var(--space-12); }
     .xans-board-modify-9 .file input[type="file"] { display:block; }
 }
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .xans-board-modify-9 #subject { width:526px; }
+    .xans-board-modify-9 #subject { width: calc((var(--space-96) * 5) + var(--space-32) + var(--space-12) + calc(var(--form-field-border-width) * 2)); }
     .xans-board-modify-9 #email1,
-    .xans-board-modify-9 #email2 { width:138px; }
-    .xans-board-modify-9 #email3 { width:138px; margin:0 0 0 10px; }
-    .xans-board-modify-9 #captcha { width:200px; margin:0 20px 0 10px; }
+    .xans-board-modify-9 #email2 { width: calc(var(--space-96) + var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 2)); }
+    .xans-board-modify-9 #email3 { width: calc(var(--space-96) + var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 2)); margin: 0 0 0 var(--space-12); }
+    .xans-board-modify-9 #captcha { width: calc((var(--space-96) * 2) + var(--space-8)); margin: 0 var(--space-24) 0 var(--space-12); }
 }

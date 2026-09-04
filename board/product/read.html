@@ -19,7 +19,7 @@
 
     <div module="board_Product_4" class="ec-base-box typeProduct">
         <p class="thumbnail">
-            <a href="{$link_product_detail}"><img id="{$product_img_id}" src="{$product_img}" onerror="this.src='//img.echosting.cafe24.com/thumb/75x75.gif'" alt=""/></a>
+            <a href="{$link_product_detail}"><img id="{$product_img_id}" src="{$product_img}" onerror="this.src='/0svg/logo.svg'" alt=""/></a>
         </p>
         <div class="information">
             <h3><a href="/product/detail.html{$param_product}" id="{$product_name_link_id}">{$product_name}</a></h3>
@@ -99,10 +99,10 @@
                 <div class="commentTop">
                     <strong class="name">{$checkbox} {$member_icon} {$comment_name}</strong>
                     <span class="date">{$comment_write_date}</span>
-                    <span class="grade {$config.is_use_point|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$comment_point_count}.svg" alt="{$comment_point_count}점"/></span>
+                    <span class="grade {$config.is_use_point|display}"><img src="/0svg/review.svg" alt="{$comment_point_count}점"/></span>
                 </div>
                 <div class="comment">
-                    <span class="{$is_spam_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/ico_spam.gif" alt="스팸글"/></span>
+                    <span class="{$is_spam_display|display}"><img src="/0svg/notice.svg" alt="스팸글"/></span>
                     {$comment_icon_lock} {$comment_content}
                 </div>
                 <div class="formGroup">
@@ -120,10 +120,10 @@
                     <strong class="name">{$checkbox} {$member_icon} {$comment_name}</strong>
                     <span class="date">{$comment_write_date}</span>
                     <span class="grade {$config.is_use_point|display}">
-                        <img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$comment_point_count}.svg" alt="{$comment_point_count}점"/></span>
+                        <img src="/0svg/review.svg" alt="{$comment_point_count}점"/></span>
                 </div>
                 <div class="comment">
-                    <span class="{$is_spam_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/ico_spam.gif" alt="스팸글"/></span>
+                    <span class="{$is_spam_display|display}"><img src="/0svg/notice.svg" alt="스팸글"/></span>
                     {$comment_icon_lock} {$comment_content}
                 </div>
                 <div class="formGroup">
@@ -303,11 +303,11 @@
         <table border="1" >
             <caption>관련글 모음</caption>
             <colgroup>
-                <col style="width:70px;"/>
-                <col style="width:auto;"/>
-                <col style="width:84px;"/>
-                <col style="width:77px;" class="{$config.use_date|display}"/>
-                <col style="width:55px;" class="{$config.use_cnt|display}"/>
+                <col class="ec-u-w-70" />
+                <col class="ec-u-w-auto" />
+                <col class="ec-u-w-84" />
+                <col class="{$config.use_date|display} ec-u-w-77"/>
+                <col class="{$config.use_cnt|display} ec-u-w-55"/>
             </colgroup>
             <thead>
                 <tr>

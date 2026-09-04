@@ -46,7 +46,7 @@
             -->
             <fieldset>
                 <legend>검색</legend>
-                {$form.keyword}<input type="image" src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/btn_search.gif" alt="검색" onclick="{$action_search_submit}" /></fieldset>
+                {$form.keyword}<button type="button" onclick="{$action_search_submit}" class="ec-icon-search-submit"><span class="blind">검색</span></button></fieldset>
         </div>
     </div>
 
@@ -155,7 +155,7 @@
                         <li module="Layout_Second" id='{$category_no}'><a href='{$category_url}' class="second">{$category_name}</a>
                         <ul module="Layout_Third">
                             <li id='{$category_no}' class="depth2"  onmouseover="{$sub_category_show}" onmouseout="{$sub_category_hide}"><a href='{$category_url}'>{$category_name}</a>
-                                <div class='sub-category' style='display:none;'>
+                                <div class='sub-category ec-u-hidden'>
                                 <ul>
                                     <li module="Layout_Fourth" id='{$category_no}'><a href='{$category_url}'>{$category_name}</a>
                                         <ul module="Layout_Fifth">
@@ -175,7 +175,7 @@
     </div><hr class="layout" />
 
     <div id="banner">
-        <p><a href="#none"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/img_banner1.jpg" alt="" /></a></p>
+        <p><a href="#none"><img src="/0svg/wellness.svg" alt="" /></a></p>
     </div>
 
     <div id="quick">
@@ -195,12 +195,12 @@
                     <a href="/product/detail.html{$param}"><img src="{$recent_img}" alt="" /><span>{$name}</span></a>
                 </li>
             </ul>
-            <p class="player"><img src="//img.echosting.cafe24.com/skin/base/layout/btn_recent_prev.gif" alt="이전 제품" class="prev" /><img src="//img.echosting.cafe24.com/skin/base/layout/btn_recent_next.gif" alt="다음 제품" class="next" /></p>
+            <p class="player"><img src="/0svg/left-arr.svg" alt="이전 제품" class="prev" /><img src="/0svg/right-arr.svg" alt="다음 제품" class="next" /></p>
         </div>
 
-        <p class="pageTop"><a href="#header" title="화면 최상단으로 이동하기"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/btn_top1.gif" alt="맨위로" /></a></p>
+        <p class="pageTop"><a href="#header" title="화면 최상단으로 이동하기"><img src="/0svg/scroll.svg" alt="맨위로" /></a></p>
 
-        <p class="banner"><a href="#none"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/img_banner2.jpg" alt="" /></a></p>
+        <p class="banner"><a href="#none"><img src="/0svg/easy.svg" alt="" /></a></p>
     </div>
 </div><hr class="layout" />
 
@@ -227,20 +227,20 @@
                 <span>Contact <strong><a href="mailto:{$email}">{$email}</a></strong> for more information.</span>
             </p>
             <p class="copyright">Copyright &copy; <strong>{$mall_name}</strong>. All rights reserved.</p>
-            <p class="pageTop"><a href="#header" title="화면 최상단으로 이동하기"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/btn_top2.gif" alt="맨위로" /></a></p>
-            <p class="hosting"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/logo_cafe24.png" alt="hosting by cafe24 카페24(주)" /></p>
+            <p class="pageTop"><a href="#header" title="화면 최상단으로 이동하기"><img src="/0svg/scroll.svg" alt="맨위로" /></a></p>
+            <p class="hosting"><img src="/0svg/logo.svg" alt="hosting by cafe24 카페24(주)" /></p>
         </div>
     </div>
 </div>
 
 <!-- 결제를 위한 필수 영역 -->
-<div id="progressPaybar" style="display:none;">
+<div id="progressPaybar" class="ec-u-hidden">
     <div id="progressPaybarBackground" class="layerProgress"></div>
     <div id="progressPaybarView">
         <div class="box">
             <p class="graph">
-                <span><img src="//img.echosting.cafe24.com/skin/base_ko_KR/layout/txt_progress.gif" alt="현재 결제가 진행중입니다." /></span>
-                <span><img src="//img.echosting.cafe24.com/skin/base/layout/img_loading.gif" alt="" /></span>
+                <span><img src="/0svg/time.svg" alt="현재 결제가 진행중입니다." /></span>
+                <span><img src="/0svg/time.svg" alt="" /></span>
             </p>
             <p class="txt">
                 본 결제 창은 결제완료 후 자동으로 닫히며,결제 진행 중에 본 결제 창을 닫으시면<br />
@@ -273,9 +273,9 @@
             </div>
         </div>
         <div class="btnArea">
-            <a href="#none"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/link/btn_go.gif" alt="GO" /></a>
+            <a href="#none"><img src="/0svg/right-arr.svg" alt="GO" /></a>
         </div>
-        <a href="#none" class="btnClose"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" width="13" height="13" alt="close" /></a>
+        <a href="#none" class="btnClose"><img src="/0svg/close.svg" width="13" height="13" alt="close" /></a>
     </div>
 </div>
 

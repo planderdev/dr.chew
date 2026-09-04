@@ -1,6 +1,6 @@
 
 
-	#category_wrap .more_cate { background: url(/0dzimg/header_cate_arrow.png) no-repeat 100% 50%; }
+	#category_wrap .more_cate { background: var(--icon-url-right-arr) no-repeat 100% 50%; background-size: calc(var(--space-4) + calc(var(--form-field-border-width) * 2)) auto; }
 	#category_wrap .cate1_li.more_cate { background-image:none; }
 
 
@@ -11,29 +11,29 @@
 
 	/** 카테고리 **/
 
-    #category_wrap { display:none; position:relative; z-index:11; height:50px; padding:0px 0px; margin-left:10px; vertical-align:top; }
-    #category_wrap a { display:block; color:#333; font-size:12px; white-space:nowrap; }
-    #category_wrap a:hover { color:#111; text-decoration:none; }
-	#category_text { width:100%; height:50px; line-height:50px; text-align:center; cursor:pointer; } 
+    #category_wrap { display:none; position:relative; z-index:11; height: calc(var(--space-48) + calc(var(--form-field-border-width) * 2)); padding: 0 0; margin-left: var(--space-12); vertical-align:top; }
+    #category_wrap a { display:block; color:var(--text-muted-strong); font-size: var(--caption-2-size); white-space:nowrap; }
+    #category_wrap a:hover { color:var(--text-strong); text-decoration:none; }
+	#category_text { width: 100%; height: calc(var(--space-48) + calc(var(--form-field-border-width) * 2)); line-height: calc(var(--space-48) + calc(var(--form-field-border-width) * 2)); text-align:center; cursor:pointer; }
 
 
     /* 대분류 */
-	#category_wrap .scroll_cate { position:absolute; top:-10000px; left:0px; }
-	.onScroll #category_wrap .scroll_cate.cate_hover { top:50px; }
-	#category_wrap .scroll_cate.cate_hover { top:50px; }
+	#category_wrap .scroll_cate { position:absolute; top: calc(((var(--space-96) * 104) + var(--space-16)) * -1); left: 0; }
+	.onScroll #category_wrap .scroll_cate.cate_hover { top: calc(var(--space-48) + calc(var(--form-field-border-width) * 2)); }
+	#category_wrap .scroll_cate.cate_hover { top: calc(var(--space-48) + calc(var(--form-field-border-width) * 2)); }
 	#category_wrap .scroll_cate_ul.cate1_ul { display:flex; flex-direction:column; }
-    #category_wrap .scroll_cate_ul.cate1_ul .cate1_li { position:relative; display:inline-block;  white-space:normal; opacity:0; transform: translateY(10px); transition: all 0.6s; }
-	#category_wrap .scroll_cate.cate_hover .scroll_cate_ul.cate1_ul .cate1_li { opacity:1; transform: translateY(0px); }
-	#category_wrap .scroll_cate.cate_hover.cate_leave .scroll_cate_ul.cate1_ul .cate1_li { opacity:0; transform: translateY(10px); }
-    #category_wrap .scroll_cate_ul.cate1_ul .cate1_li > a { display:inline-block; line-height:30px; color:#000; font-size:12px; font-weight:500; word-spacing:-1px; text-align:center; }
-    #category_wrap .scroll_cate_ul.cate1_ul .cate1_li img {  width:100px; height:100px; border-radius:50%;}
-	#category_wrap .scroll_cate_ul.cate1_ul .cate1_li > a > img { display:block; margin:0 auto; }
+    #category_wrap .scroll_cate_ul.cate1_ul .cate1_li { position:relative; display:inline-block;  white-space:normal; opacity:0; transform: translateY(calc(var(--space-8) + (var(--form-field-border-width) * 2))); transition: all 0.6s; }
+	#category_wrap .scroll_cate.cate_hover .scroll_cate_ul.cate1_ul .cate1_li { opacity:1; transform: translateY(0); }
+	#category_wrap .scroll_cate.cate_hover.cate_leave .scroll_cate_ul.cate1_ul .cate1_li { opacity:0; transform: translateY(calc(var(--space-8) + (var(--form-field-border-width) * 2))); }
+    #category_wrap .scroll_cate_ul.cate1_ul .cate1_li > a { display:inline-block; line-height: calc(var(--space-24) + var(--space-4) + calc(var(--form-field-border-width) * 2)); color:var(--text-main); font-size: var(--caption-2-size); font-weight:var(--font-weight-medium); word-spacing: calc(var(--form-field-border-width) * -1); text-align:center; }
+    #category_wrap .scroll_cate_ul.cate1_ul .cate1_li img {  width: calc(var(--space-96) + var(--space-4)); height: calc(var(--space-96) + var(--space-4)); border-radius: var(--radius-pill);}
+	#category_wrap .scroll_cate_ul.cate1_ul .cate1_li > a > img { display:block; margin: 0 auto; }
 
 
 
     /* 중분류 */
 
-	#category_wrap .cate2_ul { display:none !Important; }
+	#category_wrap .cate2_ul { display:none; }
 
 
 
@@ -42,5 +42,5 @@
 
 #category_wrap { display:inline-block; }
 
-    
+
 }

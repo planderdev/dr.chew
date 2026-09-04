@@ -18,9 +18,9 @@
             $login_page = /member/login.html
         -->
         <div class="date">
-            <a href="{$prev_month}"><img src="//img.echosting.cafe24.com/skin/base/calendar/btn_date_prev.gif" alt="이전 달" /></a>
+            <a href="{$prev_month}"><img src="/0svg/left-arr.svg" alt="이전 달" /></a>
             <span class="day">{$year}.{$month}</span>
-            <a href="{$next_month}"><img src="//img.echosting.cafe24.com/skin/base/calendar/btn_date_next.gif" alt="다음 달" /></a>
+            <a href="{$next_month}"><img src="/0svg/right-arr.svg" alt="다음 달" /></a>
         </div>
     </div>
 
@@ -30,13 +30,13 @@
         -->
         <caption>출석체크 달력</caption>
         <colgroup>
-            <col style="width:15%;" />
-            <col style="width:14%;" />
-            <col style="width:14%;" />
-            <col style="width:14%;" />
-            <col style="width:14%;" />
-            <col style="width:14%;" />
-            <col style="width:15%;" />
+            <col  class="ec-u-w-15p" />
+            <col  class="ec-u-w-14p" />
+            <col  class="ec-u-w-14p" />
+            <col  class="ec-u-w-14p" />
+            <col  class="ec-u-w-14p" />
+            <col  class="ec-u-w-14p" />
+            <col  class="ec-u-w-15p" />
         </colgroup>
         <thead>
             <tr>
@@ -85,7 +85,7 @@
             </span>
         </div>
 
-        <div class="{$attendSecurityLayer}" style="display:none;">
+        <div class="{$attendSecurityLayer} ec-u-hidden">
             <h3>스팸방지 보안문자 입력</h3>
             <div class="content">
                 <fieldset>
@@ -101,7 +101,7 @@
                 <a href="#none" class="btnSubmitFix sizeS" onclick="{$action_capcha_do}">확인</a>
                 <a href="#none" class="btnNormalFix sizeS" onclick="{$action_capcha_undo}">취소</a>
             </div>
-            <div class="close"><a href="#none" onclick="$('.attendSecurityLayer').hide();"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="닫기" /></a></div>
+            <div class="close"><a href="#none" onclick="$('.attendSecurityLayer').hide();"><img src="/0svg/close.svg" alt="닫기" /></a></div>
         </div>
     </div>
 </div>

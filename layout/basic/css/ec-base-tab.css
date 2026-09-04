@@ -1,50 +1,3 @@
-:root {
-    /* Tabs */
-    --tab-font-family: var(--font-body);
-    --tab-font-size: var(--body-3-size);
-    --tab-font-weight: var(--font-weight-medium);
-    --tab-font-weight-active: var(--font-weight-semibold);
-    --tab-letter-spacing: var(--body-letter-spacing);
-    --tab-height: 44px;
-    --tab-padding-x: var(--space-16);
-    --tab-gap: var(--space-8);
-    --tab-color: var(--text-sub);
-    --tab-color-hover: var(--text-main);
-    --tab-color-active: var(--brand-primary);
-    --tab-muted-color: var(--text-weak);
-    --tab-bg: var(--bg-0);
-    --tab-bg-muted: var(--bg-50);
-    --tab-bg-hover: var(--red-50);
-    --tab-border: var(--line-weak);
-    --tab-border-strong: var(--line-strong);
-    --tab-underline: var(--brand-primary);
-    --tab-underline-height: 2px;
-    --tab-radius: var(--radius-sm);
-    --tab-focus-shadow: 0 0 0 3px rgba(215, 59, 80, 0.16);
-    --tab-transition: color var(--motion-fast) var(--motion-ease), background-color var(--motion-fast) var(--motion-ease), border-color var(--motion-fast) var(--motion-ease), box-shadow var(--motion-fast) var(--motion-ease);
-    --tab-menu-max-width: 1230px;
-    --tab-menu-padding: 0;
-    --tab-menu-margin: 0 auto;
-    --tab-menu-wrap: wrap;
-
-    /* Filter Chips */
-    --chip-font-family: var(--font-body);
-    --chip-font-size: var(--caption-1-size);
-    --chip-font-weight: var(--font-weight-medium);
-    --chip-height: 36px;
-    --chip-padding-x: var(--space-16);
-    --chip-gap: var(--space-8);
-    --chip-radius: var(--radius-pill);
-    --chip-color: var(--text-sub);
-    --chip-color-hover: var(--brand-primary);
-    --chip-color-active: var(--brand-primary);
-    --chip-bg: var(--bg-0);
-    --chip-bg-hover: var(--red-50);
-    --chip-bg-active: var(--red-100);
-    --chip-border: var(--line-weak);
-    --chip-border-active: var(--brand-primary);
-    --chip-padding-y: 13px;
-}
 
 .ec-base-tab {
     position: relative;
@@ -58,19 +11,13 @@
     -moz-box-sizing: border-box;
 }
 
-.ec-base-tab .menu:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 .ec-base-tab .menu li a {
     display: inline-block;
     color: var(--tab-color);
     font-family: var(--tab-font-family);
     font-size: var(--tab-font-size);
     font-weight: var(--tab-font-weight);
-    line-height: var(--body-line-height);
+    line-height: var(--tab-line-height);
     text-decoration: none;
     outline: 0;
     text-align: center;
@@ -94,16 +41,16 @@
 
 .ec-base-tab>.right {
     position: absolute;
-    top: 8px;
-    right: 10px;
-    line-height: 24px;
+    top: var(--space-8);
+    right: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
+    line-height: var(--space-24);
     color: var(--tab-muted-color);
 }
 
 /* typeNav */
 .ec-base-tab.typeNav .menu {
     margin: 0 0 var(--space-24);
-    border-bottom: var(--border-width-1) solid var(--tab-border);
+    border-bottom: var(--tab-border-width) solid var(--tab-border);
     background: var(--tab-bg);
 }
 
@@ -113,7 +60,8 @@
 
 .ec-base-tab.typeNav .menu li a {
     min-height: var(--tab-height);
-    border: var(--border-width-1) solid var(--tab-border);
+    padding: var(--tab-padding-y) var(--tab-padding-x);
+    border: var(--tab-border-width) solid var(--tab-border);
     border-bottom: 0;
     color: var(--tab-color);
     background: var(--tab-bg);
@@ -136,11 +84,11 @@
     content: "";
     display: block;
     position: absolute;
-    bottom: -1px;
-    left: 0;
-    right: 0;
-    width: 100%;
+    bottom: calc(var(--tab-border-width) * -1);
+    left: var(--tab-underline-inset);
+    right: var(--tab-underline-inset);
     height: var(--tab-underline-height);
+    border-radius: var(--radius-pill);
     background: var(--tab-underline);
 }
 
@@ -164,7 +112,6 @@
 .ec-base-tab.typeMenu li {
     height: auto;
     white-space: nowrap;
-    float: none;
 }
 
 .ec-base-tab.typeMenu li a {
@@ -179,21 +126,22 @@
     min-height: var(--chip-height);
     margin: 0;
     padding: var(--chip-padding-y) var(--chip-padding-x);
-    border: var(--border-width-1) solid var(--chip-border);
+    border: var(--form-field-border-width) solid var(--chip-border);
     border-radius: var(--chip-radius);
     color: var(--chip-color);
     background: var(--chip-bg);
     font-family: var(--chip-font-family);
     font-size: var(--chip-font-size);
     font-weight: var(--chip-font-weight);
-    line-height: 1;
+    line-height: var(--chip-line-height);
+    letter-spacing: var(--chip-letter-spacing);
     white-space: nowrap;
     box-sizing: border-box;
     transition: var(--tab-transition);
 }
 
 .ec-base-tab.typeMenu .button:hover {
-    border-color: var(--chip-border-active);
+    border-color: var(--chip-border-hover);
     color: var(--chip-color-hover);
     background: var(--chip-bg-hover);
 }
@@ -223,12 +171,12 @@
 .ec-base-tab.typeMenu ul>li .iconWrap:after {
     content: "";
     position: absolute;
-    top: -24px;
-    right: 15px;
+    top: calc(var(--space-24) * -1);
+    right: calc(var(--space-12) + calc(var(--form-field-border-width) * 3));
     display: inline-block;
-    width: 7px;
-    height: 7px;
-    border: var(--border-width-1) solid var(--tab-muted-color);
+    width: calc(var(--space-4) + calc(var(--form-field-border-width) * 3));
+    height: calc(var(--space-4) + calc(var(--form-field-border-width) * 3));
+    border: var(--form-field-border-width) solid var(--tab-muted-color);
     border-left: 0;
     border-bottom: 0;
     transform: rotate(45deg)
@@ -237,10 +185,10 @@
 .ec-base-tab.typeMenu ul>li>ul,
 .ec-base-tab.typeMenu ul>li>ul>li ul {
     position: absolute;
-    top: 35px;
+    top: calc(var(--space-32) + calc(var(--form-field-border-width) * 3));
     left: 0;
     display: inline-block;
-    border: var(--border-width-1) solid var(--tab-border);
+    border: var(--form-field-border-width) solid var(--tab-border);
     border-radius: var(--tab-radius);
     padding: var(--space-12) 0 var(--space-12) var(--space-16);
     background-color: var(--tab-bg);
@@ -249,7 +197,7 @@
 
 .ec-base-tab.typeMenu ul>li>ul>li {
     position: static;
-    padding-right: 50px;
+    padding-right: var(--space-48);
 }
 
 .ec-base-tab.typeMenu ul>li>ul>li .button {
@@ -257,17 +205,17 @@
 }
 
 .ec-base-tab.typeMenu ul>li>ul>li .iconWrap:after {
-    top: -19px;
-    right: -30px;
+    top: calc((var(--space-16) + calc(var(--form-field-border-width) * 3)) * -1);
+    right: calc((var(--space-24) + var(--space-4) + calc(var(--form-field-border-width) * 2)) * -1);
 }
 
 .ec-base-tab.typeMenu ul>li>ul>li ul {
-    top: -1px;
+    top: calc(var(--form-field-border-width) * -1);
     left: 100%;
 }
 
 .ec-base-tab.typeMenu ul>li>ul>li ul>li {
-    padding-right: 50px;
+    padding-right: var(--space-48);
 }
 
 .ec-base-tab.typeMenu ul>li>ul {
@@ -300,7 +248,7 @@
 }
 
 .ec-base-tab.gScroll::-webkit-scrollbar {
-    height: 4px;
+    height: var(--space-4);
 }
 
 .ec-base-tab.gScroll::-webkit-scrollbar-track {
@@ -319,7 +267,7 @@
     /* typeNav */
     .ec-base-tab.typeNav .menu {
         display: flex;
-        border-bottom: var(--border-width-1) solid var(--tab-border);
+        border-bottom: var(--tab-border-width) solid var(--tab-border);
     }
 
     .ec-base-tab.typeNav .menu li {
@@ -328,7 +276,7 @@
 
     .ec-base-tab.typeNav .menu li a {
         height: 100%;
-        padding: 16px 8px;
+        padding: var(--tab-padding-y) var(--space-8);
         box-sizing: border-box;
         display: flex;
         align-items: center;
@@ -337,7 +285,7 @@
 
     .ec-base-tab.typeNav .menu li a .count {
         align-self: flex-end;
-        padding-left: 3px;
+        padding-left: var(--space-4);
     }
 
     .ec-base-tab.typeMenu {
@@ -363,8 +311,8 @@
     }
 
     .ec-base-tab.typeMenu li a.button {
-        padding-top: 12px;
-        padding-bottom: 11px;
+        padding-top: var(--space-12);
+        padding-bottom: var(--space-12);
     }
 
     .ec-base-tab.typeMenu ul>li .iconWrap {
@@ -377,17 +325,16 @@
 
     /* typeNav */
     .ec-base-tab.typeNav .menu {
-        margin: 0 0 20px;
+        margin: 0 0 var(--space-24);
     }
 
-    .ec-base-tab.typeNav .menu li {
-        float: left;
-        margin-left: -1px;
+    .ec-base-tab.typeNav .menu li { display:inline-flex; align-items:center;
+        margin-left: 0;
     }
 
     .ec-base-tab.typeNav .menu li a {
-        min-width: 218px;
-        padding: 16px 20px;
+        min-width: calc((var(--space-96) * 2) + var(--space-24) + calc(var(--form-field-border-width) * 2));
+        padding: var(--tab-padding-y) var(--tab-padding-x);
     }
 }
 
@@ -399,7 +346,6 @@
 .ec-base-tab.gFlex .menu>li {
     display: flex;
     align-items: center;
-    float: none;
     flex: 1;
     position: relative;
     margin-left: 0;

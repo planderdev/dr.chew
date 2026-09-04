@@ -1,39 +1,37 @@
-a.xans-search-form { margin:0 0 20px; }
+a.xans-search-form { margin: 0 0 var(--space-24); }
 
 /* .searchbox */
-.xans-search-form .searchbox { margin:21px 0 20px; padding:45px 0; background:#fff; }
-.xans-search-form .searchbox fieldset { width:486px; margin:0 auto; padding:0 47px; }
-.xans-search-form .searchbox .item { margin:8px 0 0; color:#353535; line-height:20px; }
-.xans-search-form .searchbox .item:after { content:""; display:block; clear:both; }
-.xans-search-form .searchbox .item strong { float:left; width:75px; padding:5px 10px 0 0; }
-.xans-search-form .searchbox .item input { padding:5px 4px 5px 10px; }
-.xans-search-form .searchbox .popular { margin:6px 0 0 86px; font-size:11px; line-height:18px; }
-.xans-search-form .searchbox .popular.xans-search-hotkeyword { margin-bottom:17px; }
-.xans-search-form .searchbox .popular:after { content:""; display:block; clear:both; }
-.xans-search-form .searchbox .popular strong { float:left; min-width:55px; padding:0 10px 0 0; color:#6b6b6b; }
-.xans-search-form .searchbox .popular p a { margin:0 3px 0 0; padding:0 0 0 8px; color:#757575; background:url("//img.echosting.cafe24.com/skin/base/product/bg_popular_search.gif") no-repeat 0 3px; }
-.xans-search-form .searchbox .popular p a:first-child { padding-left:0; background:none; }
-.xans-search-form .searchbox .popular a:hover { color:#fe7b05; text-decoration:none; }
-.xans-search-form .searchbox .button { margin:30px 0 0 170px;}
-.xans-search-form .noData { padding:50px 0; text-align:center; line-height:1.8em; }
-.xans-search-form .noData > strong { display:block; color:#000; }
-.xans-search-form .noData > strong.warning { display:block; color:#008bcc; }
-.xans-search-form .noData ul { margin:10px 0 0; }
+.xans-search-form .searchbox { margin: var(--space-24) 0 var(--space-24); padding: var(--space-48) 0; background:var(--bg-0); }
+.xans-search-form .searchbox fieldset { width: calc((var(--space-96) * 5) + var(--space-4) + calc(var(--form-field-border-width) * 2)); margin: 0 auto; padding: 0 var(--space-48); }
+.xans-search-form .searchbox .item { display:flex; align-items:center; margin: var(--space-8) 0 0; color:var(--text-muted-strong); line-height: calc(var(--space-16) + var(--space-4)); }
+.xans-search-form .searchbox .item strong { display:inline-flex; align-items:center; width: calc(var(--space-64) + var(--space-8) + calc(var(--form-field-border-width) * 3)); padding: var(--space-4) var(--space-12) 0 0; }
+.xans-search-form .searchbox .item input { padding: var(--space-4) var(--space-4) var(--space-4) var(--space-12); }
+.xans-search-form .searchbox .popular { display:flex; align-items:center; margin: var(--space-8) 0 0 var(--space-96); font-size: var(--caption-2-size); line-height: calc(var(--space-16) + calc(var(--form-field-border-width) * 2)); }
+.xans-search-form .searchbox .popular.xans-search-hotkeyword { margin-bottom: var(--space-16); }
+.xans-search-form .searchbox .popular strong { display:inline-flex; align-items:center; min-width: calc(var(--space-48) + var(--space-4) + calc(var(--form-field-border-width) * 3)); padding: 0 var(--space-12) 0 0; color:var(--text-weak); }
+.xans-search-form .searchbox .popular p a { margin: 0 var(--space-4) 0 0; padding: 0 0 0 var(--space-8); color:var(--text-weak); background:var(--icon-url-search) no-repeat 0 calc(var(--form-field-border-width) * 3); }
+.xans-search-form .searchbox .popular p a:first-child { padding-left: 0; background:none; }
+.xans-search-form .searchbox .popular a:hover { color:var(--support-warning); text-decoration:none; }
+.xans-search-form .searchbox .button { margin: var(--space-32) 0 0 var(--space-96);}
+.xans-search-form .noData { padding: var(--space-48) 0; text-align:center; line-height: var(--body-line-height); }
+.xans-search-form .noData > strong { display:block; color:var(--text-main); }
+.xans-search-form .noData > strong.warning { display:block; color:var(--support-info); }
+.xans-search-form .noData ul { margin: var(--space-12) 0 0; }
 
 /* Input Size */
-.xans-search-form .searchbox select { height:30px; }
+.xans-search-form .searchbox select { height: calc(var(--space-24) + var(--space-4) + calc(var(--form-field-border-width) * 2)); }
 .xans-search-form .searchbox #category_no,
-.xans-search-form .searchbox #order_by { width:400px; }
-.xans-search-form .searchbox #search_type { width:120px; }
-.xans-search-form .searchbox #keyword { width:260px; }
-.xans-search-form .searchbox #exceptkeyword { width:200px; padding:5px 4px 5px 10px; }
-.xans-search-form .searchbox #product_price1 { width:170px; margin:0 5px 0 0; }
-.xans-search-form .searchbox #product_price2 { width:170px; margin:0 0 0 5px; }
+.xans-search-form .searchbox #order_by { width: calc((var(--space-96) * 4) + var(--space-16)); }
+.xans-search-form .searchbox #search_type { width: calc(var(--space-96) + var(--space-24)); }
+.xans-search-form .searchbox #keyword { width: calc((var(--space-96) * 2) + var(--space-64) + var(--space-4)); }
+.xans-search-form .searchbox #exceptkeyword { width: calc((var(--space-96) * 2) + var(--space-8)); padding: var(--space-4) var(--space-4) var(--space-4) var(--space-12); }
+.xans-search-form .searchbox #product_price1 { width: calc(var(--space-96) + var(--space-64) + var(--space-8) + calc(var(--form-field-border-width) * 2)); margin: 0 var(--space-4) 0 0; }
+.xans-search-form .searchbox #product_price2 { width: calc(var(--space-96) + var(--space-64) + var(--space-8) + calc(var(--form-field-border-width) * 2)); margin: 0 0 0 var(--space-4); }
 
 /* searchResult */
-.xans-search-form .searchResult { overflow:hidden; border:1px solid #d7d5d5; text-align:right; line-height:38px; }
-.xans-search-form .searchResult .record { float:left; padding:0 0 0 8px; color:#008bcc; }
-.xans-search-form .searchResult .listType { display:inline; margin:0 4px 0 0; }
-.xans-search-form .searchResult .listType li { display:inline; padding:0 6px 0 10px; color:#2e2e2e; cursor:pointer; background:url("//img.echosting.cafe24.com/skin/base/product/bg_result_type.gif") no-repeat 0 50%; }
-.xans-search-form .searchResult .listType li:hover { color:#008bcc; text-decoration:none; }
+.xans-search-form .searchResult { overflow:hidden; border: var(--form-field-border-width) solid var(--line-default); text-align:right; line-height: calc(var(--space-32) + var(--space-4) + calc(var(--form-field-border-width) * 2)); }
+.xans-search-form .searchResult .record { display:inline-flex; align-items:center; padding: 0 0 0 var(--space-8); color:var(--support-info); }
+.xans-search-form .searchResult .listType { display:inline; margin: 0 var(--space-4) 0 0; }
+.xans-search-form .searchResult .listType li { display:inline; padding: 0 var(--space-8) 0 var(--space-12); color:var(--line-strong); cursor:pointer; background: none; }
+.xans-search-form .searchResult .listType li:hover { color:var(--support-info); text-decoration:none; }
 .xans-search-form .searchResult .listType li:first-child { background:none; }

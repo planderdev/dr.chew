@@ -1,78 +1,4 @@
 /* Font */
-:root {
-    /* Form - Input & Status */
-    --form-font-family: var(--font-body);
-    --form-label-font-size: var(--body-3-size);
-    --form-label-line-height: var(--body-line-height);
-    --form-label-color: var(--text-main);
-    --form-field-height: 44px;
-    --form-field-padding-x: var(--space-12);
-    --form-field-padding-y: var(--space-8);
-    --form-field-radius: var(--radius-sm);
-    --form-field-border-width: var(--border-width-1);
-    --form-field-border: var(--line-weak);
-    --form-field-border-hover: var(--line-strong);
-    --form-field-border-focus: var(--brand-primary);
-    --form-field-bg: var(--bg-0);
-    --form-field-bg-disabled: var(--bg-100);
-    --form-field-text: var(--text-main);
-    --form-field-placeholder: var(--text-weak);
-    --form-field-disabled-text: var(--text-weak);
-    --form-helper-color: var(--text-weak);
-    --form-helper-font-size: var(--caption-2-size);
-    --form-helper-line-height: var(--line-height-140);
-    --form-status-error: var(--error);
-    --form-status-success: var(--success);
-    --form-status-warning: var(--warning);
-    --form-focus-shadow: 0 0 0 3px rgba(215, 59, 80, 0.16);
-    --form-transition: border-color var(--motion-fast) var(--motion-ease), box-shadow var(--motion-fast) var(--motion-ease), background-color var(--motion-fast) var(--motion-ease), color var(--motion-fast) var(--motion-ease);
-    --form-qty-control-size: 32px;
-
-    /* Selection Controls */
-    --selection-size: 20px;
-    --selection-touch-min: 44px;
-    --selection-border-width: var(--border-width-1);
-    --selection-border: var(--line-weak);
-    --selection-border-hover: var(--line-strong);
-    --selection-border-selected: var(--brand-primary);
-    --selection-bg: var(--bg-0);
-    --selection-bg-selected: var(--brand-primary);
-    --selection-check-color: var(--color-white);
-    --selection-disabled-bg: var(--bg-100);
-    --selection-disabled-border: var(--line-weak);
-    --selection-disabled-color: var(--icon-weak);
-    --selection-label-color: var(--text-main);
-    --selection-label-gap: var(--space-8);
-    --selection-group-gap: var(--space-16);
-    --selection-focus-shadow: var(--form-focus-shadow);
-    --selection-transition: border-color var(--motion-fast) var(--motion-ease), background-color var(--motion-fast) var(--motion-ease), box-shadow var(--motion-fast) var(--motion-ease), color var(--motion-fast) var(--motion-ease);
-
-    /* Shared UI Utilities */
-    --ui-icon-color: var(--icon-main);
-    --ui-icon-color-inverse: var(--color-white);
-    --ui-hidden-font-size: 1px;
-    --ui-legacy-font-size-11: 11px;
-    --ui-title-color: var(--text-main);
-    --ui-title-bg-muted: var(--bg-100);
-    --ui-title-main-size-mobile: var(--headline-4-size-ko);
-    --ui-title-main-size-pc: var(--headline-1-size-ko);
-    --ui-title-sub-size: var(--title-4-size);
-    --ui-title-desc-size-mobile: var(--caption-2-size);
-    --ui-title-desc-size-pc: var(--caption-1-size);
-    --ui-title-desc-color: var(--text-sub);
-    --ui-list-color: var(--text-weak);
-    --ui-breadcrumb-font-size: var(--caption-2-size);
-    --ui-breadcrumb-color: var(--text-weak);
-    --ui-breadcrumb-current-color: var(--text-main);
-    --ui-breadcrumb-display: none;
-    --ui-step-font-size: var(--body-3-size);
-    --ui-step-color: var(--text-weak);
-    --ui-step-current-color: var(--text-main);
-    --ui-step-divider-color: var(--line-weak);
-    --ui-option-layer-scrim: rgba(10, 10, 10, 0.25);
-    --ui-transition: background-color var(--motion-base) var(--motion-ease), border-color var(--motion-base) var(--motion-ease), color var(--motion-base) var(--motion-ease);
-}
-
 .txtInfo,
 .txtHelp {
     color: var(--form-helper-color);
@@ -84,29 +10,29 @@
 
 p.txtInfo,
 ul.txtInfo {
-    margin: 10px 0 0;
+    margin: var(--space-12) 0 0;
 }
 
 span.txtInfo {
-    margin-left: 10px;
+    margin-left: var(--space-12);
 }
 
 p.txtInfo.typeDot,
 .txtInfo.typeDot li {
     position: relative;
-    padding: 0 0 0 14px;
+    padding: 0 0 0 var(--space-16);
 }
 
 p.txtInfo.typeDot:before,
 .txtInfo.typeDot li:before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: var(--space-8);
     left: 0;
     display: inline-block;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
+    width: var(--space-4);
+    height: var(--space-4);
+    border-radius: var(--radius-pill);
     background: var(--form-helper-color);
 }
 
@@ -120,7 +46,7 @@ p.txtInfo.typeDot:before,
 
 p.txtList,
 ul.txtList {
-    margin: 10px 0 0;
+    margin: var(--space-12) 0 0;
 }
 
 .txtWarn,
@@ -130,11 +56,11 @@ ul.txtList {
 }
 
 .txtEm {
-    color: var(--font-color-primary);
+    color: var(--brand-primary);
 }
 
 .txtSecondary {
-    color: var(--font-color-secondary);
+    color: var(--brand-light);
 }
 
 .txtSuccess,
@@ -151,28 +77,28 @@ ul.txtList {
 .strike,
 .discount {
     text-decoration: line-through;
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
 }
 
 .strike strong,
 .discount strong {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
 }
 
 .txtNormal {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
     font-style: normal;
 }
 
 .txtNum {
     display: inline-block;
-    font-size: var(--ui-legacy-font-size-11);
+    font-size: var(--caption-2-size);
     color: var(--text-weak);
     word-break: normal;
 }
 
 .txt11 {
-    font-size: var(--ui-legacy-font-size-11);
+    font-size: var(--caption-2-size);
 }
 
 .txt12 {
@@ -230,53 +156,54 @@ html:lang(zh-tw) .txt11 {
 /* grid */
 .gBlank5 {
     display: block;
-    margin-top: 5px;
+    margin-top: var(--space-4);
 }
 
 .gBlank10 {
     display: block;
-    margin-top: 10px;
+    margin-top: var(--space-12);
 }
 
 .gBlank15 {
     display: block;
-    margin-top: 15px;
+    margin-top: var(--space-16);
 }
 
 .gBlank20 {
     display: block;
-    margin-top: 20px;
+    margin-top: var(--space-24);
 }
 
 .gBlank30 {
     display: block;
-    margin-top: 30px;
+    margin-top: var(--space-32);
 }
 
 .gIndent10 {
-    margin-left: 10px;
+    margin-left: var(--space-12);
 }
 
 .gIndent20 {
-    margin-left: 20px;
+    margin-left: var(--space-24);
 }
 
 .gSpace10 {
-    margin-right: 10px;
+    margin-right: var(--space-12);
 }
 
 .gSpace20 {
-    margin-right: 20px;
+    margin-right: var(--space-24);
 }
 
 .gMerge {
     position: relative;
     z-index: 1;
-    margin-top: -1px;
+    margin-top: 0;
 }
 
 /* svg icon */
-svg.icon {
+svg.icon,
+img.ds-icon {
     display: block;
 }
 
@@ -285,12 +212,12 @@ svg.icon {
     display: block;
     position: relative;
     overflow: hidden;
-    width: 15px;
-    height: 15px;
+    width: calc(var(--space-12) + calc(var(--form-field-border-width) * 3));
+    height: calc(var(--space-12) + calc(var(--form-field-border-width) * 3));
     margin: 0 auto;
-    font-size: var(--ui-hidden-font-size);
-    line-height: 0;
-    color: transparent;
+    font-size: var(--caption-2-size);
+    line-height: var(--line-height-hidden);
+    color: var(--overlay-transparent);
     white-space: nowrap;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -300,9 +227,9 @@ svg.icon {
     content: "";
     position: absolute;
     top: 0;
-    right: 7px;
-    width: 1px;
-    height: 15px;
+    right: calc(var(--space-4) + calc(var(--form-field-border-width) * 3));
+    width: var(--form-field-border-width);
+    height: calc(var(--space-12) + calc(var(--form-field-border-width) * 3));
     background: var(--ui-icon-color);
     -webkit-transition: var(--ui-transition);
     transition: var(--ui-transition);
@@ -311,10 +238,10 @@ svg.icon {
 .icon.icoClose:after {
     content: "";
     position: absolute;
-    top: 7px;
+    top: calc(var(--space-4) + calc(var(--form-field-border-width) * 3));
     right: 0;
-    width: 15px;
-    height: 1px;
+    width: calc(var(--space-12) + calc(var(--form-field-border-width) * 3));
+    height: var(--form-field-border-width);
     background: var(--ui-icon-color);
     -webkit-transition: var(--ui-transition);
     transition: var(--ui-transition);
@@ -328,12 +255,12 @@ svg.icon {
 .icon[class*="icoArrow"] {
     display: inline-block;
     overflow: hidden;
-    width: 8px;
-    height: 8px;
+    width: var(--space-8);
+    height: var(--space-8);
     text-indent: 120%;
     white-space: nowrap;
-    border-left: var(--border-width-1) solid var(--ui-icon-color);
-    border-bottom: var(--border-width-1) solid var(--ui-icon-color);
+    border-left: var(--form-field-border-width) solid var(--ui-icon-color);
+    border-bottom: var(--form-field-border-width) solid var(--ui-icon-color);
     -webkit-transition: var(--ui-transition);
     transition: var(--ui-transition);
 }
@@ -364,51 +291,51 @@ svg.icon {
 
 .icon.icoNav {
     display: block;
-    width: 20px;
-    height: 2px;
+    width: calc(var(--space-16) + var(--space-4));
+    height: calc(var(--form-field-border-width) * 2);
     color: var(--ui-icon-color);
-    background: currentColor;
-    box-shadow: 0 14px 0;
-    margin: -8px auto 0;
+    background: var(--icon-current);
+    box-shadow: var(--shadow-lv1);
+    margin: calc(var(--space-8) * -1) auto 0;
     position: relative;
 }
 
 .icon.icoNav:before {
     content: "";
     position: absolute;
-    top: 7px;
+    top: calc(var(--space-4) + calc(var(--form-field-border-width) * 3));
     left: 0;
-    width: 20px;
-    height: 2px;
-    background: currentColor;
+    width: calc(var(--space-16) + var(--space-4));
+    height: calc(var(--form-field-border-width) * 2);
+    background: var(--icon-current);
 }
 
 .icon.icoUser {
     overflow: hidden;
     display: inline-block;
-    width: 22px;
-    height: 22px;
-    border-bottom: var(--border-width-2) solid var(--ui-icon-color);
+    width: calc(var(--space-16) + var(--space-4) + calc(var(--form-field-border-width) * 2));
+    height: calc(var(--space-16) + var(--space-4) + calc(var(--form-field-border-width) * 2));
+    border-bottom: calc(var(--form-field-border-width) * 2) solid var(--ui-icon-color);
     box-sizing: border-box;
 }
 
 .icon.icoUser:before {
     content: "";
     display: block;
-    width: 6px;
-    height: 6px;
-    margin: 0 auto 1px;
-    border-radius: 50%;
-    border: var(--border-width-2) solid var(--ui-icon-color);
+    width: calc(var(--space-4) + calc(var(--form-field-border-width) * 2));
+    height: calc(var(--space-4) + calc(var(--form-field-border-width) * 2));
+    margin: 0 auto 0;
+    border-radius: var(--radius-pill);
+    border: calc(var(--form-field-border-width) * 2) solid var(--ui-icon-color);
 }
 
 .icon.icoUser:after {
     content: "";
     display: block;
-    width: 18px;
-    height: 16px;
-    border-radius: 50%;
-    border: var(--border-width-2) solid var(--ui-icon-color);
+    width: calc(var(--space-16) + calc(var(--form-field-border-width) * 2));
+    height: var(--space-16);
+    border-radius: var(--radius-pill);
+    border: calc(var(--form-field-border-width) * 2) solid var(--ui-icon-color);
 }
 
 /* Form */
@@ -421,7 +348,7 @@ input[type=url],
 input[type=number],
 .fText {
     height: var(--form-field-height);
-    line-height: calc(var(--form-field-height) - (var(--form-field-border-width) * 2));
+    line-height: calc(var(--form-field-height) - calc(var(--form-field-border-width) * 2));
     padding: 0 var(--form-field-padding-x);
     border: var(--form-field-border-width) solid var(--form-field-border);
     border-radius: var(--form-field-radius);
@@ -515,14 +442,14 @@ textarea[readonly],
 
 textarea,
 .fTextarea {
-    min-height: 120px;
+    min-height: calc(var(--space-96) + var(--space-24));
     padding: var(--form-field-padding-y) var(--form-field-padding-x);
     border: var(--form-field-border-width) solid var(--form-field-border);
     border-radius: var(--form-field-radius);
     color: var(--form-field-text);
     font-family: var(--form-font-family);
     font-size: var(--body-3-size);
-    line-height: var(--line-height-150);
+    line-height: var(--body-line-height);
     letter-spacing: var(--body-letter-spacing);
     box-sizing: border-box;
     outline: 0;
@@ -568,7 +495,7 @@ input[type="file"]::-webkit-file-upload-button {
     font-size: var(--body-3-size);
     font-weight: var(--font-weight-medium);
     color: var(--text-main);
-    border: var(--border-width-1) solid var(--line-strong);
+    border: var(--form-field-border-width) solid var(--line-strong);
     border-radius: var(--form-field-radius);
     background: var(--bg-0);
     box-sizing: border-box;
@@ -581,7 +508,7 @@ input[type="file"]::-webkit-file-upload-button {
 select {
     max-width: 100%;
     height: var(--form-field-height);
-    padding: 0 36px 0 var(--form-field-padding-x);
+    padding: 0 var(--space-32) 0 var(--form-field-padding-x);
     font-family: var(--form-font-family);
     font-size: var(--body-3-size);
     letter-spacing: var(--body-letter-spacing);
@@ -590,8 +517,8 @@ select {
     border-radius: var(--form-field-radius);
     box-sizing: border-box;
     outline: 0;
-    background: var(--form-field-bg) url("//img.echosting.cafe24.com/skin/skin/common/ico_select.png") no-repeat right var(--space-12) center;
-    background-size: 14px 8px;
+    background: var(--form-field-bg) var(--icon-url-notice) no-repeat right var(--space-12) center;
+    background-size: calc(var(--space-12) + calc(var(--form-field-border-width) * 2)) var(--space-8);
     transition: var(--form-transition);
 }
 
@@ -610,7 +537,7 @@ input[type="radio"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     border: var(--selection-border-width) solid var(--selection-border);
-    border-radius: 50%;
+    border-radius: var(--radius-pill);
     background: var(--selection-bg);
     outline: 0;
     box-sizing: border-box;
@@ -619,7 +546,7 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
     border-color: var(--selection-border-selected);
-    background: radial-gradient(circle at center, var(--selection-bg-selected) 0 43%, transparent 47%);
+    background: radial-gradient(circle at center, var(--selection-bg-selected) 0 43%, var(--overlay-transparent) 47%);
 }
 
 input[type="radio"]:not(:disabled):hover {
@@ -654,7 +581,7 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     border: var(--selection-border-width) solid var(--selection-border);
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     background: var(--selection-bg);
     outline: 0;
     box-sizing: border-box;
@@ -669,12 +596,12 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:checked:after {
     content: "";
     position: absolute;
-    top: 2px;
-    left: 6px;
-    width: 5px;
-    height: 10px;
+    top: calc(var(--form-field-border-width) * 2);
+    left: calc(var(--space-4) + calc(var(--form-field-border-width) * 2));
+    width: calc(var(--space-4) + var(--form-field-border-width));
+    height: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
     border: solid var(--selection-check-color);
-    border-width: 0 2px 2px 0;
+    border-width: 0 calc(var(--form-field-border-width) * 2) calc(var(--form-field-border-width) * 2) 0;
     transform: rotate(45deg);
 }
 
@@ -763,21 +690,21 @@ select.is-warning,
 legend {
     visibility: hidden;
     position: absolute;
-    left: -9999px;
-    top: -9999px;
+    left: calc(((var(--space-96) * 104) + var(--space-12) + calc(var(--form-field-border-width) * 3)) * -1);
+    top: calc(((var(--space-96) * 104) + var(--space-12) + calc(var(--form-field-border-width) * 3)) * -1);
     width: 0;
     height: 0;
-    line-height: 0;
+    line-height: var(--line-height-hidden);
 }
 
 table tr.radioType input,
 span.noBorder input {
-    border: none !important;
-    width: auto !important;
-    height: auto !important;
-    margin: 0 3px 0 0 !important;
-    vertical-align: middle !important;
-    background: none !important;
+    border: none;
+    width: auto;
+    height: auto;
+    margin: 0 var(--space-4) 0 0;
+    vertical-align: middle;
+    background: none;
 }
 
 .gLabel {
@@ -867,9 +794,9 @@ span.noBorder input {
 .path {
     display: var(--ui-breadcrumb-display);
     overflow: hidden;
-    margin: 20px 0 0;
-    height: 50px;
-    line-height: 30px;
+    margin: var(--space-24) 0 0;
+    height: calc(var(--space-48) + calc(var(--form-field-border-width) * 2));
+    line-height: calc(var(--space-24) + var(--space-4) + calc(var(--form-field-border-width) * 2));
 }
 
 .path span {
@@ -881,8 +808,7 @@ span.noBorder input {
     text-indent: 100%;
 }
 
-.path ol {
-    float: right;
+.path ol { margin-left: auto; display:inline-flex; align-items:center;
 }
 
 .path li {
@@ -892,7 +818,7 @@ span.noBorder input {
 .path li:not(:first-child):before {
     content: "/";
     display: inline-block;
-    margin: 0 4px 0 2px;
+    margin: 0 var(--space-4) 0 var(--space-4);
     color: var(--ui-breadcrumb-color);
     vertical-align: top;
 }
@@ -959,19 +885,19 @@ span.noBorder input {
 .ec-base-qty {
     position: relative;
     display: inline-block;
-    width: 104px;
+    width: calc(var(--space-96) + var(--space-8));
     padding: 0 var(--form-qty-control-size);
     vertical-align: top;
     box-sizing: border-box;
 }
 
 .ec-base-qty input[type="text"] {
-    width: 40px;
+    width: calc(var(--space-32) + var(--space-8));
     height: var(--form-qty-control-size);
     padding: 0;
-    line-height: calc(var(--form-qty-control-size) - (var(--border-width-1) * 2));
-    margin-left: -1px;
-    border: var(--border-width-1) solid var(--form-field-border);
+    line-height: calc(var(--form-qty-control-size) - calc(var(--form-field-border-width) * 2));
+    margin-left: 0;
+    border: var(--form-field-border-width) solid var(--form-field-border);
     border-radius: 0;
     text-align: center;
     box-shadow: none;
@@ -1007,14 +933,14 @@ span.noBorder input {
 .ec-base-qty a {
     width: var(--form-qty-control-size);
     height: var(--form-qty-control-size);
-    border: var(--border-width-1) solid var(--form-field-border);
+    border: var(--form-field-border-width) solid var(--form-field-border);
     box-sizing: border-box;
     overflow: hidden;
     white-space: nowrap;
     text-indent: 150%;
-    color: transparent;
-    font-size: var(--ui-hidden-font-size);
-    line-height: var(--ui-hidden-font-size);
+    color: var(--overlay-transparent);
+    font-size: var(--caption-2-size);
+    line-height: var(--control-line-height);
     background: var(--form-field-bg);
     transition: var(--form-transition);
 }
@@ -1024,9 +950,9 @@ span.noBorder input {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 9px;
-    height: 1px;
-    margin-left: -4px;
+    width: calc(var(--space-8) + var(--form-field-border-width));
+    height: var(--form-field-border-width);
+    margin-left: calc(var(--space-4) * -1);
     background: var(--icon-main);
 }
 
@@ -1035,9 +961,9 @@ span.noBorder input {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 1px;
-    height: 9px;
-    margin: -4px 0 0 0;
+    width: var(--form-field-border-width);
+    height: calc(var(--space-8) + var(--form-field-border-width));
+    margin: calc(var(--space-4) * -1) 0 0 0;
     background: var(--icon-main);
 }
 
@@ -1067,7 +993,7 @@ span.noBorder input {
 
 /* ec-base-step */
 .ec-base-step {
-    margin: 40px 0 50px;
+    margin: var(--space-48) 0 var(--space-48);
     text-align: center;
 }
 
@@ -1080,11 +1006,11 @@ span.noBorder input {
 .ec-base-step li:not(:last-child):after {
     content: "";
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: var(--space-8);
+    height: var(--space-8);
     vertical-align: middle;
-    border-left: var(--border-width-1) solid var(--ui-step-divider-color);
-    border-bottom: var(--border-width-1) solid var(--ui-step-divider-color);
+    border-left: var(--form-field-border-width) solid var(--ui-step-divider-color);
+    border-bottom: var(--form-field-border-width) solid var(--ui-step-divider-color);
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
@@ -1096,11 +1022,11 @@ span.noBorder input {
 /********************* Mobile *********************/
 @media all and (max-width:767px) {
     .gInnerMargin {
-        margin: 0 16px;
+        margin: 0 var(--space-16);
     }
 
     .titleArea {
-        margin: 40px 16px 30px;
+        margin: var(--space-48) var(--space-16) var(--space-32);
     }
 }
 
@@ -1126,7 +1052,7 @@ span.noBorder input {
 
     .titleArea--middle {
         margin: 0;
-        padding: 27px 16px 12px;
+        padding: var(--space-24) var(--space-16) var(--space-12);
         text-align: left;
         background: var(--ui-title-bg-muted);
     }
@@ -1147,17 +1073,17 @@ span.noBorder input {
         margin: 0;
         opacity: 0;
         overflow: hidden;
-        width: 1px;
-        height: 1px;
-        font-size: var(--ui-hidden-font-size);
-        line-height: 1px;
+        width: var(--form-field-border-width);
+        height: var(--form-field-border-width);
+        font-size: var(--caption-2-size);
+        line-height: var(--control-line-height);
         white-space: nowrap;
-        color: transparent;
+        color: var(--overlay-transparent);
         text-indent: 150%;
     }
 
     .ec-base-step li:not(:last-child):after {
-        margin: -2px 15px 0;
+        margin: calc(var(--space-4) * -1) var(--space-16) 0;
     }
 
 }
@@ -1165,26 +1091,26 @@ span.noBorder input {
 /********************* Tablet *********************/
 @media all and (min-width:768px) and (max-width:1000px) {
     .gInnerMargin {
-        margin: 0 24px;
+        margin: 0 var(--space-24);
     }
 
     .titleArea {
-        margin: 40px 24px 30px;
+        margin: var(--space-48) var(--space-24) var(--space-32);
     }
 
     .titleArea--middle {
         margin: 0;
     }
 
-    .path {
-        margin: 0 24px;
+    .path { display:flex; align-items:center;
+        margin: 0 var(--space-24);
     }
 }
 
 /********************* PC *********************/
 @media all and (min-width:1001px) {
     .titleArea {
-        margin: 45px 0 40px;
+        margin: var(--space-48) 0 var(--space-48);
         text-align: center;
     }
 
@@ -1201,7 +1127,7 @@ span.noBorder input {
     }
 
     .titleArea--middle {
-        margin: 50px 0 20px;
+        margin: var(--space-48) 0 var(--space-24);
         text-align: left;
     }
 
@@ -1212,7 +1138,7 @@ span.noBorder input {
     }
 
     .titleArea.titleArea--myshop {
-        margin: 50px 0 20px;
+        margin: var(--space-48) 0 var(--space-24);
         text-align: left;
     }
 
@@ -1228,14 +1154,14 @@ span.noBorder input {
     }
 
     .titleArea ul {
-        padding: 5px 0;
+        padding: var(--space-4) 0;
         color: var(--ui-list-color);
-        line-height: 18px;
+        line-height: calc(var(--space-16) + calc(var(--form-field-border-width) * 2));
     }
 
     .titleArea ul li {
         position: relative;
-        padding: 0 0 0 9px;
+        padding: 0 0 0 var(--space-8);
     }
 
     .titleArea ul li:before {
@@ -1244,34 +1170,34 @@ span.noBorder input {
         top: 50%;
         left: 0;
         content: "";
-        width: 2px;
-        height: 2px;
-        margin: -2px 0 0 0;
+        width: calc(var(--form-field-border-width) * 2);
+        height: calc(var(--form-field-border-width) * 2);
+        margin: calc(var(--space-4) * -1) 0 0 0;
         background: var(--ui-list-color);
     }
 
     .path+.titleArea {
-        margin-top: 55px;
+        margin-top: var(--space-48);
     }
 
     .ec-base-step li:not(:last-child):after {
-        margin: -2px 30px 0;
+        margin: calc(var(--space-4) * -1) var(--space-32) 0;
     }
 
     /* memberArea */
     .memberArea {
-        max-width: 898px;
+        max-width: calc((var(--space-96) * 9) + var(--space-32) + calc(var(--form-field-border-width) * 2));
         margin: 0 auto;
     }
 
     #capp-shop-new-product-optionselect-layer {
-        position: fixed !important;
-        top: 0 !important;
-        right: 0 !important;
-        left: auto !important;
-        width: 458px !important;
-        height: 100% !important;
-        margin: 0 !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: auto;
+        width: calc((var(--space-96) * 4) + var(--space-64) + var(--space-8) + calc(var(--form-field-border-width) * 2));
+        height: 100%;
+        margin: 0;
     }
 
     #capp-shop-new-product-optionselect-layer>iframe {
@@ -1292,7 +1218,7 @@ span.noBorder input {
     }
 
     #capp-shop-new-product-optionselect-backlayer {
-        width: 100% !important;
+        width: 100%;
         background: var(--text-main);
     }
 

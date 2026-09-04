@@ -1,34 +1,34 @@
 
 
-#infoArea_height { display:none; width:750px; margin:0 0 0 50px; vertical-align:top; }
+#infoArea_height { display:none; width: calc((var(--space-96) * 7) + var(--space-64) + var(--space-12) + calc(var(--form-field-border-width) * 2)); margin: 0 0 0 var(--space-48); vertical-align:top; }
 
 
-#fixed_buy_option { position:fixed; bottom:0px; right:150px; transform:translateY(100%); display:none; width:620px; padding:20px 0 20px 20px; background-color:#fff; z-index:999; box-shadow:0 0 5px rgb(0 0 0 / 10%); transition:transform ease 0.5s; }
+#fixed_buy_option { position:fixed; bottom: 0; right: calc(var(--space-96) + var(--space-48) + var(--space-4) + calc(var(--form-field-border-width) * 2)); transform:translateY(100%); display:none; width: calc((var(--space-96) * 6) + var(--space-32) + var(--space-12)); padding: var(--space-24) 0 var(--space-24) var(--space-24); background-color:var(--bg-0); z-index:999; box-shadow: var(--shadow-lv1); transition:transform ease 0.5s; }
 #fixed_buy_option.on_buy_option { transform:translateY(0%); }
-#fixed_buy_option_in { position:relative; width:100%; }
+#fixed_buy_option_in { position:relative; width: 100%; }
 
-#fixed_buy_option_bt { position:absolute; top:-20px; right:-0px; transform:translateY(-100%); width:110px; padding:10px 20px; background-color:#000; color:#fff; font-size:16px; cursor:pointer; }
+#fixed_buy_option_bt { display:flex; align-items:center; position:absolute; top: calc((var(--space-16) + var(--space-4)) * -1); right: 0; transform:translateY(-100%); width: calc(var(--space-96) + var(--space-12) + calc(var(--form-field-border-width) * 2)); padding: var(--space-12) var(--space-24); background-color:var(--text-main); color:var(--bg-0); font-size: var(--body-1-size); cursor:pointer; }
 #fixed_buy_option_bt span:nth-child(2) { display:none; }
-#fixed_buy_option_bt i { float:right; font-size:25px; }
+#fixed_buy_option_bt i { margin-left: auto; display:inline-flex; align-items:center; font-size: var(--headline-3-size-ko); }
 #fixed_buy_option_bt i.xi-angle-down-min { display:none; }
 #fixed_buy_option.on_buy_option #fixed_buy_option_bt span:nth-child(1) { display:none; }
 #fixed_buy_option.on_buy_option #fixed_buy_option_bt span:nth-child(2) { display:inline-block; }
 #fixed_buy_option.on_buy_option #fixed_buy_option_bt i.xi-angle-up-min { display:none; }
 #fixed_buy_option.on_buy_option #fixed_buy_option_bt i.xi-angle-down-min { display:inline-block; }
 
-#fixed_buy_option_scroll { width:100%; max-height:800px; }  
-#fixed_buy_option_scroll .mCSB_inside>.mCSB_container { margin-right:20px; }
-#fixed_buy_option_scroll .mCSB_scrollTools { opacity:0; width:6px; }
+#fixed_buy_option_scroll { width: 100%; max-height: calc((var(--space-96) * 8) + var(--space-32)); }
+#fixed_buy_option_scroll .mCSB_inside>.mCSB_container { margin-right: var(--space-24); }
+#fixed_buy_option_scroll .mCSB_scrollTools { opacity:0; width: calc(var(--space-4) + calc(var(--form-field-border-width) * 2)); }
 #fixed_buy_option:hover #fixed_buy_option_scroll .mCSB_scrollTools { opacity:1; }
 #fixed_buy_option_scroll .mCSB_draggerRail { display:none; }
-#fixed_buy_option .infoArea { width:100%; margin:0 0 0 0; }
+#fixed_buy_option .infoArea { width: 100%; margin: 0 0 0 0; }
 
 .xans-product-option li a { cursor:pointer; }
 
 
 
 td > span > #span_product_price_text { position:relative; }
-td > span > #span_product_price_text .sale_box { position:absolute; top:50%; right:0; transform:translate(120%,-50%); width:100px; padding:8px 8px; font-size:20px; text-align:center; color:#fff; background-color:#1a1a1a; border-radius:5px; }
+td > span > #span_product_price_text .sale_box { position:absolute; top: 50%; right: 0; transform:translate(120%,-50%); width: calc(var(--space-96) + var(--space-4)); padding: var(--space-8) var(--space-8); font-size: var(--title-2-size); text-align:center; color:var(--bg-0); background-color:var(--text-strong); border-radius: var(--radius-sm); }
 
 
 

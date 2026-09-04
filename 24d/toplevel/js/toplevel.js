@@ -1,32 +1,40 @@
 $(function(){
     
     if ($(document).scrollTop() > 0) {
-    	$("#top_go").fadeIn(300);
+        showScrollButton("#top_go");
     }
     
     if ($(document).scrollTop() < $(document).height()- $(window).height()) {
-        $("#bottom_go").fadeIn(300);
+        showScrollButton("#bottom_go");
     } 
     
 });
+
+function showScrollButton(selector) {
+    $(selector).stop(true, true).css("display", "flex").fadeTo(300, 1);
+}
+
+function hideScrollButton(selector) {
+    $(selector).stop(true, true).fadeOut(300);
+}
 
 
 $(window).scroll(function() {
     
     if ($(document).scrollTop() > 0) {
-    	$("#top_go").fadeIn(300);
+        showScrollButton("#top_go");
     } 
     
     if ($(document).scrollTop() == 0) {
-    	$("#top_go").fadeOut(300);
+        hideScrollButton("#top_go");
     } 
     
     if ($(document).scrollTop() < $(document).height()- $(window).height()) {
-        $("#bottom_go").fadeIn(300);
+        showScrollButton("#bottom_go");
     } 
     
     if ($(document).scrollTop() == $(document).height()- $(window).height()) {
-        $("#bottom_go").fadeOut(300);
+        hideScrollButton("#bottom_go");
     } 
 
 });

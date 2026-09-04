@@ -118,14 +118,14 @@
                 -->
                 <table border="1">
                     <caption>{$name} 기본 정보</caption>
-                    <tbody>
-                        <tr class="{$item_display|display}">
-                            <th scope="row">{$item_title}</th>
-                            <td >{$item_content}</td>
+                    <tbody class="detail-meta-body">
+                        <tr class="detail-meta-row {$item_display|display}">
+                            <th scope="row" class="detail-meta-title">{$item_title}</th>
+                            <td class="detail-meta-content">{$item_content}</td>
                         </tr>
-                        <tr class="{$item_display|display}">
-                            <th scope="row">{$item_title}</th>
-                            <td >{$item_content}</td>
+                        <tr class="detail-meta-row {$item_display|display}">
+                            <th scope="row" class="detail-meta-title">{$item_title}</th>
+                            <td class="detail-meta-content">{$item_content}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -176,9 +176,9 @@
                 </table>
             </div>
 
-			<p class="{$naver_mileage_exception_display|display}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/txt_naver.gif" alt="개인결제창을 통한 결제 시 네이버 마일리지 적립 및 사용이 가능합니다." loading="lazy" ez-prevent="img"></p>
+			<p class="{$naver_mileage_exception_display|display}"><img src="/0svg/gift.svg" alt="개인결제창을 통한 결제 시 네이버 마일리지 적립 및 사용이 가능합니다." loading="lazy" ez-prevent="img"></p>
 
-            <table border="1" module="product_option">
+            <table border="1" module="product_option" class="detail-option-table">
                 <!--
                 $use_per_add_option = yes
                 -->
@@ -193,8 +193,8 @@
                         <td>
                             <div class="ec-base-qty">
                                 {$form.quantity}
-                                <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                                <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                             </div>
                         </td>
                     </tr>
@@ -229,8 +229,8 @@
                 <dd>
                     <div class="ec-base-qty">
                         {$form.quantity}
-                        <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                        <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                        <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                        <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                     </div>
                 </dd>
             </dl>
@@ -270,8 +270,8 @@
                                     <li module="product_quantity">
                                         <div class="ec-base-qty">
                                             {$form.quantity}
-                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -285,8 +285,8 @@
                                     <li module="product_quantity">
                                         <div class="ec-base-qty">
                                             {$form.quantity}
-                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -330,8 +330,8 @@
                                     <li module="product_quantity">
                                         <div class="ec-base-qty">
                                             {$form.quantity}
-                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -345,8 +345,8 @@
                                     <li module="product_quantity">
                                         <div class="ec-base-qty">
                                             {$form.quantity}
-                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -375,8 +375,8 @@
                     <dd>
                         <div class="ec-base-qty">
                             {$form.quantity}
-                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                         </div>
                     </dd>
                 </dl>
@@ -409,8 +409,8 @@
                                     <li module="product_quantity">
                                         <div class="ec-base-qty">
                                             {$form.quantity}
-                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -424,8 +424,8 @@
                                     <li module="product_quantity">
                                         <div class="ec-base-qty">
                                             {$form.quantity}
-                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -458,8 +458,8 @@
                                     <li module="product_quantity">
                                         <div class="ec-base-qty">
                                             {$form.quantity}
-                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -473,8 +473,8 @@
                                     <li module="product_quantity">
                                         <div class="ec-base-qty">
                                             {$form.quantity}
-                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_up.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
-                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="//img.echosting.cafe24.com/skin/mobile/common/ico_quantity_down.jpg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="up qtyUp eClearUp"><img id="{$quantity_up_id}" class="{$quantity_up_class}" alt="up" src="/0svg/plus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
+                                            <a href="javascript:;" class="down qtyDown eClearDown"><img id="{$quantity_down_id}" class="{$quantity_down_class}" alt="down" src="/0svg/minus.svg" width="33" height="29" loading="lazy" ez-prevent="img"></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -492,13 +492,13 @@
                 </ul>
             </div>
 
-            <div id="{$total.total_id}" class="{$total.total_display|display}">
-                <table border="1">
+            <div id="{$total.total_id}" class="{$total.total_display|display} detail-selected-products">
+                <table border="1" class="detail-selected-table">
                     <caption>상품 목록</caption>
                     <!--colgroup>
-                        <col style="width:auto;">
-                        <col style="width:100px;">
-                        <col style="width:50px;">
+                        <col class="ec-u-w-auto">
+                        <col class="ec-u-w-100">
+                        <col class="ec-u-w-50">
                     </colgroup-->
                     <thead>
                         <tr>
@@ -507,17 +507,17 @@
                             <th scope="col">가격</th>
                         </tr>
                     </thead>
-                    <tbody class="{$quantity_display|display}">
-                        <tr>
-                            <td>{$name}</td>
-                            <td>
+                    <tbody class="{$quantity_display|display} detail-selected-body">
+                        <tr class="detail-selected-row">
+                            <td class="detail-selected-name">{$name}</td>
+                            <td class="detail-selected-quantity">
                                 <span class="quantity">
                                     {$quantity}
                                     <a href="javascript:;" class="up {$quantity_up_class}">수량증가</a>
                                     <a href="javascript:;" class="down {$quantity_down_class}">수량감소</a>
                                 </span>
                             </td>
-                            <td class="right"><span class="{$total.quantity_price}">{$product_price}</span> <span class="mileage {$mileage_display|display}">(<img src="{$mileage_mileage_icon}" loading="lazy" ez-prevent="img"> <span class="{$total.mileage_price}">{$mileage_value}</span>)</span></td>
+                            <td class="right detail-selected-price"><span class="{$total.quantity_price}">{$product_price}</span> <span class="mileage {$mileage_display|display}">(<img src="{$mileage_mileage_icon}" loading="lazy" ez-prevent="img"> <span class="{$total.mileage_price}">{$mileage_value}</span>)</span></td>
                         </tr>
                         <tr id="{$total.option_id}" class="option" module="product_option">
                             <!--
@@ -528,8 +528,8 @@
                                 <table border="1">
                                     <caption>옵션 정보</caption>
                                     <colgroup>
-                                        <col style="width:30%;">
-                                        <col style="width:auto;">
+                                        <col class="ec-u-w-30p">
+                                        <col class="ec-u-w-auto">
                                     </colgroup>
                                     <tbody>
 
@@ -555,7 +555,7 @@
                         </tr>
                     </tbody>
                     <!-- 옵션선택 또는 세트상품 선택시 상품이 추가되는 영역입니다. 쇼핑몰 화면에는 아래와 같은 마크업구조로 표시됩니다. 삭제시 기능이 정상동작 하지 않습니다. -->
-                    <tbody>
+                    <tbody class="detail-selected-option-body">
                         <!-- tr>
                             <td>
                                 <p class="product">
@@ -566,14 +566,14 @@
                             <td>
                                 <span class="quantity">
                                     <input type="text" class="quantity_opt" />
-                                    <a href="javascript:;" class="up eProductQuantityUpClass"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif" alt="수량증가"  loading="lazy" ez-prevent="img"></a>
-                                    <a href="javascript:;" class="down eProductQuantityDownClass"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif" alt="수량감소"  loading="lazy" ez-prevent="img"></a>
+                                    <a href="javascript:;" class="up eProductQuantityUpClass"><img src="/0svg/plus.svg" alt="수량증가"  loading="lazy" ez-prevent="img"></a>
+                                    <a href="javascript:;" class="down eProductQuantityDownClass"><img src="/0svg/minus.svg" alt="수량감소"  loading="lazy" ez-prevent="img"></a>
                                 </span>
-                                <a href="#none"><img src="//img.echosting.cafe24.com/design/skin/default/product/btn_price_delete.gif" alt="삭제" class="option_box_del"  loading="lazy" ez-prevent="img"></a>
+                                <a href="#none"><img src="/0svg/close.svg" alt="삭제" class="option_box_del"  loading="lazy" ez-prevent="img"></a>
                             </td>
                             <td class="right">
                                 <span>$가격</span>
-                                <span class="mileage">(<img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/product/ico_pay_point.gif"  loading="lazy" ez-prevent="img"> <span class="mileage_price">$적립금</span>)</span>
+                                <span class="mileage">(<img src="/0svg/gift.svg"  loading="lazy" ez-prevent="img"> <span class="mileage_price">$적립금</span>)</span>
                             </td>
                         </tr -->
                     </tbody>
@@ -603,13 +603,13 @@
             <div module="product_action" id="{$fixed_action_button}" class="productAction">
 				<div id="ec-product-price-info" class="displaynone" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}"></div>
                 <div class="{$action_display|display} action_button">
-                    <button type="button" class="btnNormal sizeL actionCart {$basket_display|display}" onclick="{$action_basket}" id="actionCart"><img src="/0svg/basket.svg" alt="basket"></button>
-					<button type="button" class="btnNormal sizeL actionWish {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWish"><img src="/0svg/heart.svg" alt="heart"></button>
+                    <button type="button" class="btnNormal sizeL actionCart {$basket_display|display}" onclick="{$action_basket}" id="actionCart"><img src="/0svg/cart.svg" alt="basket"></button>
+					<button type="button" class="btnNormal sizeL actionWish {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWish"><img src="/0svg/like.svg" alt="heart"></button>
                     <span class="sub_sold {$soldout_display|display}">품절상품</span>
                     <a href="#none" class="btnSubmit sizeL {$buy_display|display}" onclick="{$action_buy}"><span id="{$btn_buy_mobile_id}">구매하기</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">REGULAR DELIVERY</span></a>
                 </div>
                 <div class="ec-base-button soldout {$action_soldout_display|display}">
-                    <button type="button" class="btnNormal gFull sizeL {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout"><img src="/0svg/heart.svg" alt="heart"></button>
+                    <button type="button" class="btnNormal gFull sizeL {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout"><img src="/0svg/like.svg" alt="heart"></button>
                     <button type="button" class="btnSubmit gFull sizeL {$soldout_display|display}">품절상품</button>
                 </div>
 				<a href="/board/inquiry/write.html{$inquiry_param}" class="btnNormal gFull sizeL mrt10 {$inquiry_display|display}">대량구매문의</a>
@@ -620,12 +620,12 @@
             </div>
             <div module="product_action" class="ec-base-button gFixed" id="orderFixArea">
                 <div class="ec-base-button gColumn {$action_display|display}">
-                    <button type="button" class="btnNormal sizeM actionCart {$basket_display|display}" onclick="{$action_basket}"><img src="/0svg/basket.svg" alt="basket"></button>
-                    <button type="button" class="btnNormal sizeM {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout"><img src="/0svg/heart.svg" alt="heart"></button>
+                    <button type="button" class="btnNormal sizeM actionCart {$basket_display|display}" onclick="{$action_basket}"><img src="/0svg/cart.svg" alt="basket"></button>
+                    <button type="button" class="btnNormal sizeM {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout"><img src="/0svg/like.svg" alt="heart"></button>
 					<a href="#none" class="btnSubmit sizeM {$buy_display|display}" onclick="{$action_buy}"><span id="{$btn_buy_mobile_id}">구매하기</span><span class="{$btn_reserve_class|display}" id="{$btn_reserve_mobile_id}">예약주문</span><span id="{$btn_regular_delivery_id}" class="{$btn_regular_delivery|display}">REGULAR DELIVERY</span></a>
                 </div>
                 <div class="ec-base-button gColumn {$action_soldout_display|display}">
-                    <button type="button" class="btnNormal sizeM {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout"><img src="/0svg/heart.svg" alt="heart"></button>
+                    <button type="button" class="btnNormal sizeM {$wishlist_display|display}" onclick="{$action_wishlist}" id="actionWishSoldout"><img src="/0svg/like.svg" alt="heart"></button>
                     <button type="button" class="btnSubmit sizeM {$soldout_display|display}">품절상품</button>
                 </div>
             </div>
@@ -701,7 +701,7 @@
 			<li><a href="#guide">구매안내</a></li>
 		</ul><!-- //title_detail -->
 	</div><!-- //detail_tab -->
-	<div id="tabProduct_area_PC" style="display:none; height:0px;"></div>
+	<div id="tabProduct_area_PC" class="ec-u-hidden ec-u-h-0"></div>
     
     <div id="tabProduct" class="tabProduct display_tablet_only">
         <ul>
@@ -711,7 +711,7 @@
             <li class="{$qna_display|display}"><a href="#prdQnA" name="use_qna_mobile">상품문의 <span>{$qna_count}</span></a></li>
         </ul>
     </div>
-	<div id="tabProduct_area" style="display:none; height:0px;"></div>
+	<div id="tabProduct_area" class="ec-u-hidden ec-u-h-0"></div>
     <div id="prdDetail" class="productDetail">
         
         <div>{$product_detail}</div>
@@ -743,19 +743,19 @@
 					<a name="use_review"></a>
 					<p class="noAccess {$deny_display|display}">글읽기 권한이 없습니다.</p>
 					<div class="minor {$adult_display|display}">
-						<p><img src="//img.echosting.cafe24.com/skin/skin/product/ico_under19.gif" loading="lazy" ez-prevent="img"> <strong class="txtEm">"19세 미만의 미성년자"</strong>는 출입을 금합니다!</p>
+						<p><img src="/0svg/notice.svg" loading="lazy" ez-prevent="img"> <strong class="txtEm">"19세 미만의 미성년자"</strong>는 출입을 금합니다!</p>
 						<p class="button"><a href="/intro/board.html{$returnParam}" class="btnSubmit sizeS">성인인증 하기</a></p>
 					</div>
 					<div class="ec-base-table typeList">
 						<table border="1" class="{$list_display|display}">
 							<!--caption>상품사용후기</caption>
 							<colgroup>
-								<col style="width:70px;" class="RW">
-								<col style="width:auto">
-								<col style="width:100px;">
-								<col style="width:100px;">
-								<col style="width:80px;">
-								<col style="width:80px;" class="{$use_point_display|display}">
+								<col class="RW ec-u-w-70">
+								<col class="ec-u-w-auto">
+								<col class="ec-u-w-100">
+								<col class="ec-u-w-100">
+								<col class="ec-u-w-80">
+								<col class="{$use_point_display|display} ec-u-w-80">
 							</colgroup>
 							<thead>
 								<tr>
@@ -834,19 +834,19 @@
 					<a name="use_qna"></a>
 					<p class="noAccess {$deny_display|display}">글읽기 권한이 없습니다.</p>
 					<div class="minor {$adult_display|display}">
-						<p><img src="//img.echosting.cafe24.com/skin/skin/product/ico_under19.gif" loading="lazy" ez-prevent="img"> <strong>"19세 미만의 미성년자"</strong>는 출입을 금합니다!</p>
+						<p><img src="/0svg/notice.svg" loading="lazy" ez-prevent="img"> <strong>"19세 미만의 미성년자"</strong>는 출입을 금합니다!</p>
 						<p class="button"><a href="/intro/board.html{$returnParam}" class="btnEm sizeS">성인인증 하기</a></p>
 					</div>
 					<div class="ec-base-table typeList">
 						<table border="1" class="{$list_display|display}">
 							<caption>상품 Q&amp;A</caption>
 							<colgroup>
-								<col style="width:70px;" class="RW">
-								<col style="width:134px;">
-								<col style="width:auto">
-								<col style="width:80px;">
-								<col style="width:100px;">
-								<col style="width:55px;">
+								<col class="RW ec-u-w-70">
+								<col class="ec-u-w-134">
+								<col class="ec-u-w-auto">
+								<col class="ec-u-w-80">
+								<col class="ec-u-w-100">
+								<col class="ec-u-w-55">
 							</colgroup>
 							<thead>
 								<tr>

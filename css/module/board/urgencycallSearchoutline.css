@@ -1,16 +1,16 @@
-.xans-mall-urgencycallsearchoutline .content { min-height:470px; }
-.xans-mall-urgencycallsearchoutline .result { margin:18px 0 8px; padding:0 0 0 16px; }
-.xans-mall-urgencycallsearchoutline .result strong { color:#000; }
-.xans-mall-urgencycallsearchoutline .urgencyOrder .inputOrdNum { width:145px; }
-.xans-mall-urgencycallsearchoutline .urgencyProduct .ec-base-table input { width:340px; font-weight:bold; }
-.xans-mall-urgencycallsearchoutline .ec-base-table .scroll { overflow:auto; max-height:278px; }
-.xans-mall-urgencycallsearchoutline .ec-base-table .scroll.xans-mall-urgencycallordresult { max-height:365px; }
-.xans-mall-urgencycallsearchoutline .ec-base-table td.product { overflow:hidden; }
-.xans-mall-urgencycallsearchoutline .ec-base-table td.product p { padding:0 0 0 55px; }
-.xans-mall-urgencycallsearchoutline .ec-base-table td.product .thumb { float:left; }
-.xans-mall-urgencycallsearchoutline .ec-base-table td.product .thumb img { width:46px; }
+.xans-mall-urgencycallsearchoutline .content { min-height: calc((var(--space-96) * 4) + var(--space-64) + var(--space-16) + var(--space-4) + calc(var(--form-field-border-width) * 2)); }
+.xans-mall-urgencycallsearchoutline .result { margin: var(--space-16) 0 var(--space-8); padding: 0 0 0 var(--space-16); }
+.xans-mall-urgencycallsearchoutline .result strong { color:var(--text-main); }
+.xans-mall-urgencycallsearchoutline .urgencyOrder .inputOrdNum { width: calc(var(--space-96) + var(--space-48) + var(--form-field-border-width)); }
+.xans-mall-urgencycallsearchoutline .urgencyProduct .ec-base-table input { width: calc((var(--space-96) * 3) + var(--space-48) + var(--space-4)); font-weight:var(--font-weight-bold); }
+.xans-mall-urgencycallsearchoutline .ec-base-table .scroll { overflow:auto; max-height: calc((var(--space-96) * 2) + var(--space-64) + var(--space-16) + var(--space-4) + calc(var(--form-field-border-width) * 2)); }
+.xans-mall-urgencycallsearchoutline .ec-base-table .scroll.xans-mall-urgencycallordresult { max-height: calc((var(--space-96) * 3) + var(--space-64) + var(--space-12) + var(--form-field-border-width)); }
+.xans-mall-urgencycallsearchoutline .ec-base-table td.product { display:flex; align-items:center; overflow:hidden; }
+.xans-mall-urgencycallsearchoutline .ec-base-table td.product p { padding: 0 0 0 var(--space-48); }
+.xans-mall-urgencycallsearchoutline .ec-base-table td.product .thumb { display:inline-flex; align-items:center; }
+.xans-mall-urgencycallsearchoutline .ec-base-table td.product .thumb img { width: calc(var(--space-32) + var(--space-12) + calc(var(--form-field-border-width) * 2)); }
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .xans-mall-urgencycallsearchoutline { width:680px; }
+    .xans-mall-urgencycallsearchoutline { width: calc((var(--space-96) * 7) + var(--space-8)); }
 }

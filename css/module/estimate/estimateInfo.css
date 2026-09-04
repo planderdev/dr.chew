@@ -1,40 +1,154 @@
-html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img { margin:0; padding:0; border:0 none; }
-body { font:12px Dotum, AppleGothic, sans-serif; color:#333; background:#fff; }
-caption { display:none; }
-li { list-style:none; }
 
-.xans-estimate-print { overflow:hidden; padding:20px 30px; border-bottom:1px solid #6c6c6c; background:#eee; }
-.xans-estimate-print strong { display:block; color:#353535; }
-.xans-estimate-print ul { float:left; margin:7px 0 0; width:410px; color:#757575; font-size:12px; line-height:1.5; }
-.xans-estimate-print li { padding:0 0 0 9px; }
-.xans-estimate-print p { float:right; width:257px; }
-.xans-estimate-print p [class^='btn'] { position:relative; display:inline-block; box-sizing:border-box; width:80px; height:80px; padding:54px 2px 4px; font-weight:bold; font-size:12px; line-height:18px; color:#fff; text-decoration:none; text-align:center; vertical-align:middle; word-spacing:-0.5px; letter-spacing:0; border:1px solid transparent; /*(C) 2023. 라인즈 All rights reserved.*/ border-radius:2px; }
-.xans-estimate-print p .btnPrint { background-color:#4a5164; }
-.xans-estimate-print p .btnDownload { background-color:#84868b; }
-.xans-estimate-print p .btnEmail { background-color:#84868b; }
-.xans-estimate-print p [class^='btn'] img { position:absolute; top:14px; left:50%; margin:0 0 0 -16px; }
-  .xans-estimate-print p [class^='btn'].gBreak { padding-top:46px; line-height:15px; }
-  .xans-estimate-print p [class^='btn'].gBreak img { top:7px; }
 
-.xans-estimate-estimateinfo { padding:0 20px 30px; }
-.xans-estimate-estimateinfo h1 { padding:30px 0; text-align:center; letter-spacing:10px; color:#000; }
-.xans-estimate-estimateinfo table { width:100%; border-spacing:0; border-collapse:collapse; border:0; margin:0 0 30px; }
+.xans-estimate-print { display:flex; align-items:flex-start; flex-wrap:wrap; gap: var(--space-16);
+  overflow: hidden;
+  padding: var(--space-24) var(--space-32);
+  border-bottom: var(--form-field-border-width) solid var(--text-weak);
+  background: var(--bg-100);
+}
+
+.xans-estimate-print strong {
+  display: block;
+  color: var(--text-muted-strong);
+}
+
+.xans-estimate-print ul { display:flex; align-items:flex-start; flex-direction:column;
+  margin: var(--space-8) 0 0;
+  width: calc((var(--space-96) * 4) + var(--space-24) + calc(var(--form-field-border-width) * 2));
+  color: var(--text-weak);
+  font-size: var(--caption-2-size);
+  line-height: var(--body-line-height);
+}
+
+.xans-estimate-print li {
+  padding: 0 0 0 var(--space-8);
+}
+
+.xans-estimate-print p { margin-left: auto; display:flex; align-items:center; justify-content:flex-end; gap: var(--space-4);
+  width: calc((var(--space-96) * 2) + var(--space-64) + var(--form-field-border-width));
+}
+
+.xans-estimate-print p [class^='btn'] {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc(var(--space-64) + var(--space-16));
+  height: calc(var(--space-64) + var(--space-16));
+  padding: var(--space-48) var(--space-4) var(--space-4);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--caption-2-size);
+  line-height: calc(var(--space-16) + calc(var(--form-field-border-width) * 2));
+  color: var(--bg-0);
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  word-spacing: calc((var(--form-field-border-width) / 2) * -1);
+  letter-spacing: var(--body-letter-spacing);
+  border: var(--form-field-border-width) solid var(--overlay-transparent);
+  /*(C) 2023. 라인즈 All rights reserved.*/
+  border-radius: var(--radius-sm);
+}
+
+.xans-estimate-print p .btnPrint {
+  background-color: var(--text-sub);
+}
+
+.xans-estimate-print p .btnDownload {
+  background-color: var(--text-weak);
+}
+
+.xans-estimate-print p .btnEmail {
+  background-color: var(--text-weak);
+}
+
+.xans-estimate-print p [class^='btn'] img {
+  position: absolute;
+  top: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
+  left: 50%;
+  margin: 0 0 0 calc(var(--space-16) * -1);
+}
+
+.xans-estimate-print p [class^='btn'].gBreak {
+  padding-top: var(--space-48);
+  line-height: calc(var(--space-12) + calc(var(--form-field-border-width) * 3));
+}
+
+.xans-estimate-print p [class^='btn'].gBreak img {
+  top: calc(var(--space-4) + calc(var(--form-field-border-width) * 3));
+}
+
+.xans-estimate-estimateinfo {
+  padding: 0 var(--space-24) var(--space-32);
+}
+
+.xans-estimate-estimateinfo h1 {
+  padding: var(--space-32) 0;
+  text-align: center;
+  letter-spacing: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
+  color: var(--text-main);
+}
+
+.xans-estimate-estimateinfo table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 0;
+  margin: 0 0 var(--space-32);
+}
+
 .xans-estimate-estimateinfo th,
-.xans-estimate-estimateinfo td { padding:4px 2px; border:1px solid #999; }
-.xans-estimate-estimateinfo p { padding:0 0 5px; }
+.xans-estimate-estimateinfo td {
+  padding: var(--space-4) var(--space-4);
+  border: var(--form-field-border-width) solid var(--text-disabled);
+}
 
-.number { text-align:center; }
-.prdCode { text-align:center; }
-.prdName img { width:60px; padding:0 4px 0 0; vertical-align:middle; }
-.unitPrice { text-align:right; }
-.quantity { text-align:center; }
-.totalPrice { text-align:right; }
+.xans-estimate-estimateinfo p {
+  padding: 0 0 var(--space-4);
+}
 
-ul.sale { padding:3px 0 0; }
-ul.sale .title { width:150px; display:inline-block; }
+.number {
+  text-align: center;
+}
+
+.prdCode {
+  text-align: center;
+}
+
+.prdName img {
+  width: calc(var(--space-48) + var(--space-12));
+  padding: 0 var(--space-4) 0 0;
+  vertical-align: middle;
+}
+
+.unitPrice {
+  text-align: right;
+}
+
+.quantity {
+  text-align: center;
+}
+
+.totalPrice {
+  text-align: right;
+}
+
+ul.sale {
+  padding: var(--space-4) 0 0;
+}
+
+ul.sale .title {
+  width: calc(var(--space-96) + var(--space-48) + var(--space-4) + calc(var(--form-field-border-width) * 2));
+  display: inline-block;
+}
 
 /* For Print */
 @media print {
-  .xans-estimate-print { display:none; }
-  table th { text-align:center; border:1px solid #999; }
+  .xans-estimate-print {
+    display: none;
+  }
+
+  table th {
+    text-align: center;
+    border: var(--form-field-border-width) solid var(--text-disabled);
+  }
 }

@@ -1,29 +1,4 @@
 /* reset */
-:root {
-    /* Layer Component */
-    --layer-scrim: rgba(10, 10, 10, 0.32);
-    --layer-border: var(--line-strong);
-    --layer-border-weak: var(--line-weak);
-    --layer-bg: var(--bg-0);
-    --layer-radius: var(--radius-card);
-    --layer-shadow: var(--shadow-lv2);
-    --layer-header-padding: 20px 0;
-    --layer-header-margin: 0 20px;
-    --layer-title-color: var(--text-main);
-    --layer-title-font-size: var(--title-4-size);
-    --layer-title-font-weight: var(--title-font-weight);
-    --layer-side-title-font-size: var(--title-3-size);
-    --layer-content-padding: 20px;
-    --layer-content-font-size: var(--caption-1-size);
-    --layer-content-line-height: var(--line-height-150);
-    --layer-close-color: var(--icon-main);
-    --layer-hidden-font-size: 1px;
-    --layer-focus-shadow: 0 0 0 3px rgba(215, 59, 80, 0.16);
-    --layer-transition: background-color var(--motion-base) var(--motion-ease), box-shadow var(--motion-fast) var(--motion-ease);
-    --layer-z-index-backdrop: var(--z-index-overlay);
-    --layer-z-index: var(--z-index-modal);
-}
-
 li {
     list-style: none;
 }
@@ -56,7 +31,7 @@ h3 {
 
 .ec-base-layer {
     z-index: var(--layer-z-index);
-    border: var(--border-width-1) solid var(--layer-border);
+    border: var(--form-field-border-width) solid var(--layer-border);
     border-radius: var(--layer-radius);
     background: var(--layer-bg);
     box-shadow: var(--layer-shadow);
@@ -67,7 +42,7 @@ h3 {
     margin: var(--layer-header-margin);
     padding: var(--layer-header-padding);
     color: var(--layer-title-color);
-    border-bottom: var(--border-width-1) solid var(--layer-border-weak);
+    border-bottom: var(--form-field-border-width) solid var(--layer-border-weak);
 }
 
 .ec-base-layer>.header>h1,
@@ -82,7 +57,7 @@ h3 {
     color: var(--text-sub);
     font-size: var(--layer-content-font-size);
     line-height: var(--layer-content-line-height);
-    min-height: 90px;
+    min-height: calc(var(--space-64) + var(--space-24) + var(--form-field-border-width) + var(--form-field-border-width));
     box-sizing: border-box;
 }
 
@@ -92,17 +67,17 @@ h3 {
 
 .ec-base-layer .btnClose {
     position: absolute;
-    right: 7px;
-    top: 7px;
-    padding: 10px;
+    right: calc(var(--space-8) - var(--form-field-border-width));
+    top: calc(var(--space-8) - var(--form-field-border-width));
+    padding: var(--space-12);
     cursor: pointer;
     display: block;
     overflow: hidden;
-    width: 20px;
-    height: 20px;
-    font-size: var(--layer-hidden-font-size);
-    line-height: 0;
-    color: transparent;
+    width: var(--category-trigger-width);
+    height: var(--category-trigger-width);
+    font-size: var(--form-field-border-width);
+    line-height: var(--line-height-hidden);
+    color: var(--overlay-transparent);
     white-space: nowrap;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -113,10 +88,10 @@ h3 {
     content: "";
     position: absolute;
     top: 0;
-    right: 10px;
-    width: 1px;
-    height: 21px;
-    margin: 10px 10px 0 0;
+    right: calc(var(--space-8) + var(--form-field-border-width) + var(--form-field-border-width));
+    width: var(--form-field-border-width);
+    height: var(--space-24);
+    margin: var(--space-12) var(--space-12) 0 0;
     background: var(--layer-close-color);
     -webkit-transition: background-color var(--motion-base) var(--motion-ease);
     transition: background-color var(--motion-base) var(--motion-ease);
@@ -125,11 +100,11 @@ h3 {
 .ec-base-layer .btnClose:after {
     content: "";
     position: absolute;
-    top: 10px;
+    top: calc(var(--space-8) + var(--form-field-border-width) + var(--form-field-border-width));
     right: 0;
-    width: 21px;
-    height: 1px;
-    margin: 10px 10px 0 0;
+    width: var(--space-24);
+    height: var(--form-field-border-width);
+    margin: var(--space-12) var(--space-12) 0 0;
     background: var(--layer-close-color);
     -webkit-transition: background-color var(--motion-base) var(--motion-ease);
     transition: background-color var(--motion-base) var(--motion-ease);
@@ -147,13 +122,82 @@ h3 {
     left: 0;
     right: 0;
     margin: 0 auto;
-    transform: translateY(calc(-50% + 0.5px));
+    transform: translateY(calc(-50% + calc(var(--form-field-border-width) / 2)));
+}
+
+#dCouponDetail {
+    z-index: var(--layer-z-index);
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: min(calc(100% - var(--space-32)), var(--coupon-detail-width));
+    margin: 0 auto;
+    border: var(--form-field-border-width) solid var(--coupon-detail-border);
+    border-radius: var(--coupon-detail-radius);
+    color: var(--coupon-detail-text);
+    background: var(--coupon-detail-bg);
+    box-shadow: var(--coupon-detail-shadow);
+    box-sizing: border-box;
+    transform: translateY(calc(-50% + calc(var(--form-field-border-width) / 2)));
+}
+
+#dCouponDetail h3 {
+    min-height: calc(var(--space-48) + var(--space-12));
+    margin: var(--layer-header-margin);
+    padding: var(--layer-header-padding);
+    border-bottom: var(--form-field-border-width) solid var(--coupon-detail-border-weak);
+    color: var(--coupon-detail-text);
+    font-size: var(--layer-title-font-size);
+    font-weight: var(--layer-title-font-weight);
+    line-height: var(--body-line-height);
+    box-sizing: border-box;
+}
+
+#dCouponDetail h3 + a {
+    position: absolute;
+    top: var(--space-16);
+    right: var(--space-16);
+}
+
+#dCouponDetail ul {
+    margin: var(--space-24) var(--space-16);
+    padding: var(--space-16) var(--space-12) var(--space-16) var(--space-24);
+    border-radius: var(--radius-sm);
+    background: var(--coupon-detail-bg-muted);
+}
+
+#dCouponDetail ul li {
+    margin: var(--space-8) 0 0;
+    color: var(--coupon-detail-muted-text);
+    font-size: var(--layer-content-font-size);
+    line-height: var(--layer-content-line-height);
+}
+
+#dCouponDetail ul li:first-child {
+    margin-top: 0;
+}
+
+#dCouponDetail ul + a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--button-height-md);
+    padding: 0 var(--button-padding-x-md);
+    border-top: var(--form-field-border-width) solid var(--coupon-detail-border-weak);
+    color: var(--button-outline-color);
+    font-size: var(--button-font-size-md);
+    font-weight: var(--button-font-weight);
+    line-height: var(--control-line-height);
+    text-align: center;
+    background: var(--button-outline-bg);
 }
 
 /* typeLayer */
 .ec-base-layer.typeLayer {
     position: absolute;
-    margin-top: 10px;
+    margin-top: var(--space-12);
 }
 
 /* typeSide */
@@ -167,7 +211,7 @@ h3 {
 }
 
 .ec-base-layer.typeSide .header {
-    padding: 74px 16px 10px;
+    padding: var(--space-64) var(--space-16) var(--space-12);
     margin: 0;
     border: 0;
 }
@@ -187,24 +231,24 @@ h3 {
 }
 
 .ec-base-layer.typeSide .ec-base-button[class*="gColumn"] {
-    margin: 25px 16px;
+    margin: var(--space-24) var(--space-16);
 }
 
 .ec-base-layer.typeSide .btnClose {
-    top: 5px;
-    width: 24px;
-    height: 24px;
-    padding: 20px 17px;
+    top: calc(var(--space-4) + var(--form-field-border-width));
+    width: var(--space-24);
+    height: var(--space-24);
+    padding: var(--space-24) var(--space-16);
 }
 
 .ec-base-layer.typeSide .btnClose:before {
-    right: 12px;
-    height: 25px;
+    right: var(--space-12);
+    height: calc(var(--space-24) + var(--form-field-border-width));
 }
 
 .ec-base-layer.typeSide .btnClose:after {
-    top: 12px;
-    width: 25px;
+    top: var(--space-12);
+    width: calc(var(--space-24) + var(--form-field-border-width));
 }
 
 /* gAlert */
@@ -212,18 +256,18 @@ h3 {
     display: block;
     overflow: hidden;
     position: absolute;
-    font-size: var(--layer-hidden-font-size);
-    line-height: 0;
-    color: transparent;
+    font-size: var(--form-field-border-width);
+    line-height: var(--line-height-hidden);
+    color: var(--overlay-transparent);
     text-indent: -150%;
     white-space: nowrap;
     padding: 0;
-    color: transparent;
+    color: var(--overlay-transparent);
     border: 0;
 }
 
 .ec-base-layer.gAlert>.content {
-    padding: 45px 0 25px;
+    padding: var(--space-48) 0 var(--space-24);
     text-align: center;
     color: var(--text-main);
 }
@@ -241,7 +285,7 @@ h3 {
 
 /* popup */
 #popup {
-    padding: 0 0 30px;
+    padding: 0 0 var(--space-32);
 }
 
 #popup .ec-base-layer {
@@ -251,7 +295,7 @@ h3 {
 }
 
 #popup .ec-base-layer .btnClose {
-    top: 5px;
+    top: calc(var(--space-4) + var(--form-field-border-width));
 }
 
 /********************* Mobile / Tablet *********************/
@@ -261,10 +305,10 @@ h3 {
         top: 50%;
         left: 0;
         right: 0;
-        min-width: 320px;
-        width: calc(100% - 32px);
+        min-width: calc((var(--space-96) * 3) + var(--space-32));
+        width: calc(100% - var(--space-32));
         margin: 0 auto;
-        transform: translateY(calc(-50% + 0.5px));
+        transform: translateY(calc(-50% + calc(var(--form-field-border-width) / 2)));
     }
 
     .ec-base-layer.typeSide {
@@ -289,7 +333,7 @@ h3 {
 /********************* PC *********************/
 @media all and (min-width:1025px) {
     .ec-base-layer {
-        min-width: 308px;
+        min-width: var(--product-option-layer-body-height);
     }
 
     .ec-base-layer.typeSide {
@@ -297,11 +341,11 @@ h3 {
         right: 0;
         left: auto;
         bottom: 0;
-        width: 458px;
+        width: calc((var(--space-96) * 4) + var(--space-64) + var(--space-8) + var(--form-field-border-width) + var(--form-field-border-width));
         border-radius: var(--layer-radius) 0 0 var(--layer-radius);
     }
 
     .ec-base-layer.gAlert {
-        width: 360px;
+        width: var(--product-zoom-tooltip-width);
     }
 }

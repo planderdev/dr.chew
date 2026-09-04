@@ -1,93 +1,92 @@
 .xans-layout-footerpackage {
-    font-size: 11px;
-    line-height: 1.5em;
-    color: #1b1b1b;
-    border-top: 1px solid #c5c5c6;
+    font-size: var(--caption-2-size);
+    line-height: var(--body-line-height);
+    color: var(--text-strong);
+    border-top: var(--form-field-border-width) solid var(--line-default);
 }
 
 .xans-layout-footerpackage .footerMenu p {
     overflow: hidden;
-    padding: 8px 14px;
-    border-bottom: 1px solid #dddddd;
-    background-color: #f9f9f9;
+    padding: var(--space-8) var(--space-16);
+    border-bottom: var(--form-field-border-width) solid var(--line-weak);
+    background-color: var(--bg-50);
     text-align: right;
 }
 
 .xans-layout-footerpackage .footerMenu p:first-child {
-    background-color: #fff;
+    background-color: var(--bg-0);
 }
 
 .footerMenu p.xans-layout-info {
     margin: 0;
 }
 
-.xans-layout-footerpackage .footerMenu .left {
-    float: left;
+.xans-layout-footerpackage .footerMenu .left { display:inline-flex; align-items:center;
     text-align: left;
 }
 
 .xans-layout-footerpackage .footerMenu .btnUtil {
     display: inline-block;
-    height: 26px;
-    line-height: 24px;
-    font-size: 11px;
+    height: calc(var(--space-24) + calc(var(--form-field-border-width) * 2));
+    line-height: var(--space-24);
+    font-size: var(--caption-2-size);
     margin: 0;
-    padding: 0 10px;
+    padding: 0 var(--space-12);
     cursor: pointer;
-    vertical-align: middle; 
-    font-weight: 400;
+    vertical-align: middle;
+    font-weight: var(--font-weight-regular);
     border: 0;
-    border-radius: 2px;
+    border-radius: var(--radius-sm);
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color: #1b1b1b;
-    border: 1px solid #bcbcbc;
-    background: #fff;
+    color: var(--text-strong);
+    border: var(--form-field-border-width) solid var(--line-default);
+    background: var(--bg-0);
 }
 
 .xans-layout-footerpackage .footerMenu .btnUtil.typeTel {
-    padding-left: 23px;
-    background: #fff url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_tel.png") no-repeat 10px 7px;
-    background-size: 8px 13px;
+    padding-left: var(--space-24);
+    background: var(--bg-0) var(--icon-url-tel) no-repeat calc(var(--space-8) + (var(--form-field-border-width) * 2)) calc(var(--space-8) - var(--form-field-border-width));
+    background-size: var(--space-8) calc(var(--space-12) + var(--form-field-border-width));
     vertical-align: middle;
 }
 
 .xans-layout-footerpackage .footerMenu .btnUtil.typeTel strong {
-    font-size: 13px;
+    font-size: var(--caption-1-size);
     vertical-align: top;
 }
 
 .xans-layout-footerpackage .footerMenu .btnUtil.typeTop {
-    padding-right: 23px;
-    background: #fff url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_top.png") no-repeat 90% 7px;
-    background-size: 12px 12px;
+    padding-right: var(--space-24);
+    background: var(--bg-0) var(--icon-url-right-arr) no-repeat 90% calc(var(--space-8) - var(--form-field-border-width));
+    background-size: var(--space-12) var(--space-12);
 }
 
 .xans-layout-footerpackage .footerMenu .policy {
-    padding: 7px 0;
+    padding: var(--space-8) 0;
     text-align: center;
-    background-color: #f9f9f9;
-    font-size: 0;
-    line-height: 0;
+    background-color: var(--bg-50);
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
 }
 
 .xans-layout-footerpackage .footerMenu .policy li {
     position: relative;
     display: inline-block;
-    padding: 0 6px 0 7px;
-    line-height: 13px;
-    font-size: 11px;
+    padding: 0 var(--space-8) 0 var(--space-8);
+    line-height: calc(var(--space-12) + var(--form-field-border-width));
+    font-size: var(--caption-2-size);
 }
 
 .xans-layout-footerpackage .footerMenu .policy li:before {
     display: block;
     content: "";
     position: absolute;
-    top: 2px;
+    top: calc(var(--form-field-border-width) * 2);
     left: 0;
-    width: 1px;
-    height: 11px;
-    background: #989899;
+    width: var(--form-field-border-width);
+    height: calc(var(--space-8) + calc(var(--form-field-border-width) * 3));
+    background: var(--text-disabled);
 }
 
 .xans-layout-footerpackage .footerMenu .policy li:first-child:before {
@@ -99,9 +98,9 @@
 }
 
 .xans-layout-footerpackage address {
-    padding: 14px;
-    border-bottom: 1px solid #dddddd;
-    background-color: #f9f9f9;
+    padding: var(--space-16);
+    border-bottom: var(--form-field-border-width) solid var(--line-weak);
+    background-color: var(--bg-50);
 }
 
 .xans-layout-footerpackage address .footerInfo {
@@ -115,28 +114,28 @@
 
 .xans-layout-footerpackage address dl dt {
     display: table-cell;
-    width: 110px;
-    line-height: 1.6;
-    color: #757575;
+    width: calc(var(--space-96) + var(--space-12) + calc(var(--form-field-border-width) * 2));
+    line-height: var(--body-line-height);
+    color: var(--text-weak);
     vertical-align: top;
 }
 
 .xans-layout-footerpackage address dl dd {
     display: table-cell;
     width: auto;
-    padding: 0 0 0 7px;
-    line-height: 1.6;
+    padding: 0 0 0 var(--space-8);
+    line-height: var(--body-line-height);
     word-break: break-all;
 }
 
 .xans-layout-footerpackage address a {
-    color: #1b1b1b;
+    color: var(--text-strong);
 }
 
 .xans-layout-footerpackage .copyright {
     text-align: center;
-    line-height: 28px;
-    color: #777777;
-    font-size: 9px;
-    background-color: #eeeeee;
+    line-height: calc(var(--space-24) + var(--space-4));
+    color: var(--text-weak);
+    font-size: var(--caption-2-size);
+    background-color: var(--bg-100);
 }

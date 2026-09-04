@@ -21,8 +21,8 @@
             <table border="1" >
                 <caption>운영일지</caption>
                 <colgroup>
-                    <col style="width:130px;" />
-                    <col style="width:auto;" />
+                    <col  class="ec-u-w-130" />
+                    <col  class="ec-u-w-auto" />
                 </colgroup>
                 <tbody>
                 <tr>
@@ -56,14 +56,14 @@
                 <div class="commentTop">
                     <strong class="name">{$checkbox} {$comment_name}</strong>
                     <span class="date">{$comment_write_date}</span>
-                    <span class="grade {$config.is_use_point|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$comment_point_count}.svg" alt="{$comment_point_count}점" /></span>
+                    <span class="grade {$config.is_use_point|display}"><img src="/0svg/review.svg" alt="{$comment_point_count}점" /></span>
                 </div>
                 <span class="button">
                     <a href="javascript:;" onclick="{$action_comment_delete}" class="btnNormal">삭제</a>
                     <a href="javascript:;" onclick="{$action_comment_reply}" class="btnNormal {$comment_reply_display|display}">댓글</a>
                 </span>
                 <div class="comment">
-                    <span class="{$is_spam_display|display}"><img src="//img.echosting.cafe24.com/skin/base/board/ico_spam.gif" alt="스팸글" /></span>
+                    <span class="{$is_spam_display|display}"><img src="/0svg/notice.svg" alt="스팸글" /></span>
                     {$comment_content}
                 </div>
             </li>
@@ -71,14 +71,14 @@
                 <div class="commentTop">
                     <strong class="name">{$checkbox} {$comment_name}</strong>
                     <span class="date">{$comment_write_date}</span>
-                    <span class="grade {$config.is_use_point|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$comment_point_count}.svg" alt="{$comment_point_count}점" /></span>
+                    <span class="grade {$config.is_use_point|display}"><img src="/0svg/review.svg" alt="{$comment_point_count}점" /></span>
                 </div>
                 <span class="button">
                     <a href="javascript:;" onclick="{$action_comment_delete}" class="btnNormal">삭제</a>
                     <a href="javascript:;" onclick="{$action_comment_reply}" class="btnNormal {$comment_reply_display|display}">댓글</a>
                 </span>
                 <div class="comment">
-                    <span class="{$is_spam_display|display}"><img src="//img.echosting.cafe24.com/skin/base/board/ico_spam.gif" alt="스팸글" /></span>
+                    <span class="{$is_spam_display|display}"><img src="/0svg/notice.svg" alt="스팸글" /></span>
                     {$comment_content}
                 </div>
             </li>

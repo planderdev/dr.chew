@@ -1,30 +1,4 @@
 /* base */
-:root {
-    /* Box Component */
-    --box-padding: 20px;
-    --box-padding-sm: var(--space-12);
-    --box-padding-md: var(--space-16);
-    --box-padding-lg: var(--space-24);
-    --box-border-width: var(--border-width-1);
-    --box-border-width-emphasis: 5px;
-    --box-border-width-product: 10px;
-    --box-border: var(--line-weak);
-    --box-border-strong: var(--line-strong);
-    --box-bg: var(--bg-0);
-    --box-bg-muted: var(--bg-50);
-    --box-bg-subtle: var(--bg-100);
-    --box-radius: var(--radius-card);
-    --box-title-font-size: var(--title-4-size);
-    --box-title-font-weight: var(--title-font-weight);
-    --box-title-color: var(--text-main);
-    --box-text-color: var(--text-main);
-    --box-muted-text-color: var(--text-sub);
-    --box-helper-text-color: var(--text-weak);
-    --box-body-font-size: var(--caption-1-size);
-    --box-caption-font-size: var(--caption-2-size);
-    --box-line-height: var(--line-height-150);
-}
-
 .ec-base-box {
     padding: var(--box-padding);
     margin-left: auto;
@@ -46,7 +20,7 @@
     left: 50%;
     display: block;
     content: "";
-    width: 1px;
+    width: var(--form-field-border-width);
     height: 100%;
     background-color: var(--box-border);
 }
@@ -79,7 +53,7 @@
 }
 
 .ec-base-box .headDesc {
-    margin: 0 0 40px;
+    margin: 0 0 var(--space-48);
     color: var(--box-title-color);
     font-size: var(--box-title-font-size);
     line-height: var(--box-line-height);
@@ -93,7 +67,7 @@
 }
 
 .ec-base-box.typeThin>.agree p {
-    padding: 0 0 30px;
+    padding: 0 0 var(--space-32);
 }
 
 /* typeMember */
@@ -130,7 +104,7 @@
 .ec-base-box.typeMember .information {
     display: table;
     table-layout: fixed;
-    padding: 10px 0;
+    padding: var(--space-12) 0;
     width: 100%;
     box-sizing: border-box;
 }
@@ -138,8 +112,8 @@
 .ec-base-box.typeMember .information>.title,
 .ec-base-box.typeMember .information>.thumbnail {
     display: table-cell;
-    padding: 0 15px;
-    width: 70px;
+    padding: 0 var(--space-16);
+    width: calc(var(--space-64) + var(--space-4) + calc(var(--form-field-border-width) * 2));
     text-align: center;
     vertical-align: middle;
 }
@@ -149,12 +123,12 @@
 }
 
 .ec-base-box.typeMember .information>.thumbnail img {
-    max-width: 70px;
+    max-width: calc(var(--space-64) + var(--space-4) + calc(var(--form-field-border-width) * 2));
 }
 
 .ec-base-box.typeMember .information .description {
     display: table-cell;
-    padding: 0 10px;
+    padding: 0 var(--space-12);
     width: auto;
     line-height: var(--box-line-height);
     border-left: var(--box-border-width) solid var(--box-border);
@@ -184,44 +158,44 @@
 }
 
 .ec-base-box.typeProduct .thumbnail {
-    width: 85px;
+    width: calc(var(--space-64) + var(--space-16) + var(--space-4) + var(--form-field-border-width));
 }
 
 .ec-base-box.typeProduct .thumbnail img {
-    max-width: 65px;
+    max-width: calc(var(--space-64) + var(--form-field-border-width));
 }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1000px) {
     .ec-base-box.gPadding {
-        padding: 50px 18px 40px;
+        padding: var(--space-48) var(--space-16) var(--space-48);
     }
 
     /* typeMember */
     .ec-base-box.typeMember {
-        padding: 50px 18px 40px;
+        padding: var(--space-48) var(--space-16) var(--space-48);
     }
 }
 
 /********************* Tablet *********************/
 @media all and (min-width:768px) and (max-width:1000px) {
     .additionalInfo {
-        margin: 0 24px;
+        margin: 0 var(--space-24);
     }
 }
 
 /********************* PC *********************/
 @media all and (min-width:1001px) {
     .ec-base-box.gPadding {
-        padding: 74px 0;
+        padding: var(--space-64) 0;
     }
 
     /* typeMember */
     .ec-base-box.typeMember {
-        padding: 74px 0;
+        padding: var(--space-64) 0;
     }
 
     .ec-base-box.typeMember .content {
-        width: 421px;
+        width: calc((var(--space-96) * 4) + var(--space-32) + var(--space-4) + var(--form-field-border-width));
     }
 }

@@ -1,13 +1,13 @@
 /* 공통 */
 .xans-product-1 {
-    margin: 22px 0 0;
+    margin: var(--space-24) 0 0;
 }
 
 .xans-product-1 h2 {
-    margin: 0 0 16px;
-    font-weight: normal;
-    font-size: 20px;
-     color: #2e2e2e;
+    margin: 0 0 var(--space-16);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--title-2-size);
+     color: var(--line-strong);
     text-align: center;
 }
 
@@ -18,16 +18,16 @@
 .xans-product-1 ul.prdList {
     display: table;
     width: 100%;
-    min-width: 756px;
-    margin: -20px 0 0;
-    font-size: 0;
-    line-height: 0;
+    min-width: calc((var(--space-96) * 7) + var(--space-64) + var(--space-16) + var(--space-4));
+    margin: calc(var(--space-24) * -1) 0 0;
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
 }
 
 .xans-product-1 ul.prdList li.item {
     display: inline-block;
-    margin: 20px 0;
-    color: #757575;
+    margin: var(--space-24) 0;
+    color: var(--text-weak);
     vertical-align: top;
     *display: inline;
     *zoom: 1;
@@ -35,48 +35,47 @@
 
 .xans-product-1 ul.prdList li.item .box {
     margin: 0 auto;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: var(--caption-2-size);
+    line-height: calc(var(--space-16) + calc(var(--form-field-border-width) * 2));
     text-align: center;
 }
 
 .xans-product-1 ul.prdList li .color {
     overflow: hidden;
     display: inline-block;
-    margin: 3px 0 0 0;
+    margin: var(--space-4) 0 0 0;
 }
 
 .xans-product-1 ul.prdList.column3 li .color {
-    width: 176px;
+    width: calc(var(--space-96) + var(--space-64) + var(--space-16));
 }
 
 .xans-product-1 ul.prdList.column4 li .color {
-    width: 116px;
+    width: calc(var(--space-96) + var(--space-16) + var(--space-4));
 }
 
 .xans-product-1 ul.prdList.column5 li .color {
-    width: 76px;
+    width: calc(var(--space-64) + var(--space-12));
 }
 
-.xans-product-1 ul.prdList li .chips {
-    float: left;
-    width: 10px;
-    height: 10px;
-    margin: 0 2px 2px 0;
-    border: 1px solid #e3e3e3;
-    font-size: 0;
-    line-height: 0;
+.xans-product-1 ul.prdList li .chips { display:inline-flex; align-items:center;
+    width: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
+    height: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
+    margin: 0 var(--space-4) var(--space-4) 0;
+    border: var(--form-field-border-width) solid var(--line-weak);
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
 }
 
 .xans-product-1 ul.prdList .thumb {
-    margin: 0 0 10px;
-    border: 1px solid #ececec;
+    margin: 0 0 var(--space-12);
+    border: var(--form-field-border-width) solid var(--line-weak);
 }
 
 .xans-product-1 ul.prdList .wish {
     position: absolute;
-    right: 3px;
-    top: 5px;
+    right: calc(var(--form-field-border-width) * 3);
+    top: calc(var(--space-4) + var(--form-field-border-width));
     z-index: 1;
     cursor: pointer;
 }
@@ -86,39 +85,32 @@
 }
 
 .xans-product-1 ul.prdList .name a {
-    color: #2e2e2e;
+    color: var(--line-strong);
 }
 
 .xans-product-1 ul.prdList .name .title {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
 }
 
 .xans-product-1 ul.prdList .status {
-    margin: 0 0 16px;
-    padding: 0 80px 4px 0;
-    border-bottom: 1px solid #e8e8e8;
+    margin: 0 0 var(--space-16);
+    padding: 0 var(--space-96) var(--space-4) 0;
+    border-bottom: var(--form-field-border-width) solid var(--line-weak);
     text-align: right;
-    line-height: 0;
+    line-height: var(--line-height-hidden);
     *zoom: 1;
 }
 
-.xans-product-1 ul.prdList .status:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.xans-product-1 ul.prdList .icon {
-    float: left;
+.xans-product-1 ul.prdList .icon { display:inline-flex; align-items:center;
     text-align: left;
 }
 
 .xans-product-1 ul.prdList .icon img {
-    margin: 0 -3px 6px 0;
+    margin: 0 calc(var(--space-4) * -1) var(--space-8) 0;
 }
 
 .xans-product-1 ul.prdList .button {
-    margin: 0 -80px 0 0;
+    margin: 0 calc(var(--space-96) * -1) 0 0;
     *zoom: 1;
 }
 
@@ -134,12 +126,12 @@
 
 .xans-product-1 ul.prdList .button .likeButton {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 var(--space-4);
 }
 
 .xans-product-1 ul.prdList .button .likeButton button {
-    color: #9a9a9a;
-    letter-spacing: -1px;
+    color: var(--text-disabled);
+    letter-spacing: calc(var(--form-field-border-width) * -1);
     background: none;
 }
 
@@ -148,12 +140,12 @@
 }
 
 .xans-product-1 ul.prdList .button .likeButton button strong {
-    height: 16px;
+    height: var(--space-16);
     vertical-align: middle;
 }
 
 .xans-product-1 ul.prdList .button .likeButton.selected button {
-    color: #353535;
+    color: var(--text-muted-strong);
 }
 
 .xans-product-1 ul.prdList .mileage {
@@ -177,11 +169,11 @@
     display: none;
     position: absolute;
     left: 0;
-    bottom: 10px;
+    bottom: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
     z-index: 1;
     width: 100%;
-    height: 42px;
-    background: #000;
+    height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 2));
+    background: var(--text-main);
     opacity: 0.5;
     filter: alpha(opacity=50);
     zoom: 1;
@@ -190,12 +182,12 @@
 .xans-product-1 .quickView a {
     display: block;
     width: 100%;
-    height: 42px;
-    line-height: 42px;
-    padding: 0 0 0 35px;
+    height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 2));
+    line-height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 2));
+    padding: 0 0 0 var(--space-32);
     box-sizing: border-box;
-    color: #fff;
-    background: url("//img.echosting.cafe24.com/design/module/product/listmain/3269/ico_quick_view.png") no-repeat 76px center;
+    color: var(--bg-0);
+    background: var(--icon-url-search) no-repeat calc(var(--space-64) + var(--space-12)) center;
 }
 
 .xans-product-1 .quickView a:hover {
@@ -212,12 +204,12 @@
 }
 
 .xans-product-1 ul.column3 li.item .box {
-    width: 324px;
+    width: calc((var(--space-96) * 3) + var(--space-32) + var(--space-4));
 }
 
 .xans-product-1 ul.column3 li.item .thumb {
-    width: 322px;
-    height: 322px;
+    width: calc((var(--space-96) * 3) + var(--space-32) + calc(var(--form-field-border-width) * 2));
+    height: calc((var(--space-96) * 3) + var(--space-32) + calc(var(--form-field-border-width) * 2));
 }
 
 .xans-product-1 ul.column4 li.item {
@@ -225,11 +217,11 @@
 }
 
 .xans-product-1 ul.column4 li.item .box {
-    width: 240px;
+    width: calc((var(--space-96) * 2) + var(--space-48));
 }
 
 .xans-product-1 ul.column4 li.item .thumb {
-    max-width: 238px;
+    max-width: calc((var(--space-96) * 2) + var(--space-32) + var(--space-12) + calc(var(--form-field-border-width) * 2));
 }
 
 .xans-product-1 ul.column5 li.item {
@@ -237,11 +229,11 @@
 }
 
 .xans-product-1 ul.column5 li.item .box {
-    width: 189px;
+    width: calc(var(--space-96) + var(--space-64) + var(--space-24) + var(--space-4) + var(--form-field-border-width));
 }
 
 .xans-product-1 ul.column5 li.item .thumb {
-    max-width: 187px;
+    max-width: calc(var(--space-96) + var(--space-64) + var(--space-24) + calc(var(--form-field-border-width) * 3));
 }
 
 /* module="product_ListItem" */
@@ -250,7 +242,7 @@
 }
 
 .xans-product-1 .xans-product-listitem li .title {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
     vertical-align: top;
 }
 
@@ -263,8 +255,8 @@
     display: inline-block;
     z-index: 10;
     position: relative;
-    width: 55px;
-    height: 19px;
+    width: calc(var(--space-48) + var(--space-4) + calc(var(--form-field-border-width) * 3));
+    height: calc(var(--space-16) + calc(var(--form-field-border-width) * 3));
     vertical-align: middle;
     *zoom: 1;
     *display: inline;
@@ -273,62 +265,62 @@
 .xans-product-1 .discountPeriod .edge {
     position: absolute;
     left: 50%;
-    top: -6px;
-    width: 10px;
-    height: 6px;
-    margin: 0 0 0 -5px;
-    font-size: 0;
-    line-height: 0;
-    background: url("http://img.echosting.cafe24.com/skin/base_ko_KR/common/ico_tip_edge.gif") no-repeat 0 0;
+    top: calc((var(--space-4) + calc(var(--form-field-border-width) * 2)) * -1);
+    width: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
+    height: calc(var(--space-4) + calc(var(--form-field-border-width) * 2));
+    margin: 0 0 0 calc(var(--space-4) * -1);
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
+    background: var(--icon-url-search) no-repeat 0 0;
 }
 
 .xans-product-1 .layerDiscountPeriod {
     display: none;
     position: absolute;
     left: 50%;
-    top: 26px;
-    width: 247px;
-    margin: 0 0 0 -124px;
-    border: 1px solid #565960;
-    font-size: 12px;
-    background-color: #fff;
+    top: calc(var(--space-24) + calc(var(--form-field-border-width) * 2));
+    width: calc((var(--space-96) * 2) + var(--space-48) + var(--space-4) + calc(var(--form-field-border-width) * 3));
+    margin: 0 0 0 calc(var(--space-96) * -1);
+    border: var(--form-field-border-width) solid var(--text-sub);
+    font-size: var(--caption-2-size);
+    background-color: var(--bg-0);
 }
 
 .xans-product-1 .layerDiscountPeriod strong.title {
     display: block;
-    margin: 0 0 12px;
-    padding: 0 35px 0 0;
-    font-weight: bold;
-    color: #2e2e2e;
+    margin: 0 0 var(--space-12);
+    padding: 0 var(--space-32) 0 0;
+    font-weight: var(--font-weight-bold);
+    color: var(--line-strong);
 }
 
 .xans-product-1 .layerDiscountPeriod .content {
-    padding: 9px 10px 12px 14px; 
+    padding: var(--space-8) var(--space-12) var(--space-12) var(--space-16);
 }
 
 .xans-product-1 .layerDiscountPeriod .content p {
-    margin: 2px 0 0;
-    font-size: 11px;
-    color: #000;
-    line-height: 16px;
-    color: #757575;
-    letter-spacing: -1px;
+    margin: var(--space-4) 0 0;
+    font-size: var(--caption-2-size);
+    color: var(--text-main);
+    line-height: var(--space-16);
+    color: var(--text-weak);
+    letter-spacing: calc(var(--form-field-border-width) * -1);
 }
 
 .xans-product-1 .layerDiscountPeriod .content p strong {
-    font-weight: normal;
-    font-size: 12px;
-    color: #2e2e2e;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--caption-2-size);
+    color: var(--line-strong);
 }
 
 .xans-product-1 .layerDiscountPeriod .content p strong span {
-    font-size: 11px;
+    font-size: var(--caption-2-size);
 }
 
 .xans-product-1 .layerDiscountPeriod .close {
     position: absolute;
-    right: 14px;
-    top: 14px;
+    right: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
+    top: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
 }
 
 .xans-product-1 .layerDiscountPeriod .close img {

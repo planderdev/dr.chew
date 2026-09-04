@@ -1,4 +1,4 @@
-.xans-layout-shoppinginfo { position:absolute; right:0; top:0; height:35px; line-height:35px; }
-.xans-layout-shoppinginfo:before { display:block; content:""; position:absolute; top:12px; left:10px; width:1px; height:11px; background:#fff; }
-.xans-layout-shoppinginfo li { float:left; margin:0 0 0 10px; padding:0 0 0 11px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 12px; }
-.xans-layout-shoppinginfo li a { color:#757575; }
+.xans-layout-shoppinginfo { display:flex; align-items:center; flex-wrap:wrap; position:absolute; right: 0; top: 0; height: calc(var(--space-32) + calc(var(--form-field-border-width) * 3)); line-height: calc(var(--space-32) + calc(var(--form-field-border-width) * 3)); }
+.xans-layout-shoppinginfo:before { display:block; content:""; position:absolute; top: var(--space-12); left: calc(var(--space-8) + calc(var(--form-field-border-width) * 2)); width: var(--form-field-border-width); height: calc(var(--space-8) + calc(var(--form-field-border-width) * 3)); background:var(--bg-0); }
+.xans-layout-shoppinginfo li { display:inline-flex; align-items:center; margin: 0 0 0 var(--space-12); padding: 0 0 0 var(--space-12); background: none; }
+.xans-layout-shoppinginfo li a { color:var(--text-weak); }

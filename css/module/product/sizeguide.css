@@ -1,29 +1,29 @@
-#popup .xans-product-sizeguide { height:667px; margin-top:-700px; border:1px solid #000; }
-#popup .xans-product-sizeguide .content { max-height:580px; }
-.xans-product-sizeguide .ec-base-layer { max-height:720px; }
-.xans-product-sizeguide .content { overflow:auto; position:relative; max-height:600px; }
+#popup .xans-product-sizeguide { height: calc((var(--space-96) * 6) + var(--space-64) + var(--space-24) + calc(var(--form-field-border-width) * 3)); margin-top: calc(var(--space-96) * -1); border: var(--form-field-border-width) solid var(--text-main); }
+#popup .xans-product-sizeguide .content { max-height: calc((var(--space-96) * 6) + var(--space-4)); }
+.xans-product-sizeguide .ec-base-layer { max-height: calc((var(--space-96) * 7) + var(--space-48)); }
+.xans-product-sizeguide .content { overflow:auto; position:relative; max-height: calc((var(--space-96) * 6) + var(--space-24)); }
 
-.xans-product-sizeguide h2 { margin:0 0 10px; font-size:12px; color:#444; }
-.xans-product-sizeguide .guideBoard { overflow-x: auto; margin:0 0 20px; }
-.xans-product-sizeguide .guideBoard table { border-spacing:0; border-collapse:collapse; line-height:1.5; background-color:#fff; }
-.xans-product-sizeguide .guideBoard.pants { margin-top:10px; }
-.xans-product-sizeguide .guideBoard.pants thead { overflow:hidden; position:absolute; width:0; height:0; white-space:nowrap; text-indent:150%; font-size:0; line-height:0; border:0; }
-.xans-product-sizeguide .guideBoard.pants tbody td { border-top-width:1px; }
+.xans-product-sizeguide h2 { margin: 0 0 var(--space-12); font-size: var(--caption-2-size); color:var(--text-muted-strong); }
+.xans-product-sizeguide .guideBoard { overflow-x: auto; margin: 0 0 var(--space-24); }
+.xans-product-sizeguide .guideBoard table { border-spacing:0; border-collapse:collapse; line-height: var(--body-line-height); background-color:var(--bg-0); }
+.xans-product-sizeguide .guideBoard.pants { margin-top: var(--space-12); }
+.xans-product-sizeguide .guideBoard.pants thead { overflow:hidden; position:absolute; width: 0; height: 0; white-space:nowrap; text-indent: 150%; font-size: var(--font-size-hidden); line-height: var(--line-height-hidden); border: 0; }
+.xans-product-sizeguide .guideBoard.pants tbody td { border-top-width: var(--form-field-border-width); }
 
-.xans-product-sizeguide .userGuide img { max-width:100%; height:auto !important; }
+.xans-product-sizeguide .userGuide img { max-width: 100%; height: auto; }
 .xans-product-sizeguide .userGuide table th,
 .xans-product-sizeguide .userGuide table td { word-break:break-all; }
 
-.xans-product-sizeguide .info { margin:10px 0 0; line-height:20px; }
-.xans-product-sizeguide .info span { display:block; padding:0 0 0 15px; }
+.xans-product-sizeguide .info { margin: var(--space-12) 0 0; line-height: calc(var(--space-16) + var(--space-4)); }
+.xans-product-sizeguide .info span { display:block; padding: 0 0 0 var(--space-16); }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
-    .xans-product-sizeguide .ec-base-layer { width:100%; border:0; }
+    .xans-product-sizeguide .ec-base-layer { width: 100%; border: 0; }
 }
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .xans-product-sizeguide .ec-base-layer { width:820px; }
+    .xans-product-sizeguide .ec-base-layer { width: calc((var(--space-96) * 8) + var(--space-48) + var(--space-4)); }
 
 }

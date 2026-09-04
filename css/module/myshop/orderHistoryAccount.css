@@ -1,1 +1,1 @@
-#popup { width:750px; }
+#popup { width: calc((var(--space-96) * 7) + var(--space-64) + var(--space-12) + calc(var(--form-field-border-width) * 2)); }

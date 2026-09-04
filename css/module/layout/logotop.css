@@ -1,13 +1,18 @@
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
 .xans-layout-logotop { text-align:center; }
-.xans-layout-logotop a { font-size:27px; line-height:1; color:#000; font-weight:bold; text-decoration:none; font-style:normal; }
-.xans-layout-logotop img { max-width:800px; max-height:21px; }
+.xans-layout-logotop a { font-size: var(--display-6-size-ko); line-height: var(--display-6-line-height-ko); color:var(--text-main); font-weight:var(--display-font-weight-ko); text-decoration:none; font-style:normal;
+    font-family: var(--font-display-ko);
+    letter-spacing: var(--display-letter-spacing-ko);}
+.xans-layout-logotop img { max-width: calc((var(--space-96) * 8) + var(--space-32)); max-height: calc(var(--space-16) + var(--space-4) + var(--form-field-border-width)); }
 }
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-.xans-layout-logotop { width:800px; margin:0 auto; padding:53px 0 31px; text-align:center; }
-.xans-layout-logotop a { font-size:35px; color:#000; font-weight:bold; text-decoration:none; font-style:normal; }
-.xans-layout-logotop img { max-width:800px; max-height:27px; }
+.xans-layout-logotop { width: calc((var(--space-96) * 8) + var(--space-32)); margin: 0 auto; padding: var(--space-48) 0 var(--space-32); text-align:center; }
+.xans-layout-logotop a { font-size: var(--display-4-size-ko); color:var(--text-main); font-weight:var(--display-font-weight-ko); text-decoration:none; font-style:normal;
+    font-family: var(--font-display-ko);
+    line-height: var(--display-4-line-height-ko);
+    letter-spacing: var(--display-letter-spacing-ko);}
+.xans-layout-logotop img { max-width: calc((var(--space-96) * 8) + var(--space-32)); max-height: calc(var(--space-24) + calc(var(--form-field-border-width) * 3)); }
 }

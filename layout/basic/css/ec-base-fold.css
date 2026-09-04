@@ -1,19 +1,4 @@
 .ec-base-fold {
-    --fold-title-color: var(--text-main);
-    --fold-title-font-size: var(--caption-1-size);
-    --fold-title-font-size-mobile: var(--title-4-size);
-    --fold-title-font-size-pc: var(--title-3-size);
-    --fold-title-font-weight: var(--title-font-weight);
-    --fold-line-height: var(--line-height-130);
-    --fold-border: var(--line-weak);
-    --fold-border-strong: var(--line-strong);
-    --fold-bg: var(--bg-0);
-    --fold-icon-color: var(--icon-main);
-    --fold-tap-highlight: rgba(255, 255, 255, 0);
-    --fold-transition: transform var(--motion-base) var(--motion-ease), border-color var(--motion-base) var(--motion-ease);
-}
-
-.ec-base-fold {
     position: relative;
 }
 
@@ -54,7 +39,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 40px;
+    width: calc(var(--space-32) + var(--space-8));
     height: 100%;
     -webkit-transition: var(--fold-transition);
     transition: var(--fold-transition);
@@ -66,7 +51,7 @@
 }
 
 .ec-base-fold .ec-base-fold {
-    border-width: 1px 0 0;
+    border-width: var(--form-field-border-width) 0 0;
 }
 
 .ec-base-fold .ec-base-fold+.ec-base-fold {
@@ -89,30 +74,30 @@
 }
 
 .ec-base-fold.theme1>.title {
-    border-top: var(--border-width-1) solid var(--fold-border-strong);
+    border-top: var(--form-field-border-width) solid var(--fold-border-strong);
 }
 
 .ec-base-fold.theme1>.title h2 {
-    padding: 25px 0;
+    padding: var(--space-24) 0;
     font-weight: var(--fold-title-font-weight);
 }
 
 .ec-base-fold.theme1>.title h3 {
-    padding: 20px 0;
+    padding: var(--space-24) 0;
     font-size: var(--fold-title-font-size);
 }
 
 .ec-base-fold.theme1>.title:after {
     content: "";
     position: absolute;
-    top: 20px;
-    right: 5px;
+    top: calc(var(--space-16) + var(--space-4));
+    right: calc(var(--space-4) + var(--form-field-border-width));
     overflow: hidden;
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-left: var(--border-width-1) solid var(--fold-icon-color);
-    border-bottom: var(--border-width-1) solid var(--fold-icon-color);
+    width: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
+    height: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
+    border-left: var(--form-field-border-width) solid var(--fold-icon-color);
+    border-bottom: var(--form-field-border-width) solid var(--fold-icon-color);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-transition: var(--fold-transition);
@@ -120,23 +105,23 @@
 }
 
 .ec-base-fold.theme1.selected>.title:after {
-    top: 25px;
+    top: calc(var(--space-24) + var(--form-field-border-width));
     -webkit-transform: rotate(135deg);
     transform: rotate(135deg);
 }
 
 .ec-base-fold.theme1.gBottomLine>.title {
     border-top: 0;
-    border-bottom: var(--border-width-1) solid var(--fold-border-strong);
+    border-bottom: var(--form-field-border-width) solid var(--fold-border-strong);
 }
 
 .ec-base-fold.theme1.gClearLine>.title {
     border-top: 0;
-    border-bottom: var(--border-width-1) solid transparent;
+    border-bottom: var(--form-field-border-width) solid var(--overlay-transparent);
 }
 
 .ec-base-fold.theme1+.ec-base-fold.theme1 {
-    margin-top: 30px;
+    margin-top: var(--space-32);
 }
 
 /* ec-base-table */
@@ -148,12 +133,12 @@
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1000px) {
     .ec-base-fold.theme1.gMargin {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: var(--space-16);
+        margin-right: var(--space-16);
     }
 
     .ec-base-fold.theme1>.title {
-        padding: 0 16px;
+        padding: 0 var(--space-16);
     }
 
     .ec-base-fold.theme1>.title h2 {
@@ -161,11 +146,11 @@
     }
 
     .ec-base-fold.theme1>.title:after {
-        right: 21px;
+        right: calc(var(--space-16) + var(--space-4) + var(--form-field-border-width));
     }
 
     .ec-base-fold.theme1.selected>.title:after {
-        top: 32px;
+        top: var(--space-32);
     }
 
     /* ec-base-table */

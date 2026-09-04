@@ -1,2 +1,2 @@
-.xans-mall-supplymainimage { margin:0 0 37px 0; }
-.xans-mall-supplymainimage img { max-width:756px; max-height:490px; }
+.xans-mall-supplymainimage { margin: 0 0 var(--space-32) 0; }
+.xans-mall-supplymainimage img { max-width: calc((var(--space-96) * 7) + var(--space-64) + var(--space-16) + var(--space-4)); max-height: calc((var(--space-96) * 5) + var(--space-8) + calc(var(--form-field-border-width) * 2)); }

@@ -1,10 +1,10 @@
-.xans-board-catemove { padding:10px 16px; border-top:1px solid #e5e5e5; }
-.xans-board-catemove .gColumn { display:inline-block; margin:10px; }
-.xans-board-catemove #board_category_move { margin:0 8px; }
-.xans-board-catemove select { width:138px; }
+.xans-board-catemove { padding: var(--space-12) var(--space-16); border-top: var(--form-field-border-width) solid var(--line-weak); }
+.xans-board-catemove .gColumn { display:inline-block; margin: var(--space-12); }
+.xans-board-catemove #board_category_move { margin: 0 var(--space-8); }
+.xans-board-catemove select { width: calc(var(--space-96) + var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 2)); }
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .xans-board-catemove { padding:10px 0; }
-    .xans-board-catemove .gColumn:first-of-type { margin-left:0; }
+    .xans-board-catemove { padding: var(--space-12) 0; }
+    .xans-board-catemove .gColumn:first-of-type { margin-left: 0; }
 }

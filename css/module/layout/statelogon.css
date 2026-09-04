@@ -1,8 +1,8 @@
-.xans-layout-statelogon > a { padding:0 4px 0 10px; color:#757575; font-size:12px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 1px; }
-.xans-layout-statelogon .myinfo { color:#757575; }
-.xans-layout-statelogon .myinfo strong { color:#353535; }
-.xans-layout-statelogon .myinfo a { padding:0 4px 0 10px; color:#757575; font-size:12px; }
+.xans-layout-statelogon > a { padding: 0 var(--space-4) 0 var(--space-12); color:var(--text-weak); font-size: var(--caption-2-size); background: none; }
+.xans-layout-statelogon .myinfo { color:var(--text-weak); }
+.xans-layout-statelogon .myinfo strong { color:var(--text-muted-strong); }
+.xans-layout-statelogon .myinfo a { padding: 0 var(--space-4) 0 var(--space-12); color:var(--text-weak); font-size: var(--caption-2-size); }
 .xans-layout-statelogon > a .count,
-.xans-layout-statelogon > a .count span { position:relative; display:inline-block; background:url("//img.echosting.cafe24.com/skin/base/layout/bg_basket_count.png") no-repeat; }
-.xans-layout-statelogon > a .count { left:-4px; top:-1px; margin:0 -5px 0 6px; padding:0 0 0 7px; vertical-align:middle; background-position:0 0; }
-.xans-layout-statelogon > a .count span { height:14px; padding:1px 8px 1px 0; font-weight:bold; color:#fff; font-size:11px; line-height:14px; vertical-align:top; background-position:right -26px; }
+.xans-layout-statelogon > a .count span { position:relative; display:inline-block; background:var(--icon-url-cart) no-repeat; }
+.xans-layout-statelogon > a .count { left: calc(var(--space-4) * -1); top: calc(var(--form-field-border-width) * -1); margin: 0 calc(var(--space-4) * -1) 0 var(--space-8); padding: 0 0 0 var(--space-8); vertical-align:middle; background-position: 0 0; }
+.xans-layout-statelogon > a .count span { height: calc(var(--space-12) + calc(var(--form-field-border-width) * 2)); padding: 0 var(--space-8) 0 0; font-weight:var(--font-weight-bold); color:var(--bg-0); font-size: var(--caption-2-size); line-height: calc(var(--space-12) + calc(var(--form-field-border-width) * 2)); vertical-align:top; background-position: right calc((var(--space-24) + calc(var(--form-field-border-width) * 2)) * -1); }

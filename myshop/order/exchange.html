@@ -29,7 +29,7 @@
                     <div class="ec-base-prdInfo gCheck">
                         <div class="prdBox">
                             <span class="check">{$form.checkbox}</span>
-                            <div class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></div>
+                            <div class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_image}" onerror="this.src='/0svg/logo.svg';" alt="" /></a></div>
                             <div class="description">
                                 <strong class="name">{$product_name_link}</strong>
                                 <div class="price">
@@ -66,7 +66,7 @@
                     <div class="ec-base-prdInfo gCheck">
                         <div class="prdBox">
                             <span class="check">{$form.checkbox}</span>
-                            <div class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt="" /></a></div>
+                            <div class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_image}" onerror="this.src='/0svg/logo.svg';" alt="" /></a></div>
                             <div class="description">
                                 <strong class="name">{$product_name_link}</strong>
                                 <div class="price">
@@ -131,8 +131,8 @@
             <table border="1" >
                 <caption>교환사유</caption>
                 <colgroup>
-                    <col style="width:200px;" />
-                    <col style="width:auto;" />
+                    <col  class="ec-u-w-200" />
+                    <col  class="ec-u-w-auto" />
                 </colgroup>
                 <tbody>
                     <tr>
@@ -159,8 +159,8 @@
                 <table border="1" >
                     <caption>추가 정보</caption>
                     <colgroup>
-                        <col style="width:200px;" />
-                        <col style="width:auto;" />
+                        <col  class="ec-u-w-200" />
+                        <col  class="ec-u-w-auto" />
                     </colgroup>
                     <tbody module="Myshop_Csadd">
                         <tr>
@@ -190,8 +190,8 @@
                 <table border="1" >
                     <caption>수거신청</caption>
                     <colgroup>
-                        <col style="width:200px;" />
-                        <col style="width:auto;" />
+                        <col  class="ec-u-w-200" />
+                        <col  class="ec-u-w-auto" />
                     </colgroup>
                     <tbody>
                         <tr>
@@ -220,8 +220,8 @@
                 <table border="1" >
                     <caption>수거지 정보</caption>
                     <colgroup>
-                        <col style="width:200px;" />
-                        <col style="width:auto;" />
+                        <col  class="ec-u-w-200" />
+                        <col  class="ec-u-w-auto" />
                     </colgroup>
                     <tbody>
                         <tr>
@@ -237,19 +237,19 @@
                             </td>
                         </tr>
                         <tr id="{$pickup_name_id}" class="{$pickup_name_display|display}">
-                            <th scope="row">이름 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
+                            <th scope="row">이름 <img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /></th>
                             <td>{$form.pickup_name}</td>
                         </tr>
                         <tr id="{$pickup_address_id}" class="{$pickup_address_display|display}">
-                            <th scope="row">수거지 주소 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
+                            <th scope="row">수거지 주소 <img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /></th>
                             <td>{$form.address}</td>
                         </tr>
                         <tr id="{$pickup_phone1_id}" class="{$pickup_phone1_display|display}">
-                            <th scope="row">일반전화 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired {$is_pickup_phone1_required_display|display}" alt="필수" /></th>
+                            <th scope="row">일반전화 <img src="/0svg/check.svg" class="icon icoRequired {$is_pickup_phone1_required_display|display}" alt="필수" /></th>
                             <td class="formGroup code">{$form.pickup_phone1_}</td>
                         </tr>
                         <tr id="{$pickup_phone2_id}" class="{$pickup_phone2_display|display}">
-                            <th scope="row">휴대전화 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired {$is_pickup_phone2_required_display|display}" alt="필수" /></th>
+                            <th scope="row">휴대전화 <img src="/0svg/check.svg" class="icon icoRequired {$is_pickup_phone2_required_display|display}" alt="필수" /></th>
                             <td class="formGroup code">{$form.pickup_phone2_}</td>
                         </tr>
                         <tr id="{$pickup_delivery_info_id}" class="{$delivery_info_offer_display|display}">
@@ -272,8 +272,8 @@
                 <table border="1" >
                     <caption>교환배송비 결제 정보</caption>
                     <colgroup>
-                        <col style="width:200px;" />
-                        <col style="width:auto;" />
+                        <col  class="ec-u-w-200" />
+                        <col  class="ec-u-w-auto" />
                     </colgroup>
                     <tbody>
                     <tr>
@@ -306,8 +306,8 @@
                 <table border="1" >
                     <caption>환불 계좌 정보</caption>
                     <colgroup>
-                        <col style="width:200px;" />
-                        <col style="width:auto;" />
+                        <col  class="ec-u-w-200" />
+                        <col  class="ec-u-w-auto" />
                     </colgroup>
                     <tbody class="{$refund_notice_display|display}">
                         <tr>

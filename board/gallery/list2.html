@@ -32,14 +32,14 @@
         <table border="1" >
         <caption>게시판 목록</caption>
         <colgroup module="board_listheader_8">
-            <col style="width:80px;" />
-            <col style="width:auto;" />
-            <col style="width:100px;" class="{$config.is_category|display}" />
-            <col style="width:85px;" />
-            <col style="width:120px;" class="{$config.use_date|display}" />
-            <col style="width:55px;" class="{$config.use_cnt|display}" />
-            <col style="width:55px;" class="{$config.is_use_recom|display}" />
-            <col style="width:80px;" class="{$config.is_use_point|display}" />
+            <col  class="ec-u-w-80" />
+            <col  class="ec-u-w-auto" />
+            <col class="{$config.is_category|display} ec-u-w-100" />
+            <col  class="ec-u-w-85" />
+            <col class="{$config.use_date|display} ec-u-w-120" />
+            <col class="{$config.use_cnt|display} ec-u-w-55" />
+            <col class="{$config.is_use_recom|display} ec-u-w-55" />
+            <col class="{$config.is_use_point|display} ec-u-w-80" />
         </colgroup>
         <thead module="board_listheader_8">
             <tr style="{$list_bg_color} {$list_char_color}">
@@ -67,7 +67,7 @@
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</span></td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</span></td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
             <tr style="{$list_bg_color} {$list_char_color}">
                 <td class="chk">{$checkbox}<span class="RW">{$notice_icon}</span></td>
@@ -78,7 +78,7 @@
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
         </tbody>
         <tbody module="board_fixed_8" class="center">
@@ -96,7 +96,7 @@
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
             <tr style="{$list_bg_color} {$list_char_color}">
                 <td class="chk">{$checkbox}<span class="RW">{$fixed_icon}</span></td>
@@ -107,7 +107,7 @@
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
         </tbody>
         <tbody module="board_list_8" class="center">
@@ -124,7 +124,7 @@
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
             <tr style="{$list_bg_color} {$list_char_color}">
                 <td class="chk no">{$checkbox}<span class="RW">{$no}</span></td>
@@ -135,7 +135,7 @@
                 <td>{$member_icon}{$writer}</td>
                 <td class="{$date_display|display}">{$write_date}</td>
                 <td class="{$hit_display|display}"><span class="RTMI">조회</span> {$hit_count}</td>
-                <td class="{$point_display|display}"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating{$point_count}.svg" alt="{$point_count}점" /></td>
+                <td class="{$point_display|display}"><img src="/0svg/review.svg" alt="{$point_count}점" /></td>
             </tr>
         </tbody>
         </table>

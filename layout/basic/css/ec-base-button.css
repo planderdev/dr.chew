@@ -1,70 +1,4 @@
 /* button */
-:root {
-    /* Button Component */
-    --button-font-family: var(--font-body);
-    --button-font-size-sm: var(--caption-2-size);
-    --button-font-size-md: var(--caption-1-size);
-    --button-font-size-lg: var(--body-3-size);
-    --button-font-weight: var(--font-weight-medium);
-    --button-font-weight-strong: var(--font-weight-semibold);
-    --button-letter-spacing: var(--body-letter-spacing);
-    --button-radius: var(--radius-sm);
-    --button-radius-campaign: var(--radius-pill);
-    --button-height-sm: 36px;
-    --button-height-md: 44px;
-    --button-height-lg: 52px;
-    --button-height-qty: 32px;
-    --button-padding-x-sm: var(--space-12);
-    --button-padding-x-md: 20px;
-    --button-padding-x-lg: var(--space-24);
-    --button-gap: var(--space-8);
-    --button-column-gap: 5px;
-    --button-break-gap: var(--space-12);
-    --button-group-margin-y: var(--space-24);
-    --button-group-margin-bottom: var(--space-48);
-    --button-group-margin-x-mobile: var(--space-16);
-    --button-panel-padding: var(--space-12) var(--button-padding-x-md);
-    --button-panel-border: var(--line-weak);
-    --button-more-min-width: 220px;
-    --button-fixed-bg: var(--bg-0);
-    --button-fixed-shadow: 0 -1px 0 var(--line-weak);
-    --button-fixed-z-index: 990;
-    --button-fixed-inner-margin: var(--space-12);
-    --button-fix-min-width: 72px;
-    --button-fix-min-width-sm: 96px;
-    --button-fix-min-width-md: 135px;
-    --button-fix-min-width-lg: 160px;
-    --button-transition: color var(--motion-base) var(--motion-ease), background-color var(--motion-base) var(--motion-ease), border-color var(--motion-base) var(--motion-ease), box-shadow var(--motion-fast) var(--motion-ease);
-    --button-focus-shadow: 0 0 0 3px rgba(215, 59, 80, 0.18);
-
-    --button-primary-bg: var(--brand-primary);
-    --button-primary-bg-hover: var(--red-700);
-    --button-primary-color: var(--color-white);
-    --button-primary-border: var(--brand-primary);
-
-    --button-secondary-bg: var(--red-100);
-    --button-secondary-bg-hover: var(--red-200);
-    --button-secondary-color: var(--brand-primary);
-    --button-secondary-border: var(--red-100);
-
-    --button-outline-bg: var(--bg-0);
-    --button-outline-bg-hover: var(--red-50);
-    --button-outline-color: var(--text-main);
-    --button-outline-color-hover: var(--brand-primary);
-    --button-outline-border: var(--line-strong);
-    --button-outline-border-hover: var(--brand-primary);
-
-    --button-ghost-bg: transparent;
-    --button-ghost-bg-hover: var(--red-50);
-    --button-ghost-color: var(--text-sub);
-    --button-ghost-color-hover: var(--brand-primary);
-    --button-ghost-border: transparent;
-
-    --button-disabled-bg: var(--bg-100);
-    --button-disabled-color: var(--text-weak);
-    --button-disabled-border: var(--line-weak);
-}
-
 [class^='btnNormal'],
 a[class^='btnNormal'],
 [class^='btnSubmit'],
@@ -88,14 +22,14 @@ a.btnCampaign {
     justify-content: center;
     gap: var(--button-gap);
     box-sizing: border-box;
-    height: var(--button-height-md);
-    padding: 0 var(--button-padding-x-md);
-    border: var(--border-width-1) solid transparent;
+    min-height: var(--button-height-md);
+    padding: var(--button-padding-y-md) var(--button-padding-x-md);
+    border: var(--form-field-border-width) solid var(--overlay-transparent);
     border-radius: var(--button-radius);
     font-family: var(--button-font-family);
     font-size: var(--button-font-size-md);
     font-weight: var(--button-font-weight);
-    line-height: 1;
+    line-height: var(--control-line-height);
     letter-spacing: var(--button-letter-spacing);
     text-align: center;
     text-decoration: none;
@@ -214,10 +148,11 @@ a[class^='btnBasic']:focus-visible,
 /* sizeQty */
 [class^='btn'].sizeQty {
     height: var(--button-height-qty);
+    min-height: var(--button-height-qty);
     margin-left: var(--button-gap);
     padding: 0 var(--button-padding-x-md);
     font-size: var(--button-font-size-sm);
-    line-height: 1;
+    line-height: var(--control-line-height);
 }
 
 /* btnText */
@@ -230,12 +165,12 @@ a[class^='btnBasic']:focus-visible,
     line-height: var(--body-line-height);
     color: var(--brand-primary);
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-underline-offset: calc(var(--form-field-border-width) * 3);
     transition: color var(--motion-base) var(--motion-ease);
 }
 
 .btnText:hover {
-    color: var(--red-700);
+    color: var(--brand-primary-hover);
 }
 
 .btnText:focus-visible {
@@ -264,12 +199,12 @@ a[class^='btnBasic']:focus-visible,
     min-width: var(--button-more-min-width);
     min-height: var(--button-height-md);
     padding: 0 var(--space-32);
-    border: var(--border-width-1) solid var(--line-strong);
+    border: var(--form-field-border-width) solid var(--line-strong);
     border-radius: var(--radius-pill);
     font-family: var(--font-body);
     font-size: var(--button-font-size-md);
     font-weight: var(--button-font-weight);
-    line-height: 1;
+    line-height: var(--control-line-height);
     color: var(--text-main);
     text-align: center;
     text-decoration: none;
@@ -279,7 +214,7 @@ a[class^='btnBasic']:focus-visible,
 .btnMore:hover {
     background: var(--brand-primary);
     border-color: var(--brand-primary);
-    color: var(--color-white);
+    color: var(--bg-0);
     text-decoration: none;
 }
 
@@ -289,16 +224,20 @@ a[class^='btnBasic']:focus-visible,
 }
 
 .btnMore .icon {
-    margin: -8px 0 0 var(--button-gap);
+    margin: calc(var(--space-8) * -1) 0 0 var(--button-gap);
     vertical-align: middle;
 }
 
 .btnMore:hover .icon {
-    border-color: var(--color-white);
+    border-color: var(--bg-0);
 }
 
 /* ec-base-button */
 .ec-base-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: var(--button-group-margin-y) 0;
     text-align: center;
 }
@@ -307,19 +246,11 @@ a[class^='btnBasic']:focus-visible,
     position: relative;
 }
 
-.ec-base-button:after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
-.ec-base-button .gLeft {
-    float: left;
+.ec-base-button .gLeft { display:inline-flex; align-items:center;
     text-align: left;
 }
 
-.ec-base-button .gRight {
-    float: right;
+.ec-base-button .gRight { margin-left: auto; display:inline-flex; align-items:center;
     text-align: right;
 }
 
@@ -341,9 +272,9 @@ a[class^='btnBasic']:focus-visible,
 
 /* type */
 .ec-base-button.typeBorder {
-    margin-top: -1px;
+    margin-top: 0;
     padding: var(--button-panel-padding);
-    border: var(--border-width-1) solid var(--button-panel-border);
+    border: var(--form-field-border-width) solid var(--button-panel-border);
 }
 
 /* gBottom */
@@ -452,23 +383,26 @@ a[class^='btnBasic']:focus-visible,
     /* size */
     [class^='btn'].sizeS {
         height: var(--button-height-sm);
+        min-height: var(--button-height-sm);
         padding: 0 var(--button-padding-x-sm);
         font-size: var(--button-font-size-sm);
     }
 
     [class^='btn'].sizeM {
         height: var(--button-height-md);
+        min-height: var(--button-height-md);
         padding: 0 var(--button-padding-x-md);
         font-size: var(--button-font-size-md);
-        line-height: 1;
+        line-height: var(--control-line-height);
     }
 
     [class^='btn'].sizeL {
         height: var(--button-height-lg);
-        min-width: 80px;
+        min-height: var(--button-height-lg);
+        min-width: calc(var(--space-64) + var(--space-16));
         padding: 0 var(--button-padding-x-lg);
         font-size: var(--button-font-size-lg);
-        line-height: 1;
+        line-height: var(--control-line-height);
         font-weight: var(--button-font-weight-strong);
     }
 
@@ -593,7 +527,6 @@ a[class^='btnBasic']:focus-visible,
 
     .ec-base-button[class*="gMColumn"] .gLeft,
     .ec-base-button[class*="gMColumn"] .gRight {
-        float: none;
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
@@ -616,22 +549,25 @@ a[class^='btnBasic']:focus-visible,
     /* size */
     [class^='btn'].sizeS {
         height: var(--button-height-sm);
+        min-height: var(--button-height-sm);
         padding: 0 var(--button-padding-x-sm);
         font-size: var(--button-font-size-sm);
     }
 
     [class^='btn'].sizeM {
         height: var(--button-height-md);
+        min-height: var(--button-height-md);
         padding: 0 var(--button-padding-x-md);
         font-size: var(--button-font-size-md);
     }
 
     [class^='btn'].sizeL {
         height: var(--button-height-lg);
-        min-width: 80px;
+        min-height: var(--button-height-lg);
+        min-width: calc(var(--space-64) + var(--space-16));
         padding: 0 var(--button-padding-x-lg);
         font-size: var(--button-font-size-lg);
-        line-height: 1;
+        line-height: var(--control-line-height);
         font-weight: var(--button-font-weight-strong);
     }
 

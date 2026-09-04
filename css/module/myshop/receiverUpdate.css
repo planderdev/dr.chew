@@ -1,4 +1,4 @@
-#popup { width:600px; }
-.ec-base-layer .inputTypeText { width:200px; }
-.ec-base-layer select { min-width:85px; }
-.ec-base-layer textarea { min-width:277px; min-height:90px; }
+#popup { width: calc((var(--space-96) * 6) + var(--space-24)); }
+.ec-base-layer .inputTypeText { width: calc((var(--space-96) * 2) + var(--space-8)); }
+.ec-base-layer select { min-width: calc(var(--space-64) + var(--space-16) + var(--space-4) + var(--form-field-border-width)); }
+.ec-base-layer textarea { min-width: calc((var(--space-96) * 2) + var(--space-64) + var(--space-16) + var(--space-4) + var(--form-field-border-width)); min-height: calc(var(--space-64) + var(--space-24) + calc(var(--form-field-border-width) * 2)); }

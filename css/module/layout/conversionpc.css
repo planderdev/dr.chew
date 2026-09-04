@@ -1,6 +1,9 @@
-.xans-layout-conversionpc { background:#fff; padding:45px; text-align:center; }
+.xans-layout-conversionpc { background:var(--bg-0); padding: var(--space-48); text-align:center; }
 .xans-layout-conversionpc a {
-    margin:20px; padding:20px 40px;
-    font-size:68px; color:#63666e; text-decoration:none; text-align:center;
-    border:4px solid #9d9db0; border-radius:10px;
-}
+    margin: var(--space-24); padding: var(--space-24) var(--space-48);
+    font-size: var(--display-1-size-ko); color:var(--text-weak); text-decoration:none; text-align:center;
+    border: var(--space-4) solid var(--text-disabled); border-radius: var(--radius-md);
+    font-family: var(--font-display-ko);
+    font-weight: var(--display-font-weight-ko);
+    line-height: var(--display-1-line-height-ko);
+    letter-spacing: var(--display-letter-spacing-ko);}

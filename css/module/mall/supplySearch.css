@@ -1,16 +1,16 @@
 
 
 /* 공급사 */
-.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch {width:300px;text-align:right;margin:-40px 0 0 auto;position:relative;}
-.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch fieldset {border:1px solid #d9d9d9;font-size:0;}
-.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch fieldset .title {display:inline-block;left:0;top:0;width:auto;padding:0 10px;height:34px;line-height:34px;font-size:13px;visibility:visible;color:#6a6a6a;border-right:1px solid #d9d9d9;}
-.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch #searchSupply {width:165px;height:32px;padding:0;border:0;line-height:32px;font-size:13px;color:#111;background:#fff; }
-.ec-base-tab.typeMenu ul > li > ul > li ul.xans-layout-fourth li {padding-right:15px !important;}
+.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch {width: calc((var(--space-96) * 3) + var(--space-12));text-align:right;margin: calc(var(--space-48) * -1) 0 0 auto;position:relative;}
+.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch fieldset {border: var(--form-field-border-width) solid var(--line-default);font-size: var(--font-size-hidden);}
+.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch fieldset .title {display:inline-block;left: 0;top: 0;width: auto;padding: 0 var(--space-12);height: calc(var(--space-32) + calc(var(--form-field-border-width) * 2));line-height: calc(var(--space-32) + calc(var(--form-field-border-width) * 2));font-size: var(--caption-1-size);visibility:visible;color:var(--text-weak);border-right: var(--form-field-border-width) solid var(--line-default);}
+.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch #searchSupply {width: calc(var(--space-96) + var(--space-64) + var(--space-4) + var(--form-field-border-width));height: var(--space-32);padding: 0;border: 0;line-height: var(--space-32);font-size: var(--caption-1-size);color:var(--text-strong);background:var(--bg-0); }
+.ec-base-tab.typeMenu ul > li > ul > li ul.xans-layout-fourth li {padding-right: var(--space-16);}
 
 @media all and (max-width:1024px) {
 	/* 공급사 */
-	.xans-layout-categorysupplylist.titleArea {margin:0 auto 20px;padding:20px 0;position:relative;border-bottom:1px solid #e8e8e8;}
-	.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch {width:100%;margin:25px 0 0 0;}
-	.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch #searchSupply {width:calc(100% - 130px);}
+	.xans-layout-categorysupplylist.titleArea {margin: 0 auto var(--space-24);padding: var(--space-24) 0;position:relative;border-bottom: var(--form-field-border-width) solid var(--line-weak);}
+	.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch {width: 100%;margin: var(--space-24) 0 0 0;}
+	.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch #searchSupply {width: calc(100% - calc(var(--space-96) + var(--space-32) + calc(var(--form-field-border-width) * 2)));}
 	.xans-layout-categorysupplylist.titleArea .xans-mall-supplysearch [type='image'] {text-align:right;}
 }

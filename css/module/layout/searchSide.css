@@ -1,44 +1,44 @@
 .xans-layout-searchside {
-    margin: 0 0 20px;
-    padding: 0 0 20px;
-    border-bottom: 1px solid #e8e8e8;
+    margin: 0 0 var(--space-24);
+    padding: 0 0 var(--space-24);
+    border-bottom: var(--form-field-border-width) solid var(--line-weak);
 }
 
 .xans-layout-searchside h2 {
-    height: 20px;
-    color: #2e2e2e;
-    font-size: 12px;
+    height: calc(var(--space-16) + var(--space-4));
+    color: var(--line-strong);
+    font-size: var(--caption-2-size);
 }
 
 .xans-layout-searchside fieldset {
-    border: 1px solid #d9d9d9;
-    border-radius: 2px;
+    border: var(--form-field-border-width) solid var(--line-default);
+    border-radius: var(--radius-sm);
 }
 
 .xans-layout-searchside #keyword {
-    width: 133px;
-    height: 32px;
-    padding: 0 0 0 9px;
+    width: calc(var(--space-96) + var(--space-32) + var(--space-4) + var(--form-field-border-width));
+    height: var(--space-32);
+    padding: 0 0 0 var(--space-8);
     border: 0;
-    line-height: 32px;
-    font-size: 12px;
-    color: #2e2e2e;
-    background: #fff;
+    line-height: var(--space-32);
+    font-size: var(--caption-2-size);
+    color: var(--line-strong);
+    background: var(--bg-0);
 }
 
 .xans-layout-searchside .bestKeyword {
-    margin: 7px 0;
-    font-size: 11px;
-    line-height: 18px;
+    margin: var(--space-8) 0;
+    font-size: var(--caption-2-size);
+    line-height: calc(var(--space-16) + calc(var(--form-field-border-width) * 2));
 }
 
 .xans-layout-searchside .bestKeyword a {
-    color: #757575;
+    color: var(--text-weak);
     text-decoration: none;
 }
 
 .xans-layout-searchside .bestKeyword a:hover {
-    color: #008bcc;
+    color: var(--support-info);
 }
 
 .xans-layout-searchside .bestKeyword a:after {
@@ -46,35 +46,35 @@
 }
 
 .xans-layout-searchside p.button {
-    margin: 10px 0 0;
+    margin: var(--space-12) 0 0;
 }
 
 .xans-layout-searchside p.button a {
-    margin: 0 0 0 4px;
+    margin: 0 0 0 var(--space-4);
 }
 
 .xans-layout-searchside fieldset .autoDrop {
     display: none;
-    border: 1px solid #565960;
-    width: 175px;
+    border: var(--form-field-border-width) solid var(--text-sub);
+    width: calc(var(--space-96) + var(--space-64) + var(--space-12) + calc(var(--form-field-border-width) * 3));
     position: absolute;
     text-align: left;
-    background: #fff;
+    background: var(--bg-0);
     overflow: hidden;
     overflow-y: auto;
-    max-height: 100px;
+    max-height: calc(var(--space-96) + var(--space-4));
 }
 
 .xans-layout-searchside fieldset .autoDrop li a {
     display: block;
-    padding: 6px 10px;
-    font-size: 11px;
-    color: #1c1c1c; 
+    padding: var(--space-8) var(--space-12);
+    font-size: var(--caption-2-size);
+    color: var(--text-strong);
 }
 
 .xans-layout-searchside fieldset .autoDrop li a:hover,
 .xans-layout-searchside fieldset .autoDrop li.selected a {
     text-decoration: none;
-    color: #fff;
-    background: #a1a4ae;
+    color: var(--bg-0);
+    background: var(--text-disabled);
 }

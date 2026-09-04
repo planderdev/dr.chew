@@ -1,24 +1,22 @@
-.xans-member-joinmapping {max-width:400px;margin-left:auto;margin-right:auto;text-align:center;}
-.xans-member-joinmapping .accountList {margin:0 auto;}
-.xans-member-joinmapping .accountList li { display: flex; border-bottom:1px solid #E8E8E8; }
-.xans-member-joinmapping .accountList li.head { padding-left:52px; }
-.xans-member-joinmapping .accountList li.head strong { display:block; flex:1; padding: 15px; font-size: 12px; line-height: 16px; font-weight: 700; text-align: center; box-sizing: border-box; }
-.xans-member-joinmapping .accountList li span { display: block; flex:1; min-width:0; position:relative; padding: 15px 5px; box-sizing: border-box; }
-.xans-member-joinmapping .accountList li .snsId { padding:0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;display: block; max-width:100%; flex:none; }
+.xans-member-joinmapping {max-width: calc((var(--space-96) * 4) + var(--space-16));margin-left: auto;margin-right: auto;text-align:center;}
+.xans-member-joinmapping .accountList {margin: 0 auto;}
+.xans-member-joinmapping .accountList li { display: flex; border-bottom: var(--form-field-border-width) solid var(--line-weak); }
+.xans-member-joinmapping .accountList li.head { padding-left: var(--space-48); }
+.xans-member-joinmapping .accountList li.head strong { display:block; flex:1; padding: var(--space-16); font-size: var(--caption-2-size); line-height: var(--space-16); font-weight: var(--font-weight-bold); text-align: center; box-sizing: border-box; }
+.xans-member-joinmapping .accountList li span { display: block; flex:1; min-width: 0; position:relative; padding: var(--space-16) var(--space-4); box-sizing: border-box; }
+.xans-member-joinmapping .accountList li .snsId { padding: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;display: block; max-width: 100%; flex:none; }
 .xans-member-joinmapping .accountList li span label { display:block; white-space: nowrap; }
-.xans-member-joinmapping .accountList li span:first-child{ padding-left:55px; }
-.xans-member-joinmapping .accountList li span label input { position:absolute; left:20px; top:15px; }
+.xans-member-joinmapping .accountList li span:first-child{ padding-left: var(--space-48); }
+.xans-member-joinmapping .accountList li span label input { position:absolute; left: calc(var(--space-16) + var(--space-4)); top: calc(var(--space-12) + calc(var(--form-field-border-width) * 3)); }
 .xans-member-joinmapping .accountList li .center { text-align: center; }
 .xans-member-joinmapping .accountList li.head strong:nth-child(2),
-.xans-member-joinmapping .accountList li > span:nth-child(2) { width: 100px; flex:none; }
-.xans-member-joinmapping .ec-base-button .btnNormal {font-weight:400;}
-.xans-member-joinmapping .ec-base-box.typeThin { margin:0 0 20px; padding:0; border-color: #d5d5d5; }
-.xans-member-joinmapping .boxTitle { margin:6px 0 20px; font-size:14px; line-height: 1.5;  font-weight:400; }
-.xans-member-joinmapping .boxTitle em{ font-style: normal; color:#000; }
+.xans-member-joinmapping .accountList li > span:nth-child(2) { width: calc(var(--space-96) + var(--space-4)); flex:none; }
+.xans-member-joinmapping .ec-base-box.typeThin { margin: 0 0 var(--space-24); padding: 0; border-color: var(--line-default); }
+.xans-member-joinmapping .boxTitle { margin: var(--space-8) 0 var(--space-24); font-size: var(--body-3-size); line-height: var(--body-line-height);  font-weight:var(--font-weight-regular); }
+.xans-member-joinmapping .boxTitle em{ font-style: normal; color:var(--text-main); }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
-    .xans-member-joinmapping {max-width:100%;}
-	.xans-member-joinmapping .ec-base-button {margin:20px 0;}
+    .xans-member-joinmapping {max-width: 100%;}
+	.xans-member-joinmapping .ec-base-button {margin: var(--space-24) 0;}
 }
-

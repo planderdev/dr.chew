@@ -1,5 +1,5 @@
-.xans-myshop-layerwish { padding: 20px 25px 0; }
+.xans-myshop-layerwish { padding: var(--space-24) var(--space-24) 0; }
 .xans-myshop-layerwish .content { text-align:center; display: flex; flex-direction: column; justify-content: center;}
-.xans-myshop-layerwish .content p { color:#000; font-size: 13px; line-height: 20px; }
-.xans-myshop-layerwish .content p strong { color:#000; }
+.xans-myshop-layerwish .content p { color:var(--text-main); font-size: var(--caption-1-size); line-height: calc(var(--space-16) + var(--space-4)); }
+.xans-myshop-layerwish .content p strong { color:var(--text-main); }
 

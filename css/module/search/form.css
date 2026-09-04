@@ -1,19 +1,19 @@
-#searchForm #titleArea { background-color:transparent; border-bottom:0; }
-#searchForm #titleArea span.count { position:static; color:#508bed; }
-#searchForm #titleArea h2 { border-bottom:1px solid #c2c2c2; background:#fff; }
+#searchForm #titleArea { background-color:var(--overlay-transparent); border-bottom: 0; }
+#searchForm #titleArea span.count { position:static; color:var(--support-info); }
+#searchForm #titleArea h2 { border-bottom: var(--form-field-border-width) solid var(--line-default); background:var(--bg-0); }
 
-.xans-search-form .empty { padding:93px 0 59px; color:#4a5164; text-align:center; font-size:17px; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/product/ico_search.png") center 28px no-repeat #fff; background-size:37px; }
+.xans-search-form .empty { padding: var(--space-96) 0 var(--space-64); color:var(--text-sub); text-align:center; font-size: var(--title-3-size); background:var(--icon-url-search) center calc(var(--space-24) + var(--space-4)) no-repeat var(--bg-0); background-size: calc(var(--space-32) + var(--space-4) + var(--form-field-border-width)); }
 
-.xans-search-form .searchbox { position:relative; padding:7px 65px 6px 14px; border-bottom:1px solid #d1d1d1; background:#fff; }
-.xans-search-form .searchbox input#keyword { width:100%; padding:0 30px 0 0; }
-.xans-search-form .searchbox .button { width:60px; position:absolute; top:7px; right:10px; text-align:right; }
-.xans-search-form .searchbox .button .btnStrong { height:29px; }
+.xans-search-form .searchbox { position:relative; padding: var(--space-8) var(--space-64) var(--space-8) var(--space-16); border-bottom: var(--form-field-border-width) solid var(--line-default); background:var(--bg-0); }
+.xans-search-form .searchbox input#keyword { width: 100%; padding: 0 var(--space-32) 0 0; }
+.xans-search-form .searchbox .button { width: calc(var(--space-48) + var(--space-12)); position:absolute; top: calc(var(--space-4) + calc(var(--form-field-border-width) * 3)); right: calc(var(--space-8) + calc(var(--form-field-border-width) * 2)); text-align:right; }
+.xans-search-form .searchbox .button .btnStrong { height: calc(var(--space-24) + var(--space-4) + var(--form-field-border-width)); }
 .xans-search-form .searchbox .btnDelete {
-    overflow: hidden; position: absolute; right: 72px; top: 12px; width: 20px; height: 20px;
-    border: 0; cursor: pointer; text-indent: 100%; font-size: 0; white-space: nowrap;
-    background: url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png") no-repeat 0 0; background-size: 20px 20px;
+    overflow: hidden; position: absolute; right: calc(var(--space-64) + var(--space-8)); top: var(--space-12); width: calc(var(--space-16) + var(--space-4)); height: calc(var(--space-16) + var(--space-4));
+    border: 0; cursor: pointer; text-indent: 100%; font-size: var(--font-size-hidden); white-space: nowrap;
+    background: var(--icon-url-close) no-repeat 0 0; background-size: calc(var(--space-16) + var(--space-4)) calc(var(--space-16) + var(--space-4));
  }
-.xans-search-form .inner { overflow:hidden; padding:7px 14px 6px; border-bottom:1px solid #ececec; background:#f1f1f1; }
-.xans-search-form .inner p { float:left; }
-.xans-search-form .inner p.button { float:right; padding:2px 0 0; }
-.xans-search-form .inner .button img { display:block; border:1px solid red; }
+.xans-search-form .inner { display:flex; align-items:center; justify-content:space-between; overflow:hidden; padding: var(--space-8) var(--space-16) var(--space-8); border-bottom: var(--form-field-border-width) solid var(--line-weak); background:var(--bg-100); }
+.xans-search-form .inner p { display:inline-flex; align-items:center; }
+.xans-search-form .inner p.button { margin-left: auto; display:inline-flex; align-items:center; padding: var(--space-4) 0 0; }
+.xans-search-form .inner .button img { display:block; border: var(--form-field-border-width) solid red; }

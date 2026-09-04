@@ -1,6 +1,6 @@
-#popup { width:600px; }
+#popup { width: calc((var(--space-96) * 6) + var(--space-24)); }
 .xans-calendar-modify td input,
-.xans-calendar-modify td textarea { padding:2px 2px 2px 4px; width:350px; height:18px; border:1px solid #d9d9d9; color:#202020; }
-.xans-calendar-modify td input#date { width:70px; text-align:center; }
-.xans-calendar-modify td input#confirm { width:40px; }
-.xans-calendar-modify td textarea { height:80px; }
+.xans-calendar-modify td textarea { padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4); width: calc((var(--space-96) * 3) + var(--space-48) + var(--space-12) + calc(var(--form-field-border-width) * 2)); height: calc(var(--space-16) + calc(var(--form-field-border-width) * 2)); border: var(--form-field-border-width) solid var(--line-default); color:var(--line-strong); }
+.xans-calendar-modify td input#date { width: calc(var(--space-64) + var(--space-4) + calc(var(--form-field-border-width) * 2)); text-align:center; }
+.xans-calendar-modify td input#confirm { width: calc(var(--space-32) + var(--space-8)); }
+.xans-calendar-modify td textarea { height: calc(var(--space-64) + var(--space-16)); }

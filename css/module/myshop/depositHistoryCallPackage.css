@@ -1,6 +1,6 @@
-.xans-myshop-depositrefundform table .price1 { font-size:16px; }
-.xans-myshop-depositrefundform table .price2 { font-size:16px; }
-.xans-myshop-depositrefundform table td #request_deposit_amt { width:100px; }
-.xans-myshop-depositrefundform table td #request_account_name { width:100px; }
+.xans-myshop-depositrefundform table .price1 { font-size: var(--body-1-size); }
+.xans-myshop-depositrefundform table .price2 { font-size: var(--body-1-size); }
+.xans-myshop-depositrefundform table td #request_deposit_amt { width: calc(var(--space-96) + var(--space-4)); }
+.xans-myshop-depositrefundform table td #request_account_name { width: calc(var(--space-96) + var(--space-4)); }
 .xans-myshop-depositrefundform table td #request_account_no,
-.xans-myshop-depositrefundform table td #request_bank_code { width:200px; }
+.xans-myshop-depositrefundform table td #request_bank_code { width: calc((var(--space-96) * 2) + var(--space-8)); }

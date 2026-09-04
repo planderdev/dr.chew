@@ -1,10 +1,10 @@
-.couponDownResult img { border:0; vertical-align:top; }
-.couponDownResult .content { padding:30px 30px 20px; line-height:20px; }
-.couponDownResult .content .ec-base-box { overflow-y:auto; height:120px; margin:10px 0 0; }
-.couponDownResult .content .ec-base-box ul { margin:0 0 10px; padding:0; }
-.couponDownResult .content .ec-base-box ul li { list-style:none; margin:0; padding:0; }
+.couponDownResult img { border: 0; vertical-align:top; }
+.couponDownResult .content { padding: var(--space-32) var(--space-32) var(--space-24); line-height: calc(var(--space-16) + var(--space-4)); }
+.couponDownResult .content .ec-base-box { overflow-y:auto; height: calc(var(--space-96) + var(--space-24)); margin: var(--space-12) 0 0; }
+.couponDownResult .content .ec-base-box ul { margin: 0 0 var(--space-12); padding: 0; }
+.couponDownResult .content .ec-base-box ul li { list-style:none; margin: 0; padding: 0; }
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-	.couponDownResult { width:563px; }
+	.couponDownResult { width: calc((var(--space-96) * 5) + var(--space-64) + var(--space-16) + calc(var(--form-field-border-width) * 3)); }
 }

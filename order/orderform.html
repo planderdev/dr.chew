@@ -92,10 +92,10 @@
         <!-- [주문 정보 확인 레이어팝업] -->
         <!--@import(/order/ec_orderform/confirm.html)-->
 
-        <iframe id="{$payment_proc_id}" name="h_payment" width="0" height="0" src="" title="" style="border:none;"></iframe>
+        <iframe id="{$payment_proc_id}" name="h_payment" width="0" height="0" src="" title="" class="ec-u-border-0"></iframe>
         <input type="hidden" id="sPrdName" name="sPrdName" value="{$sPrdName}">
     </div>
-    <div id="progressPaybar" style="display:none;">
+    <div id="progressPaybar" class="ec-u-hidden">
         <div id="progressPaybarBackground" class="layerProgress"></div>
         <div id="progressPaybarView">
             <p class="graph">현재 결제가 진행중입니다.</p>

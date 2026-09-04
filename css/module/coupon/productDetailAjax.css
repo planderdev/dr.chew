@@ -1,51 +1,40 @@
-.xans-coupon-productdetailajax { clear:both; overflow:hidden; }
+.xans-coupon-productdetailajax { overflow:hidden; }
 .xans-coupon-productdetailajax > .title { position:relative; }
-.xans-coupon-productdetailajax > .title h2 { font-size:18px; color:#000; font-weight:normal; line-height:39px; }
-.xans-coupon-productdetailajax > .title .button { position:absolute; top:7px; right:0; padding:0 0 0 7px; background:#fff; }
+.xans-coupon-productdetailajax > .title h2 { font-size: var(--title-3-size); color:var(--text-main); font-weight:var(--font-weight-regular); line-height: var(--body-line-height); }
+.xans-coupon-productdetailajax > .title .button { position:absolute; top: var(--space-8); right: 0; padding: 0 0 0 var(--space-8); background:var(--bg-0); }
 
-.xans-coupon-productdetailajax .couponSkinArea { padding:25px 0 0; }
-.xans-coupon-productdetailajax .couponSkinArea ul { margin:0 auto; padding:0; text-align:center; }
-.xans-coupon-productdetailajax .couponSkinArea ul:after { content:""; display:block; clear:both; }
-.xans-coupon-productdetailajax .couponSkinArea ul li { padding:0; list-style:none; }
-.xans-coupon-productdetailajax .couponSkinArea .coupon { width:216px; height:105px; margin-bottom:20px; font-size:12px; line-height:1.5; text-align:center; background-repeat:no-repeat; }
-.xans-coupon-productdetailajax .couponSkinArea .coupon img { border:0; }
-.xans-coupon-productdetailajax .couponSkinArea .coupon p { margin:0; padding:0; }
-.xans-coupon-productdetailajax .couponSkinArea .coupon .title { display:block; padding:8px 0 0; font-size:10px; line-height:15px; text-align:center; font-weight:normal; }
-.xans-coupon-productdetailajax .couponSkinArea .coupon .discount { font-size:18px; line-height:28px; font-weight:bold; text-align:center; text-decoration:none; letter-spacing:-1px; }
-.xans-coupon-productdetailajax .couponSkinArea .coupon .discount span { font-size:22px; }
-.xans-coupon-productdetailajax .couponSkinArea .coupon .period { font-size:11px; line-height:13px; font-weight:bold; text-align:center; letter-spacing:-1px; }
-.xans-coupon-productdetailajax .couponSkinArea .coupon .button { margin:5px 0 0; text-align:center; }
+.xans-coupon-productdetailajax .couponSkinArea { padding: var(--space-24) 0 0; }
+.xans-coupon-productdetailajax .couponSkinArea ul { display:flex; align-items:center; flex-wrap:wrap; margin: 0 auto; padding: 0; text-align:center; }
+.xans-coupon-productdetailajax .couponSkinArea ul li { padding: 0; list-style:none; }
+.xans-coupon-productdetailajax .couponSkinArea .coupon { width: var(--coupon-card-width); height: var(--coupon-card-height); margin-bottom: var(--space-24); font-size: var(--caption-2-size); line-height: var(--body-line-height); text-align:center; background-repeat:no-repeat; }
+.xans-coupon-productdetailajax .couponSkinArea .coupon img { border: 0; }
+.xans-coupon-productdetailajax .couponSkinArea .coupon p { margin: 0; padding: 0; }
+.xans-coupon-productdetailajax .couponSkinArea .coupon .title { display:block; padding: var(--space-8) 0 0; font-size: var(--caption-2-size); line-height: var(--body-line-height); text-align:center; font-weight:var(--font-weight-regular); }
+.xans-coupon-productdetailajax .couponSkinArea .coupon .discount { font-size: var(--title-3-size); line-height: var(--body-line-height); font-weight:var(--font-weight-bold); text-align:center; text-decoration:none; letter-spacing: var(--body-letter-spacing); }
+.xans-coupon-productdetailajax .couponSkinArea .coupon .discount span { font-size: var(--headline-3-size-ko); font-family:var(--font-headline-ko); font-weight:var(--headline-font-weight-ko); line-height: var(--headline-3-line-height-ko); letter-spacing: var(--headline-letter-spacing-ko); }
+.xans-coupon-productdetailajax .couponSkinArea .coupon .period { font-size: var(--caption-2-size); line-height: var(--body-line-height); font-weight:var(--font-weight-bold); text-align:center; letter-spacing: var(--body-letter-spacing); }
+.xans-coupon-productdetailajax .couponSkinArea .coupon .button { margin: var(--space-4) 0 0; text-align:center; }
 .xans-coupon-productdetailajax .couponSkinArea .imgCoupon .title,
 .xans-coupon-productdetailajax .couponSkinArea .imgCoupon .discount,
 .xans-coupon-productdetailajax .couponSkinArea .imgCoupon .period,
 .xans-coupon-productdetailajax .couponSkinArea .imgCoupon .button { display:none; }
-.xans-coupon-productdetailajax .couponSkinArea .imgCoupon .detail { height:100%; }
+.xans-coupon-productdetailajax .couponSkinArea .imgCoupon .detail { height: 100%; }
 .xans-coupon-productdetailajax .couponSkinArea .discount { text-decoration:none; }
-
-#dCouponDetail { z-index:1001; overflow:hidden; position:fixed; top:50% !important; left:0 !important; right:0; margin:0 auto; width:398px; border:1px solid #000; background:#fff; transform:translateY(calc(-50% + 0.5px)); }
-#dCouponDetail h3 { height:60px; margin:0 20px; padding:20px 0; font-size:16px; box-sizing:border-box; border-bottom:1px solid #e5e5e5; }
-#dCouponDetail h3 + a { position:absolute; right:20px; top:20px; }
-#dCouponDetail ul { padding:16px 10px 17px 20px; margin:25px 19px; background:#f5f5f5; }
-#dCouponDetail ul li { margin:7px 0 0; color:#2e2e2e; line-height:18px; }
-#dCouponDetail ul li:first-child { margin-top:0; }
-#dCouponDetail ul + a { display:block; padding:12px 0; text-align:center; border-top:1px solid #d7d5d5; background:#fbfafa; }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1000px) {
-  .xans-coupon-productdetailajax { margin:100px 16px 50px; }
-  .xans-coupon-productdetailajax .couponSkinArea ul li { margin:25px 0 0; }
-  .xans-coupon-productdetailajax .couponSkinArea .coupon { margin:0 auto; }
-  
-  #dCouponDetail { width:88%; }
+  .xans-coupon-productdetailajax { margin: var(--space-96) var(--space-16) var(--space-48); }
+  .xans-coupon-productdetailajax .couponSkinArea ul li { margin: var(--space-24) 0 0; }
+  .xans-coupon-productdetailajax .couponSkinArea .coupon { margin: 0 auto; }
 }
 
 /********************* PC *********************/
 @media all and (min-width:1001px) {
-  .xans-coupon-productdetailajax { margin:100px 0 0; }
-  .xans-coupon-productdetailajax .couponSkinArea ul li { display:inline; float:left; width:216px; }
-  .xans-coupon-productdetailajax .couponSkinArea ul.grid1 { width:216px; }
-  .xans-coupon-productdetailajax .couponSkinArea ul.grid2 { width:472px; }
-  .xans-coupon-productdetailajax .couponSkinArea ul.grid2 li { margin:0 10px; }
-  .xans-coupon-productdetailajax .couponSkinArea ul.grid3 { width:708px; }
-  .xans-coupon-productdetailajax .couponSkinArea ul.grid3 li { margin:0 10px; }
+  .xans-coupon-productdetailajax { margin: var(--space-96) 0 0; }
+  .xans-coupon-productdetailajax .couponSkinArea ul li { display:flex; width: var(--coupon-card-width); }
+  .xans-coupon-productdetailajax .couponSkinArea ul.grid1 { width: var(--coupon-card-width); }
+  .xans-coupon-productdetailajax .couponSkinArea ul.grid2 { width: calc((var(--coupon-card-width) * 2) + var(--coupon-grid-gap-x)); }
+  .xans-coupon-productdetailajax .couponSkinArea ul.grid2 li { margin: 0 var(--space-12); }
+  .xans-coupon-productdetailajax .couponSkinArea ul.grid3 { width: calc((var(--coupon-card-width) * 3) + calc(var(--coupon-grid-gap-x) * 2)); }
+  .xans-coupon-productdetailajax .couponSkinArea ul.grid3 li { margin: 0 var(--space-12); }
 }

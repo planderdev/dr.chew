@@ -1,28 +1,32 @@
-.xans-project-package .title{ margin: 40px 0 0;}
-.xans-project-package .title h2 { margin: 0 0 30px; text-align: center; font-size:20px; color:#000; }
-.xans-project-package .banner { margin:0 0 54px; }
+.xans-project-package .title{ margin: var(--space-48) 0 0;}
+.xans-project-package .title h2 { margin: 0 0 var(--space-32); text-align: center; font-size: var(--title-2-size); color:var(--text-main); }
+.xans-project-package .banner { margin: 0 0 var(--space-48); }
 .xans-project-package .banner img { width: 100%; }
 
-.xans-product-headcategory + .ec-base-tab {margin: 30px 0 0;}
-.xans-project-package .menuCategory { margin-top:40px; font-size:0; line-height:0; }
-.xans-project-package .menuCategory > li { display:inline-block; margin: 0 15px; font-size:12px; line-height:14px; vertical-align:top; }
-.xans-project-package .menuCategory > li > a { padding:0 13px 0 0;font-weight:bold; color:#353535; }
-.xans-project-package .menuCategory > li > a:hover { color:#000; text-decoration:none;}
-.xans-project-package .menuCategory > li .count { font-weight:normal; }
+.xans-product-headcategory + .ec-base-tab {margin: var(--space-32) 0 0;}
+.xans-project-package .menuCategory { margin-top: var(--space-48); font-size: var(--font-size-hidden); line-height: var(--line-height-hidden); }
+.xans-project-package .menuCategory > li { display:inline-block; margin: 0 var(--space-16); font-size: var(--caption-2-size); line-height: calc(var(--space-12) + calc(var(--form-field-border-width) * 2)); vertical-align:top; }
+.xans-project-package .menuCategory > li > a { padding: 0 var(--space-12) 0 0;font-weight:var(--font-weight-bold); color:var(--text-muted-strong); }
+.xans-project-package .menuCategory > li > a:hover { color:var(--text-main); text-decoration:none;}
+.xans-project-package .menuCategory > li .count { font-weight:var(--font-weight-regular); }
 
 .xans-project-list + .xans-project-list {border: 0;}
-.xans-project-list h3 { margin:50px 0 35px; font-weight:normal; font-size:18px; color:#2e2e2e; text-align:left; }
+.xans-project-list h3 { margin: var(--space-48) 0 var(--space-32); font-weight:var(--font-weight-regular); font-size: var(--title-3-size); color:var(--line-strong); text-align:left; }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     .xans-project-package .title {margin: 0;}
-    .xans-project-package .banner {margin-bottom: 40px; }
-    .xans-project-package .title h2 {font-size: 22px;}
-    .xans-project-list {margin: 0 16px; }
-    .xans-project-list h3 {margin: 40px 0 20px; font-size: 16px;}
+    .xans-project-package .banner {margin-bottom: var(--space-48); }
+    .xans-project-package .title h2 {font-size: var(--headline-3-size-ko);
+    font-family: var(--font-headline-ko);
+    font-weight: var(--headline-font-weight-ko);
+    line-height: var(--headline-3-line-height-ko);
+    letter-spacing: var(--headline-letter-spacing-ko);}
+    .xans-project-list {margin: 0 var(--space-16); }
+    .xans-project-list h3 {margin: var(--space-48) 0 var(--space-24); font-size: var(--body-1-size);}
 }
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .xans-project-list {margin: 0 24px; border-top: 1px solid #e0e0e0; }
+    .xans-project-list {margin: 0 var(--space-24); border-top: var(--form-field-border-width) solid var(--line-weak); }
 }

@@ -20,8 +20,7 @@
 }
 
 .swiper-container-no-flexbox .swiper-slide {
-    float: left
-}
+    display: inline-flex; align-items: center;}
 
 .swiper-container-vertical>.swiper-wrapper {
     -webkit-box-orient: vertical;
@@ -104,8 +103,8 @@
 }
 
 .swiper-container-3d {
-    -webkit-perspective: 1200px;
-    perspective: 1200px
+    -webkit-perspective: calc((var(--space-96) * 12) + var(--space-48));
+    perspective: calc((var(--space-96) * 12) + var(--space-48))
 }
 
 .swiper-container-3d .swiper-cube-shadow,
@@ -133,31 +132,31 @@
 }
 
 .swiper-container-3d .swiper-slide-shadow-left {
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+    background-image: -webkit-gradient(linear, right top, left top, from(var(--overlay-dark-strong)), to(var(--overlay-transparent)));
+    background-image: -webkit-linear-gradient(right, var(--overlay-dark-strong), var(--overlay-transparent));
+    background-image: -o-linear-gradient(right, var(--overlay-dark-strong), var(--overlay-transparent));
+    background-image: linear-gradient(to left, var(--overlay-dark-strong), var(--overlay-transparent))
 }
 
 .swiper-container-3d .swiper-slide-shadow-right {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-dark-strong)), to(var(--overlay-transparent)));
+    background-image: -webkit-linear-gradient(left, var(--overlay-dark-strong), var(--overlay-transparent));
+    background-image: -o-linear-gradient(left, var(--overlay-dark-strong), var(--overlay-transparent));
+    background-image: linear-gradient(to right, var(--overlay-dark-strong), var(--overlay-transparent))
 }
 
 .swiper-container-3d .swiper-slide-shadow-top {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--overlay-dark-strong)), to(var(--overlay-transparent)));
+    background-image: -webkit-linear-gradient(bottom, var(--overlay-dark-strong), var(--overlay-transparent));
+    background-image: -o-linear-gradient(bottom, var(--overlay-dark-strong), var(--overlay-transparent));
+    background-image: linear-gradient(to top, var(--overlay-dark-strong), var(--overlay-transparent))
 }
 
 .swiper-container-3d .swiper-slide-shadow-bottom {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-dark-strong)), to(var(--overlay-transparent)));
+    background-image: -webkit-linear-gradient(top, var(--overlay-dark-strong), var(--overlay-transparent));
+    background-image: -o-linear-gradient(top, var(--overlay-dark-strong), var(--overlay-transparent));
+    background-image: linear-gradient(to bottom, var(--overlay-dark-strong), var(--overlay-transparent))
 }
 
 .swiper-container-wp8-horizontal,
@@ -176,12 +175,12 @@
 .swiper-button-prev {
     position: absolute;
     top: 50%;
-    width: 27px;
-    height: 44px;
-    margin-top: -22px;
+    width: calc(var(--space-24) + calc(var(--form-field-border-width) * 3));
+    height: calc(var(--space-32) + var(--space-12));
+    margin-top: calc(var(--space-24) * -1);
     z-index: 10;
     cursor: pointer;
-    background-size: 27px 44px;
+    background-size: calc(var(--space-24) + calc(var(--form-field-border-width) * 3)) calc(var(--space-32) + var(--space-12));
     background-position: center;
     background-repeat: no-repeat
 }
@@ -195,36 +194,36 @@
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-    left: 10px;
+    background-image: var(--icon-url-left-arr);
+    left: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
     right: auto
 }
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
-    right: 10px;
+    background-image: var(--icon-url-right-arr);
+    right: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
     left: auto
 }
 
 .swiper-button-prev.swiper-button-white,
 .swiper-container-rtl .swiper-button-next.swiper-button-white {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")
+    background-image: var(--icon-url-left-arr)
 }
 
 .swiper-button-next.swiper-button-white,
 .swiper-container-rtl .swiper-button-prev.swiper-button-white {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")
+    background-image: var(--icon-url-right-arr)
 }
 
 .swiper-button-prev.swiper-button-black,
 .swiper-container-rtl .swiper-button-next.swiper-button-black {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E")
+    background-image: var(--icon-url-left-arr)
 }
 
 .swiper-button-next.swiper-button-black,
 .swiper-container-rtl .swiper-button-prev.swiper-button-black {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E")
+    background-image: var(--icon-url-right-arr)
 }
 
 .swiper-button-lock {
@@ -249,14 +248,14 @@
 .swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: 10px;
+    bottom: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
     left: 0;
     width: 100%
 }
 
 .swiper-pagination-bullets-dynamic {
     overflow: hidden;
-    font-size: 0
+    font-size: var(--font-size-hidden)
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
@@ -303,11 +302,11 @@
 }
 
 .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
+    width: var(--space-8);
+    height: var(--space-8);
     display: inline-block;
-    border-radius: 100%;
-    background: #000;
+    border-radius: var(--radius-pill);
+    background: var(--text-main);
     opacity: .2
 }
 
@@ -328,18 +327,18 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #007aff
+    background: var(--brand-primary)
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {
-    right: 10px;
+    right: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
     top: 50%;
     -webkit-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0)
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 6px 0;
+    margin: var(--space-8) 0;
     display: block
 }
 
@@ -348,7 +347,7 @@ button.swiper-pagination-bullet {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 8px
+    width: var(--space-8)
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
@@ -361,7 +360,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 4px
+    margin: 0 var(--space-4)
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
@@ -389,12 +388,12 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-progressbar {
-    background: rgba(0, 0, 0, .25);
+    background: var(--overlay-dark);
     position: absolute
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: #007aff;
+    background: var(--brand-primary);
     position: absolute;
     left: 0;
     top: 0;
@@ -417,41 +416,41 @@ button.swiper-pagination-bullet {
 .swiper-container-horizontal>.swiper-pagination-progressbar,
 .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
     width: 100%;
-    height: 4px;
+    height: var(--space-4);
     left: 0;
     top: 0
 }
 
 .swiper-container-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
 .swiper-container-vertical>.swiper-pagination-progressbar {
-    width: 4px;
+    width: var(--space-4);
     height: 100%;
     left: 0;
     top: 0
 }
 
 .swiper-pagination-white .swiper-pagination-bullet-active {
-    background: #fff
+    background: var(--bg-0)
 }
 
 .swiper-pagination-progressbar.swiper-pagination-white {
-    background: rgba(255, 255, 255, .25)
+    background: var(--overlay-light)
 }
 
 .swiper-pagination-progressbar.swiper-pagination-white .swiper-pagination-progressbar-fill {
-    background: #fff
+    background: var(--bg-0)
 }
 
 .swiper-pagination-black .swiper-pagination-bullet-active {
-    background: #000
+    background: var(--text-main)
 }
 
 .swiper-pagination-progressbar.swiper-pagination-black {
-    background: rgba(0, 0, 0, .25)
+    background: var(--overlay-dark)
 }
 
 .swiper-pagination-progressbar.swiper-pagination-black .swiper-pagination-progressbar-fill {
-    background: #000
+    background: var(--text-main)
 }
 
 .swiper-pagination-lock {
@@ -459,27 +458,27 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-scrollbar {
-    border-radius: 10px;
+    border-radius: var(--radius-md);
     position: relative;
     -ms-touch-action: none;
-    background: rgba(0, 0, 0, .1)
+    background: var(--overlay-dark-soft)
 }
 
 .swiper-container-horizontal>.swiper-scrollbar {
     position: absolute;
     left: 1%;
-    bottom: 3px;
+    bottom: calc(var(--form-field-border-width) * 3);
     z-index: 50;
-    height: 5px;
+    height: calc(var(--space-4) + var(--form-field-border-width));
     width: 98%
 }
 
 .swiper-container-vertical>.swiper-scrollbar {
     position: absolute;
-    right: 3px;
+    right: calc(var(--form-field-border-width) * 3);
     top: 1%;
     z-index: 50;
-    width: 5px;
+    width: calc(var(--space-4) + var(--form-field-border-width));
     height: 98%
 }
 
@@ -487,8 +486,8 @@ button.swiper-pagination-bullet {
     height: 100%;
     width: 100%;
     position: relative;
-    background: rgba(0, 0, 0, .5);
-    border-radius: 10px;
+    background: var(--overlay-dark-strong);
+    border-radius: var(--radius-md);
     left: 0;
     top: 0
 }
@@ -533,13 +532,13 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-lazy-preloader {
-    width: 42px;
-    height: 42px;
+    width: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 2));
+    height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 2));
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -21px;
-    margin-top: -21px;
+    margin-left: calc(var(--space-24) * -1);
+    margin-top: calc(var(--space-24) * -1);
     z-index: 10;
     -webkit-transform-origin: 50%;
     -ms-transform-origin: 50%;
@@ -553,14 +552,14 @@ button.swiper-pagination-bullet {
     content: '';
     width: 100%;
     height: 100%;
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-image: var(--icon-url-clock);
     background-position: 50%;
     background-size: 100%;
     background-repeat: no-repeat
 }
 
 .swiper-lazy-preloader-white:after {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%23fff'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")
+    background-image: var(--icon-url-clock)
 }
 
 @-webkit-keyframes swiper-preloader-spin {
@@ -663,10 +662,10 @@ button.swiper-pagination-bullet {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: var(--text-main);
     opacity: .6;
-    -webkit-filter: blur(50px);
-    filter: blur(50px);
+    -webkit-filter: blur(calc(var(--space-48) + (var(--form-field-border-width) * 2)));
+    filter: blur(calc(var(--space-48) + (var(--form-field-border-width) * 2)));
     z-index: 0
 }
 
@@ -700,5 +699,5 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-coverflow .swiper-wrapper {
-    -ms-perspective: 1200px
+    -ms-perspective: calc((var(--space-96) * 12) + var(--space-48))
 }

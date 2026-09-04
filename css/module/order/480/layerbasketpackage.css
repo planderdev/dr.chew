@@ -3,29 +3,29 @@
     top: 50%;
     left: 50%;
     z-index: 1000;
-    width: 687px;
-    margin: -175px 0 0 -225px;
-    background-color: #fff;
+    width: calc((var(--space-96) * 7) + var(--space-12) + calc(var(--form-field-border-width) * 3));
+    margin: calc(var(--space-96) * -1) 0 0 calc(var(--space-96) * -1);
+    background-color: var(--bg-0);
 }
 
 .xans-order-layerbasketpackage h1 {
-    height: 35px;
-    padding: 0 35px 0 19px;
-    color: #fff;
-    font-size: 14px;
-    line-height: 35px;
-    background: #495164;
+    height: calc(var(--space-32) + calc(var(--form-field-border-width) * 3));
+    padding: 0 var(--space-32) 0 var(--space-16);
+    color: var(--bg-0);
+    font-size: var(--body-3-size);
+    line-height: calc(var(--space-32) + calc(var(--form-field-border-width) * 3));
+    background: var(--text-sub);
 }
 
 .xans-order-layerbasketpackage .content p {
-    font-weight: bold;
-    color: #2e2e2e;
+    font-weight: var(--font-weight-bold);
+    color: var(--line-strong);
 }
 
 .xans-order-layerbasketpackage .close {
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: calc(var(--space-16) + var(--space-4));
+    top: calc(var(--space-8) + calc(var(--form-field-border-width) * 2));
 }
 
 .xans-order-layerbasketpackage .close img {
@@ -33,71 +33,71 @@
 }
 
 .xans-order-layerbasketpackage .btnArea {
-    padding: 9px 0;
-    border-bottom: 1px solid #757575;
-    border-top: 1px solid #d7d5d5;
+    padding: var(--space-8) 0;
+    border-bottom: var(--form-field-border-width) solid var(--text-weak);
+    border-top: var(--form-field-border-width) solid var(--line-default);
     text-align: center;
-    background: #fbfafa;
+    background: var(--bg-50);
 }
 
 .xans-order-layerbasketpackage .btnArea img:first-child {
-    margin: 0 1px 0 0;
+    margin: 0 0 0 0;
 }
 
 /* 장바구니 담긴 상품 구매 */
 .xans-order-layerbasket.content {
-    border-right: 1px solid #757575;
-    border-left: 1px solid #757575;
-    line-height: 1.4; 
+    border-right: var(--form-field-border-width) solid var(--text-weak);
+    border-left: var(--form-field-border-width) solid var(--text-weak);
+    line-height: var(--body-line-height);
 }
 
 .xans-order-layerbasket.content .totalCount {
-    padding: 15px 0 10px;
-    margin: 0 20px 15px;
-    border-bottom: 1px solid #ececec;
-    font-size: 14px;
-    font-weight: bold;
+    padding: var(--space-16) 0 var(--space-12);
+    margin: 0 var(--space-24) var(--space-16);
+    border-bottom: var(--form-field-border-width) solid var(--line-weak);
+    font-size: var(--body-3-size);
+    font-weight: var(--font-weight-bold);
 }
 
 .xans-order-layerbasket.content .totalCount strong {
-    color: #008bcc;
+    color: var(--support-info);
 }
 
 .xans-order-layerbasket.content ul.prdList {
     display: table;
-    width: 658px;
-    margin: 0 auto 20px;
-    font-size: 0;
-    line-height: 0;
+    width: calc((var(--space-96) * 6) + var(--space-64) + var(--space-16) + calc(var(--form-field-border-width) * 2));
+    margin: 0 auto var(--space-24);
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
 }
 
 .xans-order-layerbasket.content ul.prdList li.item {
     display: inline-block;
-    vertical-align: top; 
+    vertical-align: top;
 }
 
 .xans-order-layerbasket.content ul.prdList li.item .box {
     margin: 0 auto;
-    font-size: 12px;
-    color: #2e2e2e;
-    line-height: 18px;
+    font-size: var(--caption-2-size);
+    color: var(--line-strong);
+    line-height: calc(var(--space-16) + calc(var(--form-field-border-width) * 2));
 }
 
 .xans-order-layerbasket.content ul.prdList li.item .box p {
-    font-weight: normal;
+    font-weight: var(--font-weight-regular);
     word-break: break-all;
     -ms-word-break: break-all;
 }
 
 .xans-order-layerbasket.content ul.prdList .thumb {
-    margin: 0 0 10px;
-    border: 1px solid #ececec;
-    width: 150px;
-    height: 150px;
+    margin: 0 0 var(--space-12);
+    border: var(--form-field-border-width) solid var(--line-weak);
+    width: calc(var(--space-96) + var(--space-48) + var(--space-4) + calc(var(--form-field-border-width) * 2));
+    height: calc(var(--space-96) + var(--space-48) + var(--space-4) + calc(var(--form-field-border-width) * 2));
 }
 
 .xans-order-layerbasket.content ul.prdList .name a {
-    color: #2e2e2e;
+    color: var(--line-strong);
 }
 
 .xans-order-layerbasket.content ul.column4 li.item {
@@ -105,7 +105,7 @@
 }
 
 .xans-order-layerbasket.content ul.column4 li.item .box {
-    width: 150px;
+    width: calc(var(--space-96) + var(--space-48) + var(--space-4) + calc(var(--form-field-border-width) * 2));
 }
 
 .xans-order-layerbasket.content ul.prdList ul {
@@ -113,20 +113,20 @@
 }
 
 .xans-order-layerbasket.content ul.prdList ul li {
-    color: #757575;
+    color: var(--text-weak);
 }
 
 .xans-order-layerbasket.content ul.prdList ul li.price {
-    margin: 5px 0;
-    font-weight: bold;
-    color: #000000; 
+    margin: var(--space-4) 0;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-main);
 }
 
 .xans-order-layerbasket.content .paging {
-    padding: 0 0 20px;
+    padding: 0 0 var(--space-24);
     text-align: center;
-    font-size: 0;
-    line-height: 0;
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
 }
 
 .xans-order-layerbasket.content .paging p {
@@ -136,16 +136,16 @@
 
 .xans-order-layerbasket.content .paging ol {
     display: inline-block;
-    font-size: 0;
-    line-height: 0;
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
     vertical-align: top;
 }
 
 .xans-order-layerbasket.content .paging ol li {
     display: inline-block;
-    margin: 0 0 0 -1px;
-    border: 1px solid #d7d5d5;
-    color: #757575;
+    margin: 0 0 0 0;
+    border: var(--form-field-border-width) solid var(--line-default);
+    color: var(--text-weak);
     vertical-align: top;
 }
 
@@ -155,16 +155,16 @@
 
 .xans-order-layerbasket.content .paging ol li a {
     display: block;
-    width: 33px;
-    padding: 9px 0;
-    font-weight: bold;
-    font-size: 12px;
-    color: #939393;
-    line-height: 14px;
+    width: calc(var(--space-32) + var(--form-field-border-width));
+    padding: var(--space-8) 0;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--caption-2-size);
+    color: var(--text-disabled);
+    line-height: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
 }
 
 .xans-order-layerbasket.content .paging ol li .this {
-    padding-bottom: 6px;
-    border-bottom: 3px solid #495164;
-    color: #495164;
+    padding-bottom: var(--space-8);
+    border-bottom: calc(var(--form-field-border-width) * 3) solid var(--text-sub);
+    color: var(--text-sub);
 }

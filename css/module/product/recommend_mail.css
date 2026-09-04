@@ -1,9 +1,9 @@
-#popup { width:620px; }
+#popup { width: calc((var(--space-96) * 6) + var(--space-32) + var(--space-12)); }
 
-.xans-product-recommmail .ec-base-box.typeProduct { margin:0 0 20px; }
-.xans-product-recommmail .infomation .icon { margin:0 0 14px; }
-.xans-product-recommmail .infomation h2 { font-size:14px; color:#2e2e2e; }
-.xans-product-recommmail .infomation .price { margin:5px 0 0; font-weight:bold; font-size:14px; }
+.xans-product-recommmail .ec-base-box.typeProduct { margin: 0 0 var(--space-24); }
+.xans-product-recommmail .infomation .icon { margin: 0 0 var(--space-16); }
+.xans-product-recommmail .infomation h2 { font-size: var(--body-3-size); color:var(--line-strong); }
+.xans-product-recommmail .infomation .price { margin: var(--space-4) 0 0; font-weight:var(--font-weight-bold); font-size: var(--body-3-size); }
 
-.xans-product-recommmail table .captcha { margin:5px 0 0; }
-.xans-product-recommmail table .captcha  #tmp_image_name_str { width:80px; }
+.xans-product-recommmail table .captcha { margin: var(--space-4) 0 0; }
+.xans-product-recommmail table .captcha  #tmp_image_name_str { width: calc(var(--space-64) + var(--space-16)); }

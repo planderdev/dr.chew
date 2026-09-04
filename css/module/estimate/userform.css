@@ -1,1 +1,1 @@
-.xans-estimate-userform .ec-base-table .agree { overflow:auto; width:95%; height:100px; padding:5px 6px; border:1px solid #d5d5d5; line-height:1.5; }
+.xans-estimate-userform .ec-base-table .agree { overflow:auto; width: 95%; height: calc(var(--space-96) + var(--space-4)); padding: var(--space-4) var(--space-8); border: var(--form-field-border-width) solid var(--line-default); line-height: var(--body-line-height); }

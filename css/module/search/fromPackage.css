@@ -1,7 +1,7 @@
-.xans-search-frompackage .xans-search-boardform fieldset { min-width:130px; }
-.xans-search-frompackage .xans-search-boardform select#search_type { width:100px; }
-.xans-search-frompackage .xans-search-boardform input#keyword { width:100%; margin:0 0 0 4px; }
+.xans-search-frompackage .xans-search-boardform fieldset { min-width: calc(var(--space-96) + var(--space-32) + calc(var(--form-field-border-width) * 2)); }
+.xans-search-frompackage .xans-search-boardform select#search_type { width: calc(var(--space-96) + var(--space-4)); }
+.xans-search-frompackage .xans-search-boardform input#keyword { width: 100%; margin: 0 0 0 var(--space-4); }
 
-.xans-search-frompackage .resultArea { overflow:hidden; min-width:306px; margin:7px 0 14px 0; font-size:12px !important; }
-.xans-search-frompackage .resultArea p { padding:7px 0 0; float:left; }
-.xans-search-frompackage .resultArea #limit { float:right; }
+.xans-search-frompackage .resultArea { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between; overflow:hidden; min-width: calc((var(--space-96) * 3) + var(--space-16) + calc(var(--form-field-border-width) * 2)); margin: var(--space-8) 0 var(--space-16) 0; font-size: var(--caption-2-size); }
+.xans-search-frompackage .resultArea p { display:inline-flex; align-items:center; padding: var(--space-8) 0 0; }
+.xans-search-frompackage .resultArea #limit { margin-left: auto; display:inline-flex; align-items:center; }

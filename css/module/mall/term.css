@@ -1,2 +1,2 @@
-#contents { padding:0 0 29px; }
-.xans-mall-term { margin:14px 7px 0; padding:14px; color:#777; font-size:11px; line-height:1.5; border:1px solid #dddddd; background:#fff; }
+#contents { padding: 0 0 var(--space-32); }
+.xans-mall-term { margin: var(--space-16) var(--space-8) 0; padding: var(--space-16); color:var(--text-weak); font-size: var(--caption-2-size); line-height: var(--body-line-height); border: var(--form-field-border-width) solid var(--line-weak); background:var(--bg-0); }

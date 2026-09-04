@@ -1,8 +1,8 @@
-.xans-member-certification { position:fixed; top:50%; left:50%; z-index:1000; width:450px; margin:-183px 0 0 -225px; }
-.xans-member-certification .content { height:365px; padding:0; background:#5070c3 url("//img.echosting.cafe24.com/skin/base_ko_KR/member/bg_certification_layer.jpg") no-repeat 0 0; }
-.xans-member-certification .content > h3 { padding:35px 0 15px 40px; }
-.xans-member-certification .content > p { padding:0 0 0 40px; font-size:14px; color:#fbfafa; line-height:1.4; }
-.xans-member-certification .content > p strong { color:#ffe746; }
-.xans-member-certification .content .btnCertification { display:inline-block; margin:30px 0 0 32px; }
-.xans-member-certification .ec-base-button { overflow:hidden; padding:9px 20px 9px 0; text-align:right; }
-.xans-member-certification .ec-base-button label { float:left; margin:0 0 0 20px; line-height:30px; color:#525252; }
+.xans-member-certification { position:fixed; top: 50%; left: 50%; z-index:1000; width: calc((var(--space-96) * 4) + var(--space-64) + calc(var(--form-field-border-width) * 2)); margin: calc(var(--space-96) * -1) 0 0 calc(var(--space-96) * -1); }
+.xans-member-certification .content { height: calc((var(--space-96) * 3) + var(--space-64) + var(--space-12) + var(--form-field-border-width)); padding: 0; background:var(--support-info) var(--icon-url-notice) no-repeat 0 0; }
+.xans-member-certification .content > h3 { padding: var(--space-32) 0 var(--space-16) var(--space-48); }
+.xans-member-certification .content > p { padding: 0 0 0 var(--space-48); font-size: var(--body-3-size); color:var(--bg-50); line-height: var(--body-line-height); }
+.xans-member-certification .content > p strong { color:var(--warning); }
+.xans-member-certification .content .btnCertification { display:inline-block; margin: var(--space-32) 0 0 var(--space-32); }
+.xans-member-certification .ec-base-button { display:flex; align-items:center; justify-content:space-between; overflow:hidden; padding: var(--space-8) var(--space-24) var(--space-8) 0; text-align:right; }
+.xans-member-certification .ec-base-button label { display:inline-flex; align-items:center; margin: 0 0 0 var(--space-24); line-height: calc(var(--space-24) + var(--space-4) + calc(var(--form-field-border-width) * 2)); color:var(--text-sub); }

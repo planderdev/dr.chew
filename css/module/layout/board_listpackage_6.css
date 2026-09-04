@@ -1,7 +1,7 @@
-.xans-board-listpackage-6 { position:relative; float:right; width:49%; margin:36px 0 0; }
-.xans-board-listpackage-6 h2 { margin:0 0 16px; color:#2e2e2e; font-size:12px; }
-.xans-board-listpackage-6 .more { position:absolute; top:-4px; right:0; }
+.xans-board-listpackage-6 { display:inline-flex; flex-direction:column; align-items:stretch; position:relative; width: 49%; margin: var(--space-32) 0 0 2%; vertical-align:top; }
+.xans-board-listpackage-6 h2 { margin: 0 0 var(--space-16); color:var(--line-strong); font-size: var(--caption-2-size); }
+.xans-board-listpackage-6 .more { position:absolute; top: calc(var(--space-4) * -1); right: 0; }
 
-.xans-board-listpackage-6 .ec-base-table td { font-size:12px; color:#a4a4a4; }
+.xans-board-listpackage-6 .ec-base-table td { font-size: var(--caption-2-size); color:var(--text-disabled); }
 .xans-board-listpackage-6 .ec-base-table td.title a,
-.xans-board-listpackage-6 .ec-base-table td.title a:hover { color:#4f4f4f;}
+.xans-board-listpackage-6 .ec-base-table td.title a:hover { color:var(--text-sub);}

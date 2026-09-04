@@ -1,19 +1,20 @@
-.xans-layout-logobottom {
-    float: left;
-    width: 189px;
-    padding: 64px 0 0 15px;
+.xans-layout-logobottom { display:inline-flex; align-items:center;
+    width: calc(var(--space-96) + var(--space-64) + var(--space-24) + var(--space-4) + var(--form-field-border-width));
+    padding: var(--space-64) 0 0 var(--space-16);
 }
 
 .xans-layout-logobottom a {
-    display: block; 
-    font-size: 28px;
-    color: #8c8c8c;
-    font-weight: bold;
+    display: block;
+    font-size: var(--headline-2-size-ko);
+    color: var(--text-disabled);
+    font-weight: var(--headline-font-weight-ko);
     word-wrap: break-word;
     text-decoration: none;
     font-style: normal;
-}
+    font-family: var(--font-headline-ko);
+    line-height: var(--headline-2-line-height-ko);
+    letter-spacing: var(--headline-letter-spacing-ko);}
 
 .xans-layout-logobottom img {
-    max-width: 180px;
+    max-width: calc(var(--space-96) + var(--space-64) + var(--space-16) + var(--space-4));
 }

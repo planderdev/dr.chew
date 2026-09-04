@@ -1,5 +1,5 @@
 
 
 
-#multishop_btn { display:none; position:fixed; bottom:20px; right:65px; justify-content:center; align-items:center; width:40px; height:40px; background-color:rgba(255,255,255,1); border-radius:50%; cursor:pointer; z-index:999; border:1px solid #eee; }
+#multishop_btn { display:none; position:fixed; bottom: calc(var(--space-16) + var(--space-4)); right: calc(var(--space-64) + var(--form-field-border-width)); justify-content:center; align-items:center; width: calc(var(--space-32) + var(--space-8)); height: calc(var(--space-32) + var(--space-8)); background-color:var(--overlay-light-solid); border-radius: var(--radius-pill); cursor:pointer; z-index:999; border: var(--form-field-border-width) solid var(--bg-100); }
 

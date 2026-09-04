@@ -1,26 +1,26 @@
-#main_slide_ver1 { position:relative; display:flex; width:100%; height:100%; margin-top:0px; border-top:0px solid #000;}
+#main_slide_ver1 { position:relative; display:flex; width: 100%; height: 100%; margin-top: 0; border-top: 0 solid var(--text-main);}
 
 #main_slide_ver1_in { flex:1; }
-#main_slide_ver1_in .swiper-pagination-bullet-active { background-color:#333; }
-#main_slide_ver1_in .swiper-slide > a { width:100%; height:100%; }
+#main_slide_ver1_in .swiper-pagination-bullet-active { background-color:var(--text-muted-strong); }
+#main_slide_ver1_in .swiper-slide > a { width: 100%; height: 100%; }
 #main_slide_ver1_in .swiper-slide > a:nth-child(1) { display:none; }
-#main_slide_ver1_in .swiper-slide img { display:block; width:100%; height:100%; object-fit:cover; border-radius:0px; }
+#main_slide_ver1_in .swiper-slide img { display:block; width: 100%; height: 100%; object-fit:cover; border-radius: 0; }
 
-#main_slide_ver1_navigation { position:absolute; bottom:10px; left:50%; transform:translateX(-50%); display:flex; color:#fff; z-index:1; background-color:rgba(0,0,0,0.05); border-radius:0px; }
+#main_slide_ver1_navigation { position:absolute; bottom: calc(var(--space-8) + calc(var(--form-field-border-width) * 2)); left: 50%; transform:translateX(-50%); display:flex; color:var(--bg-0); z-index:1; background-color:var(--overlay-dark-hairline); border-radius: 0; }
 #main_slide_ver1_navigation .swiper-button-next,
-#main_slide_ver1_navigation .swiper-button-prev { position:static; margin-top:0px; display:flex; justify-content:center; align-items:center; width:20px; height:20px; background:none; }
+#main_slide_ver1_navigation .swiper-button-prev { position:static; margin-top: 0; display:flex; justify-content:center; align-items:center; width: calc(var(--space-16) + var(--space-4)); height: calc(var(--space-16) + var(--space-4)); background:none; }
 #main_slide_ver1_navigation .swiper-button-next img,
-#main_slide_ver1_navigation .swiper-button-prev img { width:10px; filter: invert(100%); }
+#main_slide_ver1_navigation .swiper-button-prev img { width: calc(var(--space-8) + calc(var(--form-field-border-width) * 2)); filter: invert(100%); }
 #main_slide_ver1_navigation .swiper-button-next:after,
 #main_slide_ver1_navigation .swiper-button-prev:after { display:none; }
 
 
 
 @media (min-width: 1001px) {
-  
+
 #main_slide_ver1_in .swiper-slide > a:nth-child(1) { display:block; }
 #main_slide_ver1_in .swiper-slide > a:nth-child(2) { display:none; }
-    
+
 }
 
 

@@ -1,11 +1,11 @@
 /** subpage_theme03 (Peach) **/
 
 .theme03 {
-    --theme-accent-bg: var(--color-orange-200);
-    --theme-accent-strong: var(--color-orange-600);
+    --theme-accent-bg: var(--support-warning-soft);
+    --theme-accent-strong: var(--support-warning);
     --theme-accent-muted-bg: var(--bg-50);
     --theme-accent-text: var(--text-main);
-    --theme-inverse-text: var(--color-white);
+    --theme-inverse-text: var(--bg-0);
     --theme-border-strong: var(--line-strong);
 
     --button-primary-bg: var(--theme-accent-bg);

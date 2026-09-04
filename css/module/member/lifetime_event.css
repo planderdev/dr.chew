@@ -3,52 +3,51 @@
     top: 50%;
     left: 50%;
     z-index: 1000;
-    width: 353px;
-    margin: -240px 0 0 -177px;
+    width: calc((var(--space-96) * 3) + var(--space-64) + var(--form-field-border-width));
+    margin: calc(var(--space-96) * -1) 0 0 calc(var(--space-96) * -1);
 }
 
 .xans-member-lifetimeevent .content {
-    padding: 0 0 0 20px;
-    height: 369px;
-    background: #3dbcd7 url("//img.echosting.cafe24.com/skin/base_ko_KR/member/bg_lifetime_event_layer.jpg") no-repeat 0 0;
+    padding: 0 0 0 var(--space-24);
+    height: calc((var(--space-96) * 3) + var(--space-64) + var(--space-16) + var(--form-field-border-width));
+    background: var(--support-info) var(--icon-url-notice) no-repeat 0 0;
 }
 
 .xans-member-lifetimeevent .content>h2 {
     margin: 0;
-    padding: 47px 0 20px;
+    padding: var(--space-48) 0 var(--space-24);
 }
 
 .xans-member-lifetimeevent .content>p {
     margin: 0;
-    font-size: 12px;
-    color: #fff; 
-    line-height: 1.4;
-    word-spacing: -1px;
+    font-size: var(--caption-2-size);
+    color: var(--bg-0);
+    line-height: var(--body-line-height);
+    word-spacing: calc(var(--form-field-border-width) * -1);
 }
 
 .xans-member-lifetimeevent .content .grade {
-    color: #fff25c;
+    color: var(--support-warning-soft);
 }
 
 .xans-member-lifetimeevent .content .btnModify {
     display: inline-block;
-    margin: 56px 0 0;
+    margin: var(--space-64) 0 0;
 }
 
-.xans-member-lifetimeevent .ec-base-button {
+.xans-member-lifetimeevent .ec-base-button { display:flex; align-items:center; justify-content:space-between;
     overflow: hidden;
-    padding: 9px 20px;
+    padding: var(--space-8) var(--space-24);
     text-align: left;
-    font-size: 14px;
-    line-height: 30px;
-    color: #525252;
+    font-size: var(--body-3-size);
+    line-height: calc(var(--space-24) + var(--space-4) + calc(var(--form-field-border-width) * 2));
+    color: var(--text-sub);
 }
 
 .xans-member-lifetimeevent .ec-base-button input[type="checkbox"] {
-    margin: -2px 5px 0 0;
+    margin: calc(var(--space-4) * -1) var(--space-4) 0 0;
     vertical-align: middle;
 }
 
-.xans-member-lifetimeevent .ec-base-button .btnNormalFix {
-    float: right;
+.xans-member-lifetimeevent .ec-base-button .btnNormalFix { margin-left: auto; display:inline-flex; align-items:center;
 }

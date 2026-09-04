@@ -1,2 +1,2 @@
-.popup #joinForm { height:100%; }
-.xans-member-join #agreeTerms { padding:7px; border:1px solid #ccc; color:#353535; font-size:12px; background:#fff; }
+.popup #joinForm { height: 100%; }
+.xans-member-join #agreeTerms { padding: var(--space-8); border: var(--form-field-border-width) solid var(--line-default); color:var(--text-muted-strong); font-size: var(--caption-2-size); background:var(--bg-0); }

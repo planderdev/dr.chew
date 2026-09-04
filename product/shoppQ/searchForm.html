@@ -4,7 +4,7 @@
         <fieldset>
             <legend>상품검색</legend>
             <div class="searchInput">
-                {$searchdata_keywordform}<input type="image" id="{$search_submit_button}" src="//img.echosting.cafe24.com/skin/base/product/btn_search.gif" alt="검색" class="btnSearch" /><ul class="autoDrop" id="{$search_auto_id}"></ul>
+                {$searchdata_keywordform}<button type="submit" id="{$search_submit_button}" class="btnSearch ec-icon-search-submit"><span class="blind">검색</span></button><ul class="autoDrop" id="{$search_auto_id}"></ul>
             </div>
             <button type="button" class="btnSearchOption">검색옵션</button>
             <!-- 검색옵션 레이어 -->
@@ -18,8 +18,8 @@
                         <table border="1" summary="">
                             <caption>검색옵션</caption>
                             <colgroup>
-                                <col style="width:80px;" />
-                                <col style="width:auto;" />
+                                <col  class="ec-u-w-80" />
+                                <col  class="ec-u-w-auto" />
                             </colgroup>
                             <tbody>
                                 <tr>
@@ -41,10 +41,10 @@
                     </div>
                 </div>
                 <div class="ec-base-button">
-                    <a href="#none"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_search.gif" alt="검색" id="{$searchdata_layer_submit}" /></a>
-                    <a href="#none"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_reset.gif" alt="초기화" id="{$searchdata_layer_reset}" /></a>
+                    <a href="#none"><img src="/0svg/search.svg?v=20260903" alt="검색" id="{$searchdata_layer_submit}" /></a>
+                    <a href="#none"><img src="/0svg/close.svg" alt="초기화" id="{$searchdata_layer_reset}" /></a>
                 </div>
-                <a href="#none" class="close"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif" alt="닫기" /></a>
+                <a href="#none" class="close"><img src="/0svg/close.svg" alt="닫기" /></a>
             </div><!-- //참고: 검색옵션 레이어 -->
         </fieldset>
         <div module="product_RelateKeyword" class="keywordArea">

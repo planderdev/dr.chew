@@ -7,21 +7,21 @@
   font-family: 'xeicon';
   src: url("fonts/xeicon.eot?3ka2yj");
   src: url("fonts/xeicon.eot?3ka2yj#iefix") format("embedded-opentype"), url("fonts/xeicon.woff2?3ka2yj") format("woff2"), url("fonts/xeicon.ttf?3ka2yj") format("truetype"), url("fonts/xeicon.woff?3ka2yj") format("woff"), url("fonts/xeicon.svg?3ka2yj#xeicon") format("svg");
-  font-weight: normal;
+  font-weight: var(--font-weight-regular);
   font-style: normal;
 }
 
 [class^="xi-"],
 [class*=" xi-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'xeicon' !important;
+  /* use to prevent issues with browser extensions that change fonts */
+  font-family: 'xeicon';
   display: inline-block;
   speak: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: var(--font-weight-regular);
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+  line-height: var(--control-line-height);
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3685,25 +3685,25 @@
 
 /* makes the font 33% larger relative to the icon container */
 .xi-x {
-  font-size: 1.33333em;
-  line-height: 0.75em;
+  font-size: var(--icon-font-size-lg);
+  line-height: var(--icon-font-line-height-tight);
   vertical-align: -15%;
 }
 
 .xi-2x {
-  font-size: 2em;
+  font-size: var(--icon-font-size-2x);
 }
 
 .xi-3x {
-  font-size: 3em;
+  font-size: var(--icon-font-size-3x);
 }
 
 .xi-4x {
-  font-size: 4em;
+  font-size: var(--icon-font-size-4x);
 }
 
 .xi-5x {
-  font-size: 5em;
+  font-size: var(--icon-font-size-5x);
 }
 
 .xi-spin {
@@ -3763,23 +3763,23 @@
           transform: scale(1, -1);
 }
 
-:root .xi-rotate-90,
-:root .xi-rotate-180,
-:root .xi-rotate-270,
-:root .xi-flip-horizontal,
-:root .xi-flip-vertical {
+.xi-rotate-90,
+.xi-rotate-180,
+.xi-rotate-270,
+.xi-flip-horizontal,
+.xi-flip-vertical {
   -webkit-filter: none;
           filter: none;
 }
 
 .xi-fw {
-  width: 1.28571em;
+  width: var(--icon-font-fw-width);
   text-align: center;
 }
 
 .xi-ul {
   padding-left: 0;
-  margin-left: 2.14286em;
+  margin-left: var(--space-32);
   list-style-type: none;
 }
 
@@ -3789,28 +3789,28 @@
 
 .xi-li {
   position: absolute;
-  left: -2.14286em;
-  width: 2.14286em;
-  top: 0.14286em;
+  left: var(--icon-font-list-offset);
+  width: var(--icon-font-list-width);
+  top: var(--icon-font-list-top);
   text-align: center;
 }
 
 .xi-li.xi-lg {
-  left: -1.85714em;
+  left: var(--icon-font-list-offset-lg);
 }
 
 .xi-border {
-  padding: .2em .25em .15em;
-  border: solid 0.08em #eee;
-  border-radius: .1em;
+  padding: var(--space-4) var(--space-4) var(--space-4);
+  border: solid var(--icon-font-border-width) var(--bg-100);
+  border-radius: var(--radius-sm);
 }
 
 .pull-right {
-  float: right;
-  margin-right: .3em;
+  display: inline-flex; align-items: center; margin-left: auto;
+  margin-right: var(--space-4);
 }
 
 .pull-left {
-  float: left;
-  margin-right: .3em;
+  display: inline-flex; align-items: center;
+  margin-right: var(--space-4);
 }

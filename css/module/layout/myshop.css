@@ -1,8 +1,8 @@
-.xans-layout-myshop { margin:0 0 20px; padding:0 0 13px; border-bottom:1px solid #e8e8e8; }
-.xans-layout-myshop h2 { height:26px; color:#2e2e2e; font-size:12px; }
-.xans-layout-myshop ul { padding:0 0 0 4px; }
-.xans-layout-myshop li { padding:0 9px 0 5px; line-height:33px; }
+.xans-layout-myshop { margin: 0 0 var(--space-24); padding: 0 0 var(--space-12); border-bottom: var(--form-field-border-width) solid var(--line-weak); }
+.xans-layout-myshop h2 { height: calc(var(--space-24) + calc(var(--form-field-border-width) * 2)); color:var(--line-strong); font-size: var(--caption-2-size); }
+.xans-layout-myshop ul { padding: 0 0 0 var(--space-4); }
+.xans-layout-myshop li { padding: 0 var(--space-8) 0 var(--space-4); line-height: calc(var(--space-32) + var(--form-field-border-width)); }
 .xans-layout-myshop li.mileage { background:none; }
 .xans-layout-myshop li.consult { background:none; }
 .xans-layout-myshop li.wish { background:none; }
-.xans-layout-myshop a { color:#222; }
+.xans-layout-myshop a { color:var(--line-strong); }

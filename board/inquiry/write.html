@@ -19,25 +19,25 @@
 			$isRuleBasedAddrForm = T
 		-->
 		<div module="board_InquiryHead" class="ec-base-box typeProduct">
-			<p class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_img}" alt="" onerror="this.src='//img.echosting.cafe24.com/thumb/75x75.gif'" /></a></p>
+			<p class="thumbnail"><a href="/product/detail.html{$param_product}"><img src="{$product_img}" alt="" onerror="this.src='/0svg/logo.svg'" /></a></p>
 			<div class="information">
 				<h3><a href="/product/detail.html{$param_product}">{$product_name}</a></h3>
 				<p class="price">{$product_price} {$product_tax_type_text}</p>
 			</div>
 		</div>
 
-		<p class="required"><img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /> 필수입력사항</p>
+		<p class="required"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /> 필수입력사항</p>
 
 		<div class="ec-base-table typeWrite">
 			<table border="1" >
 			<caption>대량구매문의 글 쓰기 폼</caption>
 			<colgroup>
-				<col style="width:190px;" />
-				<col style="width:auto;" />
+				<col  class="ec-u-w-190" />
+				<col  class="ec-u-w-auto" />
 			</colgroup>
 			<tbody>
 				<tr>
-					<th scope="row">구매 예정 수량 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
+					<th scope="row">구매 예정 수량 <img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /></th>
 					<td>
 						<span class="ec-base-qty">
 							{$form.bi_product_cnt}
@@ -47,7 +47,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">제목 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
+					<th scope="row">제목 <img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /></th>
 					<td>{$form.bi_inquire_subject}</td>
 				</tr>
 				<tr>
@@ -77,7 +77,7 @@
 					<td>{$form.inquiry_file5}<p class="gBlank5 txtInfo">첨부파일: 10M 이하 / csv, xls, doc, ppt, pdf</p></td>
 				</tr>
 				<tr>
-					<th scope="row">카탈로그 신청 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
+					<th scope="row">카탈로그 신청 <img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /></th>
 					<td>{$form.bi_is_catalog}</td>
 				</tr>
 			</tbody>
@@ -91,12 +91,12 @@
 			<table border="1" >
 			<caption>대량구매문의 고객정보</caption>
 			<colgroup>
-				<col style="width:190px;" />
-				<col style="width:auto;" />
+				<col  class="ec-u-w-190" />
+				<col  class="ec-u-w-auto" />
 			</colgroup>
 			<tbody>
 				<tr>
-					<th scope="row">고객명 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
+					<th scope="row">고객명 <img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /></th>
 					<td>{$form.bi_inquirer_name}</td>
 				</tr>
 				<tr>
@@ -104,19 +104,19 @@
 					<td>{$form.bi_inquirer_company_name}</td>
 				</tr>
 				<tr>
-					<th scope="row">이메일 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
+					<th scope="row">이메일 <img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /></th>
 					<td>{$form.bi_inquirer_email}</td>
 				</tr>
 				<tr>
-					<th scope="row">주소 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
+					<th scope="row">주소 <img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /></th>
 					<td>{$form.address}</td>
 				</tr>
 				<tr>
-					<th scope="row">연락처 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
+					<th scope="row">연락처 <img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /></th>
 					<td class="formGroup code">{$form.bi_inquirer_phone} <span class="txtInfo">숫자만 입력해주세요.</span></td>
 				</tr>
 				<tr class="agree {$config.is_logout|display}">
-					<th scope="row">개인정보 수집 및 <br class="RW">이용 동의 <img src="//img.echosting.cafe24.com/skin/skin/common/ico_required.svg" class="icon icoRequired" alt="필수" /></th>
+					<th scope="row">개인정보 수집 및 <br class="RW">이용 동의 <img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /></th>
 					<td>
 						{$form.privacy_agreement}
 						<div><span class="gSpace20">개인정보 수집 및 이용에 동의하십니까?</span><br class="RMB">{$form.privacy_agreement_radio}</div>

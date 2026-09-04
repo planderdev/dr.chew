@@ -1,45 +1,45 @@
 @media (max-width: 1000px){
-   #wrap #container #contents { width:100%; } 
-    
+   #wrap #container #contents { width: 100%; }
+
 }
 
 .ec-base-product .prdList.swiper-wrapper { flex-wrap:nowrap;   }
-.ec-base-product .prdList.swiper-wrapper.grid4 > li { border-left:0px; margin:0 0 0 0;  border-top:0px solid #000; border-bottom:0px solid #000;  border-right:0px solid #000; }
-.ec-base-product .prdList.swiper-wrapper.grid4 > li:nth-child(1) { border-left:0px; }
+.ec-base-product .prdList.swiper-wrapper.grid4 > li { border-left: 0; margin: 0 0 0 0;  border-top: 0 solid var(--text-main); border-bottom: 0 solid var(--text-main);  border-right: 0 solid var(--text-main); }
+.ec-base-product .prdList.swiper-wrapper.grid4 > li:nth-child(1) { border-left: 0; }
 
 .product_best_swipe { position:relative; overflow:hidden; }
-.product_best_swipe.ec-base-product .prdList { margin:0 0 0; }
-.product_best_swipe.ec-base-product .prdList .prdList__item { margin:0 0; }
+.product_best_swipe.ec-base-product .prdList { margin: 0 0 0; }
+.product_best_swipe.ec-base-product .prdList .prdList__item { margin: 0 0; }
 
-.product_best_swipe .swiper-button-prev { display:none; left:0px; background-image:url(''); width:44px; font-size:44px; font-weight:700; }
-.product_best_swipe .swiper-button-next { display:none; right:0px; background-image:url(''); width:44px; font-size:44px; font-weight:700; }
-.product_best_swipe .swiper-pagination-bullet-active { background-color:#333; }
+.product_best_swipe .swiper-button-prev { display:none; left: 0; background-image:url(''); width: calc(var(--space-32) + var(--space-12)); font-size: var(--display-3-size-ko); font-weight:var(--font-weight-bold); }
+.product_best_swipe .swiper-button-next { display:none; right: 0; background-image:url(''); width: calc(var(--space-32) + var(--space-12)); font-size: var(--display-3-size-ko); font-weight:var(--font-weight-bold); }
+.product_best_swipe .swiper-pagination-bullet-active { background-color:var(--text-muted-strong); }
 
 
 
 .product_new_swipe { position:relative; overflow:hidden; }
-.product_new_swipe.ec-base-product .prdList { margin:0 0 0; }
-.product_new_swipe.ec-base-product .prdList .prdList__item { margin:0 0; }
+.product_new_swipe.ec-base-product .prdList { margin: 0 0 0; }
+.product_new_swipe.ec-base-product .prdList .prdList__item { margin: 0 0; }
 
-.product_new_swipe .swiper-button-prev { display:none; left:0px; background-image:url(''); width:44px; font-size:44px; font-weight:700; }
-.product_new_swipe .swiper-button-next { display:none; right:0px; background-image:url(''); width:44px; font-size:44px; font-weight:700; }
-.product_new_swipe .swiper-pagination-bullet-active { background-color:#333; }
+.product_new_swipe .swiper-button-prev { display:none; left: 0; background-image:url(''); width: calc(var(--space-32) + var(--space-12)); font-size: var(--display-3-size-ko); font-weight:var(--font-weight-bold); }
+.product_new_swipe .swiper-button-next { display:none; right: 0; background-image:url(''); width: calc(var(--space-32) + var(--space-12)); font-size: var(--display-3-size-ko); font-weight:var(--font-weight-bold); }
+.product_new_swipe .swiper-pagination-bullet-active { background-color:var(--text-muted-strong); }
 
 
 
 /********************* Mobile *********************/
 @media all and (max-width:787px) {
-        .ec-base-product .prdList.swiper-wrapper.grid4 > li:nth-child(2n) {   border-right:1px solid #fff;}        
+        .ec-base-product .prdList.swiper-wrapper.grid4 > li:nth-child(2n) {   border-right: var(--form-field-border-width) solid var(--bg-0);}
     }
 
 
 /********************* Tablet *********************/
 @media all and (min-width:788px) and (max-width:1000px) {
-        .ec-base-product .prdList.swiper-wrapper.grid4 > li:nth-child(3n) {   border-right:1px solid #fff;}    
-    
+        .ec-base-product .prdList.swiper-wrapper.grid4 > li:nth-child(3n) {   border-right: var(--form-field-border-width) solid var(--bg-0);}
+
     }
 
 @media (min-width: 1000px){
-            .ec-base-product .prdList.swiper-wrapper.grid4 > li:nth-child(4n) {   border-right:1px solid #fff;}    
-    
+            .ec-base-product .prdList.swiper-wrapper.grid4 > li:nth-child(4n) {   border-right: var(--form-field-border-width) solid var(--bg-0);}
+
     }

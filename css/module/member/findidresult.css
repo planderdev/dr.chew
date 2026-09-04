@@ -1,6 +1,6 @@
-.xans-member-findidresult { margin:14px 7px 0; padding:0 0 29px; color:#333; font-size:13px; }
-.xans-member-findidresult .info { padding:25px 21px 20px; border:1px solid #d5d5d5; text-align:center; background:#fff; }
-.xans-member-findidresult .info .message { margin:0 0 10px; font-size:15px; font-weight:bold; }
+.xans-member-findidresult { margin: var(--space-16) var(--space-8) 0; padding: 0 0 var(--space-32); color:var(--text-muted-strong); font-size: var(--caption-1-size); }
+.xans-member-findidresult .info { padding: var(--space-24) var(--space-24) var(--space-24); border: var(--form-field-border-width) solid var(--line-default); text-align:center; background:var(--bg-0); }
+.xans-member-findidresult .info .message { margin: 0 0 var(--space-12); font-size: var(--body-2-size); font-weight:var(--font-weight-bold); }
 
-.xans-member-findidresult .ec-base-table { margin:7px auto 0; }
-.xans-member-findidresult .list { padding:14px; border:1px solid #d5d5d5; border-top:none; background:#fff; }
+.xans-member-findidresult .ec-base-table { margin: var(--space-8) auto 0; }
+.xans-member-findidresult .list { padding: var(--space-16); border: var(--form-field-border-width) solid var(--line-default); border-top: none; background:var(--bg-0); }

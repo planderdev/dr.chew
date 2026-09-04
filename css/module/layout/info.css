@@ -1,47 +1,50 @@
 .xans-layout-info {
-    margin: 0 0 20px;
-    padding: 0 0 17px;
-    border-bottom: 1px solid #e8e8e8;
+    margin: 0 0 var(--space-24);
+    padding: 0 0 var(--space-16);
+    border-bottom: var(--form-field-border-width) solid var(--line-weak);
 }
 
 .xans-layout-info h2 {
-    height: 24px;
-    color: #2e2e2e;
-    font-size: 12px;
+    height: var(--space-24);
+    color: var(--line-strong);
+    font-size: var(--caption-2-size);
 }
 
 .xans-layout-info ul {
-    padding: 0 9px;
+    padding: 0 var(--space-8);
 }
 
 .xans-layout-info li {
-    margin: 4px 0 0;
-    color: #494949;
+    margin: var(--space-4) 0 0;
+    color: var(--text-sub);
 }
 
 .xans-layout-info li strong {
     display: inline-block;
     width: 20%;
     vertical-align: top;
-    color: #949494;
-    font-weight: normal;
+    color: var(--text-disabled);
+    font-weight: var(--font-weight-regular);
 }
 
 .xans-layout-info li.tel {
-    margin: 0 0 10px;
+    margin: 0 0 var(--space-12);
     padding: 0;
-    color: #495164;
-    font-size: 25px;
-    background: none; 
-}
+    color: var(--text-sub);
+    font-size: var(--headline-3-size-ko);
+    background: none;
+    font-family: var(--font-headline-ko);
+    font-weight: var(--headline-font-weight-ko);
+    line-height: var(--headline-3-line-height-ko);
+    letter-spacing: var(--headline-letter-spacing-ko);}
 
 .xans-layout-info li.tel strong {
     visibility: hidden;
     overflow: hidden;
     width: 0;
     height: 0;
-    font-size: 0;
-    line-height: 0;
+    font-size: var(--font-size-hidden);
+    line-height: var(--line-height-hidden);
 }
 
 .xans-layout-info li span {

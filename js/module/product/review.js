@@ -185,7 +185,7 @@ var REVIEW = {
                 if (data.is_secret == true) {
                     // 비밀글 비밀번호 입력 폼
                     aHtml.push('<form name="SecretForm_4" id="SecretForm_4">');
-                    aHtml.push('<input type="text" name="a" style="display:none;">');
+                    aHtml.push('<input type="text" name="a" class="displaynone">');
                     aHtml.push('<div class="view secret">');
                     aHtml.push('<p class="alert">이 글은 비밀글입니다. 비밀번호를 입력하여 주세요.</p>');
                     aHtml.push('<p><input type="password" id="secure_password" name="secure_password" onkeydown="if (event.keyCode == 13) '+data.action_pass_submit+'"> <input type="button" value="확인" onclick="'+data.action_pass_submit+'" class="btnNormal"></p>');
@@ -285,7 +285,7 @@ aHtml.push('    </div>'); // .ec-base-button
 
                     // 댓글리스트
                     if (data.comment != undefined && data.comment.length != undefined) {
-                        aHtml.push('<ul class="boardComment" id="commentList_'+data.read['no']+'" style="display:none;">');
+                        aHtml.push('<ul class="boardComment displaynone" id="commentList_'+data.read['no']+'">');
                         for (var i=0; data.comment.length > i; i++) {
                             //댓글리스트
                             if (data.comment[i]['comment_reply_css'] == undefined) {
@@ -293,7 +293,7 @@ aHtml.push('    </div>'); // .ec-base-button
                                 aHtml.push('<div class="commentInfo">');
                                 aHtml.push('<strong class="name">'+data.comment[i]['member_icon']+' '+data.comment[i]['comment_name']+'</strong>');
                                 aHtml.push('<span class="date">'+data.comment[i]['comment_write_date']+'</span>');
-                                aHtml.push('<span class="grade '+data.use_point+'"><img src="//img.echosting.cafe24.com/skin/skin/board/icon-star-rating'+data.comment[i]['comment_point_count']+'.svg" alt="'+data.comment[i]['comment_point_count']+'점" /></span>');
+                                aHtml.push('<span class="grade '+data.use_point+'"><img src="/0svg/review.svg'+data.comment[i]['comment_point_count']+'.svg" alt="'+data.comment[i]['comment_point_count']+'점" /></span>');
                                 aHtml.push('</div>');
                                 aHtml.push('<p class="comment">'+data.comment[i]['comment_content']+'</p>');
                                 if (data.comment[i]['comment_reply_display'] == true) {
@@ -305,7 +305,7 @@ aHtml.push('    </div>'); // .ec-base-button
                                 aHtml.push('</li>');
                             } else {
                                 //댓글의 댓글리스트
-                                aHtml.push('<li class="replyArea" style="display:none;" id="'+data.comment[i]['comment_reply_id']+'">');
+                                aHtml.push('<li class="replyArea displaynone" id="'+data.comment[i]['comment_reply_id']+'">');
                                 aHtml.push('<div class="commentInfo">');
                                 aHtml.push('<strong class="name">'+data.comment[i]['member_icon']+' '+data.comment[i]['comment_name']+'</strong>');
                                 aHtml.push('<span class="date">'+data.comment[i]['comment_write_date']+'</span>');
@@ -319,7 +319,7 @@ aHtml.push('    </div>'); // .ec-base-button
 
                     // 댓글쓰기
                     if (data.comment_write != undefined) {
-                        aHtml.push('<form name="commentWriteForm_4'+data.key+'" id="commentWriteForm_4'+data.key+'" style="display:none;">');
+                        aHtml.push('<form name="commentWriteForm_4'+data.key+'" id="commentWriteForm_4'+data.key+'" class="displaynone">');
                         aHtml.push('<div class="memoCont">');
                         aHtml.push('<div class="writeForm">');
                         aHtml.push('<div class="commentForm">' +data.comment_write['comment']+ '</div>');
@@ -342,7 +342,7 @@ aHtml.push('    </div>'); // .ec-base-button
                     // 댓글의 댓글쓰기
 
                     if (data.comment_reply != undefined) {
-                        aHtml.push('<form name="commentReplyWriteForm_4'+data.key+'" id="commentReplyWriteForm_4'+data.key+'" style="display:none">');
+                        aHtml.push('<form name="commentReplyWriteForm_4'+data.key+'" id="commentReplyWriteForm_4'+data.key+'" class="displaynone">');
                         aHtml.push('<div class="memoCont reply">');
                         aHtml.push('<div class="writeForm">');
                         aHtml.push('<div class="commentForm">' +data.comment_reply['comment']+ '</div>');
@@ -363,7 +363,7 @@ aHtml.push('    </div>'); // .ec-base-button
                     }
                     // 비밀댓글 확인
                     if (data.comment_secret != undefined) {
-                        aHtml.push('<form name="commentSecretForm_4'+data.key+'" id="commentSecretForm_4'+data.key+'" style="display:none">');
+                        aHtml.push('<form name="commentSecretForm_4'+data.key+'" id="commentSecretForm_4'+data.key+'" class="displaynone">');
                         aHtml.push('<div class="commentSecret">');
                         aHtml.push('<p>비밀번호 '+data.comment_secret['secure_password']);
                         aHtml.push(' <a href="#none" class="btnNormal" onclick="'+data.comment_secret['action_secret_submit']+'">확인</a>');

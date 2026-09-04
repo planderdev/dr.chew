@@ -16,8 +16,8 @@
                     -->
                     <caption>기본 정보</caption>
                     <colgroup>
-                        <col style="width:80px">
-                        <col style="width:auto">
+                        <col class="ec-u-w-80">
+                        <col class="ec-u-w-auto">
                     </colgroup>
                     <tbody module="product_option">
                     <tr>
@@ -29,8 +29,8 @@
                         <td>
                             <div class="ec-base-qty">
                                 {$form.quantity}
-                                <a href="javascript:;" class="up eClearUp"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" id="{$quantity_up_id}" alt="up" class="{$quantity_up_class}"></a>
-                                <a href="javascript:;" class="down eClearDown"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" id="{$quantity_down_id}" alt="down" class="{$quantity_down_class}"></a>
+                                <a href="javascript:;" class="up eClearUp"><img src="/0svg/plus.svg" id="{$quantity_up_id}" alt="up" class="{$quantity_up_class}"></a>
+                                <a href="javascript:;" class="down eClearDown"><img src="/0svg/minus.svg" id="{$quantity_down_id}" alt="down" class="{$quantity_down_class}"></a>
                             </div>
                         </td>
                     </tr>
@@ -63,8 +63,8 @@
                         <td>
                             <div class="ec-base-qty">
                                 {$form.quantity}
-                                <a href="javascript:;" class="up eClearUp"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" id="{$quantity_up_id}" alt="up" class="{$quantity_up_class}"></a>
-                                <a href="javascript:;" class="down eClearDown"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" id="{$quantity_down_id}" alt="down" class="{$quantity_down_class}"></a>
+                                <a href="javascript:;" class="up eClearUp"><img src="/0svg/plus.svg" id="{$quantity_up_id}" alt="up" class="{$quantity_up_class}"></a>
+                                <a href="javascript:;" class="down eClearDown"><img src="/0svg/minus.svg" id="{$quantity_down_id}" alt="down" class="{$quantity_down_class}"></a>
                             </div>
                         </td>
                     </tr>
@@ -74,8 +74,8 @@
                         <td>
                             <div class="ec-base-qty">
                                 {$form.quantity}
-                                <a href="javascript:;" class="up eClearUp"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif" id="{$quantity_up_id}" alt="up" class="{$quantity_up_class}"></a>
-                                <a href="javascript:;" class="down eClearDown"><img src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif" id="{$quantity_down_id}" alt="down" class="{$quantity_down_class}"></a>
+                                <a href="javascript:;" class="up eClearUp"><img src="/0svg/plus.svg" id="{$quantity_up_id}" alt="up" class="{$quantity_up_class}"></a>
+                                <a href="javascript:;" class="down eClearDown"><img src="/0svg/minus.svg" id="{$quantity_down_id}" alt="down" class="{$quantity_down_class}"></a>
                             </div>
                         </td>
                     </tr>
@@ -302,9 +302,9 @@
             <table border="1" >
                 <caption>상품 목록</caption>
                 <colgroup>
-                    <col style="width:auto;">
-                    <col style="width:100px;">
-                    <col style="width:35px;">
+                    <col class="ec-u-w-auto">
+                    <col class="ec-u-w-100">
+                    <col class="ec-u-w-35">
                 </colgroup>
                 <thead>
                 <tr>
@@ -336,7 +336,7 @@
             <button type="button" class="btnNormal {$wishlist_display|display}" onclick="{$action_wishlist}">WISH LIST</button>
         </div>
         <!-- 네이버 체크아웃 구매 버튼 -->
-        <div id="NaverChk_Button" style="display:none;"></div>
+        <div id="NaverChk_Button" class="ec-u-hidden"></div>
     </div>
     <a href="#none" class="btnClose" onclick="closeBuyLayer();">닫기</a>
 </div>

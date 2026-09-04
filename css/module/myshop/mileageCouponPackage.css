@@ -1,29 +1,28 @@
-.xans-myshop-summary { margin:0 0 40px; }
-.xans-myshop-summary.ec-base-box.gHalf { border:1px solid #e5e5e5;border-top:1px solid #000;padding:0; }
+.xans-myshop-summary { display:flex; align-items:center; flex-wrap:wrap; margin: 0 0 var(--space-48); }
+.xans-myshop-summary.ec-base-box.gHalf { border: var(--form-field-border-width) solid var(--line-weak);border-top: var(--form-field-border-width) solid var(--text-main);padding: 0; }
 .xans-myshop-summary.ec-base-box.gHalf::before { display:none; }
-.xans-myshop-summary ul{ position:relative; float:none;width:100%;}
-.xans-myshop-summary:after { content:""; display:block; clear:both; }
-.xans-myshop-summary ul li {  padding:20px 16px; border-top:1px solid #e5e5e5; line-height:1.5; vertical-align:top; box-sizing:border-box; overflow:hidden; }
-.xans-myshop-summary .title { float:left; width:50%; font-weight:normal; box-sizing:border-box; }
-.xans-myshop-summary .data { float:left; width:50%;text-align:right; box-sizing:border-box; }
-.xans-myshop-summary + .ec-base-tab.typeNav .menu{margin: 0 0 40px;}
+.xans-myshop-summary ul{ position:relative;width: 100%;}
+.xans-myshop-summary ul li {  padding: var(--space-24) var(--space-16); border-top: var(--form-field-border-width) solid var(--line-weak); line-height: var(--body-line-height); vertical-align:top; box-sizing:border-box; overflow:hidden; }
+.xans-myshop-summary .title { display:inline-flex; align-items:center; width: 50%; font-weight:var(--font-weight-regular); box-sizing:border-box; }
+.xans-myshop-summary .data { display:inline-flex; align-items:center; justify-content:flex-end; width: 50%;text-align:right; box-sizing:border-box; }
+.xans-myshop-summary + .ec-base-tab.typeNav .menu{margin: 0 0 var(--space-48);}
 
-.xans-myshop-couponmemberlist h3 { padding:19px 15px; line-height:1.5;background:#f6f6f6; }
-.xans-myshop-couponmemberlist h3 .number{ display:inline-block;margin: 0 0 0 10px; }
-.xans-myshop-couponmemberlist .item { margin:25px 0 0; }
-.xans-myshop-couponmemberlist .ec-base-table {border-top:none; }
+.xans-myshop-couponmemberlist h3 { padding: var(--space-16) var(--space-16); line-height: var(--body-line-height);background:var(--bg-100); }
+.xans-myshop-couponmemberlist h3 .number{ display:inline-block;margin: 0 0 0 var(--space-12); }
+.xans-myshop-couponmemberlist .item { margin: var(--space-24) 0 0; }
+.xans-myshop-couponmemberlist .ec-base-table {border-top: none; }
 .xans-myshop-couponmemberlist .item table th,
-.xans-myshop-couponmemberlist .item table td {line-height:1.5;background:#fff;}
-.xans-myshop-couponmemberlist .item table th {color:#6d6d6d;text-align:left;font-weight:normal;}
+.xans-myshop-couponmemberlist .item table td {line-height: var(--body-line-height);background:var(--bg-0);}
+.xans-myshop-couponmemberlist .item table th {color:var(--text-weak);text-align:left;font-weight:var(--font-weight-regular);}
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-	.xans-myshop-summary { margin:0 0 50px; }
-	.xans-myshop-summary ul{ float:left;width:50%;}
-	.xans-myshop-summary ul li { margin:14px 0; padding:0 30px 0; border-top:none; }
-	.xans-myshop-summary.ec-base-box.gHalf { padding: 10px 0;}
-	.xans-myshop-summary.ec-base-box.gHalf::before {content:'';position: absolute;top: 25px;left: 50%;bottom: 25px;display: block;width: 1px;height:auto;background-color: #e5e5e5; }
-	.xans-myshop-summary + .ec-base-tab.typeNav .menu{margin: 0 0 50px;}
-	
-	.xans-myshop-couponmemberlist .item {margin:20px 0 0;}
+	.xans-myshop-summary { margin: 0 0 var(--space-48); }
+	.xans-myshop-summary ul{ display:flex; flex-direction:column; align-items:stretch;width: 50%;}
+	.xans-myshop-summary ul li { margin: var(--space-16) 0; padding: 0 var(--space-32) 0; border-top: none; }
+	.xans-myshop-summary.ec-base-box.gHalf { padding: var(--space-12) 0;}
+	.xans-myshop-summary.ec-base-box.gHalf::before {content:'';position: absolute;top: calc(var(--space-24) + var(--form-field-border-width));left: 50%;bottom: calc(var(--space-24) + var(--form-field-border-width));display: block;width: var(--form-field-border-width);height: auto;background-color: var(--line-weak); }
+	.xans-myshop-summary + .ec-base-tab.typeNav .menu{margin: 0 0 var(--space-48);}
+
+	.xans-myshop-couponmemberlist .item {margin: var(--space-24) 0 0;}
 }

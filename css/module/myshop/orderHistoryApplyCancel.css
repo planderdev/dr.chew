@@ -1,14 +1,14 @@
 .xans-myshop-orderhistoryapplycancel .order { position:relative; }
-.xans-myshop-orderhistoryapplycancel .order__number { overflow:hidden; padding:20px 0 20px 15px; font-size:13px; background-color:#f6f6f6; border-top:1px solid #000; }
-.xans-myshop-orderhistoryapplycancel .order__number .date { font-weight:bold; }
+.xans-myshop-orderhistoryapplycancel .order__number { overflow:hidden; padding: var(--space-24) 0 var(--space-24) var(--space-16); font-size: var(--caption-1-size); background-color:var(--bg-100); border-top: var(--form-field-border-width) solid var(--text-main); }
+.xans-myshop-orderhistoryapplycancel .order__number .date { font-weight:var(--font-weight-bold); }
 
-.xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery{background-color:#fbfafa;vertical-align:middle;padding:10px 20px 10px 40px;}
+.xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery{background-color:var(--bg-50);vertical-align:middle;padding: var(--space-12) var(--space-24) var(--space-12) var(--space-48);}
 .xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery .inner{display: flex;align-items:center;}
-.xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery .address{flex:1;display: block;padding-right:20px;}
+.xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery .address{flex:1;display: block;padding-right: var(--space-24);}
 .xans-myshop-orderhistoryapplycancel .ec-base-table.typeList .xans-myshop-products .multiDelivery .waybill{flex:none;display: inline-block;}
 
 /* Write */
-.xans-myshop-orderhistoryapplycancel textarea { width:100%; }
-.itemAddInfo input { width:100%; }
+.xans-myshop-orderhistoryapplycancel textarea { width: 100%; }
+.itemAddInfo input { width: 100%; }
 
-.xans-myshop-orderhistoryapplycancel p.ec-base-help { margin:10px 0 0; }
+.xans-myshop-orderhistoryapplycancel p.ec-base-help { margin: var(--space-12) 0 0; }

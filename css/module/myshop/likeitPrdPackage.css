@@ -1,1 +1,1 @@
-.xans-myshop-likeproductlist .list table td.thumb img { width:75px; height:auto; }
+.xans-myshop-likeproductlist .list table td.thumb img { width: calc(var(--space-64) + var(--space-8) + calc(var(--form-field-border-width) * 3)); height: auto; }

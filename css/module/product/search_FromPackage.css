@@ -1,10 +1,10 @@
-#popup { width:600px; height:500px; }
+#popup { width: calc((var(--space-96) * 6) + var(--space-24)); height: calc((var(--space-96) * 5) + var(--space-16) + var(--space-4)); }
 .xans-search-frompackage fieldset { text-align:center; }
-.xans-search-frompackage .ec-base-box { padding:30px 20px; }
-.xans-search-frompackage #search_type { width:100%; }
-.xans-search-frompackage #keyword { width:100%; margin:10px 0; }
+.xans-search-frompackage .ec-base-box { padding: var(--space-32) var(--space-24); }
+.xans-search-frompackage #search_type { width: 100%; }
+.xans-search-frompackage #keyword { width: 100%; margin: var(--space-12) 0; }
 
-.xans-search-frompackage .resultArea { overflow:hidden; margin:10px 0 0; padding:10px 0; text-align:right; line-height:30px; }
-.xans-search-frompackage .total { float:left; }
+.xans-search-frompackage .resultArea { overflow:hidden; margin: var(--space-12) 0 0; padding: var(--space-12) 0; text-align:right; line-height: calc(var(--space-24) + var(--space-4) + calc(var(--form-field-border-width) * 2)); }
+.xans-search-frompackage .total { display:inline-flex; align-items:center; }
 
-.xans-search-frompackage table td.thumb img { max-width:78px; border:1px solid #d6d6d6; }
+.xans-search-frompackage table td.thumb img { max-width: calc(var(--space-64) + var(--space-12) + calc(var(--form-field-border-width) * 2)); border: var(--form-field-border-width) solid var(--line-default); }

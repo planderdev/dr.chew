@@ -1,1 +1,1 @@
-.xans-product-listitem { border-top:1px solid #000; }
+.xans-product-listitem { border-top: var(--form-field-border-width) solid var(--text-main); }

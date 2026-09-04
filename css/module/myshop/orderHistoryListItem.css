@@ -4,10 +4,10 @@
 
 .xans-myshop-orderhistorylistitem .order__number {
 	overflow: hidden;
-	padding: 20px 0 20px 15px;
-	font-size: 13px;
-	background-color: #f6f6f6;
-	border-top: 1px solid #000;
+	padding: var(--space-24) 0 var(--space-24) var(--space-16);
+	font-size: var(--caption-1-size);
+	background-color: var(--bg-100);
+	border-top: var(--form-field-border-width) solid var(--text-main);
 }
 
 .xans-myshop-orderhistorylistitem .order:first-child .order__number {
@@ -15,72 +15,71 @@
 }
 
 .xans-myshop-orderhistorylistitem .order__number .date {
-	font-weight: bold;
+	font-weight: var(--font-weight-bold);
 }
 
 .xans-myshop-orderhistorylistitem .btnDetail {
 	position: absolute;
-	top: 19px;
-	right: 19px;
+	top: calc(var(--space-16) + calc(var(--form-field-border-width) * 3));
+	right: calc(var(--space-16) + calc(var(--form-field-border-width) * 3));
 }
 
 .xans-myshop-orderhistorylistitem .request {
 	position: relative;
 	overflow: hidden;
-	padding: 25px 0 0;
+	padding: var(--space-24) 0 0;
 	text-align: right;
 }
 
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail {
 	display: flex;
 	flex-direction: row-reverse;
-	padding: 0 0 18px 0;
-	line-height: 26px;
-	font-size: 13px;
+	padding: 0 0 var(--space-16) 0;
+	line-height: calc(var(--space-24) + calc(var(--form-field-border-width) * 2));
+	font-size: var(--caption-1-size);
 }
 
-.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .gRight {
-	float: right;
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .gRight { margin-left: auto; display:inline-flex; align-items:center;
 	text-align: right;
 }
 
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail strong {
-	font-weight: 400;
+	font-weight: var(--font-weight-regular);
 }
 
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title:before {
 	content: " = ";
-	line-height: 26px;
-	font-size: 13px;
-	color: #000;
-	padding: 0 5px; 
+	line-height: calc(var(--space-24) + calc(var(--form-field-border-width) * 2));
+	font-size: var(--caption-1-size);
+	color: var(--text-main);
+	padding: 0 var(--space-4);
 }
 
 .xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title>strong {
-	margin-right: 5px;
+	margin-right: var(--space-4);
 }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
 	.xans-myshop-orderhistorylistitem .order__number {
-		margin: 50px 0 0;
+		margin: var(--space-48) 0 0;
 	}
 
 	.xans-myshop-orderhistorylistitem .request {
-		padding: 25px 16px;
+		padding: var(--space-24) var(--space-16);
 	}
 
 	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail {
 		display: block;
-		padding: 18px 16px;
-		line-height: 26px;
-		font-size: 12px;
-		border-top: 1px solid #e5e5e5;
+		padding: var(--space-16) var(--space-16);
+		line-height: calc(var(--space-24) + calc(var(--form-field-border-width) * 2));
+		font-size: var(--caption-2-size);
+		border-top: var(--form-field-border-width) solid var(--line-weak);
 	}
 
 	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title {
-		font-size: 14px;
-		margin-bottom: 10px;
+		font-size: var(--body-3-size);
+		margin-bottom: var(--space-12);
 	}
 
 	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title:before {
@@ -88,7 +87,7 @@
 	}
 
 	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .title .gRight strong {
-		font-weight: 700;
+		font-weight: var(--font-weight-bold);
 	}
 
 	.xans-myshop-orderhistorylistitem .ec-base-prdInfo .payDetail .contents {
@@ -99,7 +98,7 @@
 /********************* PC *********************/
 @media all and (min-width:1025px) {
 	.xans-myshop-orderhistorylistitem .order__number {
-		margin: 60px 0 0;
+		margin: var(--space-64) 0 0;
 	}
 
 }

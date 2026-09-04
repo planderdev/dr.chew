@@ -1,105 +1,96 @@
 /* 타이틀 */
 #titleArea {
     position: relative;
-    border-bottom: 1px solid #c2c2c2;
-    background-color: #fff;
+    border-bottom: var(--form-field-border-width) solid var(--line-default);
+    background-color: var(--bg-0);
 }
 
 #titleArea h2 {
-    padding: 0 61px;
-    line-height: 43px;
-    font-size: 15px;
-    color: #2e2e2e;
+    padding: 0 var(--space-64);
+    line-height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 3));
+    font-size: var(--body-2-size);
+    color: var(--line-strong);
     text-align: center;
 }
 
 #titleArea span {
     position: absolute;
-    top: 6px;
-    left: 14px;
+    top: calc(var(--space-4) + calc(var(--form-field-border-width) * 2));
+    left: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
 }
 
 /* 공통 */
-body {
-    height: 100%;
-    background: #f1f1f1 !important;
-}
+
 
 .xans-member-adulthead {
-    padding: 29px 14px 0;
-    font-size: 11px;
+    padding: var(--space-32) var(--space-16) 0;
+    font-size: var(--caption-2-size);
 }
 
 .xans-member-adulthead h3 {
-    height: 43px;
-    padding: 0 0 0 7px;
-    border-bottom: 1px solid #d5d5d5;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 43px;
+    height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 3));
+    padding: 0 0 0 var(--space-8);
+    border-bottom: var(--form-field-border-width) solid var(--line-default);
+    font-size: var(--caption-1-size);
+    font-weight: var(--font-weight-bold);
+    line-height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 3));
 }
 
 .xans-member-adulthead .noMember h3 {
-    margin: 0 14px;
+    margin: 0 var(--space-16);
 }
 
 .xans-member-adulthead .loginHeader {
-    margin: 0 14px;
+    margin: 0 var(--space-16);
 }
 
 .xans-member-adulthead .loginHeader h3 {
-    margin: 23px 0 0;
-}
-
-.xans-member-adulthead .loginHeader:after {
-    content: "";
-    display: block;
-    clear: both;
+    margin: var(--space-24) 0 0;
 }
 
 .xans-member-adulthead .under19 {
     position: relative;
-    min-height: 70px;
-    margin: 0 14px;
-    padding: 10px 0 0 94px;
-    font-size: 11px;
-    line-height: 1.5em;
-    color: #1b1b1b;
-    font-weight: 400;
+    min-height: calc(var(--space-64) + var(--space-4) + calc(var(--form-field-border-width) * 2));
+    margin: 0 var(--space-16);
+    padding: var(--space-12) 0 0 var(--space-96);
+    font-size: var(--caption-2-size);
+    line-height: var(--body-line-height);
+    color: var(--text-strong);
+    font-weight: var(--font-weight-regular);
     text-align: justify;
 }
 
 .xans-member-adulthead .under19 h2 {
-    font-size: 13px;
+    font-size: var(--caption-1-size);
 }
 
 .xans-member-adulthead .under19 .info {
     display: block;
-    margin: 0 0 7px;
-    color: #e1566e;
-    font-weight: normal;
+    margin: 0 0 var(--space-8);
+    color: var(--brand-accent);
+    font-weight: var(--font-weight-regular);
 }
 
 .xans-member-adulthead .under19 span {
     position: absolute;
     top: 0;
     left: 0;
-    width: 83px;
-    height: 83px;
+    width: calc(var(--space-64) + var(--space-16) + calc(var(--form-field-border-width) * 3));
+    height: calc(var(--space-64) + var(--space-16) + calc(var(--form-field-border-width) * 3));
     overflow: hidden;
     text-indent: 100%;
-    background: url("//img.echosting.cafe24.com/skin/mobile_ko_KR/intro/bg_adult.png") 0 0 no-repeat;
-    background-size: 80px 80px;
+    background: var(--icon-url-notice) 0 0 no-repeat;
+    background-size: calc(var(--space-64) + var(--space-16)) calc(var(--space-64) + var(--space-16));
 }
 
 .xans-member-adulthead .under19 strong {
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
 }
 
 .xans-member-adulthead .under19 .adultInfo {
     display: inline-block;
-    margin: 0 0 20px;
-    font-size: 13px;
+    margin: 0 0 var(--space-24);
+    font-size: var(--caption-1-size);
 }
 
 .xans-member-adulthead .under19+.formBox {
@@ -107,15 +98,15 @@ body {
 }
 
 .xans-member-adulthead .keyboard {
-    line-height: 43px;
+    line-height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 3));
     text-align: right;
 }
 
 .xans-member-adulthead .keyboard .btnKey {
     position: relative;
-    padding: 0 20px 0 0;
-    color: #757575;
-    font-size: 11px;
+    padding: 0 var(--space-24) 0 0;
+    color: var(--text-weak);
+    font-size: var(--caption-2-size);
     cursor: pointer;
     border: 0;
     background: none;
@@ -123,12 +114,12 @@ body {
 
 .xans-member-adulthead .keyboard .btnKey.korean {
     display: inline-block;
-    margin: 0px 14px 0px 0;
+    margin: 0 var(--space-16) 0 0;
 }
 
 .xans-member-adulthead .keyboard .btnKey.special {
     display: inline-block;
-    margin: 0px 0 0px;
+    margin: 0 0 0;
 }
 
 .xans-member-adulthead .keyboard .btnKey:focus {
@@ -140,20 +131,20 @@ body {
     position: absolute;
     right: 0;
     top: 50%;
-    width: 13px;
-    height: 8px;
-    margin: -3px 0 0;
-    background: url("//img.echosting.cafe24.com/skin/mobile_ko_KR/member/ico_toggle_arrow_down.png") no-repeat 0 50%;
+    width: calc(var(--space-12) + var(--form-field-border-width));
+    height: var(--space-8);
+    margin: calc(var(--space-4) * -1) 0 0;
+    background: var(--icon-url-right-arr) no-repeat 0 50%;
     background-size: 100% 100%;
 }
 
 .xans-member-adulthead .keyboard .btnKey.selected {
-    color: #508bed;
+    color: var(--support-info);
     border: none;
 }
 
 .xans-member-adulthead .keyboard .btnKey.selected:before {
-    background-image: url("//img.echosting.cafe24.com/skin/mobile_ko_KR/member/ico_toggle_arrow_up.png");
+    background-image: var(--icon-url-right-arr);
 }
 
 .xans-member-adulthead .view {
@@ -162,44 +153,37 @@ body {
 
 .xans-member-adulthead .view>div {
     display: none;
-    padding: 0 0 14px;
+    padding: 0 0 var(--space-16);
 }
 
 .xans-member-adulthead .formBox {
     position: relative;
-    margin: 0 14px 0;
-    font-size: 13px;
-}
-
-.xans-member-adulthead .formBox:after {
-    content: "";
-    display: block;
-    clear: both;
+    margin: 0 var(--space-16) 0;
+    font-size: var(--caption-1-size);
 }
 
 .xans-member-adulthead .formBox h3 {
-    margin: 23px 0 0;
+    margin: var(--space-24) 0 0;
 }
 
 .xans-member-adulthead .formBox .form input[type="text"],
 .xans-member-adulthead .formBox .form input[type="password"] {
     width: 100%;
-    height: 43px;
+    height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 3));
 }
 
 .xans-member-adulthead .formBox .form input[type="text"] {
-    margin: 0 0 7px;
+    margin: 0 0 var(--space-8);
 }
 
-.xans-member-adulthead .formBox .option {
+.xans-member-adulthead .formBox .option { display:flex; align-items:center;
     overflow: hidden;
-    line-height: 29px;
+    line-height: calc(var(--space-24) + var(--space-4) + var(--form-field-border-width));
     margin: 0;
 }
 
-.xans-member-adulthead .formBox .option>span {
-    float: left;
-    margin: 0 10px 0 0;
+.xans-member-adulthead .formBox .option>span { display:inline-flex; align-items:center;
+    margin: 0 var(--space-12) 0 0;
 }
 
 .xans-member-adulthead .formBox .option>span:last-child {
@@ -208,61 +192,61 @@ body {
 
 .xans-member-adulthead .formBox .option input[type="checkbox"],
 .xans-member-adulthead .formBox .option img {
-    margin: 0 3px 0 0;
+    margin: 0 var(--space-4) 0 0;
 }
 
 .xans-member-adulthead .formBox p.mobile,
 .xans-member-adulthead .formBox p.ipin {
-    line-height: 43px;
-    padding: 0 0 0 7px;
+    line-height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 3));
+    padding: 0 0 0 var(--space-8);
 }
 
 .xans-member-adulthead .formBox p.mobile span,
 .xans-member-adulthead .formBox p.ipin span {
     display: inlin-block;
-    height: 43px;
-    line-height: 43px;
+    height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 3));
+    line-height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 3));
 }
 
 .xans-member-adulthead .formBox p.mobile img,
 .xans-member-adulthead .formBox p.ipin img {
-    width: 106px;
+    width: calc(var(--space-96) + var(--space-8) + calc(var(--form-field-border-width) * 2));
 }
 
 .xans-member-adulthead .formBox .option .ssl img {
-    width: 14px;
-    margin: 0 3px 0 0;
+    width: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
+    margin: 0 var(--space-4) 0 0;
     vertical-align: middle;
 }
 
 .xans-member-adulthead .formBox .option .ssl em {
-    color: #757575;
+    color: var(--text-weak);
     vertical-align: middle;
 }
 
 /* 인트로 본인인증 ( 법적권고 ) */
 .xans-member-adulthead.recommend {
-    padding: 29px 14px 0; 
+    padding: var(--space-32) var(--space-16) 0;
 }
 
 .xans-member-adulthead.recommend h3 {
-    height: 35px;
-    padding: 0 0 0 7px;
-    border-bottom: 1px solid #d5d5d5;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 43px;
+    height: calc(var(--space-32) + calc(var(--form-field-border-width) * 3));
+    padding: 0 0 0 var(--space-8);
+    border-bottom: var(--form-field-border-width) solid var(--line-default);
+    font-size: var(--caption-1-size);
+    font-weight: var(--font-weight-bold);
+    line-height: calc(var(--space-32) + var(--space-8) + calc(var(--form-field-border-width) * 3));
 }
 
 .xans-member-adulthead.recommend .under19 {
     position: relative;
-    min-height: 70px;
-    margin: 0 14px;
-    padding: 10px 0 0 94px;
-    font-size: 11px;
-    line-height: 1.5em;
-    color: #1b1b1b;
-    font-weight: 400;
+    min-height: calc(var(--space-64) + var(--space-4) + calc(var(--form-field-border-width) * 2));
+    margin: 0 var(--space-16);
+    padding: var(--space-12) 0 0 var(--space-96);
+    font-size: var(--caption-2-size);
+    line-height: var(--body-line-height);
+    color: var(--text-strong);
+    font-weight: var(--font-weight-regular);
     text-align: justify;
 }
 
@@ -270,50 +254,50 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 83px;
-    height: 83px;
+    width: calc(var(--space-64) + var(--space-16) + calc(var(--form-field-border-width) * 3));
+    height: calc(var(--space-64) + var(--space-16) + calc(var(--form-field-border-width) * 3));
     overflow: hidden;
     text-indent: 100%;
-    background: url("//img.echosting.cafe24.com/skin/mobile_ko_KR/intro/bg_adult.png") 0 0 no-repeat;
-    background-size: 80px 80px;
+    background: var(--icon-url-notice) 0 0 no-repeat;
+    background-size: calc(var(--space-64) + var(--space-16)) calc(var(--space-64) + var(--space-16));
 }
 
 .xans-member-adulthead.recommend .under19 strong {
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
 }
 
 .xans-member-adulthead.recommend .formBox {
     position: relative;
-    margin: 0 14px 0;
-    font-size: 13px;
+    margin: 0 var(--space-16) 0;
+    font-size: var(--caption-1-size);
 }
 
 /* 하단 버튼 */
 .xans-member-adulthead .loginUtil {
-    height: 35px;
-    margin: 10px auto;
-    font-size: 13px;
+    height: calc(var(--space-32) + calc(var(--form-field-border-width) * 3));
+    margin: var(--space-12) auto;
+    font-size: var(--caption-1-size);
     text-align: center;
-    line-height: 35px;
+    line-height: calc(var(--space-32) + calc(var(--form-field-border-width) * 3));
 }
 
 .xans-member-adulthead .loginUtil .btnLogin {
     position: relative;
     display: inline-block;
-    padding: 0 14px 0 15px;
-    color: #858585;
-    font-weight: normal;
+    padding: 0 var(--space-16) 0 var(--space-16);
+    color: var(--text-weak);
+    font-weight: var(--font-weight-regular);
 }
 
 .xans-member-adulthead .loginUtil .btnLogin:before {
     display: block;
     content: "";
     position: absolute;
-    top: 11px;
+    top: calc(var(--space-8) + calc(var(--form-field-border-width) * 3));
     left: 0;
-    width: 1px;
-    height: 13px;
-    background: #848484;
+    width: var(--form-field-border-width);
+    height: calc(var(--space-12) + var(--form-field-border-width));
+    background: var(--text-weak);
 }
 
 .xans-member-adulthead .loginUtil .btnLogin:first-child:before {
@@ -322,92 +306,92 @@ body {
 
 .xans-member-adulthead .loginUtil .btnLogin .icon {
     display: inline-block;
-    width: 5px;
-    padding: 0 7px 0 6px;
+    width: calc(var(--space-4) + var(--form-field-border-width));
+    padding: 0 var(--space-8) 0 var(--space-8);
 }
 
 .xans-member-adulthead .snsLogin .btnNaver {
     display: block;
-    margin: 10px 0 0;
+    margin: var(--space-12) 0 0;
     border: 0;
-    border-radius: 2px;
-    font-size: 13px;
-    color: #fff;
+    border-radius: var(--radius-sm);
+    font-size: var(--caption-1-size);
+    color: var(--bg-0);
     text-align: center;
-    height: 34px;
-    line-height: 33px;
-    padding: 0 0 0 45px;
-    background: #26c826 url("//img.echosting.cafe24.com/skin/mobile/member/ico_btn_naver.png") no-repeat 13px 0;
-    background-size: 33px 33px;
+    height: calc(var(--space-32) + calc(var(--form-field-border-width) * 2));
+    line-height: calc(var(--space-32) + var(--form-field-border-width));
+    padding: 0 0 0 var(--space-48);
+    background: var(--support-success) var(--icon-url-my) no-repeat calc(var(--space-12) + var(--form-field-border-width)) 0;
+    background-size: calc(var(--space-32) + var(--form-field-border-width)) calc(var(--space-32) + var(--form-field-border-width));
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .xans-member-adulthead .snsLogin .btnFacebook {
     display: block;
-    margin: 10px 0 0;
+    margin: var(--space-12) 0 0;
     border: 0;
-    border-radius: 2px;
-    font-size: 13px;
-    color: #fff;
+    border-radius: var(--radius-sm);
+    font-size: var(--caption-1-size);
+    color: var(--bg-0);
     text-align: center;
-    height: 33px;
-    line-height: 33px;
-    padding: 0 0 0 45px;
-    background: #4267b2 url("//img.echosting.cafe24.com/skin/mobile/member/ico_btn_facebook.png") no-repeat 13px 0;
-    background-size: 33px 33px;
+    height: calc(var(--space-32) + var(--form-field-border-width));
+    line-height: calc(var(--space-32) + var(--form-field-border-width));
+    padding: 0 0 0 var(--space-48);
+    background: var(--support-info) var(--icon-url-my) no-repeat calc(var(--space-12) + var(--form-field-border-width)) 0;
+    background-size: calc(var(--space-32) + var(--form-field-border-width)) calc(var(--space-32) + var(--form-field-border-width));
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .xans-member-adulthead .snsLogin .btnGoogle {
     display: block;
-    margin: 10px 0 0;
+    margin: var(--space-12) 0 0;
     border: 0;
-    border-radius: 2px;
-    font-size: 13px;
-    color: #fff;
+    border-radius: var(--radius-sm);
+    font-size: var(--caption-1-size);
+    color: var(--bg-0);
     text-align: center;
-    height: 33px;
-    line-height: 33px;
-    padding: 0 0 0 45px;
-    background: #517ff3 url("//img.echosting.cafe24.com/skin/mobile/member/ico_google.png") no-repeat 0 0;
-    background-size: auto 31px;
-    border: 1px solid #517ff3;
+    height: calc(var(--space-32) + var(--form-field-border-width));
+    line-height: calc(var(--space-32) + var(--form-field-border-width));
+    padding: 0 0 0 var(--space-48);
+    background: var(--support-info) var(--icon-url-my) no-repeat 0 0;
+    background-size: auto calc(var(--space-24) + var(--space-4) + calc(var(--form-field-border-width) * 3));
+    border: var(--form-field-border-width) solid var(--support-info);
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .xans-member-adulthead .snsLogin .btnKakao {
     display: block;
-    margin: 10px 0 0;
+    margin: var(--space-12) 0 0;
     border: 0;
-    border-radius: 2px;
-    font-size: 13px;
-    color: #3c1e1e;
+    border-radius: var(--radius-sm);
+    font-size: var(--caption-1-size);
+    color: var(--line-strong);
     text-align: center;
-    height: 34px;
-    line-height: 33px;
-    padding: 0 0 0 45px;
-    background: #ffeb00 url("//img.echosting.cafe24.com/skin/mobile/member/ico_btn_kakao.png") no-repeat 11px 1px;
-    background-size: auto 33px;
+    height: calc(var(--space-32) + calc(var(--form-field-border-width) * 2));
+    line-height: calc(var(--space-32) + var(--form-field-border-width));
+    padding: 0 0 0 var(--space-48);
+    background: var(--warning) var(--icon-url-my) no-repeat calc(var(--space-12) - var(--form-field-border-width)) var(--form-field-border-width);
+    background-size: auto calc(var(--space-32) + var(--form-field-border-width));
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .xans-member-adulthead .snsLogin .btnApple {
     display: block;
-    margin: 10px 0 0;
+    margin: var(--space-12) 0 0;
     border: 0;
-    border-radius: 2px;
-    font-size: 13px;
-    color: #fff;
+    border-radius: var(--radius-sm);
+    font-size: var(--caption-1-size);
+    color: var(--bg-0);
     text-align: center;
-    height: 34px;
-    line-height: 33px;
-    padding: 0 0 0 45px;
-    background: #000 url("//img.echosting.cafe24.com/skin/mobile/member/ico_btn_apple.png") no-repeat 13px 0;
-    background-size: 33px 33px;
+    height: calc(var(--space-32) + calc(var(--form-field-border-width) * 2));
+    line-height: calc(var(--space-32) + var(--form-field-border-width));
+    padding: 0 0 0 var(--space-48);
+    background: var(--text-main) var(--icon-url-my) no-repeat calc(var(--space-12) + var(--form-field-border-width)) 0;
+    background-size: calc(var(--space-32) + var(--form-field-border-width)) calc(var(--space-32) + var(--form-field-border-width));
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -415,5 +399,5 @@ body {
 /* input */
 .xans-member-adulthead #member_id,
 .xans-member-adulthead #member_passwd {
-    font-size: 15px;
+    font-size: var(--body-2-size);
 }

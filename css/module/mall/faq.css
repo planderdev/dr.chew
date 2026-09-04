@@ -1,6 +1,6 @@
-.xans-mall-faq .contents { padding:20px 0 0; color:#6d6d6d; line-height:20px; }
+.xans-mall-faq .contents { padding: var(--space-24) 0 0; color:var(--text-weak); line-height: calc(var(--space-16) + var(--space-4)); }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
-    .xans-mall-faq .contents { padding:20px 16px 0; }
+    .xans-mall-faq .contents { padding: var(--space-24) var(--space-16) 0; }
 }

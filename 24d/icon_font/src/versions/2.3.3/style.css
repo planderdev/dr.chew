@@ -6,21 +6,21 @@
     url('fonts/xeicon.ttf?3ka2yj') format('truetype'),
     url('fonts/xeicon.woff?3ka2yj') format('woff'),
     url('fonts/xeicon.svg?3ka2yj#xeicon') format('svg');
-  font-weight: normal;
+  font-weight: var(--font-weight-regular);
   font-style: normal;
 }
 
 [class^="xi-"],
 [class*=" xi-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'xeicon' !important;
+  /* use to prevent issues with browser extensions that change fonts */
+  font-family: 'xeicon';
   display: inline-block;
   speak: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: var(--font-weight-regular);
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+  line-height: var(--control-line-height);
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;

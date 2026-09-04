@@ -30,9 +30,10 @@ var boardVerSlide = {
         var trLength = tbody.find('> tr').length;
         var trHeight = tbody.find('> tr').outerHeight();
         var boardVerSlideAreaHeight = trHeight * view;
-        table.wrap('<div class="boardVerSlideArea" style="height:'+ boardVerSlideAreaHeight +'px;" />');
+        table.wrap('<div class="boardVerSlideArea" />');
         table.wrap('<div class="list" />');
         var boardVerSlideArea = this.wrap.find('.boardVerSlideArea');
+        boardVerSlideArea.css('--board-ver-slide-area-height', boardVerSlideAreaHeight + 'px');
         var list = this.wrap.find('.list');
         table.find('caption').remove();
         table.find('thead').remove();

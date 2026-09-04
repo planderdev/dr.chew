@@ -11,29 +11,29 @@
 
 @-webkit-keyframes pop {
     10% { -webkit-transform-origin:50% 50%; -webkit-transform: rotate(5deg); }
-    25% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(50px); }
-    90% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(-30px); }
+    25% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(calc(var(--space-48) + (var(--form-field-border-width) * 2))); }
+    90% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(calc((var(--space-32) - (var(--form-field-border-width) * 2)) * -1)); }
     100% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1,1); }
  }
 
 @-moz-keyframes pop {
     10% { -webkit-transform-origin:50% 50%; -webkit-transform: rotate(5deg); }
-    25% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(50px); }
-    90% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(-30px); }
+    25% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(calc(var(--space-48) + (var(--form-field-border-width) * 2))); }
+    90% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(calc((var(--space-32) - (var(--form-field-border-width) * 2)) * -1)); }
     100% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1,1); }
  }
 
 @-o-keyframes pop {
     10% { -webkit-transform-origin:50% 50%; -webkit-transform: rotate(5deg); }
-    25% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(50px); }
-    90% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(-30px); }
+    25% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(calc(var(--space-48) + (var(--form-field-border-width) * 2))); }
+    90% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(calc((var(--space-32) - (var(--form-field-border-width) * 2)) * -1)); }
     100% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1,1); }
  }
 
 @keyframes pop {
     10% { -webkit-transform-origin:50% 50%; -webkit-transform: rotate(5deg); }
-    25% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(50px); }
-    90% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(-30px); }
+    25% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(calc(var(--space-48) + (var(--form-field-border-width) * 2))); }
+    90% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1.87,1.87) translateY(calc((var(--space-32) - (var(--form-field-border-width) * 2)) * -1)); }
     100% { -webkit-transform-origin:50% 50%; -webkit-transform: scale(1,1); }
  }
 

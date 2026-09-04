@@ -2,30 +2,30 @@
 
 #product_listrecommend_swipe { position:relative; }
 #product_listrecommend_swipe .product_best_swipe { overflow:visible; }
-#product_listrecommend_left_mask { position:absolute; top:0px; left:0px; transform:translateX(-100%); width:100vh; height:100%; background-color:#fff; z-index:1; }
-#product_listrecommend_right_mask { position:absolute; top:0px; right:0px; transform:translateX(100%); width:100vh; height:100%; background-color:#fff; z-index:1; }
+#product_listrecommend_left_mask { position:absolute; top: 0; left: 0; transform:translateX(-100%); width: 100vh; height: 100%; background-color:var(--bg-0); z-index:1; }
+#product_listrecommend_right_mask { position:absolute; top: 0; right: 0; transform:translateX(100%); width: 100vh; height: 100%; background-color:var(--bg-0); z-index:1; }
 #product_listrecommend_swipe .swiper-container-horizontal>.swiper-pagination-bullets { z-index:auto; }
 
 
-.xans-product-listrecommend { margin:0; padding:0 0 50px !important; }
-.xans-product-listrecommend:first-child h2 { border-top:0; }
-.xans-product-listrecommend h2 { margin:0; padding:14px 14px 0; font-size:14px; line-height:15px; color:#4a5164; }
-.xans-product-listrecommend img { max-width:100%; }
-.xans-product-listrecommend li { vertical-align:top; margin:0 0 14px; }
+.xans-product-listrecommend { margin: 0; padding: 0 0 var(--space-48); }
+.xans-product-listrecommend:first-child h2 { border-top: 0; }
+.xans-product-listrecommend h2 { margin: 0; padding: var(--space-16) var(--space-16) 0; font-size: var(--body-3-size); line-height: calc(var(--space-12) + calc(var(--form-field-border-width) * 3)); color:var(--text-sub); }
+.xans-product-listrecommend img { max-width: 100%; }
+.xans-product-listrecommend li { vertical-align:top; margin: 0 0 var(--space-16); }
 .xans-product-listrecommend .prdList > li { position:relative; }
-.xans-product-listrecommend > ul > li > ul > li { display:inline-block; padding:0; vertical-align:top; font-size:12px; line-height:1.4; }
+.xans-product-listrecommend > ul > li > ul > li { display:inline-block; padding: 0; vertical-align:top; font-size: var(--caption-2-size); line-height: var(--body-line-height); }
 
 /********************* Mobile *********************/
 @media all and (max-width:767px) {
-    .xans-product-listrecommend.ec-base-product {margin-right: 16px; margin-left: 16px;}
+    .xans-product-listrecommend.ec-base-product {margin-right: var(--space-16); margin-left: var(--space-16);}
 }
 
 /********************* Tablet *********************/
 @media all and (min-width:768px) and (max-width:1024px) {
-    .xans-product-listrecommend.ec-base-product {margin-right: 24px; margin-left: 24px;}
+    .xans-product-listrecommend.ec-base-product {margin-right: var(--space-24); margin-left: var(--space-24);}
 }
 
 /********************* PC *********************/
 @media all and (min-width:1000px) {
-    
+
 }

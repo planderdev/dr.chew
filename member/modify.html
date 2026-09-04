@@ -16,7 +16,7 @@
     <div class="{$display_benefit|display}">
         <div class="benefit">
             <div class="user">
-                <div class="user__thumbnail"><img src="{$group_image}" alt="" onerror="this.src='//img.echosting.cafe24.com/skin/skin/member/icon-user-thumb.svg';" class="{$group_image_tag_class}" /></div>
+                <div class="user__thumbnail"><img src="{$group_image}" alt="" onerror="this.src='/0svg/my.svg';" class="{$group_image_tag_class}" /></div>
                 <div class="user__info">
                     <strong class="title">안녕하세요. {$member_name}님</strong>
                     <p>고객님의 회원등급은 <strong>{$group_name}</strong> 입니다.</p>
@@ -53,8 +53,8 @@
             <table border="1" >
             <caption>회원인증</caption>
             <colgroup>
-                <col style="width:190px;" />
-                <col style="width:auto;" />
+                <col  class="ec-u-w-190" />
+                <col  class="ec-u-w-auto" />
             </colgroup>
             <tbody>
                 <tr class="{$display_member_type|display}">
@@ -92,22 +92,22 @@
 
     <div class="titleArea titleArea--middle {$display_base_column_title|display}">
         <h3>기본정보</h3>
-        <p class="required {$display_base_column_title|display}"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" /> 필수입력사항</p>
+        <p class="required {$display_base_column_title|display}"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" /> 필수입력사항</p>
     </div>
     <div class="ec-base-table typeWrite">
         <table border="1" >
         <caption>회원 기본정보</caption>
         <colgroup>
-            <col style="width:190px;" />
-            <col style="width:auto;" />
+            <col  class="ec-u-w-190" />
+            <col  class="ec-u-w-auto" />
         </colgroup>
         <tbody>
             <tr class="{$display_use_id|display}">
-                <th scope="row" class="member_id"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />아이디</th>
+                <th scope="row" class="member_id"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />아이디</th>
                 <td>{$form.member_id} <span class="txtInfo">{$form.user_id_dupl} (영문소문자/숫자, 4~16자)</span></td>
             </tr>
             <tr>
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_is_none_certification|display}" alt="필수" />{$display_passwd_title}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_is_none_certification|display}" alt="필수" />{$display_passwd_title}</th>
                 <td>
                     <div class="eTooltip">
                         {$form.passwd}
@@ -126,7 +126,7 @@
                 </td>
             </tr>
             <tr class="{$display_is_none_certification|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />비밀번호 확인</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />비밀번호 확인</th>
                 <td>{$form.user_passwd_confirm} <p class="txtInfo" id="{$pwConfirmMsg_id}"></p></td>
             </tr>
             <tr class="{$display_is_certification|display}">
@@ -153,19 +153,19 @@
                 <td>{$form.new_passwd_confirm} <p class="txtInfo" id="{$newPwConfirmMsg_id}"></p></td>
             </tr>
             <tr class="{$display_hint|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />비밀번호 확인 질문</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />비밀번호 확인 질문</th>
                 <td>{$form.hint}</td>
             </tr>
             <tr class="{$display_hint_answer|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />비밀번호 확인 답변</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />비밀번호 확인 답변</th>
                 <td>{$form.hint_answer}</td>
             </tr>
             <tr class="{$display_name|display}">
-                <th scope="row" id="{$name_title}"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />이름</th>
+                <th scope="row" id="{$name_title}"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />이름</th>
                 <td>{$form.name}</td>
             </tr>
             <tr class="{$display_eng_name|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_name_en|display}" alt="필수" />이름(영문)</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_name_en|display}" alt="필수" />이름(영문)</th>
                 <td>{$form.name_en}<span class="txtInfo">(이름 - 성 형식으로 입력해 주세요.)</span></td>
             </tr>
             <tr class="{$display_foreigner_ssn|display}">
@@ -173,19 +173,19 @@
                 <td>{$foreigner_ssn}</td>
             </tr>
             <tr class="{$display_coroperate|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />법인명 </th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />법인명 </th>
                 <td>{$coroperate_name}</td>
             </tr>
             <tr class="{$display_coroperate|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />법인번호</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />법인번호</th>
                 <td class="formGroup">{$coroperate_ssn}</td>
             </tr>
             <tr class="{$display_company|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />상호명</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />상호명</th>
                 <td>{$form.cname}</td>
             </tr>
             <tr class="{$display_company|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />사업자번호</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />사업자번호</th>
                 <td class="formGroup">
                     {$form.cssn}
                     <a href="#none" class="btnNormal {$display_cssn_dupl|display}" onclick="{$action_cssn_dupl}">중복확인</a>
@@ -193,19 +193,19 @@
                 </td>
             </tr>
             <tr class="{$display_nation|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />국적</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />국적</th>
                 <td>{$form.citizenship}</td>
             </tr>
             <tr class="{$display_addr|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_address|display}" alt="필수" />주소</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_address|display}" alt="필수" />주소</th>
                 <td class="formMultiple">{$form.address}</td>
             </tr>
             <tr class="{$display_phone|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_phone|display}" alt="필수" />일반전화</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_phone|display}" alt="필수" />일반전화</th>
                 <td class="formGroup code">{$form.phone}</td>
             </tr>
             <tr class="{$display_mobile|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_cell|display}" alt="필수" />휴대전화</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_cell|display}" alt="필수" />휴대전화</th>
                 <td class="formGroup code">
                     {$form.mobile}<button type="button" class="btnNormal {$display_verify_mobile|display}" id="{$btn_action_verify_mobile}" onclick="{$action_verify_mobile}">인증번호받기</button>
                     <p class="txtInfo {$bDisplayMobileVerifyInfoDefault|display}" id="{$result_send_verify_mobile_fail}"></p>
@@ -216,7 +216,7 @@
                 </td>
             </tr>
             <tr class="{$display_verify_mobile_confirm|display}" id="{$confirm_verify_mobile}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />인증번호</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />인증번호</th>
                 <td class="formGroup">
                     <div class="verify">
                         <div>{$form.verify_sms_number}</div>
@@ -226,18 +226,18 @@
                 </td>
             </tr>
             <tr class="{$display_is_sms|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />SMS 수신여부</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />SMS 수신여부</th>
                 <td>{$form.is_sms}<p class="txtInfo">쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다.</p></td>
             </tr>
             <tr>
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />이메일</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />이메일</th>
                 <td>
                     {$form.email} <p id="{$emailMsg_id}"></p>
                     <p class="txtInfo {$display_is_email_auth_info|display}">이메일 주소 변경 시 로그아웃 후 재인증을 하셔야만 로그인이 가능합니다.<br />인증 메일은 24시간 동안 유효하며, 유효 시간이 만료된 후에는 가입 정보로 로그인 하셔서 재발송 요청을 해주시기 바랍니다.</p>
                 </td>
             </tr>
             <tr class="{$display_is_news_mail|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired" alt="필수" />이메일 수신여부</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired" alt="필수" />이메일 수신여부</th>
                 <td>{$form.is_news_mail}<p class="txtInfo">쇼핑몰에서 제공하는 유익한 이벤트 소식을 이메일로 받으실 수 있습니다.</p></td>
             </tr>
             <tr class="{$display_is_lifetime|display}">
@@ -262,132 +262,132 @@
         <table border="1" >
         <caption>회원 추가정보</caption>
         <colgroup>
-            <col style="width:190px;" />
-            <col style="width:auto;" />
+            <col  class="ec-u-w-190" />
+            <col  class="ec-u-w-auto" />
         </colgroup>
         <tbody>
             <tr class="{$display_nick|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_nick_name_flag|display}" alt="필수" />별명</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_nick_name_flag|display}" alt="필수" />별명</th>
                 <td>{$form.nick_name} <span class="txtInfo">(한글2~10자/영문 대소문자4~20자/숫자 혼용가능)</span></td>
             </tr>
             <tr class="{$display_is_sex|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_sex|display}" alt="필수" />성별</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_sex|display}" alt="필수" />성별</th>
                 <td>{$form.is_sex}</td>
             </tr>
             <tr class="{$display_birthday|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_is_birthday|display}" alt="필수" />생년월일</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_is_birthday|display}" alt="필수" />생년월일</th>
                 <td class="formGroup date">{$form.birth_year} 년 {$form.birth_month} 월 {$form.birth_day} 일 <span class="gFlow {$display_calendar_type|display}">{$form.is_solar_calendar}</span></td>
             </tr>
             <tr class="{$display_marry|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_is_wedding_anniversary|display}" alt="필수" />결혼기념일</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_is_wedding_anniversary|display}" alt="필수" />결혼기념일</th>
                 <td class="formGroup date">{$form.marry_year} 년 {$form.marry_month} 월 {$form.marry_day} 일</td>
             </tr>
             <tr class="{$display_partner|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_is_life_partner|display}" alt="필수" />배우자생일</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_is_life_partner|display}" alt="필수" />배우자생일</th>
                 <td class="formGroup date">{$form.partner_year} 년 {$form.partner_month} 월 {$form.partner_day} 일</td>
             </tr>
             <tr class="{$display_child|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_child|display}" alt="필수" />자녀 </th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_child|display}" alt="필수" />자녀 </th>
                 <td>{$form.child}</td>
             </tr>
             <tr class="{$display_school|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_school|display}" alt="필수" />최종학력</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_school|display}" alt="필수" />최종학력</th>
                 <td>{$form.school}</td>
             </tr>
             <tr class="{$display_job_class|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_job_class|display}" alt="필수" />직종</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_job_class|display}" alt="필수" />직종</th>
                 <td>{$form.job_class}</td>
             </tr>
             <tr class="{$display_job|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_job|display}" alt="필수" />직업</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_job|display}" alt="필수" />직업</th>
                 <td>{$form.job}</td>
             </tr>
             <tr class="{$display_earning|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_earning|display}" alt="필수" />연소득</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_earning|display}" alt="필수" />연소득</th>
                 <td>{$form.earning}</td>
             </tr>
             <tr class="{$display_car|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_car|display}" alt="필수" />자동차</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_car|display}" alt="필수" />자동차</th>
                 <td>{$form.car}</td>
             </tr>
             <tr class="{$display_region|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_region|display}" alt="필수" />지역</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_region|display}" alt="필수" />지역</th>
                 <td>{$form.region}</td>
             </tr>
             <tr class="{$display_internet|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_internet|display}" alt="필수" />인터넷 이용장소</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_internet|display}" alt="필수" />인터넷 이용장소</th>
                 <td>{$form.internet}</td>
             </tr>
             <tr class="{$display_inter|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_interest|display}" alt="필수" />관심분야</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_interest|display}" alt="필수" />관심분야</th>
                 <td><div class="interest">{$form.inter_check}</div></td>
             </tr>
             <tr class="{$display_add1|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add1|display}" alt="필수" />{$title_add1}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add1|display}" alt="필수" />{$title_add1}</th>
                 <td>{$form.add1}</td>
             </tr>
             <tr class="{$display_add2|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add2|display}" alt="필수" />{$title_add2}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add2|display}" alt="필수" />{$title_add2}</th>
                 <td>{$form.add2}</td>
             </tr>
             <tr class="{$display_add3|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add3|display}" alt="필수" />{$title_add3}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add3|display}" alt="필수" />{$title_add3}</th>
                 <td>{$form.add3}</td>
             </tr>
             <tr class="{$display_add4|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add4|display}" alt="필수" />{$title_add4}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add4|display}" alt="필수" />{$title_add4}</th>
                 <td>{$form.add4}</td>
             </tr>
             <tr class="{$display_add5|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add5|display}" alt="필수" />{$title_add5}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add5|display}" alt="필수" />{$title_add5}</th>
                 <td>{$form.add5}</td>
             </tr>
             <tr class="{$display_add6|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add6|display}" alt="필수" />{$title_add6}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add6|display}" alt="필수" />{$title_add6}</th>
                 <td>{$form.add6}</td>
             </tr>
             <tr class="{$display_add7|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add7|display}" alt="필수" />{$title_add7}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add7|display}" alt="필수" />{$title_add7}</th>
                 <td>{$form.add7}</td>
             </tr>
             <tr class="{$display_add8|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add8|display}" alt="필수" />{$title_add8}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add8|display}" alt="필수" />{$title_add8}</th>
                 <td>{$form.add8}</td>
             </tr>
             <tr class="{$display_add9|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add9|display}" alt="필수" />{$title_add9}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add9|display}" alt="필수" />{$title_add9}</th>
                 <td>{$form.add9}</td>
             </tr>
             <tr class="{$display_add10|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add10|display}" alt="필수" />{$title_add10}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add10|display}" alt="필수" />{$title_add10}</th>
                 <td>{$form.add10}</td>
             </tr>
             <tr class="{$display_add11|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add11|display}" alt="필수" />{$title_add11} </th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add11|display}" alt="필수" />{$title_add11} </th>
                 <td>{$form.add11}</td>
             </tr>
             <tr class="{$display_add12|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add12|display}" alt="필수" />{$title_add12}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add12|display}" alt="필수" />{$title_add12}</th>
                 <td>{$form.add12}</td>
             </tr>
             <tr class="{$display_add13|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add13|display}" alt="필수" />{$title_add13}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add13|display}" alt="필수" />{$title_add13}</th>
                 <td>{$form.add13}</td>
             </tr>
             <tr class="{$display_add14|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add14|display}" alt="필수" />{$title_add14}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add14|display}" alt="필수" />{$title_add14}</th>
                 <td>{$form.add14}</td>
             </tr>
             <tr class="{$display_add15|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_add15|display}" alt="필수" />{$title_add15}</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_add15|display}" alt="필수" />{$title_add15}</th>
                 <td>{$form.add15}</td>
             </tr>
             <tr class="{$display_reco_id|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_reco_id|display}" alt="필수" />추천인 아이디</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_reco_id|display}" alt="필수" />추천인 아이디</th>
                 <td>{$form.reco_id}</td>
             </tr>
             <tr class="{$display_bank_info|display}">
-                <th scope="row"><img src="/SkinImg/img/ico_required.svg" class="icon icoRequired {$display_required_bank_account_no|display}" alt="필수" />환불계좌</th>
+                <th scope="row"><img src="/0svg/check.svg" class="icon icoRequired {$display_required_bank_account_no|display}" alt="필수" />환불계좌</th>
                 <td>
                     <a href="#none" class="btnNormal" {$action_reg_bank}><span id="id_has_bank_img" class="{$display_has_bank|display}">환불계좌변경</span><span id="id_reg_bank_img" class="{$display_reg_bank|display}">환불계좌등록</span></a>
                     <span id="{$id_bank_info}" class="gFlow">{$bank_info}</span>
@@ -403,13 +403,13 @@
             <table border="1" >
                 <caption>제3자 정보제공 동의현황</caption>
                 <colgroup>
-                    <col style="width:auto;" />
-                    <col style="width:15%;" />
-                    <col style="width:25%;" />
-                    <col style="width:15%;" />
-                    <col style="width:12%;" />
-                    <col style="width:12%;" />
-                    <col style="width:12%;" />
+                    <col  class="ec-u-w-auto" />
+                    <col  class="ec-u-w-15p" />
+                    <col  class="ec-u-w-25p" />
+                    <col  class="ec-u-w-15p" />
+                    <col  class="ec-u-w-12p" />
+                    <col  class="ec-u-w-12p" />
+                    <col  class="ec-u-w-12p" />
                 </colgroup>
                 <thead>
                     <tr>
@@ -453,12 +453,12 @@
             <table border="1" >
                 <caption>처리위탁 동의현황</caption>
                 <colgroup>
-                    <col style="width:auto;" />
-                    <col style="width:20%;" />
-                    <col style="width:30%;" />
-                    <col style="width:12%;" />
-                    <col style="width:12%;" />
-                    <col style="width:12%;" />
+                    <col  class="ec-u-w-auto" />
+                    <col  class="ec-u-w-20p" />
+                    <col  class="ec-u-w-30p" />
+                    <col  class="ec-u-w-12p" />
+                    <col  class="ec-u-w-12p" />
+                    <col  class="ec-u-w-12p" />
                 </colgroup>
                 <thead>
                     <tr>
@@ -547,8 +547,8 @@
                 <table border="1" >
                     <caption>회원탈퇴 사유</caption>
                     <colgroup>
-                        <col style="width:140px;" />
-                        <col style="width:auto;" />
+                        <col  class="ec-u-w-140" />
+                        <col  class="ec-u-w-auto" />
                     </colgroup>
                     <tbody>
                         <tr>

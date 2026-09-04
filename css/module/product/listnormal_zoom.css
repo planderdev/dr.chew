@@ -1,5 +1,5 @@
 .xans-product-listnormal {
-    background: #fff;
+    background: var(--bg-0);
 }
 
 /* 타입 : 확대보기 */
@@ -15,18 +15,18 @@ html.popupFullSize .loading {
     left: 50%;
     top: 50%;
     z-index: 120;
-    margin: -16px 0 0 -16px;
+    margin: calc(var(--space-16) * -1) 0 0 calc(var(--space-16) * -1);
 }
 
 html.popupFullSize .dimmed {
     display: block;
     position: fixed;
-    left: 0px;
+    left: 0;
     top: 0;
-    right: 0px;
-    bottom: 0px;
+    right: 0;
+    bottom: 0;
     z-index: 110;
-    background: rgba(0, 0, 0, 0.8);
+    background: var(--scrim-heavy);
 }
 
 .xans-product-listnormal.typeZoom {
@@ -39,7 +39,7 @@ html.popupFullSize .dimmed {
     z-index: 100;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--bg-0);
 }
 
 .xans-product-listnormal.typeZoom h1 {
@@ -48,32 +48,32 @@ html.popupFullSize .dimmed {
     top: 0;
     z-index: 101;
     width: 100%;
-    height: 35px;
-    border-bottom: 1px solid rgba(206, 206, 206, 0.8);
-    color: #1b1b1b;
-    font-size: 15px;
+    height: calc(var(--space-32) + calc(var(--form-field-border-width) * 3));
+    border-bottom: var(--form-field-border-width) solid var(--border-translucent);
+    color: var(--text-strong);
+    font-size: var(--body-2-size);
     text-align: center;
-    line-height: 36px;
-    background: rgba(227, 227, 227, 0.8);
+    line-height: calc(var(--space-32) + var(--space-4));
+    background: var(--surface-translucent);
 }
 
 .xans-product-listnormal.typeZoom .btnClose {
     position: absolute;
-    right: 14px;
-    top: 11px;
+    right: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
+    top: calc(var(--space-8) + calc(var(--form-field-border-width) * 3));
     z-index: 101;
     overflow: hidden;
-    width: 13px;
-    height: 13px;
+    width: calc(var(--space-12) + var(--form-field-border-width));
+    height: calc(var(--space-12) + var(--form-field-border-width));
     border: 0;
     padding: 0;
     text-indent: 100%;
     white-space: nowrap;
-    background: url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_close_black.png") no-repeat 0 0;
-    background-size: 13px 13px;
+    background: var(--icon-url-close) no-repeat 0 0;
+    background-size: calc(var(--space-12) + var(--form-field-border-width)) calc(var(--space-12) + var(--form-field-border-width));
 }
 
-.xans-product-listnormal.typeZoom .zoomList {
+.xans-product-listnormal.typeZoom .zoomList { display:flex; align-items:center; flex-wrap:wrap;
     position: absolute;
     top: 0;
     right: 0;
@@ -91,15 +91,8 @@ html.popupFullSize .dimmed {
     height: 100%;
 }
 
-.xans-product-listnormal.typeZoom .zoomList ul:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.xans-product-listnormal.typeZoom .zoomList li {
+.xans-product-listnormal.typeZoom .zoomList li { display:inline-flex; align-items:center;
     position: relative;
-    float: left;
     width: 100%;
     height: 100%;
 }
@@ -140,44 +133,44 @@ html.popupFullSize .dimmed {
 
 .xans-product-listnormal.typeZoom .zoomList li .thumbnail .wish {
     position: absolute;
-    right: 7px;
-    bottom: 7px;
+    right: calc(var(--space-4) + calc(var(--form-field-border-width) * 3));
+    bottom: calc(var(--space-4) + calc(var(--form-field-border-width) * 3));
     z-index: 100;
 }
 
 .xans-product-listnormal.typeZoom .zoomList li .thumbnail .wish img {
-    max-height: 23px;
+    max-height: calc(var(--space-16) + var(--space-4) + calc(var(--form-field-border-width) * 3));
 }
 
 .xans-product-listnormal.typeZoom .zoomList .information {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 10px 14px;
+    padding: var(--space-12) var(--space-16);
     width: 100%;
-    border-top: 1px solid rgba(206, 206, 206, 0.8); 
-    font-size: 15px;
-    font-weight: bold;
-    background: rgba(227, 227, 227, 0.8);
+    border-top: var(--form-field-border-width) solid var(--border-translucent);
+    font-size: var(--body-2-size);
+    font-weight: var(--font-weight-bold);
+    background: var(--surface-translucent);
     box-sizing: border-box;
 }
 
 .xans-product-listnormal.typeZoom .zoomList .information .name,
 .xans-product-listnormal.typeZoom .zoomList .information .price {
-    margin: 0 110px 3px 0;
+    margin: 0 var(--space-96) var(--space-4) 0;
 }
 
 .xans-product-listnormal.typeZoom .zoomList .information .name {
     overflow: hidden;
-    height: 20px;
+    height: calc(var(--space-16) + var(--space-4));
     word-wrap: break-word;
 }
 
 .xans-product-listnormal.typeZoom .zoomList .information .name a {
     display: inline-block;
     width: 100%;
-    color: #1b1b1b;
-    font-weight: 700;
+    color: var(--text-strong);
+    font-weight: var(--font-weight-bold);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -188,24 +181,24 @@ html.popupFullSize .dimmed {
 }
 
 .xans-product-listnormal.typeZoom .zoomList .information .price a {
-    color: #222;
+    color: var(--line-strong);
 }
 
 .xans-product-listnormal.typeZoom .zoomList .information .price .strike {
-    color: #000;
-    font-weight: normal;
+    color: var(--text-main);
+    font-weight: var(--font-weight-regular);
     text-decoration: line-through;
 }
 
 .xans-product-listnormal.typeZoom .zoomList .information .detail {
     position: absolute;
-    right: 14px;
-    top: 15px;
+    right: calc(var(--space-12) + calc(var(--form-field-border-width) * 2));
+    top: calc(var(--space-12) + calc(var(--form-field-border-width) * 3));
 }
 
 .xans-product-listnormal.typeZoom .btnStrong {
-    height: 33px;
-    line-height: 33px;
+    height: calc(var(--space-32) + var(--form-field-border-width));
+    line-height: calc(var(--space-32) + var(--form-field-border-width));
 }
 
 .xans-product-listnormal.typeZoom .pagenate {
@@ -214,36 +207,36 @@ html.popupFullSize .dimmed {
     right: 0;
     top: 50%;
     z-index: 101;
-    margin: -17px 0 0;
+    margin: calc(var(--space-16) * -1) 0 0;
 }
 
 .xans-product-listnormal.typeZoom .pagenate button {
     overflow: hidden;
     position: absolute;
     top: 0;
-    width: 33px;
-    height: 34px;
+    width: calc(var(--space-32) + var(--form-field-border-width));
+    height: calc(var(--space-32) + calc(var(--form-field-border-width) * 2));
     padding: 0;
     border: 0;
     text-indent: 150%;
     white-space: nowrap;
-    background-size: 12px auto;
+    background-size: var(--space-12) auto;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 0 5px rgba(150, 150, 150, 0.8);
+    background-color: var(--overlay-light);
+    box-shadow: var(--shadow-lv1);
 }
 
 .xans-product-listnormal.typeZoom .pagenate .prev {
     left: 0;
-    background-image: url("/24d/zgt_imgs/mb_prev_g.png");
-    border-radius: 0 2px 2px 0;
+    background-image: var(--icon-url-left-arr);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 .xans-product-listnormal.typeZoom .pagenate .next {
     right: 0;
-    background-image: url("/24d/zgt_imgs/mb_next_g.png");
-    border-radius: 2px 0 0 2px;
+    background-image: var(--icon-url-right-arr);
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 }
 
 /* Thumbnail icon position */
@@ -286,10 +279,10 @@ html.popupFullSize .dimmed {
 /* 좋아요버튼 */
 .xans-product-listnormal.typeZoom .likeButton {
     position: absolute;
-    top: -33px;
+    top: calc((var(--space-32) + var(--form-field-border-width)) * -1);
     right: 0;
-    padding: 5px 14px 7px 14px;
-    background: rgba(255, 255, 255, 0.8);
+    padding: var(--space-4) var(--space-16) var(--space-8) var(--space-16);
+    background: var(--overlay-light-strong);
 }
 
 .xans-product-listnormal.typeZoom .likeButton button {
@@ -298,26 +291,26 @@ html.popupFullSize .dimmed {
 }
 
 .xans-product-listnormal.typeZoom .likeButton button img {
-    max-height: 19px;
+    max-height: calc(var(--space-16) + calc(var(--form-field-border-width) * 3));
 }
 
 .xans-product-listnormal.typeZoom .likeButton button strong {
-    margin: 0 0 0 3px;
-    font-size: 11px;
-    line-height: 20px;
-    color: #757575;
+    margin: 0 0 0 var(--space-4);
+    font-size: var(--caption-2-size);
+    line-height: calc(var(--space-16) + var(--space-4));
+    color: var(--text-weak);
 }
 
 .xans-product-listnormal.typeZoom .likeButton.selected button strong {
-    color: #2e2e2e;
+    color: var(--line-strong);
 }
 
 .xans-product-listnormal.typeZoom .samplelikewrap {
     display: inline-block;
     position: absolute;
     top: auto;
-    bottom: 63px;
-    right: 0px;
-    background: #fff;
+    bottom: calc(var(--space-48) + var(--space-12) + calc(var(--form-field-border-width) * 3));
+    right: 0;
+    background: var(--bg-0);
     z-index: 999;
 }

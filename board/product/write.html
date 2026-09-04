@@ -26,7 +26,7 @@
         -->
 
         <div class="ec-base-box typeProduct {$display_product|display}">
-            <p class="thumbnail"><a href="{$link_product_detail}"><img id="{$product_img_id}" src="{$url_product_img}" onerror="this.src='//img.echosting.cafe24.com/thumb/75x75.gif'" alt="" /></a></p>
+            <p class="thumbnail"><a href="{$link_product_detail}"><img id="{$product_img_id}" src="{$url_product_img}" onerror="this.src='/0svg/logo.svg'" alt="" /></a></p>
             <div class="information">
                 <h3><a href="/product/detail.html{$param_product}" id="{$product_name_link_id}">{$product_name}</a></h3>
                 <p class="price">{$product_price} {$product_tax_type_text}</p>
@@ -42,8 +42,8 @@
             <table border="1" >
             <caption>글쓰기 폼</caption>
             <colgroup>
-                <col style="width:190px;" />
-                <col style="width:auto;" />
+                <col  class="ec-u-w-190" />
+                <col  class="ec-u-w-auto" />
             </colgroup>
             <tbody>
                 <tr>

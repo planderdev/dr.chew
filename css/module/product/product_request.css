@@ -1,23 +1,22 @@
-#popup { width:600px; }
-.xans-product-request .titleArea { margin:0 0 8px; }
-.xans-product-request .titleArea:after { content:""; display:block; clear:both; }
-.xans-product-request .titleArea h2 { float:left; margin:0 4px 0 0; font-size:12px; color:#2e2e2e; }
-.xans-product-request .titleArea .count { color:#757575; }
-.xans-product-request .content { padding:18px 20px 20px; border-top:1px solid #e8e8e8; }
-.xans-product-request .txtEm { color:#353535; }
+#popup { width: calc((var(--space-96) * 6) + var(--space-24)); }
+.xans-product-request .titleArea { display:flex; align-items:center; flex-wrap:wrap; margin: 0 0 var(--space-8); }
+.xans-product-request .titleArea h2 { margin: 0 var(--space-4) 0 0; font-size: var(--caption-2-size); color:var(--line-strong); }
+.xans-product-request .titleArea .count { color:var(--text-weak); }
+.xans-product-request .content { padding: var(--space-16) var(--space-24) var(--space-24); border-top: var(--form-field-border-width) solid var(--line-weak); }
+.xans-product-request .txtEm { color:var(--text-muted-strong); }
 
-.xans-product-request td.image img { max-width:78px; border:1px solid #d6d6d6; }
-.xans-product-request.ec-base-layer .ec-base-help { margin:20px 0 0; }
+.xans-product-request td.image img { max-width: calc(var(--space-64) + var(--space-12) + calc(var(--form-field-border-width) * 2)); border: var(--form-field-border-width) solid var(--line-default); }
+.xans-product-request.ec-base-layer .ec-base-help { margin: var(--space-24) 0 0; }
 
 /* Input Size */
 .xans-product-request #sender,
 .xans-product-request #recipient,
-.xans-product-request #subject { width:196px; }
+.xans-product-request #subject { width: calc((var(--space-96) * 2) + var(--space-4)); }
 
 .xans-product-request #sender_phone1,
-.xans-product-request #recipient_phone1 { width:68px; }
+.xans-product-request #recipient_phone1 { width: calc(var(--space-64) + var(--space-4)); }
 
 .xans-product-request #sender_phone2,
 .xans-product-request #sender_phone3,
 .xans-product-request #recipient_phone2,
-.xans-product-request #recipient_phone3 { width:57px; }
+.xans-product-request #recipient_phone3 { width: calc(var(--space-48) + var(--space-8) + var(--form-field-border-width)); }

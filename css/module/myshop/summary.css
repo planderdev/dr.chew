@@ -1,13 +1,13 @@
-.xans-myshop-summary { margin:14px 7px; }
-.xans-myshop-summary h3 { padding:14px; font-size:13px; line-height:1.2em; color:#fff; background:#444; }
+.xans-myshop-summary { margin: var(--space-16) var(--space-8); }
+.xans-myshop-summary h3 { padding: var(--space-16); font-size: var(--caption-1-size); line-height: var(--body-line-height); color:var(--bg-0); background:var(--text-muted-strong); }
 
 /* 관련 링크 */
-.xans-myshop-mileagepackage .navigation { padding:0 7px 14px; }
-.xans-myshop-mileagepackage .navigation ul { border:1px solid #d5d5d5; }
-.xans-myshop-mileagepackage .navigation li { background:#f9f9f9; border-top:1px solid #ddd; }
-.xans-myshop-mileagepackage .navigation li:first-child { border-top:0; }
-.xans-myshop-mileagepackage .navigation li a { display:block; position:relative; padding:14px; font-weight:bold; font-size:13px; line-height:1.2em; color:#4a5164; }
-.xans-myshop-mileagepackage .navigation li a:after { display:block; content:""; width:20px; height:20px; position:absolute; top:12px; right:12px;
-    background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_arrow_gray.png") right 50% no-repeat; background-size:20px 20px;
+.xans-myshop-mileagepackage .navigation { padding: 0 var(--space-8) var(--space-16); }
+.xans-myshop-mileagepackage .navigation ul { border: var(--form-field-border-width) solid var(--line-default); }
+.xans-myshop-mileagepackage .navigation li { background:var(--bg-50); border-top: var(--form-field-border-width) solid var(--line-weak); }
+.xans-myshop-mileagepackage .navigation li:first-child { border-top: 0; }
+.xans-myshop-mileagepackage .navigation li a { display:block; position:relative; padding: var(--space-16); font-weight:var(--font-weight-bold); font-size: var(--caption-1-size); line-height: var(--body-line-height); color:var(--text-sub); }
+.xans-myshop-mileagepackage .navigation li a:after { display:block; content:""; width: calc(var(--space-16) + var(--space-4)); height: calc(var(--space-16) + var(--space-4)); position:absolute; top: var(--space-12); right: var(--space-12);
+    background:var(--icon-url-right-arr) right 50% no-repeat; background-size: calc(var(--space-16) + var(--space-4)) calc(var(--space-16) + var(--space-4));
     transform:rotate(-90deg); -ms-transform:rotate(-90deg); -webkit-transform:rotate(-90deg);
  }

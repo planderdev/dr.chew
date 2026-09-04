@@ -1,24 +1,24 @@
 .xans-board-inquirysearch .form { display:flex; }
-.xans-board-inquirysearch select, 
-.xans-board-inquirysearch input[type="text"], 
-.xans-board-inquirysearch a { margin-left:10px; }
+.xans-board-inquirysearch select,
+.xans-board-inquirysearch input[type="text"],
+.xans-board-inquirysearch a { margin-left: var(--space-12); }
 
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
-    .xans-board-inquirysearch { margin:10px 16px 0px 6px; }
+    .xans-board-inquirysearch { margin: var(--space-12) var(--space-16) 0 var(--space-8); }
     .xans-board-inquirysearch .form { flex-wrap:wrap; }
-    .xans-board-inquirysearch select, 
+    .xans-board-inquirysearch select,
     .xans-board-inquirysearch input[type="text"],
-    .xans-board-inquirysearch a { flex:1; margin-top:10px; }
+    .xans-board-inquirysearch a { flex:1; margin-top: var(--space-12); }
     .xans-board-inquirysearch #search { flex:2; }
 }
 
 /********************* PC *********************/
 @media all and (min-width:1025px) {
-    .xans-board-inquirysearch { margin:20px -5px 0; }
-    .xans-board-inquirysearch select, 
-    .xans-board-inquirysearch input[type="text"], 
-    .xans-board-inquirysearch a { margin:0 5px; }
-    .xans-board-inquirysearch #search_key { width:110px; }
-    .xans-board-inquirysearch #search { width:175px; }
+    .xans-board-inquirysearch { margin: var(--space-24) calc(var(--space-4) * -1) 0; }
+    .xans-board-inquirysearch select,
+    .xans-board-inquirysearch input[type="text"],
+    .xans-board-inquirysearch a { margin: 0 var(--space-4); }
+    .xans-board-inquirysearch #search_key { width: calc(var(--space-96) + var(--space-12) + calc(var(--form-field-border-width) * 2)); }
+    .xans-board-inquirysearch #search { width: calc(var(--space-96) + var(--space-64) + var(--space-12) + calc(var(--form-field-border-width) * 3)); }
 }
